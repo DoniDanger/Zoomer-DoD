@@ -83,6 +83,102 @@ political_decisions = {
 		}
 	}
 
+	push_tungning_out = {
+		potential = {
+			tag = JAP
+			NOT = { has_country_flag = push_tungning_out_flag }
+		}
+		allow = {
+			CHI_2562 = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 10
+			CHI_2562 = {
+				remove_core = TNG
+				any_pop = {
+					limit = {
+						has_pop_culture = chugoku
+					}
+					literacy = 0.35
+				}
+			}
+			set_country_flag = push_tungning_out_flag
+		}
+	}
+
+	curtail_chinese_autonomy = {
+		potential = {
+			tag = JAP
+			NOT = {
+				has_global_flag = chinese_autonomy_curtailed
+			}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			war = no
+			MCK = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			SHU = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			HUI = {
+				vassal_of = THIS
+				in_sphere = THIS
+			}
+			CHI_1504 = {
+				owned_by = THIS
+			}
+			CHI_1550 = {
+				owned_by = THIS
+			}
+			CHI_1495 = {
+				owned_by = THIS
+			}
+			CHI_1494 = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 25
+			set_global_flag = chinese_autonomy_curtailed
+			country_event = 33431
+			MCK = {
+				country_event = 33430
+			}
+			SHU = {
+				country_event = 33430
+			}
+			HUI = {
+				country_event = 33430
+			}
+		}
+	}
+
+	integration_of_the_min = {
+		potential = {
+			tag = JAP
+			NOT = { has_country_flag = integration_of_the_min_flag }
+			has_global_flag = chinese_autonomy_curtailed
+		}
+		allow = {
+			war = no
+			revolution_n_counterrevolution = 1
+			CHI_1487 = {
+				owned_by = THIS
+			}
+		}
+		effect = {
+			prestige = 15
+			add_accepted_culture = min
+			capital = 1482
+			set_country_flag = integration_of_the_min_flag
+		}
+	}
 
 	#Miscellaneous garbage
   annex_hawaii = {

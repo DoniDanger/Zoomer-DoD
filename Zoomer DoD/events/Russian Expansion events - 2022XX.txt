@@ -41,7 +41,7 @@ country_event = {
 		RUS_1075 = { add_core = RUS }
 		RUS_2694 = { add_core = RUS }
 		RUS_1070 = { add_core = RUS }
-		RUS_2615{ = { add_core = RUS }
+		RUS_2615 = { add_core = RUS }
 		CHI_1082 = { add_core = RUS }
 		CHI_1553 = { add_core = RUS }
 		CHI_5 = { add_core = RUS }

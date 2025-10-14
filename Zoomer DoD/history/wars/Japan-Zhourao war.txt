@@ -1,9 +1,10 @@
-name = "Reconquest of Formosa"
+name = "War for Japanese Supremacy"
 
 1835.10.2 = {
 	add_attacker = JAP
   	add_defender = GAN
 	add_defender = TNG
+	add_defender = TKG
 
 	# actor
 	# receiver
@@ -18,4 +19,9 @@ name = "Reconquest of Formosa"
 		receiver = TNG
 	}
 
+	war_goal = {
+		casus_belli = annex_core_country
+		actor = JAP
+		receiver = TKG
+	}
 }

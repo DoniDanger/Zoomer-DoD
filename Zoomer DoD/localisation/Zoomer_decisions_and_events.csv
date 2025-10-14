@@ -23,3 +23,17 @@ EVTOPTA800010;Satisfactory;;;;;;;;;;;;;x
 EVTNAME800011;Ideological Thought;;;;;;;;;;;;;x
 EVTDESC800011;Plurality at a cheap price.;;;;;;;;;;;;;x
 EVTOPTA800011;Satisfactory;;;;;;;;;;;;;x
+shogunate_japan_collapse_title;Collapse the society of the Japanese;x
+shogunate_japan_collapse_desc;This decision will cost you infamy and kill a portion of the Japanese pops, but will grant you cores over the Japanese land and remove the Shogunate cores;x
+push_tungning_out_title;Push Tungning out of Formosa;x
+push_tungning_out_desc; ;x
+EVTNAME32028;Aristocracy demands we proclaim our independance;x
+EVTDESC32028; ;x
+EVTNAME32029;$FROMCOUNTRY$ declares independance!;x
+EVTDESC32029;§RThis will continue to happen until we curtail Chinese autonomy;x
+EVTNAME33430;Modernizing our countries;x
+EVTDESC33430; ;x
+EVTNAME33431;The Administration of China;x
+EVTDESC33431;While we curtail the autonomy of our Chinese states, we are faced with the need to eliminate the strength of these governments by outright annexing one of these. This will make it so that the strength of our puppets may never rival ours and will be forced to submit to our will.;x
+curtail_chinese_autonomy_title;Curtail Chinese Autonomy;x
+curtail_chinese_autonomy_desc;§BThis decision will stop the revolts our Chinese puppets;x

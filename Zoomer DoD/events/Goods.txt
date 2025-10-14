@@ -1,4 +1,81 @@
 #############################
+#		 Coal EVENTS		#
+#############################
+province_event = {
+	id = 1099
+	title = "EVTNAME1100"
+	desc = "EVTDESC1100"
+
+	trigger = {
+		year = 1840
+		OR = {
+			province_id = 1634
+			province_id = 1623
+			province_id = 1619
+			province_id = 1622
+			province_id = 1664
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = "EVT199022OPTA"
+		trade_goods = coal
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+	}
+	
+	option = {
+		name = "EVT199034OPTB"
+		ai_chance = { factor = 0 }
+	}
+}
+
+#############################
+#		 Iron EVENTS		#
+#############################
+province_event = {
+	id = 1098
+	title = "EVTNAME1100"
+	desc = "EVTDESC1100"
+
+	trigger = {
+		year = 1840
+		OR = {
+			province_id = 1620
+			province_id = 1621
+			province_id = 1626
+			province_id = 1627
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = "EVT199022OPTA"
+		trade_goods = iron
+		add_province_modifier = {
+			name = switched_production
+			duration = 1825
+		}
+	}
+	
+	option = {
+		name = "EVT199034OPTB"
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+
+#############################
 #        GOLD EVENTS        #
 #############################
 province_event = {
@@ -73,7 +150,7 @@ province_event = {
 			province_id = 104			# San Francisco
 			province_id = 3				# Kenai
 			province_id = 90			# San Diego
-			province_id = 695			# Königsberg
+			province_id = 695			# Kï¿½nigsberg
 			province_id = 2470			# Port Macquaire Australia
 			province_id = 2471			# Bathurst Australia
 			province_id = 2472			# Eden Australia

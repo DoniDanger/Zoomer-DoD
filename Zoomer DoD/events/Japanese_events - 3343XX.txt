@@ -1711,3 +1711,299 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 32028
+	title = "EVTNAME32028"
+	desc = "EVTDESC32028"
+	
+	trigger = {
+		THIS = {
+			vassal_of = JAP
+			is_culture_group = chinese
+		}
+		NOT = {
+			tag = MCK
+		}
+		NOT = {
+			has_global_flag = chinese_autonomy_curtailed
+		}
+		NOT = {
+			truce_with = JAP
+		}
+		NOT = {
+			war_with = JAP
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 36
+		modifier = {
+			factor = 1.25
+			THIS = {
+				relation = {
+					who = JAP
+					value = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			THIS = {
+				relation = {
+					who = JAP
+					value = 150
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			THIS = {
+				relation = {
+					who = JAP
+					value = 200
+				}
+			}
+		}
+		modifier = {
+			factor = 0.95
+			THIS = {
+				NOT = {
+					relation = {
+						who = JAP
+						value = 0
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.95
+			THIS = {
+				NOT = {
+					relation = {
+						who = JAP
+						value = -50
+					}
+				}
+			}
+		}	
+		modifier = {
+			factor = 0.95
+			THIS = {
+				NOT = {
+					relation = {
+						who = JAP
+						value = -100
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.95
+			THIS = {
+				NOT = {
+					relation = {
+						who = JAP
+						value = -150
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.95
+			THIS = {
+				NOT = {
+					relation = {
+						who = JAP
+						value = -200
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			JAP = {
+				is_greater_power = no
+			}
+		}
+		modifier = {
+			factor = 0.9
+			JAP = {
+				war_exhaustion = 25
+			}
+		}
+		modifier = {
+			factor = 0.9
+			JAP = {
+				war_exhaustion = 50
+			}
+		}
+		modifier = {
+			factor = 0.9
+			JAP = {
+				war_exhaustion = 75
+			}
+		}
+		modifier = {
+			factor = 0.9
+			JAP = {
+				war_exhaustion = 100
+			}
+		}
+		modifier = {
+			factor = 0.5
+			stronger_army_than = JAP
+		}
+	}
+	option = {
+		name = "For Freedom!"
+		JAP = {
+			country_event = {
+				id = 32029
+				days = 0
+			}
+		}
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 0.25
+				relation = {
+					who = JAP
+					value = 150
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "This is unwise"
+		prestige = -15
+		any_pop = {
+			limit = {
+				is_culture_group = chinese
+			}
+			militancy = 2
+			conciousness = 3
+		}
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 0.25
+				NOT = {
+					relation = {
+						who = JAP
+						value = 100
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = 32029
+	title = "EVTNAME32029"
+	desc = "EVTDESC32029"
+	picture = Picture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		war = {
+			target = FROM
+			attacker_goal = {
+				casus_belli = make_puppet
+			}
+			defender_goal = {
+				casus_belli = become_independent
+			}
+			call_ally = no
+		}
+		release_vassal = FROM
+		diplomatic_influence = {
+			who = FROM
+			value = -400
+		}	
+	}
+
+	option = {
+		name = "The Fools!"
+	}
+}
+
+country_event = {
+	id = 33430
+	title = "EVTNAME33430"
+	desc = "EVTDESC33430"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Ok"
+		civilized = yes
+		activate_technology = post_napoleonic_thought
+		activate_technology = flintlock_rifles
+		activate_technology = bronze_muzzle_loaded_artillery
+		activate_technology = military_staff_system
+		activate_technology = army_command_principle
+		activate_technology = post_nelsonian_thought
+		activate_technology = clipper_design
+		activate_technology = naval_design_bureaus
+		activate_technology = alphabetic_flag_signaling
+		activate_technology = the_command_principle
+		activate_technology = classicism_n_early_romanticism
+		activate_technology = late_enlightenment_philosophy
+		activate_technology = malthusian_thought
+		activate_technology = enlightenment_thought
+		activate_technology = introspectionism
+		activate_technology = private_banks
+		activate_technology = no_standard
+		activate_technology = early_classical_theory_and_critique
+		activate_technology = freedom_of_trade
+		activate_technology = guild_based_production
+		activate_technology = piston_steam_engine
+		activate_technology = mechanical_production
+		activate_technology = mechanized_mining
+		activate_technology = experimental_railroad
+		activate_technology = basic_chemistry
+	}
+}
+
+country_event = {
+	id = 33431
+	title = "EVTNAME33431"
+	desc = "EVTDESC33431"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "Qing Empire"
+		inherit = MCK
+		MCK = {
+			all_core = {
+				add_core = JAP
+			}
+		}
+	}
+	
+	option = {
+		name = "Anhui Clique"
+		inherit = HUI
+		HUI = {
+			all_core = {
+				add_core = JAP
+			}
+		}
+	}
+
+	option = {
+		name = "Shun"
+		inherit = SHU
+		SHU = {
+			all_core = {
+				add_core = JAP
+			}
+		}
+	}
+	
+}

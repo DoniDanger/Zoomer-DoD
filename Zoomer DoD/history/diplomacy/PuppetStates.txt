@@ -53,7 +53,7 @@ vassal = {
 
 #Japan-Chinese puppets
 
-vassal = {
+substate = {
 	first = JAP
 	second = MCK
 	start_date = 1836.1.1
@@ -94,6 +94,13 @@ vassal = {
 vassal = {
 	first = GAN
 	second = TNG
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+vassal = {
+	first = GAN
+	second = TKG
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }

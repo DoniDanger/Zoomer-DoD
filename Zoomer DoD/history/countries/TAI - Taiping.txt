@@ -1,4 +1,4 @@
-capital = 1550
+capital = 1503
 primary_culture = yue 
 culture = hakka
 culture = zhuang 

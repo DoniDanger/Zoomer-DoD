@@ -1,5 +1,5 @@
 capital = 2062
-primary_culture = hui
+primary_culture = hui_culture
 culture = tibetan
 culture = beifaren
 religion = mahayana
