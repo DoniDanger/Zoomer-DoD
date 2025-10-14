@@ -31,7 +31,8 @@ school_reforms = no_schools
 conscription = four_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = quota_immigration
 
 set_country_flag = catholic_country
@@ -68,7 +69,7 @@ no_standard = 1
 early_classical_theory_and_critique = 1
 freedom_of_trade = 1
 guild_based_production = 1
-piston_steam_engine
+piston_steam_engine = 1
 mechanized_mining = 1
 basic_chemistry = 1
 

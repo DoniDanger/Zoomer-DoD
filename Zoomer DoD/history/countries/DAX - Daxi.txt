@@ -48,6 +48,7 @@ upper_house = {
 
 # Level_2
 # Technologies
+enlightenment_thought = 1
 
 # Inventions
 

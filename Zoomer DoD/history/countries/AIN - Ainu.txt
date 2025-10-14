@@ -1,4 +1,4 @@
-capital = 1073
+capital = 1644
 primary_culture = ainu
 religion = animist
 government = absolute_monarchy

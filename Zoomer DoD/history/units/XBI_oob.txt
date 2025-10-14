@@ -1,0 +1,55 @@
+army = {
+    name = "Yellow Standard Army"
+    location = 2062
+    
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 2062
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 2062
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1559
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1559
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1562
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1562
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1492
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1490
+    }
+    regiment = {
+        name = "Cavalry"
+        type = cavalry
+        home = 1491
+    }
+    regiment = {
+        name = "Cavalry"
+        type = cavalry
+        home = 1561
+    }
+}

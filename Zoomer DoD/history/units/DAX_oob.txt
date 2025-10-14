@@ -16,130 +16,130 @@ leader = {
 
 army = {
 	name = "Army of the Daxi Emperor"
-	location = 1525
+	location = 1578
 	regiment = {
 		name= "1st Standard"
-		type = infantry
-		home = 1578
+		type = irregular
+		home = 1579
 	}
 
 	regiment = {
 		name= "2nd Standard"
-		type = infantry
-		home = 1578
+		type = irregular
+		home = 1579
 	}
 
 	regiment = {
 		name= "3rd Standard"
-		type = infantry
-		home = 1578
+		type = irregular
+		home = 1579
 	}
 	
 	regiment = {
 		name= "4th Standard"
-		type = infantry
-		home = 1578
+		type = irregular
+		home = 1579
 	}
 
 	regiment = {
 		name= "5th Standard"
-		type = infantry
-		home = 1578
+		type = irregular
+		home = 1579
 	}
 
 	regiment = {
 		name= "6th Standard"
-		type = infantry
-		home = 1578
+		type = irregular
+		home = 1579
 	}
 	
 	regiment = {
 		name= "7th Standard"
-		type = infantry
-		home = 1578
+		type = irregular
+		home = 1579
 	}
 
 	regiment = {
 		name= "8th Standard"
-		type = hussar
-		home = 1578
+		type = cavalry
+		home = 1579
 	}
 
 	regiment = {
 		name= "9th Standard"
-		type = hussar
-		home = 1578
+		type = cavalry
+		home = 1579
 	}
 	
 	regiment = {
 		name= "10th Standard"
-		type = hussar
-		home = 1578
+		type = cavalry
+		home = 1579
 	}
 }
 
 army = {
 	name = "Army of Daxi"
-	location = 1519
+	location = 1583
 
 	regiment = {
 		name= "11th Standard"
-		type = infantry
-		home = 1601
+		type = irregular
+		home = 1582
 	}
 
 	regiment = {
 		name= "12th Standard"
-		type = infantry
-		home = 1601
+		type = irregular
+		home = 1578
 	}
 	
 	regiment = {
 		name= "13th Standard"
-		type = infantry
-		home = 1601
+		type = irregular
+		home = 1578
 	}
 
 	regiment = {
 		name= "14th Standard"
-		type = infantry
-		home = 1601
+		type = irregular
+		home = 1580
 	}
 
 	regiment = {
 		name= "15th Standard"
-		type = infantry
-		home = 1601
+		type = irregular
+		home = 1580
 	}
 	
 	regiment = {
 		name= "16th Standard"
-		type = infantry
-		home = 1601
+		type = irregular
+		home = 1580
 	}
 
 	regiment = {
 		name= "17th Standard"
-		type = infantry
-		home = 1601
+		type = irregular
+		home = 1586
 	}
 
 	regiment = {
 		name= "18th Standard"
-		type = infantry
-		home = 1601
+		type = irregular
+		home = 1586
 	}
 
 	regiment = {
 		name= "19th Standard"
-		type = infantry
-		home = 1529
+		type = irregular
+		home = 1582
 	}
 
 	regiment = {
 		name= "20th Standard"
-		type = artillery
-		home = 1529
+		type = irregular
+		home = 1582
 	}
 }
 
@@ -149,61 +149,61 @@ army = {
 
 	regiment = {
 		name= "21st Standard"
-		type = infantry
-		home = 1529
+		type = irregular
+		home = 1582
 	}
 	
 	regiment = {
 		name= "22nd Standard"
-		type = infantry
-		home = 1529
+		type = irregular
+		home = 1584
 	}
 
 	regiment = {
 		name= "23rd Standard"
-		type = infantry
-		home = 1529
+		type = irregular
+		home = 1584
 	}
 
 	regiment = {
 		name= "24th Standard"
-		type = infantry
-		home = 1529
+		type = irregular
+		home = 1583
 	}
 
 	regiment = {
 		name= "25th Standard"
-		type = infantry
-		home = 1529
+		type = irregular
+		home = 1583
 	}
 
 	regiment = {
 		name= "26th Standard"
-		type = infantry
-		home = 1521
+		type = irregular
+		home = 1583
 	}
 
 	regiment = {
 		name= "27th Standard"
-		type = infantry
-		home = 1521
+		type = irregular
+		home = 1585
 	}
 
 	regiment = {
 		name= "28th Standard"
-		type = infantry
-		home = 1521
+		type = irregular
+		home = 1585
 	}
 
 	regiment = {
 		name= "29th Standard"
-		type = infantry
-		home = 1521
+		type = irregular
+		home = 1585
 	}
 
 	regiment = {
 		name= "30th Standard"
-		type = artillery
-		home = 1521
+		type = irregular
+		home = 1585
 	}
 }

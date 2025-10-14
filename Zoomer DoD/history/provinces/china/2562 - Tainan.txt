@@ -1,6 +1,7 @@
 owner = TNG
 controller = TNG
 add_core = TNG
+add_core = JAP
 trade_goods = sulphur
 life_rating = 32
 terrain = montane_forest

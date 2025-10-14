@@ -40,520 +40,202 @@ leader = {
 
 army = {
 	name = "1st Green Standard Army"
-	location = 1565
+	location = 1481
 	regiment = {
 		name= "1st Green Standard"
 		type = infantry
-		home = 1565
+		home = 1553
 	}
 
 	regiment = {
 		name= "2nd Green Standard"
 		type = infantry
-		home = 1565
+		home = 1620
 	}
 
 	regiment = {
 		name= "3rd Green Standard"
 		type = infantry
-		home = 1565
+		home = 1619
 	}
 	
 	regiment = {
 		name= "4th Green Standard"
 		type = infantry
-		home = 1565
+		home = 1627
 	}
 
 	regiment = {
 		name= "5th Green Standard"
 		type = infantry
-		home = 1565
+		home = 1629
 	}
 
 	regiment = {
 		name= "6th Green Standard"
 		type = infantry
-		home = 1565
+		home = 1622
 	}
 	
 	regiment = {
 		name= "7th Green Standard"
 		type = infantry
-		home = 1565
+		home = 1533
 	}
 
 	regiment = {
 		name= "8th Green Standard"
-		type = hussar
-		home = 1565
+		type = cavalry
+		home = 1552
 	}
 
 	regiment = {
 		name= "9th Green Standard"
-		type = hussar
-		home = 1565
+		type = cavalry
+		home = 1552
 	}
 	
 	regiment = {
 		name= "10th Green Standard"
-		type = hussar
-		home = 1565
+		type = cavalry
+		home = 1552
 	}
 }
 
 army = {
 	name = "2nd Green Standard Army"
-	location = 1472
+	location = 1555
 
 	regiment = {
 		name= "11th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1555
 	}
 
 	regiment = {
 		name= "12th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1554
 	}
 	
 	regiment = {
 		name= "13th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1479
 	}
 
 	regiment = {
 		name= "14th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1480
 	}
 
 	regiment = {
 		name= "15th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1479
 	}
 	
 	regiment = {
 		name= "16th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1479
 	}
 
 	regiment = {
 		name= "17th Green Standard"
 		type = infantry
-		home = 1472
+		home = 1002
 	}
 
 	regiment = {
 		name= "18th Green Standard"
-		type = hussar
-		home = 1472
+		type = cavalry
+		home = 1613
 	}
 
 	regiment = {
 		name= "19th Green Standard"
-		type = hussar
-		home = 1472
+		type = cavalry
+		home = 1613
 	}
 
 	regiment = {
 		name= "20th Green Standard"
-		type = hussar
-		home = 1472
+		type = cavalry
+		home = 1613
 	}
 }
 
 army = {
 	name = "Army of Forbidden Banners"
-	location = 1612
+	location = 1616
 	regiment = {
 		name= "1. Manchu Yellow Banner"
 		type = infantry
-		home = 1555
+		home = 1616
 	}
 
 	regiment = {
 		name= "2.Manchu Yellow Banner"
 		type = infantry
-		home = 1555
+		home = 1616
 	}
 
 	regiment = {
 		name= "3.Manchu Yellow Banner"
 		type = infantry
-		home = 1555
+		home = 1616
 	}
 
 	regiment = {
 		name= "1st Standard"
 		type = infantry
-		home = 1555
+		home = 1617
 	}
 
 	regiment = {
 		name= "2nd Standard"
 		type = infantry
-		home = 1555
+		home = 1617
 	}
 
 	regiment = {
 		name= "3rd Standard"
 		type = infantry
-		home = 1553
+		home = 1617
 	}
 	
 	regiment = {
 		name= "4th Standard"
 		type = infantry
-		home = 1553
+		home = 1616
 	}
 
 	regiment = {
 		name= "5th Standard"
 		type = infantry
-		home = 1553
+		home = 1616
 	}
 
 	regiment = {
 		name= "6th Standard"
 		type = infantry
-		home = 1553
+		home = 1613
 	}
 	
 	regiment = {
 		name= "7th Standard"
 		type = infantry
-		home = 1553
-	}
-
-	regiment = {
-		name= "8th Standard"
-		type = infantry
 		home = 1613
 	}
 
-	regiment = {
-		name= "9th Standard"
-		type = infantry
-		home = 1613
-	}
-	
-	regiment = {
-		name= "10th Standard"
-		type = infantry
-		home = 1613
-	}
-
-	regiment = {
-		name= "11th Standard"
-		type = infantry
-		home = 1613
-	}
-
-	regiment = {
-		name= "12th Standard"
-		type = infantry
-		home = 1613
-	}
 }
 
-army = {
-	name = "Army of The Manchu Bordered Yellow Banner"
-	location = 1571
-	
-	regiment = {
-		name= "1.Manchu Bordered Yellow Banner"
-		type = infantry
-		home = 1613
-	}
-
-	regiment = {
-		name= "2.Manchu Bordered Yellow Banner"
-		type = infantry
-		home = 1613
-	}
-
-	regiment = {
-		name= "3.Manchu Bordered Yellow Banner"
-		type = infantry
-		home = 1613
-	}
-
-	regiment = {
-		name= "1st Standard"
-		type = infantry
-		home = 1613
-	}
-
-	regiment = {
-		name= "2nd Standard"
-		type = infantry
-		home = 1613
-	}
-
-	regiment = {
-		name= "3rd Standard"
-		type = infantry
-		home = 1613
-	}
-	
-	regiment = {
-		name= "4th Standard"
-		type = infantry
-		home = 1613
-	}
-
-	regiment = {
-		name= "5th Standard"
-		type = infantry
-		home = 1613
-	}
-
-	regiment = {
-		name= "6th Standard"
-		type = infantry
-		home = 1612
-	}
-	
-	regiment = {
-		name= "7th Standard"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "8th Standard"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "9th Standard"
-		type = infantry
-		home = 1612
-	}
-	
-	regiment = {
-		name= "10th Standard"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "11th Standard"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "12th Standard"
-		type = infantry
-		home = 1612
-	}
-}
-
-army = {
-	name = "Army of The Manchu White Banner"
-	location = 1515
-
-	regiment = {
-		name= "1.Manchu White Banner"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "2.Manchu White Banner"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "3.Manchu White Banner"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "1st Standard"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "2nd Standard"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "3rd Standard"
-		type = infantry
-		home = 1612
-	}
-	
-	regiment = {
-		name= "4th Standard"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "5th Standard"
-		type = infantry
-		home = 1612
-	}
-
-	regiment = {
-		name= "6th Standard"
-		type = infantry
-		home = 1576
-	}
-	
-	regiment = {
-		name= "7th Standard"
-		type = infantry
-		home = 1576
-	}
-
-	regiment = {
-		name= "8th Standard"
-		type = infantry
-		home = 1576
-	}
-
-	regiment = {
-		name= "9th Standard"
-		type = infantry
-		home = 1576
-	}
-	
-	regiment = {
-		name= "10th Standard"
-		type = infantry
-		home = 1576
-	}
-
-	regiment = {
-		name= "11th Standard"
-		type = infantry
-		home = 1576
-	}
-
-	regiment = {
-		name= "12th Standard"
-		type = infantry
-		home = 1576
-	}
-}
-
-army = {
-	name = "Army of The Manchu North Red Banner"
-	location = 1621
-
-	regiment = {
-		name= "1.Manchu Red Banner"
-		type = infantry
-		home = 1573
-	}
-
-	regiment = {
-		name= "2.Manchu Red Banner"
-		type = infantry
-		home = 1573
-	}
-
-	regiment = {
-		name= "3.Manchu Red Banner"
-		type = infantry
-		home = 1573
-	}
-
-	regiment = {
-		name= "1st Standard"
-		type = infantry
-		home = 1573
-	}
-
-	regiment = {
-		name= "2nd Standard"
-		type = infantry
-		home = 1573
-	}
-
-	regiment = {
-		name= "3rd Standard"
-		type = infantry
-		home = 1563
-	}
-	
-	regiment = {
-		name= "4th Standard"
-		type = infantry
-		home = 1563
-	}
-
-	regiment = {
-		name= "5th Standard"
-		type = infantry
-		home = 1563
-	}
-
-	regiment = {
-		name= "6th Standard"
-		type = infantry
-		home = 1563
-	}
-}
-
-army = {
-	name = "Army of The Manchu South Red Banner"
-	location = 1620
-    
-	regiment = {
-		name= "7th Standard"
-		type = infantry
-		home = 1563
-	}
-
-	regiment = {
-		name= "8th Standard"
-		type = infantry
-		home = 1563
-	}
-
-	regiment = {
-		name= "9th Standard"
-		type = infantry
-		home = 1563
-	}
-	
-	regiment = {
-		name= "10th Standard"
-		type = infantry
-		home = 1563
-	}
-
-	regiment = {
-		name= "11th Standard"
-		type = infantry
-		home = 1563
-	}
-
-	regiment = {
-		name= "12th Standard"
-		type = infantry
-		home = 1563
-	}
-}
 
 navy = {
 	name = "Imperial Fleet"
-	location = 1569
+	location = 1481
 	ship = {
 		name= "Manchu"
 		type = frigate
@@ -603,12 +285,6 @@ navy = {
 		name= "Transport Flotilla"
 		type = clipper_transport
 	}
-
-}
-
-navy = {
-	name = "Southern Fleet"
-	location = 1565
 	ship = {
 		name= "Nanjing"
 		type = frigate
@@ -643,8 +319,8 @@ navy = {
 		name= "Transport Flotilla"
 		type = clipper_transport
 	}
-}
 
+}
 
 TAI = {
 	value = -150		#relation

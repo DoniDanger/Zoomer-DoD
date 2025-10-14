@@ -1,0 +1,128 @@
+army = {
+	name = "Yellow Standard Army"
+	location = 1493
+
+	regiment = {
+		name= "1st Standard"
+		type = irregular
+		home = 1500
+	}
+
+	regiment = {
+		name= "2nd Standard"
+		type = irregular
+		home = 1500
+	}
+
+	regiment = {
+		name= "3rd Standard"
+		type = irregular
+		home = 1497
+	}
+	
+	regiment = {
+		name= "4th Standard"
+		type = irregular
+		home = 1497
+	}
+
+	regiment = {
+		name= "5th Standard"
+		type = irregular
+		home = 1550
+	}
+
+	regiment = {
+		name= "6th Standard"
+		type = irregular
+		home = 1550
+	}
+	
+	regiment = {
+		name= "7th Standard"
+		type = irregular
+		home = 1550
+	}
+
+	regiment = {
+		name= "8th Standard"
+		type = cavalry
+		home = 1547
+	}
+
+	regiment = {
+		name= "9th Standard"
+		type = cavalry
+		home = 1547
+	}
+	
+	regiment = {
+		name= "10th Standard"
+		type = cavalry
+		home = 1547
+	}
+}
+army = {
+	name = "Red Standard Army"
+	location = 1550
+
+	regiment = {
+		name= "1st Standard"
+		type = irregular
+		home = 1497
+	}
+
+	regiment = {
+		name= "2nd Standard"
+		type = irregular
+		home = 1497
+	}
+
+	regiment = {
+		name= "3rd Standard"
+		type = irregular
+		home = 1494
+	}
+	
+	regiment = {
+		name= "4th Standard"
+		type = irregular
+		home = 1494
+	}
+
+	regiment = {
+		name= "5th Standard"
+		type = irregular
+		home = 1494
+	}
+
+	regiment = {
+		name= "6th Standard"
+		type = irregular
+		home = 1501
+	}
+	
+	regiment = {
+		name= "7th Standard"
+		type = irregular
+		home = 1495
+	}
+
+	regiment = {
+		name= "8th Standard"
+		type = cavalry
+		home = 2632
+	}
+
+	regiment = {
+		name= "9th Standard"
+		type = cavalry
+		home = 1499
+	}
+	
+	regiment = {
+		name= "10th Standard"
+		type = cavalry
+		home = 1548
+	}
+}

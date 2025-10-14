@@ -1,0 +1,165 @@
+army = {
+    name = "Yellow Standard Army"
+    location = 1514
+    
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1509
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1509
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1512
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1512
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1514
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1514
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1478
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1478
+    }
+    regiment = {
+        name = "Cavalry"
+        type = cavalry
+        home = 1472
+    }
+    regiment = {
+        name = "Cavalry"
+        type = cavalry
+        home = 1472
+    }
+}
+army = {
+    name = "Red Standard Army"
+    location = 1474
+    
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1517
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1517
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1516
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1516
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1545
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1522
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1522
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1518
+    }
+    regiment = {
+        name = "Cavalry"
+        type = cavalry
+        home = 1518
+    }
+    regiment = {
+        name = "Cavalry"
+        type = cavalry
+        home = 1474
+    }
+}
+army = {
+    name = "Blue Standard Army"
+    location = 1549
+    
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1474
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1474
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1474
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1470
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1470
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1470
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1471
+    }
+    regiment = {
+        name = "Infantry"
+        type = infantry
+        home = 1471
+    }
+    regiment = {
+        name = "Cavalry"
+        type = cavalry
+        home = 1471
+    }
+    regiment = {
+        name = "Cavalry"
+        type = cavalry
+        home = 1549
+    }
+}

@@ -51,13 +51,29 @@ vassal = {
 	end_date = 1864.1.1
 }
 
-# Japanese Protectorate of Ainu
+#Japan-Chinese puppets
+
 vassal = {
 	first = JAP
-	second = AIN
-	start_date = 1827.11.9
-	end_date = 1845.1.1
+	second = MCK
+	start_date = 1836.1.1
+	end_date = 1936.1.1
 }
+
+vassal = {
+	first = JAP
+	second = HUI
+	start_date = 1836.1.1
+	end_date = 1936.1.1
+}
+
+vassal = {
+	first = JAP
+	second = SHU
+	start_date = 1836.1.1
+	end_date = 1936.1.1
+}
+
 
 vassal = {
 	first = ASK
@@ -70,6 +86,14 @@ vassal = {
 vassal = {
 	first = OYO
 	second = DHY
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
+
+#Zhourao-Tungning
+vassal = {
+	first = GAN
+	second = TNG
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }

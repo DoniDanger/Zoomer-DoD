@@ -1,15 +1,15 @@
 capital = 1550
-primary_culture = nanfaren
-culture = beifaren
-culture = yue 
+primary_culture = yue 
 culture = hakka
 culture = zhuang 
 religion = taiping
 government = absolute_monarchy
-plurality = 0.0
+plurality = 5
+prestige = 10
 nationalvalue = nv_tradition
 literacy = 0.036
 non_state_culture_literacy = 0.02
+civilized = yes
 
 # Political reforms
 slavery = yes_slavery
@@ -49,15 +49,21 @@ upper_house = {
 	communist = 0
 }
 
-# Level_2
 # Technologies
+post_napoleonic_thought = 1
+flintlock_rifles = 1
+army_command_principle = 1
+post_nelsonian_thought = 1
 early_classical_theory_and_critique = 1
+freedom_of_trade = 1
+guild_based_production = 1
+classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
+introspectionism = 1
+piston_steam_engine = 1
+mechanical_production = 1
 
 # Inventions
-
-# Unciv Reforms
-foreign_training = yes_foreign_training
 
 # Starting Consciousness
 consciousness = 0
