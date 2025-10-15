@@ -1,5 +1,5 @@
-owner = CLM
-controller = CLM
+owner = ELS
+controller = ELS
 add_core = CLM
 add_core = YUC
 add_core = MEX
@@ -7,6 +7,7 @@ add_core = ELS
 add_core = UCA
 trade_goods = coffee
 life_rating = 31
+fort = 1
 1861.1.1 = {
 	owner = GUA
 	controller = GUA

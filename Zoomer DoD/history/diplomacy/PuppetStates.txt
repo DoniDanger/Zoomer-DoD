@@ -104,3 +104,85 @@ vassal = {
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }
+
+### Peace of San Salvador ###
+## Spanish Subjugation 
+#Gran Colombia
+vassal = {
+	first = SPA
+	second = CLM
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
+
+## Spanish Dependencies/Loyalists
+#Castillia
+vassal = {
+	first = SPA
+	second = CAS
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
+#Lusitania
+vassal = {
+	first = SPA
+	second = LST
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
+#Aztlan
+vassal = {
+	first = SPA
+	second = AZT
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
+#Jalisco
+vassal = {
+	first = SPA
+	second = JLS
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
+#Mayapan
+vassal = {
+	first = SPA
+	second = YUC
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
+#Salvador
+vassal = {
+	first = SPA
+	second = ELS
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
+#Essequibo
+vassal = {
+	first = SPA
+	second = GUY
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
+#Quito
+vassal = {
+	first = SPA
+	second = QUI
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
+
+## Granadan Frontier Republics 
+#Arequipa
+alliance = {
+	first="SPA"
+	second="ARE"
+	start_date="1815.11.9"
+}
+#Quito
+alliance = {
+	first="SPA"
+	second="QUI"
+	start_date="1815.11.9"
+}

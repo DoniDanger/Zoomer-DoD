@@ -1,6 +1,6 @@
 name = "Colombian War of Independence"
 
-1832.5.2 = {
+1803.5.2 = {
 	add_attacker = SPA
 	add_defender = CLM
 	
@@ -22,7 +22,7 @@ name = "Colombian War of Independence"
 
 }
 
-1837.10.3 = {
+1815.10.3 = {
 	rem_attacker = SPA
 	rem_defender = CLM
 }
