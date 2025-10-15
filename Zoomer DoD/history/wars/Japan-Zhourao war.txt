@@ -13,7 +13,7 @@ name = "War for Japanese Supremacy"
 	# state_province_id - target state capital
   
 	war_goal = {
-		casus_belli = acquire_core_state
+		casus_belli = acquire_core_state_large
 		state_province_id = 2681
 		actor = JAP
 		receiver = TNG

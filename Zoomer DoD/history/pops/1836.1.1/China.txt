@@ -10692,7 +10692,7 @@
 
 	farmers = {
 		culture = min
-		religion = mahayanaz
+		religion = mahayana
 		size = 220000
 	}
 }

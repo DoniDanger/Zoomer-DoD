@@ -15,6 +15,9 @@ province_event = {
 			province_id = 1622
 			province_id = 1664
 		}
+		NOT = {
+			trade_goods = coal
+		}
 	}
 
 	mean_time_to_happen = {
@@ -51,6 +54,9 @@ province_event = {
 			province_id = 1621
 			province_id = 1626
 			province_id = 1627
+		}
+		NOT = {
+			trade_goods = iron
 		}
 	}
 

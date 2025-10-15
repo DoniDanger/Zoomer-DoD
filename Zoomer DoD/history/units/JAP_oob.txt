@@ -7,14 +7,14 @@ MCK = {
 
 SHU = {
 	value = 100
-	level = 5
+	level = 4
 	influence_value = 100
 	military_access = yes
 }
 
 HUI = {
 	value = 100
-	level = 5
+	level = 4
 	influence_value = 100
 	military_access = yes
 }
