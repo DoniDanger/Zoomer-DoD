@@ -1048,10 +1048,7 @@ free_peoples_tiny = {
 
 	can_use = {
 		NOT = { tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		NOT = { year = 1870 }
 		NOT = { OR = { has_country_modifier = neutrality  } }
 		THIS = { NOT = { OR = { has_country_modifier = neutrality  } } 
@@ -1130,10 +1127,7 @@ free_peoples_small = {
 
 	can_use = {
 		NOT = { tag = GHO  tag = TIN tag = SMA  tag = MED  tag = LRG  tag = HUG }
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		NOT = { year = 1870 }
 		NOT = { OR = { has_country_modifier = neutrality  } }
 		THIS = { NOT = { OR = { has_country_modifier = neutrality  } } 
@@ -1212,10 +1206,7 @@ free_peoples_medium = {
 
 	can_use = {
 		NOT = { tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		NOT = { year = 1870 }
 		NOT = { OR = { has_country_modifier = neutrality  } }
 		THIS = { NOT = { OR = { has_country_modifier = neutrality  } } 
@@ -1294,10 +1285,7 @@ free_peoples_large = {
 
 	can_use = {
 		NOT = { tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		NOT = { year = 1870 }
 		NOT = { OR = { has_country_modifier = neutrality  } }
 		THIS = { NOT = { OR = { has_country_modifier = neutrality  } } 
@@ -1376,10 +1364,7 @@ free_peoples_huge = {
 
 	can_use = {
 		NOT = { tag = GHO  tag = TIN	tag = SMA  tag = MED  tag = LRG  tag = HUG }
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		NOT = { year = 1870 }
 		NOT = { OR = { has_country_modifier = neutrality  } }
 		THIS = { NOT = { OR = { has_country_modifier = neutrality  } } 
@@ -2690,10 +2675,7 @@ acquire_state_tiny = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			not = { is_core = THIS }
@@ -2793,10 +2775,7 @@ acquire_state_small = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			not = { is_core = THIS }
@@ -2897,10 +2876,7 @@ acquire_state_medium = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			not = { is_core = THIS }
@@ -3001,10 +2977,7 @@ acquire_state_large = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			not = { is_core = THIS }
@@ -3105,10 +3078,7 @@ acquire_state_huge = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			not = { is_core = THIS }
@@ -3141,6 +3111,120 @@ acquire_state_huge = {
 		is_colonial = no
 		any_owned_province = {
 			is_core = HUG
+			not = {	is_core = THIS }
+			is_colonial = no
+		}
+		not = { any_owned_province = { is_capital = yes } }
+	}
+	
+	allowed_states_in_crisis = {
+		any_owned_province = {
+			any_neighbor_province = {
+				owner = { tag = THIS }
+			}
+		}
+	}		
+
+	po_demand_state = yes
+	po_remove_prestige = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+# Gain control of Huge State
+acquire_state_huge_china = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 0.5
+	
+	badboy_factor = 2.2
+	prestige_factor = 2
+	peace_cost_factor = 0.012
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 60
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		
+		NOT = { tag = GHO }
+		
+		NOT = { 
+			OR = { 
+				has_country_modifier = neutrality
+				
+			}
+		}
+		THIS = { NOT = {
+				OR = {
+					has_country_modifier = neutrality
+					
+				}
+			 } 
+		}
+		OR = {
+			AND = {
+				THIS = {
+					tag = JAP
+				}
+				tag = TAI
+			}
+			AND = {
+				THIS = {
+					tag = TAI
+				}
+				tag = JAP
+			}
+		}
+
+		number_of_states = 2 # annex if you want their last state
+		any_owned_province = {
+			not = { is_core = THIS }
+			is_colonial = no
+		}
+				
+		OR = {
+			AND = {
+				civilized = yes
+				THIS = {
+					civilized = yes
+				}
+			}
+			AND = {
+				civilized = yes
+				THIS = {
+					civilized = no
+				}
+			}
+			AND = {
+				civilized = no
+				THIS = {
+					civilized = no
+				}
+			}
+		}
+	}
+	
+	allowed_states = {
+		is_colonial = no
+		any_owned_province = {
+			is_core = HUG
+			is_core = CHI
 			not = {	is_core = THIS }
 			is_colonial = no
 		}
@@ -3210,10 +3294,7 @@ place_in_the_sun_tiny = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		any_owned_province = {
 			is_colonial = yes
 		}
@@ -3292,10 +3373,7 @@ place_in_the_sun_small = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		any_owned_province = {
 			is_colonial = yes
 		}
@@ -3373,10 +3451,7 @@ place_in_the_sun_medium = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		any_owned_province = {
 			is_colonial = yes
 		}
@@ -3454,10 +3529,7 @@ place_in_the_sun_large = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		any_owned_province = {
 			is_colonial = yes
 		}
@@ -3535,10 +3607,7 @@ place_in_the_sun_huge = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		any_owned_province = {
 			is_colonial = yes
 		}
@@ -4247,10 +4316,7 @@ demand_concession_casus_belli_tiny = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		THIS = {
 			civilized = yes
 		}
@@ -4322,10 +4388,7 @@ demand_concession_casus_belli_small = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		THIS = {
 			civilized = yes
 		}
@@ -4397,10 +4460,7 @@ demand_concession_casus_belli_medium = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		THIS = {
 			civilized = yes
 		}
@@ -4472,10 +4532,7 @@ demand_concession_casus_belli_large = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		THIS = {
 			civilized = yes
 		}
@@ -4547,10 +4604,7 @@ demand_concession_casus_belli_huge = {
 				}
 			 } 
 		}
-		THIS = {
-			NOT = { has_country_flag = conquerable_1865 }
-		}
-		NOT = { has_country_flag = conquerable_1865 }
+
 		THIS = {
 			civilized = yes
 		}
