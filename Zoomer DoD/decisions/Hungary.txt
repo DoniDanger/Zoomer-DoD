@@ -243,4 +243,24 @@ political_decisions = {
 			add_accepted_culture = romanian
 		}
 	}
+
+	modernization_land_reform = {
+		picture = "hungary"
+		potential = {
+			tag = HUN
+			NOT = {
+				has_country_flag = hungarian_land_reform_flag
+			}
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+		}
+		effect = {
+			add_country_modifier = { name = hungarian_land_reform duration = 1825 }
+			political_reform = debtors_prisons
+			prestige = 10
+			set_country_flag = hungarian_land_reform_flag
+		}
+	}
 }

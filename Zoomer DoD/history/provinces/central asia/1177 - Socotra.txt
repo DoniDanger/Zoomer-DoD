@@ -4,5 +4,5 @@ add_core = YEM
 trade_goods = fish
 life_rating = 20
 terrain = semidesert
-colonial = 1
+colonial = 2
 naval_base = 1

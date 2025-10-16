@@ -206,7 +206,7 @@ army = {
 	regiment = {
 		name = "1. Cuirassier"
 		type = cuirassier
-		home = 1624
+		home = 1660
 	}
 }
 
@@ -247,7 +247,7 @@ army = {
 	regiment = {
 		name = "1. Hussar"
 		type = hussar
-		home = 1487
+		home = 1486
 	}
 	regiment = {
 		name = "1. Artillery"

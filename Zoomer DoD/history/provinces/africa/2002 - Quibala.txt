@@ -3,4 +3,4 @@ controller = SCA
 add_core = KON
 trade_goods = coffee
 life_rating = 10
-colonial = 1
+colonial = 2

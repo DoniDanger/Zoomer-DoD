@@ -2,4 +2,4 @@ add_core = PLA
 add_core = OCE
 trade_goods = grain
 life_rating = 35
-colonial = 1
+colonial = 2

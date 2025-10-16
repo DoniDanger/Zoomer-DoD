@@ -478,3 +478,5 @@ ansei_purge;Ansei Purge;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;
 meddled_in_foreign_affairs;Meddled in Foreign Affairs;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 no_freedom;Attempted Freedom;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 no_freedom_desc;We attempted to free ourselves from foreign rule. We must wait until there is another opportunity, as for now they are watching us closely.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+schooling_change;Schooling System recently changed;x
+schooling_change_desc;We have recently change our schooling system;x

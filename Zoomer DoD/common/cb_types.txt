@@ -2219,6 +2219,7 @@ acquire_core_state_tiny = {
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			is_core = THIS
+			is_core = TIN
 		}
 	}
 	
@@ -2282,6 +2283,7 @@ acquire_core_state_small = {
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			is_core = THIS
+			is_core = SMA
 		}
 	}
 	
@@ -2345,6 +2347,7 @@ acquire_core_state_medium = {
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			is_core = THIS
+			is_core = MED
 		}
 	}
 	
@@ -2408,6 +2411,7 @@ acquire_core_state_large = {
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			is_core = THIS
+			is_core = LRG
 		}
 	}
 	
@@ -2471,6 +2475,7 @@ acquire_core_state_huge = {
 		number_of_states = 2 # annex if you want their last state
 		any_owned_province = {
 			is_core = THIS
+			is_core = HUG
 		}
 	}
 	
