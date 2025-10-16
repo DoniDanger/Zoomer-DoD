@@ -146,6 +146,7 @@ form_south_africa = {
 			2087 = {
                 change_province_name = "Kaapstad"
             }
+			set_country_flag = new_world_nation
 		}
 		ai_will_do = {
 			factor = 1

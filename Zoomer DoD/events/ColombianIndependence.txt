@@ -1,0 +1,516 @@
+country_event = {
+
+	id = 46435
+
+	title = "Peace of San Salvador"
+	desc = "EVTDESC46435"
+	picture = "Administration"
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = SPA
+			vassal_of = SPA
+		}
+	}
+	
+	mean_time_to_happen = {
+			days = -1
+	}
+	
+	option = {
+		name = "This matter will be settled in the coming years."
+		add_country_modifier = {
+			name = peace_of_san_salvador 
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+
+	id = 46436
+
+	title = "Spanish Reject end to Protectorship"
+	desc = "EVTDESC46436"
+	picture = "Administration"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Liberation is a struggle every Latinx dreams of."
+		prestige = 10
+		add_accepted_culture = lusitanian
+    	add_accepted_culture = central_american
+		add_accepted_culture = granadan
+		add_country_modifier = {
+			name = war_of_colombian_liberation 
+			duration = 1825
+		}
+		SPA = { country_event = { id= 46438 months = 6 }
+	}
+	
+	option = {
+		name = "We must free the slaves and arms the Natives."
+		political_reform = no_slavery
+		add_accepted_culture = nahua
+    	add_accepted_culture = afro_latino
+		add_country_modifier = {
+			name = alliance_with_the_natives 
+			duration = 1825
+		}
+		SPA = { country_event = { id= 46438 months = 6 }
+	}
+}
+
+country_event = {
+
+	id = 46437
+
+	title = "Spanish Violate Peace of San Salvador"
+	desc = "EVTDESC46437"
+	picture = "Administration"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Liberation is a struggle every Latinx dreams of."
+		prestige = 10
+		add_accepted_culture = lusitanian
+    	add_accepted_culture = central_american
+		add_accepted_culture = granadan
+		add_country_modifier = {
+			name = war_of_colombian_liberation 
+			duration = 1825
+		}
+		SPA = { country_event = { id= 46438 months = 3 }
+	}
+	
+	option = {
+		name = "We must free the slaves and arms the Natives."
+		political_reform = no_slavery
+		add_accepted_culture = nahua
+    	add_accepted_culture = afro_latino
+		add_country_modifier = {
+			name = alliance_with_the_natives 
+			duration = 1825
+		}
+		SPA = { country_event = { id= 46438 months = 3 }
+	}
+}
+
+country_event = {
+
+	id = 46438
+
+	title = "2nd War of Colombian Independence"
+	desc = "EVTDESC46438"
+	picture = "Administration"
+	major = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "The Colombian dream must be squashed now."
+		release_vassal = CLM
+		casus_belli = {
+            target = CLM
+            type = make_puppet
+            months = 60
+        }
+		war = {
+            target = CLM
+            attacker_goal = { casus_belli = make_puppet }
+			defender_goal = { casus_belli = unification_humiliate_cb }
+			defender_goal = { casus_belli = humiliate }
+			call_ally = yes
+        }
+		any_country = {
+			limit = { has_country_modifier = peace_of_san_salvador } 
+			remove_country_modifier = peace_of_san_salvador 	
+		}
+		set_global_flag = 2nd_colombian_independence_war
+	}
+}
+
+country_event = {
+
+	id = 46439
+
+	title = "Treaty of Andagoya"
+	desc = "EVTDESC46439"
+	picture = "Administration"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = CLM
+		has_global_flag = 2nd_colombian_independence_war
+		NOT = { war_with = SPA }
+		is_vassal = no
+		OR = {
+			SPA = { has_recently_lost_war = yes }
+			SPA = { has_country_flag = total_colombian_victory }
+		}
+	}
+	
+	mean_time_to_happen = {
+			days = 1
+	}
+	
+	option = {
+		name = "A dream of a united Colombia is now reality."
+		prestige = 30
+		add_country_modifier = {
+			name = united_colombian_dream 
+			duration = 1825
+		}
+		any_country = { 
+			limit = {  
+				vassal_of = SPA 
+				OR = { 
+					tag = ARE
+					tag = CAS
+					tag = LST
+					tag = ELS
+					tag = YUC
+					tag = GUY
+					tag = AZT
+					tag = JLS
+					tag = QUI
+				} 
+			}
+			country_event = 46440
+		}
+		any_country = { 
+			limit = {  
+				OR = { 
+					tag = ARE
+					tag = CAS
+					tag = LST
+					tag = ELS
+					tag = YUC
+					tag = GUY
+					tag = AZT
+					tag = JLS
+					tag = QUI
+				} 
+			}
+			country_event = 46441
+		}
+		set_global_flag = treaty_of_andagoya
+	}
+}
+
+country_event = { ### Annexation
+	id = 46440
+	title = "Colombia Demands Integration"
+	desc = "EVTDESC46440"
+	picture = "administration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We have no choice but to share the Colombian dream."
+		FROM = { inherit = THIS }
+		ai_chance = { 
+		factor = 100 
+		}
+	}
+}
+
+country_event = { ### Annexation Choice
+	id = 46441
+	title = "Colombia Demands Integration"
+	desc = "EVTDESC46441"
+	picture = "administration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We stand a better chance with the Colombians."
+		FROM = { inherit = THIS }
+		ai_chance = { 
+		factor = 50 
+		}
+	}
+	
+	option = {
+		name = "We will not submit to the Colombians."
+		relation = { who = CLM value = -150 }
+		ai_chance = { 
+		factor = 50 
+		}
+	}
+}
+
+country_event = {
+
+	id = 46442
+
+	title = "Evacuation of the Spanish"
+	desc = "EVTDESC46442"
+	picture = "Administration"
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = CLM
+		has_global_flag = 2nd_colombian_independence_war
+		NOT = { war_with = SPA }
+		is_vassal = no
+		has_global_flag = spanish_evacuation_colonies
+	}
+	
+	mean_time_to_happen = {
+			days = 1
+	}
+	
+	option = {
+		name = "The Spanish may have left, but the struggle continues."
+		prestige = 10
+		any_country = { 
+			limit = {  
+				vassal_of = SPA 
+				OR = { 
+					tag = ARE
+					tag = CAS
+					tag = LST
+					tag = ELS
+					tag = YUC
+					tag = GUY
+					tag = AZT
+					tag = JLS
+					tag = QUI
+				} 
+			}
+			country_event = 46440
+		}
+		any_country = { 
+			limit = {  
+				OR = { 
+					tag = ARE
+					tag = CAS
+					tag = LST
+					tag = ELS
+					tag = YUC
+					tag = GUY
+					tag = AZT
+					tag = JLS
+					tag = QUI
+				} 
+			}
+			country_event = 46441
+		}
+	}
+}
+
+country_event = { ### Vassal Lost
+	id = 46443
+	title = "Collapse of Spanish Authority"
+	desc = "EVTDESC46443"
+	picture = "administration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We stand alone against the Colombians."
+		SPA = {
+			release_vassal = THIS
+			leave_alliance = THIS
+			
+		}
+		ai_chance = { 
+		factor = 100 
+		}
+	}
+}
+
+country_event = {
+
+	id = 46444
+
+	title = "Collapse of Authority in Colonies"
+	desc = "EVTDESC46444"
+	picture = "Administration"
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SPA
+		has_global_flag = 2nd_colombian_independence_war
+		NOT = { war_with = CLM }
+		NOT = { CLM = { vassal_of = THIS }}
+		NOT = { has_country_flag = total_colombian_victory }
+		NOT = { has_global_flag = treaty_of_andagoya }
+	}
+	
+	mean_time_to_happen = {
+			days = 1
+	}
+	
+	option = {
+		name = "At least we still have Cuba."
+		prestige = -15
+		any_country = { 
+			limit = {  
+				vassal_of = SPA 
+				OR = { 
+					tag = ARE
+					tag = CAS
+					tag = LST
+					tag = ELS
+					tag = YUC
+					tag = GUY
+					tag = AZT
+					tag = JLS
+					tag = QUI
+				} 
+			}
+			country_event = 46443
+		}
+		set_global_flag = spanish_evacuation_colonies
+	}
+}
+
+country_event = {
+
+	id = 46431
+
+	title = "EVTNAME46431"
+	desc = "EVTDESC46431"
+	picture = "Administration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA46431"
+		government = democracy
+    		political_reform = universal_weighted_voting
+    		political_reform = state_equal_weight
+    		political_reform = yes_meeting
+    		political_reform = free_press
+    		political_reform = state_controlled
+    		political_reform = secret_ballots
+		prestige = 5
+		primary_culture = mexican
+		add_accepted_culture = lusitanian
+    	add_accepted_culture = central_american
+		add_accepted_culture = granadan
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = conservative
+			}
+		}
+	}
+
+	option = {
+		name = "EVTOPTB46431"
+		prestige = -5
+		set_country_flag = granadans_refusal
+		any_pop = {
+  			limit = {
+  				NOT = { culture = mexican }
+  			}
+  			militancy = 3
+          		consciousness = 3
+  		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+
+	id = 46432
+
+	title = "EVTNAME46432"
+	desc = "EVTDESC46432"
+	picture = "Administration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA46432"
+		prestige = -5
+		set_country_flag = granadans_refusal
+		any_pop = {
+  			limit = {
+  				NOT = { culture = mexican }
+  			}
+  			militancy = 3
+          		consciousness = 3
+  		}
+	}
+}
+
+country_event = { 
+	id = 46433 
+	title = "46433.T"
+	desc = "46433.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "46433.A"
+	random_list = {
+		50 = { country_event = 46430 }
+		25 = { country_event = 46431 }
+		25 = { country_event = 46432 }
+				}
+	}
+}
+	
+country_event = { 
+	id = 46434 
+	title = "46434.T"
+	desc = "46434.D"
+	
+	trigger = { 
+	tag = CLM 
+	year = 1870 
+	NOT = { 
+	LST = { exists = yes }
+	CUB = { exists = yes }
+	UCA = { exists = yes }
+	GRA = { exists = yes }
+	NIC = { exists = yes }
+	PNM = { exists = yes }
+	ELS = { exists = yes }
+	GUY = { exists = yes }
+	CAS = { exists = yes }
+	SAN = { exists = yes }
+	QUI = { exists = yes }
+	ARE = { exists = yes }
+	JLS = { exists = yes }
+	has_country_flag = CLM_unity
+		}
+	}
+	
+	mean_time_to_happen = { 
+	months = 15 
+	}
+	
+	option = { 
+	name = "97086.A"
+	set_country_flag = CLM_unity
+	any_owned = { 
+	remove_core = NIC 
+	remove_core = PNM 
+	remove_core = ELS 
+	remove_core = JLS 
+	remove_core = CAS
+	remove_core = SAN
+	remove_core = QUI 
+	remove_core = ARE
+		}
+	}
+}
+

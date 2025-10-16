@@ -5169,6 +5169,12 @@ become_independent = {
 	can_use = {
 		is_our_vassal = THIS
 		THIS = { is_substate = no }
+		THIS = {
+			NOT = {
+				has_country_modifier = peace_of_san_salvador
+				has_country_flag = peace_of_san_salvador
+			}
+		}
 	}
 	
 	# THIS - us
