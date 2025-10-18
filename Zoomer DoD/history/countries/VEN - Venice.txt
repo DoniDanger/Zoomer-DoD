@@ -3,11 +3,11 @@ primary_culture = venetian
 culture = north_italian
 religion = catholic
 government = merchant_republic
-plurality = 0.1
+plurality = 10
 nationalvalue = nv_productivity
 literacy = 0.4
 civilized = yes
-
+prestige = 18
 
 # Political reforms
 slavery = yes_slavery

@@ -78,6 +78,11 @@ HYD = {
 	influence_value = 25
 }
 
+GAN = {
+	value = 105		
+	level = 5		
+	influence_value = 0
+}
 
 leader = {
 	name = "Tristan Duras"

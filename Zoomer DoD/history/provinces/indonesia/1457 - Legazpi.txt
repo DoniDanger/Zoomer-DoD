@@ -1,5 +1,6 @@
-owner = TNG
-controller = TNG
+owner = GAN
+controller = GAN
 add_core = TON
 trade_goods = grain
 life_rating = 35
+colonial = 2

@@ -25,12 +25,159 @@ army = {
 	regiment = {
 		name= "2. Royal infantry"
 		type = infantry
+		home = 2468
+	}
+	regiment = {
+		name= "3. Royal infantry"
+		type = infantry
+		home = 2468
+	}
+	regiment = {
+		name= "4. Royal infantry"
+		type = infantry
+		home = 2468
+	}
+	regiment = {
+		name= "2. Royal Guard Cavalry"
+		type = hussar
+		home = 2469
+	}
+	regiment = {
+		name= "1. Royal Artillery"
+		type = artillery
+		home = 2471
+	}
+	regiment = {
+		name= "2. Royal Artillery"
+		type = artillery
+		home = 2472
+	}
+	regiment = {
+		name= "3. Royal Artillery"
+		type = artillery
+		home = 2472
+	}
+	regiment = {
+		name = "1. Cuirassier"
+		type = cuirassier
+		home = 2476
+	}
+	regiment = {
+		name = "2. Cuirassier"
+		type = cuirassier
+		home = 2476
+	}
+}
+
+army = {
+	name = "Army of Sugbu"
+	location = 1456
+	
+	regiment = {
+		name = "1. Infantry"
+		type = infantry
+		home = 2505
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = infantry
 		home = 2483
 	}
 	regiment = {
-		name= "2. Royal infantry"
-		type = hussar
+		name = "3. Infantry"
+		type = infantry
 		home = 2483
+	}
+	regiment = {
+		name = "1. Hussar"
+		type = hussar
+		home = 2484
+	}
+	regiment = {
+		name = "2. Hussar"
+		type = hussar
+		home = 2486
+	}
+	regiment = {
+		name = "3. Hussar"
+		type = hussar
+		home = 2485
+	}
+	regiment = {
+		name = "1. Cuirassier"
+		type = cuirassier
+		home = 2492
+	}
+	regiment = {
+		name = "2. Cuirassier"
+		type = cuirassier
+		home = 2491
+	}
+	regiment = {
+		name = "4. Infantry"
+		type = infantry
+		home = 2493
+	}
+	regiment = {
+		name = "5. Infantry"
+		type = infantry
+		home = 2477
+	}
+}
+
+army = {
+	name = "Tungning Heavenly Guard"
+	location = 1485
+	
+	regiment = {
+		name = "1. Infantry"
+		type = infantry
+		home = 2681
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = infantry
+		home = 2562
+	}
+	regiment = {
+		name = "3. Infantry"
+		type = infantry
+		home = 1485
+	}
+	regiment = {
+		name = "4. Infantry"
+		type = infantry
+		home = 2406
+	}
+	regiment = {
+		name = "5. Infantry"
+		type = infantry
+		home = 1455
+	}
+	regiment = {
+		name = "1. Cuirassier"
+		type = cuirassier
+		home = 2476
+	}
+	regiment = {
+		name = "1. Hussar"
+		type = hussar
+		home = 2476
+	}
+	regiment = {
+		name = "1. Artillery"
+		type = artillery
+		home = 2497
+	}
+	regiment = {
+		name = "2. Artillery"
+		type = artillery
+		home = 2497
+	}
+	regiment = {
+		name = "3. Artillery"
+		type = artillery
+		home = 2470
 	}
 }
 
@@ -38,22 +185,156 @@ navy = {
 	name = "Fleet of Zhourao"
 	location = 2468
 
-
 	ship = {
 		name= "Zhourao"
-		type = frigate
+		type = manowar
 	}
 
 	ship = {
 		name= "Zheng He"
-		type = frigate
+		type = manowar
 	}
 
 	ship = {
 		name= "Lanfang"
+		type = manowar
+	}
+
+	ship = {
+		name= "Haishenwai"
+		type = manowar
+	}
+
+	ship = {
+		name= "Qingqiu"
+		type = manowar
+	}
+	
+	ship = {
+		name= "Nanjing"
+		type = manowar
+	}
+
+	ship = {
+		name= "Shanghai"
+		type = manowar
+	}
+
+	ship = {
+		name= "Jiangsu"
+		type = manowar
+	}
+
+	ship = {
+		name= "Guangzhou"
+		type = manowar
+	}
+	
+	ship = {
+		name= "Haishenwai"
+		type = manowar
+	}
+
+	ship = {
+		name= "Qingqiu"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Nanjing"
 		type = frigate
 	}
 
+	ship = {
+		name= "Shanghai"
+		type = frigate
+	}
+
+	ship = {
+		name= "Jiangsu"
+		type = frigate
+	}
+
+	ship = {
+		name= "Guangzhou"
+		type = frigate
+	}
+
+	ship = {
+		name= "Haishenwai"
+		type = frigate
+	}
+
+	ship = {
+		name= "Qingqiu"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Nanjing"
+		type = frigate
+	}
+
+	ship = {
+		name= "Shanghai"
+		type = frigate
+	}
+
+	ship = {
+		name= "Jiangsu"
+		type = frigate
+	}
+
+	ship = {
+		name= "Guangzhou"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Haishenwai"
+		type = frigate
+	}
+
+	ship = {
+		name= "Qingqiu"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Nanjing"
+		type = frigate
+	}
+
+	ship = {
+		name= "Shanghai"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Guangzhou"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Haishenwai"
+		type = frigate
+	}
+
+	ship = {
+		name= "Qingqiu"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Nanjing"
+		type = frigate
+	}
+
+	ship = {
+		name= "Shanghai"
+		type = frigate
+	}
+	
 	ship = {
 		name= "Beijing"
 		type = clipper_transport
@@ -61,6 +342,71 @@ navy = {
 
 	ship = {
 		name= "Nanjing"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
 		type = clipper_transport
 	}
 }

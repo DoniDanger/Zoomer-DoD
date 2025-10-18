@@ -1,7 +1,8 @@
-owner = TNG
-controller = TNG
+owner = GAN
+controller = GAN
 add_core = TNG
 add_core = JAP
 trade_goods = sulphur
 life_rating = 32
 terrain = montane_forest
+colonial = 2
