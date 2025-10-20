@@ -2,7 +2,7 @@ capital = 1661
 primary_culture = chugoku
 religion = shinto
 government = prussian_constitutionalism
-plurality = 10
+plurality = 15
 nationalvalue = nv_autocracy
 literacy = 0.43
 civilized = yes
@@ -73,9 +73,6 @@ mechanized_mining = 1
 #Starting Consciousness
 consciousness = 4
 nonstate_consciousness = 0
-
-
-schools = naval_tech_school
 
 oob = "JAP_oob.txt"
 

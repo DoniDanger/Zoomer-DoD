@@ -4,7 +4,7 @@ culture = finnish
 culture = norwegian
 religion = protestant
 government = hms_government
-plurality = 25.0
+plurality = 20
 nationalvalue = nv_order
 literacy = 0.8
 civilized = yes
@@ -94,7 +94,7 @@ decision = pass_folkskolereformen
 
 1861.1.1 = {
 	oob = "/1861/SWE_oob.txt"
-	plurality = 60
+	plurality = 20
 	literacy = 0.95
 
 # Political reforms

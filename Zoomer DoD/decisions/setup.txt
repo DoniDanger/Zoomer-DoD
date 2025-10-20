@@ -116,4 +116,23 @@ political_decisions = {
 			set_country_flag = 1836
 		}
 	}
+    1836_capital_supply = {
+        potential = {
+            tag = SIK
+            always = no
+        }
+        allow = {
+            tag = SIK
+        }
+        effect = {
+            any_country = {
+                limit = {
+                    exists = yes
+                    ai = no
+					war = no
+                }
+                country_event = 545454
+            }
+        }
+    }
 }

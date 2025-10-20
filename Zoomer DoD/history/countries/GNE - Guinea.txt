@@ -5,7 +5,7 @@ culture = western_nigritic
 culture = dyula
 religion = sunni
 government = democracy
-plurality = 0.0
+plurality = 25
 nationalvalue = nv_tradition
 literacy = 0.04
 

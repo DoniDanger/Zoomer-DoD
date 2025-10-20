@@ -3,7 +3,7 @@ primary_culture = turkish
 culture = bosniak
 religion = sunni
 government = absolute_monarchy
-plurality = 5.0
+plurality = 5
 nationalvalue = nv_autocracy
 literacy = 0.08
 non_state_culture_literacy = 0.01
@@ -83,7 +83,7 @@ oob = "TUR_oob.txt"
 1861.1.1 = {
 	oob = "/1861/TUR_oob.txt"
 	prestige = 85
-	plurality = 50
+	plurality = 5
 	literacy = 0.25
 	non_state_culture_literacy = 0.15
 }

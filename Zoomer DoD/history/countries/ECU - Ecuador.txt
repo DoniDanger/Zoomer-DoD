@@ -2,7 +2,7 @@ capital = 2279
 primary_culture = north_andean
 religion = catholic
 government = democracy
-plurality = 25.0
+plurality = 25
 nationalvalue = nv_equality
 literacy = 0.1
 non_state_culture_literacy = 0.01
@@ -76,7 +76,7 @@ decision = ECU_1836_setup
 oob = "ECU_oob.txt"
 1861.1.1 = {
 	oob = "/1861/ECU_oob.txt"
-	plurality = 60
+	plurality = 25
 	literacy = 0.11
 	non_state_culture_literacy = 0.05
 }

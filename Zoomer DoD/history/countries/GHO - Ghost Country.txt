@@ -6,7 +6,7 @@ set_country_flag = ghostland
 
 religion = placeholder
 government = absolute_monarchy
-plurality = 100
+plurality = 5
 nationalvalue = nv_order
 literacy = 1
 civilized = no
@@ -43,3 +43,4 @@ upper_house = { # inherit
 }
 
 decision = 1836_states
+decision = 1836_capital_supply

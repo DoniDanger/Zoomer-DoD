@@ -276,6 +276,7 @@ army = {
 
 JAP = {
 	value = -150		#relation
+	truce_until = 1838.1.1
 }
 
 DAX = { 

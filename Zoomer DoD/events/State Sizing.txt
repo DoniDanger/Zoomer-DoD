@@ -44,6 +44,7 @@ country_event = {
 					state_scope = { 
 						NOT = { total_pops = 100000 }
 					}
+					NOT = { is_core = CHI }
 				}
 				add_core = TIN
 				remove_core = SMA
@@ -77,9 +78,21 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					state_scope = { 
-						total_pops = 100000
-						NOT = { total_pops = 400000 }
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 100000
+								NOT = { total_pops = 400000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 100000
+								NOT = { total_pops = 1000000 }
+							}
+							is_core = CHI
+						}
 					}
 				}
 				add_core = SMA 
@@ -112,13 +125,25 @@ country_event = {
 				}
 				
 			}
-			any_owned = { 
+			any_owned = {  
 				limit = {
-					state_scope = { 
-						total_pops = 400000 
-						NOT = { total_pops = 700000 }
-					} 
-				} 
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 400000
+								NOT = { total_pops = 700000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 1000000
+								NOT = { total_pops = 2000000 }
+							}
+							is_core = CHI
+						}
+					}
+				}
 				add_core = MED
 				remove_core = TIN
 				remove_core = SMA 
@@ -149,18 +174,30 @@ country_event = {
 				}
 				
 			}
-			any_owned = {
+			any_owned = {  
 				limit = {
-					state_scope = { 
-						total_pops = 700000 
-						NOT = { total_pops = 1000000 }
-					} 
-				} 
-			add_core = LRG
-			remove_core = TIN
-			remove_core = SMA 
-			remove_core = MED 
-			remove_core = HUG 
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 700000
+								NOT = { total_pops = 1000000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 2000000
+								NOT = { total_pops = 3000000 }
+							}
+							is_core = CHI
+						}
+					}
+				}
+				add_core = LRG
+				remove_core = TIN
+				remove_core = SMA 
+				remove_core = MED 
+				remove_core = HUG 
 			} 
 		}
 		any_country = {
@@ -188,8 +225,19 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					state_scope = { 
-						total_pops = 1000000
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 1000000
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 3000000
+							}
+							is_core = CHI
+						}
 					}
 				}
 				add_core = HUG 
@@ -274,9 +322,21 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					state_scope = { 
-						total_pops = 150000
-						NOT = { total_pops = 600000 }
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 150000
+								NOT = { total_pops = 600000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 150000
+								NOT = { total_pops = 1500000 }
+							}
+							is_core = CHI
+						}
 					}
 				}
 				add_core = SMA 
@@ -307,10 +367,22 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					state_scope = { 
-						total_pops = 600000 
-						NOT = { total_pops = 1000000 }
-					} 
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 600000
+								NOT = { total_pops = 1000000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 1500000
+								NOT = { total_pops = 2500000 }
+							}
+							is_core = CHI
+						}
+					}
 				} 
 				add_core = MED
 				remove_core = TIN
@@ -340,10 +412,22 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					state_scope = { 
-						total_pops = 1000000 
-						NOT = { total_pops = 1500000 }
-					} 
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 1000000
+								NOT = { total_pops = 1500000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 2500000
+								NOT = { total_pops = 3500000 }
+							}
+							is_core = CHI
+						}
+					}
 				} 
 			add_core = LRG
 			remove_core = TIN
@@ -373,8 +457,19 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					state_scope = { 
-						total_pops = 1500000
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 1500000
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 3500000
+							}
+							is_core = CHI
+						}
 					}
 				}
 				add_core = HUG 
@@ -458,9 +553,21 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					state_scope = { 
-						total_pops = 200000
-						NOT = { total_pops = 800000 }
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 200000
+								NOT = { total_pops = 800000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 200000
+								NOT = { total_pops = 2000000 }
+							}
+							is_core = CHI
+						}
 					}
 				}
 				add_core = SMA 
@@ -491,10 +598,22 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					state_scope = { 
-						total_pops = 800000 
-						NOT = { total_pops = 1400000 }
-					} 
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 800000
+								NOT = { total_pops = 1400000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 2000000
+								NOT = { total_pops = 3000000 }
+							}
+							is_core = CHI
+						}
+					}
 				} 
 				add_core = MED
 				remove_core = TIN
@@ -524,10 +643,22 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					state_scope = { 
-						total_pops = 1400000 
-						NOT = { total_pops = 2000000 }
-					} 
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 1400000
+								NOT = { total_pops = 200000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 3000000
+								NOT = { total_pops = 4000000 }
+							}
+							is_core = CHI
+						}
+					}
 				} 
 			add_core = LRG
 			remove_core = TIN
@@ -556,9 +687,20 @@ country_event = {
 				
 			}
 			any_owned = { 
-				limit = {
-					state_scope = { 
-						total_pops = 2000000
+				limit = {		
+					OR = {
+						AND = {
+							state_scope = { 
+								total_pops = 2000000
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								total_pops = 4000000
+							}
+							is_core = CHI
+						}
 					}
 				}
 				add_core = HUG 

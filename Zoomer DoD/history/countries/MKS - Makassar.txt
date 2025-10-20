@@ -2,7 +2,7 @@ capital = 1430
 primary_culture = moluccan
 religion = sunni
 government = absolute_monarchy
-plurality = 0.0
+plurality = 5
 nationalvalue = nv_tradition
 literacy = 0.06
 

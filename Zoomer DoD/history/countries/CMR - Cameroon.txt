@@ -12,7 +12,7 @@ culture = sara
 culture = kanuri
 religion = protestant
 government = democracy
-plurality = 0.0
+plurality = 25
 nationalvalue = nv_tradition
 literacy = 0.04
 

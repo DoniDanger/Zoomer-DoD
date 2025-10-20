@@ -480,3 +480,5 @@ no_freedom;Attempted Freedom;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;
 no_freedom_desc;We attempted to free ourselves from foreign rule. We must wait until there is another opportunity, as for now they are watching us closely.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 schooling_change;Schooling System recently changed;x
 schooling_change_desc;We have recently change our schooling system;x
+capital_supply;Capital Supply;x
+capital_supply_desc;§RThis modifier will go away once we are at war with a player country;x

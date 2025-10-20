@@ -2678,7 +2678,7 @@ purge = {
 war_of_colombian_liberation = { 
 	core_pop_militancy_modifier = -0.10
 	core_pop_consciousness_modifier = -0.10
-	war_exhaustion = -0.25
+	war_exhaustion = -0.5
 	land_unit_start_experience = 5
 	mobilisation_economy_impact = -0.15
 	supply_consumption = -0.05
@@ -2688,7 +2688,7 @@ war_of_colombian_liberation = {
 }
 
 alliance_with_the_natives = { 
-	war_exhaustion = -0.15
+	war_exhaustion = -0.25
 	mobilisation_economy_impact = -0.05
 	supply_consumption = -0.05
 	immigrant_attract = -0.05
@@ -2697,9 +2697,9 @@ alliance_with_the_natives = {
 
 united_colombian_dream = {
 	global_immigrant_attract = 0.15
-	global_pop_militancy_modifier = -0.01
-	global_pop_consciousness_modifier = -0.01
-	education_efficiency_modifier = 0.01
+	global_pop_militancy_modifier = -0.05
+	global_pop_consciousness_modifier = 0.05
+	education_efficiency_modifier = 0.1
 	prestige = 0.02
 	icon = 13
 }
@@ -2716,4 +2716,9 @@ hungarian_land_reform = {
 
 schooling_change = {
 	icon = 6
+}
+
+capital_supply = {
+    supply_limit = 1000
+    icon = 17
 }

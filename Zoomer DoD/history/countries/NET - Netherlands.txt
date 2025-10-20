@@ -2,7 +2,7 @@ capital = 375
 primary_culture = dutch
 religion = protestant
 government = absolute_monarchy
-plurality = 30
+plurality = 15
 nationalvalue = nv_productivity
 literacy = 0.70
 civilized = yes
@@ -64,7 +64,7 @@ oob = "NET_oob.txt"
 1861.1.1 = {
 government = prussian_constitutionalism
 ruling_party = HOL_liberal
-plurality = 60
+plurality = 15
 literacy = 0.82
 
 # Political reforms

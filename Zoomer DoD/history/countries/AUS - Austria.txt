@@ -2,7 +2,7 @@ capital = 619
 primary_culture = south_german
 religion = catholic
 government = absolute_monarchy
-plurality = 10.0
+plurality = 5
 nationalvalue = nv_autocracy
 literacy = 0.6
 civilized = yes
@@ -94,7 +94,7 @@ oob = "AUS_oob.txt"
 }
 1861.1.1 = {
 	ruling_party = AUS_conservative_3
-	plurality = 60
+	plurality = 5
 	literacy = 0.60
 	non_state_culture_literacy = 0.15
 

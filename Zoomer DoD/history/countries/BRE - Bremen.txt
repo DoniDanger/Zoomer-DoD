@@ -2,7 +2,7 @@ capital = 539
 primary_culture = north_german
 religion = protestant
 government = hms_government
-plurality = 25.0
+plurality = 20
 nationalvalue = nv_liberty
 literacy = 0.8
 non_state_culture_literacy = 0.8
@@ -84,7 +84,7 @@ nonstate_consciousness = 1
 oob = "BRE_oob.txt"
 1861.1.1 = {
 	oob = "/1861/BRE_oob.txt"
-	plurality = 60
+	plurality = 20
 	literacy = 0.90
 	non_state_culture_literacy = 0.45
 }

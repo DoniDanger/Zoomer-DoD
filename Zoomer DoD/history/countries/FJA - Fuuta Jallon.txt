@@ -2,7 +2,7 @@ capital = 1792
 primary_culture = mande
 religion = fetishist
 government = absolute_monarchy
-plurality = 0.0
+plurality = 5
 nationalvalue = nv_tradition
 literacy = 0.002
 

@@ -3,7 +3,7 @@ primary_culture = french
 culture = provencal
 religion = catholic
 government = absolute_monarchy
-plurality = 5
+plurality = 20
 nationalvalue = nv_liberty
 literacy = 0.60
 non_state_culture_literacy = 0.15
@@ -100,7 +100,7 @@ oob = "FRA_oob.txt"
 1861.1.1 = {
 	oob = "/1861/FRA_oob.txt"
 	prestige = 140
-	plurality = 65
+	plurality = 20
 	literacy = 0.65
 	non_state_culture_literacy = 0.15
 

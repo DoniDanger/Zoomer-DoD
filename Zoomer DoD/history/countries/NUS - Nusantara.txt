@@ -13,7 +13,7 @@ culture = maori
 
 religion = sunni
 government = hms_government
-plurality = 0.0
+plurality = 20
 nationalvalue = nv_enlightenment
 literacy = 0.02
 # Political reforms

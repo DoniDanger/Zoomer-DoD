@@ -2,7 +2,7 @@ capital = 2396
 primary_culture = patagonian
 religion = inti
 government = democracy
-plurality = 0.05
+plurality = 25
 nationalvalue = nv_enlightenment
 literacy = 0.08
 

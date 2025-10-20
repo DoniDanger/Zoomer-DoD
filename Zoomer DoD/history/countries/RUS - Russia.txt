@@ -4,7 +4,7 @@ culture = ruthenian
 culture = ugrian
 religion = orthodox
 government = democracy
-plurality = 5.0
+plurality = 20
 nationalvalue = nv_autocracy
 literacy = 0.15
 non_state_culture_literacy = 0.01
@@ -82,7 +82,7 @@ oob = "RUS_oob.txt"
 	set_global_flag = 2nd_caucasian_war
 	decision = russian_vladivostok
 	ruling_party = RUS_reactionary
-	plurality = 60
+	plurality = 20
 	literacy = 0.15
 	non_state_culture_literacy = 0.1
 

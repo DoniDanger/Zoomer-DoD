@@ -5,7 +5,7 @@ culture = kazak
 culture = kirgiz
 religion = sunni
 government = absolute_monarchy
-plurality = 0.0
+plurality = 5
 nationalvalue = nv_tradition
 literacy = 0.01
 

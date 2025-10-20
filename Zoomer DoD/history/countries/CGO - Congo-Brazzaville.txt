@@ -3,7 +3,7 @@ primary_culture = bakongo
 culture = forest_bantu
 religion = catholic
 government = democracy
-plurality = 0.0
+plurality = 25
 nationalvalue = nv_tradition
 literacy = 0.04
 

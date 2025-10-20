@@ -3,7 +3,7 @@ primary_culture = portuguese
 culture = castilian
 religion = catholic
 government = hms_government
-plurality = 25.0
+plurality = 20
 nationalvalue = nv_productivity
 literacy = 0.13
 non_state_culture_literacy = 0.02
@@ -100,7 +100,7 @@ voting_system = jefferson_method
 political_parties = gerrymandering
 
 ruling_party = POR_liberal_2
-plurality = 60
+plurality = 20
 prestige = 20
 literacy = 0.17
 non_state_culture_literacy = 0.08

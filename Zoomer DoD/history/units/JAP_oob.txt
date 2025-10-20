@@ -35,6 +35,11 @@ AIN = {
 	value = -50
 } 
 
+TAI = {
+	value = -150
+	truce_until = 1838.1.1
+}
+
 
 leader = {
 	name = "No-miya Uehara"

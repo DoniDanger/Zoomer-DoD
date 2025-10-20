@@ -2,7 +2,7 @@ capital = 599
 primary_culture = south_german
 religion = catholic
 government = absolute_monarchy
-plurality = 15.0
+plurality = 5
 nationalvalue = nv_order
 literacy = 0.8
 civilized = yes
@@ -87,7 +87,7 @@ oob = "BAV_oob.txt"
 }
 1861.1.1 = {
 
-plurality = 60
+plurality = 5
 
 # Technologies
 	post_napoleonic_thought = 1

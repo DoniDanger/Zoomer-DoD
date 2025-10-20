@@ -4,7 +4,7 @@ culture = flemish
 culture = picard
 religion = catholic
 government = hms_government
-plurality = 25.0
+plurality = 20
 nationalvalue = nv_liberty
 literacy = 0.45
 non_state_culture_literacy = 0.5 #Germans/Dutch
@@ -90,7 +90,7 @@ nonstate_consciousness = 2
 oob = "BEL_oob.txt"
 1861.1.1 = {
 	oob = "/1861/BEL_oob.txt"
-	plurality = 60
+	plurality = 20
 	literacy = 0.65
 	non_state_culture_literacy = 0.65
 }

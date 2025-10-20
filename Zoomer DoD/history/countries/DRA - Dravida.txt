@@ -7,7 +7,7 @@ culture = telegu
 
 religion = hindu
 government = absolute_monarchy
-plurality = 0.0
+plurality = 5
 nationalvalue = nv_enlightenment
 literacy = 0.02
 
