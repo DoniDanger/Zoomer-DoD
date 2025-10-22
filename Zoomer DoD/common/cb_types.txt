@@ -76,6 +76,7 @@ annex_core_country
 unification_add_to_sphere
 add_to_sphere
 unification_GP_humiliate
+assert_colombian_dominance
 great_war_install_democracy
 great_war_install_fascism
 great_war_install_communism
@@ -6956,3 +6957,54 @@ take_capital = {
 }
 
 
+assert_colombian_dominance = {
+	sprite_index = 24
+	is_triggered_only = yes
+	months = 12
+	constructing_cb = no
+	crisis = no
+	
+	can_use = {
+		tag = SPA
+		has_global_flag = 2nd_colombian_independence_war
+		NOT = { 
+			has_global_flag = spanish_evacuation_colonies
+			has_global_flag = treaty_of_andagoya
+			has_global_flag = gran_colombian_collapse
+		}
+	}
+	
+	badboy_factor = 1
+	prestige_factor = 1
+	peace_cost_factor = 55
+	penalty_factor = 1
+	
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 60
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+
+	po_reparations = yes
+
+	war_name = WAR_INDEPENDENCE_NAME
+	
+	tws_battle_factor = 2.0 # battle score twice that of oppenent
+	
+	on_add = {
+		set_country_flag = intervened_boxer_war
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+	
+	on_po_accepted = {
+		country_event = 46450
+	}
+}

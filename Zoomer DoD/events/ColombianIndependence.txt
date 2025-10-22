@@ -39,7 +39,7 @@ country_event = {
 	
 	option = {
 		name = "Liberation is a struggle every Latinx dreams of."
-		prestige = 10
+		prestige = 18
 		add_accepted_culture = lusitanian
     	add_accepted_culture = central_american
 		add_accepted_culture = granadan
@@ -47,11 +47,12 @@ country_event = {
 			name = war_of_colombian_liberation 
 			duration = 1825
 		}
-		SPA = { country_event = { id= 46438 months = 6 }
+		SPA = { country_event = { id= 46438 months = 6 }}
 	}
 	
 	option = {
 		name = "We must free the slaves and arms the Natives."
+		prestige = 14
 		political_reform = no_slavery
 		add_accepted_culture = nahua
     	add_accepted_culture = afro_latino
@@ -59,7 +60,7 @@ country_event = {
 			name = alliance_with_the_natives 
 			duration = 1825
 		}
-		SPA = { country_event = { id= 46438 months = 6 }
+		SPA = { country_event = { id= 46438 months = 6 }}
 	}
 }
 
@@ -75,7 +76,7 @@ country_event = {
 	
 	option = {
 		name = "Liberation is a struggle every Latinx dreams of."
-		prestige = 10
+		prestige = 18
 		add_accepted_culture = lusitanian
     	add_accepted_culture = central_american
 		add_accepted_culture = granadan
@@ -83,11 +84,12 @@ country_event = {
 			name = war_of_colombian_liberation 
 			duration = 1825
 		}
-		SPA = { country_event = { id= 46438 months = 3 }
+		SPA = { country_event = { id= 46438 months = 3 }}
 	}
 	
 	option = {
 		name = "We must free the slaves and arms the Natives."
+		prestige = 14
 		political_reform = no_slavery
 		add_accepted_culture = nahua
     	add_accepted_culture = afro_latino
@@ -95,7 +97,7 @@ country_event = {
 			name = alliance_with_the_natives 
 			duration = 1825
 		}
-		SPA = { country_event = { id= 46438 months = 3 }
+		SPA = { country_event = { id= 46438 months = 3 }}
 	}
 }
 
@@ -114,6 +116,8 @@ country_event = {
 	option = {
 		name = "The Colombian dream must be squashed now."
 		release_vassal = CLM
+		leave_alliance = CLM
+		diplomatic_influence = { who = CLM value = -400 }
 		casus_belli = {
             target = CLM
             type = make_puppet
@@ -122,8 +126,7 @@ country_event = {
 		war = {
             target = CLM
             attacker_goal = { casus_belli = make_puppet }
-			defender_goal = { casus_belli = unification_humiliate_cb }
-			defender_goal = { casus_belli = humiliate }
+			defender_goal = { casus_belli = assert_colombian_dominance }
 			call_ally = yes
         }
 		any_country = {
@@ -149,14 +152,12 @@ country_event = {
 		has_global_flag = 2nd_colombian_independence_war
 		NOT = { war_with = SPA }
 		is_vassal = no
-		OR = {
-			SPA = { has_recently_lost_war = yes }
-			SPA = { has_country_flag = total_colombian_victory }
-		}
+		SPA = { has_country_flag = total_colombian_victory }
+		NOT = { has_global_flag = treaty_of_andagoya }
 	}
 	
 	mean_time_to_happen = {
-			days = 1
+		days = 15
 	}
 	
 	option = {
@@ -184,7 +185,8 @@ country_event = {
 			country_event = 46440
 		}
 		any_country = { 
-			limit = {  
+			limit = {
+				NOT = { vassal_of = SPA }
 				OR = { 
 					tag = ARE
 					tag = CAS
@@ -232,15 +234,21 @@ country_event = { ### Annexation Choice
 		name = "We stand a better chance with the Colombians."
 		FROM = { inherit = THIS }
 		ai_chance = { 
-		factor = 50 
+		factor = 80 
 		}
 	}
 	
 	option = {
 		name = "We will not submit to the Colombians."
 		relation = { who = CLM value = -150 }
+		relation = { who = SPA value = -300 }
+		SPA = {
+			release_vassal = THIS
+			leave_alliance = THIS
+			diplomatic_influence = { who = THIS value = -400 }
+		}
 		ai_chance = { 
-		factor = 50 
+		factor = 20 
 		}
 	}
 }
@@ -253,7 +261,6 @@ country_event = {
 	desc = "EVTDESC46442"
 	picture = "Administration"
 	fire_only_once = yes
-	major = yes
 	
 	trigger = {
 		tag = CLM
@@ -264,7 +271,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-			days = 1
+		days = 15
 	}
 	
 	option = {
@@ -289,6 +296,7 @@ country_event = {
 		}
 		any_country = { 
 			limit = {  
+				NOT = { vassal_of = SPA }
 				OR = { 
 					tag = ARE
 					tag = CAS
@@ -315,14 +323,23 @@ country_event = { ### Vassal Lost
 	is_triggered_only = yes
 	
 	option = {
+		name = "We stand a better chance with the Colombians."
+		CLM = { inherit = THIS }
+		ai_chance = { 
+		factor = 20 
+		}
+	}
+	
+	option = {
 		name = "We stand alone against the Colombians."
 		SPA = {
 			release_vassal = THIS
 			leave_alliance = THIS
-			
+			diplomatic_influence = { who = THIS value = -400 }
+			relation = { who = THIS value = -400 }
 		}
 		ai_chance = { 
-		factor = 100 
+		factor = 80 
 		}
 	}
 }
@@ -335,6 +352,7 @@ country_event = {
 	desc = "EVTDESC46444"
 	picture = "Administration"
 	fire_only_once = yes
+	major = yes
 	
 	trigger = {
 		tag = SPA
@@ -346,12 +364,82 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-			days = 1
+		days = 20
 	}
 	
 	option = {
 		name = "At least we still have Cuba."
 		prestige = -15
+		any_country = { 
+			limit = {  
+				OR = { 
+					tag = ARE
+					tag = LST
+					tag = ELS
+					tag = YUC
+					tag = GUY
+					tag = AZT
+					tag = JLS
+				} 
+			}
+			country_event = 46443
+		}
+		any_country = { 
+			limit = {  
+				OR = { 
+					tag = CAS
+					tag = QUI
+				} 
+			}
+			country_event = 46440
+		}
+		set_global_flag = spanish_evacuation_colonies
+	}
+}
+
+country_event = {
+
+	id = 46445
+
+	title = "Gran Colombians Demands End to Protectorship"
+	desc = "EVTDESC46445"
+	picture = "Administration"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Sorry Colombian, the protectorship WILL continue."
+		prestige = 10
+		CLM = { country_event = 46436 }
+		set_country_flag = colombians_demand_freedom
+	}
+	
+	option = {
+		name = "We must respect the treaty and allow Gran Colombia to decide for themselves."
+		prestige = -30
+		CLM = { country_event = 46446 }
+		set_country_flag = colombians_demand_freedom
+	}
+}
+
+country_event = {
+
+	id = 46446
+
+	title = "An End to the Spanish Protectorship"
+	desc = "EVTDESC46446"
+	picture = "Administration"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Gran Colombia will determine its own fate."
+		set_country_flag = peaceful_colombian_independence
+		prestige = 10
+		add_country_modifier = {
+			name = united_colombian_dream 
+			duration = 1095
+		}
 		any_country = { 
 			limit = {  
 				vassal_of = SPA 
@@ -367,150 +455,498 @@ country_event = {
 					tag = QUI
 				} 
 			}
-			country_event = 46443
+			country_event = 46440
 		}
-		set_global_flag = spanish_evacuation_colonies
-	}
-}
-
-country_event = {
-
-	id = 46431
-
-	title = "EVTNAME46431"
-	desc = "EVTDESC46431"
-	picture = "Administration"
-
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA46431"
-		government = democracy
-    		political_reform = universal_weighted_voting
-    		political_reform = state_equal_weight
-    		political_reform = yes_meeting
-    		political_reform = free_press
-    		political_reform = state_controlled
-    		political_reform = secret_ballots
-		prestige = 5
-		primary_culture = mexican
-		add_accepted_culture = lusitanian
-    	add_accepted_culture = central_american
-		add_accepted_culture = granadan
-		ai_chance = {
-			factor = 80
-			modifier = {
-				factor = 0
-				ruling_party_ideology = reactionary
+		any_country = { 
+			limit = {  
+				NOT = { vassal_of = SPA }
+				OR = { 
+					tag = ARE
+					tag = CAS
+					tag = LST
+					tag = ELS
+					tag = YUC
+					tag = GUY
+					tag = AZT
+					tag = JLS
+					tag = QUI
+				} 
 			}
-			modifier = {
-				factor = 0.5
-				ruling_party_ideology = conservative
-			}
-		}
-	}
-
-	option = {
-		name = "EVTOPTB46431"
-		prestige = -5
-		set_country_flag = granadans_refusal
-		any_pop = {
-  			limit = {
-  				NOT = { culture = mexican }
-  			}
-  			militancy = 3
-          		consciousness = 3
-  		}
-		ai_chance = {
-			factor = 20
+			country_event = 46441
 		}
 	}
 }
 
 country_event = {
 
-	id = 46432
+	id = 46447
 
-	title = "EVTNAME46432"
-	desc = "EVTDESC46432"
+	title = "Expiration of the Spanish Protectorship"
+	desc = "EVTDESC46447"
 	picture = "Administration"
-
-	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = CLM
+		year = 1840
+		NOT = { has_country_flag = demanded_spanish_protectorate_end }
+	}
+	
+	mean_time_to_happen = {
+			months = 1
+	}
 	
 	option = {
-		name = "EVTOPTA46432"
-		prestige = -5
-		set_country_flag = granadans_refusal
-		any_pop = {
-  			limit = {
-  				NOT = { culture = mexican }
-  			}
-  			militancy = 3
-          		consciousness = 3
-  		}
+		name = "Hopefully they realize there is no end to the Colombian dream."
+		SPA = { country_event = 46445 }
+		set_country_flag = demanded_spanish_protectorate_end
 	}
 }
 
-country_event = { 
-	id = 46433 
-	title = "46433.T"
-	desc = "46433.D"
+country_event = {
+
+	id = 46448
+
+	title = "Reorganization of Colonial Administration"
+	desc = "EVTDESC46448"
+	picture = "Administration"
+	fire_only_once = yes
+	is_triggered_only = yes
 	
-	is_triggered_only = yes 
+	option = {
+		name = "Our authority in the Amerigas will never be questioned again."
+		create_vassal = AZT
+		create_vassal = JLS
+		create_vassal = LST
+		create_vassal = ELS
+		create_vassal = YUC
+		create_vassal = CAS
+		create_vassal = QUI
+		create_vassal = ARE
+		create_vassal = GUY
+		create_vassal = MEX
+		SAN = { all_core = { add_core = CAS remove_core = SAN }}
+		CAS = { inherit = GUY }
+		CAS = { change_tag = GRA }
+		ARE = { all_core = { add_core = QUI remove_core = ARE }}
+		QUI = { inherit = ARE }
+		ELS = { change_tag = UCA }
+		AZT = { inherit = JLS }
+		JLS = { all_core = { add_core = AZT remove_core = JLS }}
+		AZT = { add_accepted_culture = mexican add_accepted_culture = tarascan add_accepted_culture = zapotec }
+		AZT = { inherit = CLM }
+		AZT = { change_tag = MEX }
+		diplomatic_influence = { who = MEX value = 400 }
+		diplomatic_influence = { who = LST value = 400 }
+		diplomatic_influence = { who = UCA value = 400 }
+		diplomatic_influence = { who = GRA value = 400 }
+		diplomatic_influence = { who = QUI value = 400 }
+		diplomatic_influence = { who = CAS value = 400 }
+		set_country_flag = colonial_empire_reestablished
+	}
+}
+
+country_event = {
+
+	id = 46449
+
+	title = "Collapse of Gran Colombia"
+	desc = "EVTDESC46449"
+	picture = "Administration"
+	fire_only_once = yes
+	is_triggered_only = yes
 	
-	option = { 
-	name = "46433.A"
-	random_list = {
-		50 = { country_event = 46430 }
-		25 = { country_event = 46431 }
-		25 = { country_event = 46432 }
+	immediate = {
+		name = "The Gran Colombian dream has perished. We must live on as Mexico."
+			#change_tag_no_core_switch = MEX
+			#any_owned = {
+			#	limit = {
+			#		is_core = AZT
+			#	}
+			#	secede_province = AZT
+			#}
+			MEX_2170 = { secede_province = AZT } #Morelia
+			MEX_2173 = { secede_province = AZT } #Zacatecas
+			MEX_2177 = { secede_province = AZT } #Oaxaca
+			any_owned = { 
+				limit = {
+					is_core = LST
 				}
+				secede_province = LST
+			}
+			any_owned = {
+				limit = {
+					is_core = YUC
+				}
+				secede_province = YUC
+			}
+			any_owned = {
+				limit = {
+					is_core = ELS
+				}
+				secede_province = ELS
+			}
+			any_owned = {
+				limit = {
+					is_core = NIC
+				}
+				secede_province = ELS
+			}
+			any_owned = {
+				limit = {
+					is_core = PNM
+				}
+				secede_province = ELS
+			}
+			any_owned = {
+				limit = {
+					is_core = SAN
+				}
+				secede_province = CAS
+			}
+			any_owned = {
+				limit = {
+					is_core = JLS
+				}
+				secede_province = JLS
+			}
+			any_owned = {
+				limit = {
+					is_core = QUI
+				}
+				secede_province = QUI
+			}
+			any_owned = {
+				limit = {
+					is_core = ARE
+				}
+				secede_province = ARE
+			}
+			any_owned = {
+				limit = {
+					is_core = GUY
+				}
+				secede_province = GUY
+			}
+			any_owned = {
+				limit = {
+					is_core = CAS
+				}
+				secede_province = CAS
+			}
+		set_global_flag = gran_colombian_collapse
 	}
 }
+
+country_event = {
+
+	id = 46450
+
+	title = "Spanish Military Expeditions Vanquished"
+	desc = "EVTDESC46450"
+	picture = "Administration"
+	fire_only_once = yes
+	is_triggered_only = yes
 	
-country_event = { 
-	id = 46434 
-	title = "46434.T"
-	desc = "46434.D"
+	immediate = {
+		CLM = { country_event = 46439 }
+		set_country_flag = total_colombian_victory
+	}
 	
-	trigger = { 
-	tag = CLM 
-	year = 1870 
-	NOT = { 
-	LST = { exists = yes }
-	CUB = { exists = yes }
-	UCA = { exists = yes }
-	GRA = { exists = yes }
-	NIC = { exists = yes }
-	PNM = { exists = yes }
-	ELS = { exists = yes }
-	GUY = { exists = yes }
-	CAS = { exists = yes }
-	SAN = { exists = yes }
-	QUI = { exists = yes }
-	ARE = { exists = yes }
-	JLS = { exists = yes }
-	has_country_flag = CLM_unity
+	option = {
+		name = "We must come to terms with the Colombians."
+		set_country_flag = total_colombian_victory
+		prestige = -10
+	}
+}
+
+country_event = {
+
+	id = 46451
+
+	title = "Occupation of Loyalist States"
+	desc = "EVTDESC46451"
+	picture = "Administration"
+	
+	trigger = {
+		tag = CLM
+		has_global_flag = 2nd_colombian_independence_war
+		war_with = SPA 
+		NOT = {
+			has_global_flag = spanish_evacuation_colonies
+			has_global_flag = treaty_of_andagoya
+			has_global_flag = gran_colombian_collapse
+		}
+		OR = {
+			AND = { LST = { all_core = { controlled_by = THIS }} LST = { exists = yes }}
+			AND = { YUC = { all_core = { controlled_by = THIS }} YUC = { exists = yes }}
+			AND = { AZT = { all_core = { controlled_by = THIS }} AZT = { exists = yes }}
+			AND = { JLS = { all_core = { controlled_by = THIS }} JLS = { exists = yes }}
+			AND = { ELS = { all_core = { controlled_by = THIS }} ELS = { exists = yes }}
+			AND = { SAN = { all_core = { controlled_by = THIS }} CAS = { exists = yes }}
+			AND = { GUY = { all_core = { controlled_by = THIS }} GUY = { exists = yes }}
+			AND = { QUI = { all_core = { controlled_by = THIS }} QUI = { exists = yes }}
+			AND = { ARE = { all_core = { controlled_by = THIS }} ARE = { exists = yes }}
 		}
 	}
 	
-	mean_time_to_happen = { 
-	months = 15 
+	mean_time_to_happen = {
+			months = 1
 	}
 	
-	option = { 
-	name = "97086.A"
-	set_country_flag = CLM_unity
-	any_owned = { 
-	remove_core = NIC 
-	remove_core = PNM 
-	remove_core = ELS 
-	remove_core = JLS 
-	remove_core = CAS
-	remove_core = SAN
-	remove_core = QUI 
-	remove_core = ARE
+	option = {
+		name = "A pebble has fallen when faced with the boulder."
+			random_country = {
+				limit = {
+					tag = YUC
+					exists = yes
+					YUC = { all_core = { controlled_by = CLM }}
+				}
+				annex_to = CLM
+			}
+			random_country = {
+				limit = {
+					tag = LST
+					exists = yes
+					LST = { all_core = { controlled_by = CLM }}
+				}
+				annex_to = CLM
+			}
+			random_country = {
+				limit = {
+					tag = ELS
+					exists = yes
+					ELS = { all_core = { controlled_by = CLM }}
+				}
+				annex_to = CLM
+			}
+			random_country = {
+				limit = {
+					tag = AZT
+					exists = yes
+					AZT = { all_core = { controlled_by = CLM }}
+				}
+				annex_to = CLM
+			}
+			random_country = {
+				limit = {
+					tag = JLS
+					exists = yes
+					JLS = { all_core = { controlled_by = CLM }}
+				}
+				annex_to = CLM
+			}
+			random_country = {
+				limit = {
+					tag = CAS
+					exists = yes
+					SAN = { all_core = { controlled_by = CLM }}
+				}
+				annex_to = CLM
+			}
+			random_country = {
+				limit = {
+					tag = ARE
+					exists = yes
+					ARE = { all_core = { controlled_by = CLM }}
+				}
+				annex_to = CLM
+			}
+			random_country = {
+				limit = {
+					tag = QUI
+					exists = yes
+					QUI = { all_core = { controlled_by = CLM }}
+				}
+				annex_to = CLM
+			}
+			random_country = {
+				limit = {
+					tag = GUY
+					exists = yes
+					GUY = { all_core = { controlled_by = CLM }}
+				}
+				annex_to = CLM
+			}
+	}
+}
+
+country_event = {
+
+	id = 46452
+
+	title = "Advance of Spanish Loyalists"
+	desc = "EVTDESC46452"
+	picture = "Administration"
+	
+	trigger = {
+		tag = CLM
+		has_global_flag = 2nd_colombian_independence_war
+		war_with = SPA 
+		NOT = {
+			has_global_flag = spanish_evacuation_colonies
+			has_global_flag = treaty_of_andagoya
+			has_global_flag = gran_colombian_collapse
+		}
+		OR = {
+			AND = { NOT = { LST = { any_core = { controlled_by = THIS }}} LST = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { YUC = { any_core = { controlled_by = THIS }}} YUC = { any_core = { owned_by = THIS }} }
+			#AND = { NOT = { AZT = { any_core = { controlled_by = THIS }}} AZT = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { ELS = { any_core = { controlled_by = THIS }}} ELS = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { CAS = { any_core = { controlled_by = THIS }}} CAS = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { GUY = { any_core = { controlled_by = THIS }}} GUY = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { QUI = { any_core = { controlled_by = THIS }}} QUI = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { ARE = { any_core = { controlled_by = THIS }}} ARE = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { JLS = { any_core = { controlled_by = THIS }}} JLS = { any_core = { owned_by = THIS }} }
+			
+			AND = { NOT = { ZAP = { any_core = { controlled_by = THIS }}} ZAP = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { NIC = { any_core = { controlled_by = THIS }}} NIC = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { PNM = { any_core = { controlled_by = THIS }}} PNM = { any_core = { owned_by = THIS }} }
+			AND = { NOT = { SAN = { any_core = { controlled_by = THIS }}} SAN = { any_core = { owned_by = THIS }} }
+		}
+	}
+	
+	mean_time_to_happen = {
+			months = 3
+	}
+	
+	immediate = {
+		name = "We must drive these dogs back to the sea."
+			any_owned = { 
+				limit = {
+					is_core = LST
+					NOT = { LST = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = LST
+			}
+			any_owned = {
+				limit = {
+					is_core = YUC
+					NOT = { YUC = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = YUC
+				SPA = { create_vassal = YUC }
+			}
+			any_owned = {
+				limit = {
+					is_core = ELS
+					NOT = { is_core = YUC }
+					NOT = { ELS = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = ELS
+				SPA = { create_vassal = ELS }
+			}
+			any_owned = {
+				limit = {
+					is_core = NIC
+					NOT = { NIC = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = ELS
+			}
+			any_owned = {
+				limit = {
+					is_core = PNM
+					NOT = { PNM = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = ELS
+			}
+			any_owned = {
+				limit = {
+					is_core = SAN
+					NOT = { is_core = CAS }
+					NOT = { SAN = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = CAS
+			}
+			any_owned = {
+				limit = {
+					is_core = JLS
+					NOT = { JLS = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = JLS
+			}
+			any_owned = {
+				limit = {
+					is_core = QUI
+					NOT = { QUI = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = QUI
+			}
+			any_owned = {
+				limit = {
+					is_core = ARE
+					NOT = { ARE = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = ARE
+			}
+			any_owned = {
+				limit = {
+					is_core = GUY
+					NOT = { GUY = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = GUY
+			}
+			any_owned = {
+				limit = {
+					is_core = CAS
+					NOT = { CAS = { any_core = { controlled_by = THIS }}}
+				}
+				secede_province = CAS
+			}
+			SPA = { country_event = 46453 }
+	}
+}
+
+country_event = {
+
+	id = 46453
+
+	title = "Loyalist State Restored"
+	desc = "EVTDESC46453"
+	picture = "Administration"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "Gran Colombia will determine its own fate."
+		any_country = { 
+			limit = {  
+				NOT = { vassal_of = SPA }
+				OR = { 
+					tag = ARE
+					tag = CAS
+					tag = LST
+					tag = ELS
+					tag = YUC
+					tag = GUY
+					tag = AZT
+					tag = JLS
+					tag = QUI
+				} 
+			}
+			country_event = 46454
 		}
 	}
 }
 
+country_event = { ### Vassal Gained
+	id = 46454
+	title = "Collapse of Spanish Authority"
+	desc = "EVTDESC46454"
+	picture = "administration"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will continue to march with the Spanish."
+		SPA = {
+			create_vassal = THIS
+			create_alliance = THIS
+			diplomatic_influence = { who = THIS value = 400 }
+			relation = { who = THIS value = 400 }
+		}
+		ai_chance = { 
+		factor = 100 
+		}
+	}
+}
