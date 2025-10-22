@@ -365,7 +365,7 @@
 	soldiers = {
 		culture = guianan
 		religion = catholic
-		size= 75
+		size= 1175
 
 	}
 

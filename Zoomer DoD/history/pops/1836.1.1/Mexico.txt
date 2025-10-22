@@ -2328,7 +2328,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 150
+		size = 450
 	}
 
 	farmers = {
@@ -2364,7 +2364,7 @@
 	soldiers = {
 		culture = mayan
 		religion = catholic
-		size = 225
+		size = 1225
 	}
 
 	farmers = {
@@ -2421,7 +2421,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 650
+		size= 1650
 
 		militancy = 5
 	}
@@ -2448,7 +2448,7 @@
 	soldiers = {
 		culture = tarascan
 		religion = catholic
-		size = 900
+		size = 1300
 	}
 
 	farmers = {
@@ -2487,7 +2487,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 250
+		size= 1250
 
 	}
 
@@ -2512,7 +2512,7 @@
 	soldiers = {
 		culture = tarascan
 		religion = catholic
-		size = 650
+		size = 1450
 	}
 
 	farmers = {
@@ -2552,7 +2552,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 275
+		size= 575
 
 	}
 
@@ -2583,7 +2583,7 @@
 	soldiers = {
 		culture = tarascan
 		religion = catholic
-		size = 700
+		size = 1300
 	}
 
 	farmers = {
@@ -2696,7 +2696,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 200
+		size= 1200
 
 	}
 
@@ -2721,7 +2721,7 @@
 	soldiers = {
 		culture = tarascan
 		religion = catholic
-		size = 600
+		size = 1600
 	}
 
 	farmers = {
@@ -3579,7 +3579,7 @@
 	soldiers = {
 		culture = central_american
 		religion = catholic
-		size = 200
+		size = 1200
 	}
 
 	farmers = {
@@ -3610,7 +3610,7 @@
 	soldiers = {
 		culture = mayan
 		religion = catholic
-		size = 600
+		size = 1600
 	}
 
 	farmers = {
@@ -3679,7 +3679,7 @@
 	soldiers = {
 		culture = mayan
 		religion = catholic
-		size= 200
+		size= 1200
 
 	}
 

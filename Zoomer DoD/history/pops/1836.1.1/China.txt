@@ -1907,9 +1907,24 @@
 		size = 749
 	}
 	bureaucrats = {
+		culture = manchu
+		religion = mahayana
+		size = 361
+	}
+	bureaucrats = {
+		culture = manchu
+		religion = taiping
+		size = 139
+	}
+	bureaucrats = {
+		culture = yue
+		religion = mahayana
+		size = 2927
+	}
+	bureaucrats = {
 		culture = yue
 		religion = taiping
-		size = 10000
+		size = 1123
 	}
 	clergymen = {
 		culture = hakka
@@ -2058,11 +2073,6 @@
 		culture = min
 		religion = taiping
 		size = 1861
-	}
-	bureaucrats = {
-		culture = hakka
-		religion = mahayana
-		size = 10000
 	}
 	artisans = {
 		culture = hakka
@@ -2878,8 +2888,8 @@
 	}
 	bureaucrats = {
 		culture = zhuang
-		religion = taiping
-		size = 10000
+		religion = catholic
+		size = 150
 	}
 	clergymen = {
 		culture = yue
@@ -2962,11 +2972,6 @@
 		culture = zhuang
 		religion = taiping
 		size = 3296
-	}
-	bureaucrats = {
-		culture = yue
-		religion = taiping
-		size = 20000
 	}
 	artisans = {
 		culture = yue
@@ -6863,9 +6868,14 @@
 		size = 10000
 	}
 	bureaucrats = {
-		culture = hakka
+		culture = nanfaren
 		religion = mahayana
-		size = 10000
+		size = 4252
+	}
+	bureaucrats = {
+		culture = nanfaren
+		religion = taiping
+		size = 1348
 	}
 	clergymen = {
 		culture = nanfaren

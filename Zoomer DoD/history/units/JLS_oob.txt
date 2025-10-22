@@ -1,0 +1,34 @@
+army = {
+    name = "Ejército de Jalisco"
+    location = 2166
+    regiment = {
+        name = "1. División de Infantería"
+        type = infantry
+        home = 2166
+    }
+
+    regiment = {
+        name = "2. División de Infantería"
+        type = infantry
+        home = 2166
+    }
+
+    regiment = {
+        name = "3. División de Infantería"
+        type = infantry
+        home = 2168
+    }
+
+	regiment = {
+        name = "4. División de Infantería"
+        type = infantry
+        home = 2168
+    }
+	
+    regiment = {
+        name = "1. División de Caballería"
+        type = cavalry
+        home = 2169
+    }
+
+}

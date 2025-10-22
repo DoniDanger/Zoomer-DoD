@@ -1,0 +1,41 @@
+leader = {
+	name = "Joaquim Pessoa"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+    name = "Ejército de Castilla"
+    location = 137
+    regiment = {
+        name = "1. División de Infantería"
+        type = infantry
+        home = 138
+    }
+
+    regiment = {
+        name = "2. División de Infantería"
+        type = infantry
+        home = 2147
+    }
+
+    regiment = {
+        name = "3. División de Infantería"
+        type = infantry
+        home = 133
+    }
+
+    regiment = {
+        name = "1. División de Caballería"
+        type = cavalry
+        home = 132
+    }
+
+	regiment = {
+        name = "2. División de Caballería"
+        type = cavalry
+        home = 137
+    }
+}

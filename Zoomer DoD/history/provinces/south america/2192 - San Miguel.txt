@@ -1,11 +1,8 @@
-owner = CLM
-controller = CLM
+owner = ELS
+controller = ELS
 add_core = UCA
 add_core = ELS
 add_core = CLM
 trade_goods = tropical_wood
-life_rating = 30
-1861.1.1 = {
-	owner = ELS
-	controller = ELS
-}
+life_rating = 32
+fort = 1

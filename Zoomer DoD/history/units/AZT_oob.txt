@@ -1,0 +1,47 @@
+leader = {
+	name = "Santiago Iman"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+    name = "Ejército de Aztecas"
+    location = 2170
+    regiment = {
+        name = "1. División de Infantería"
+        type = infantry
+        home = 2170
+    }
+
+    regiment = {
+        name = "2. División de Infantería"
+        type = infantry
+        home = 2170
+    }
+
+    regiment = {
+        name = "3. División de Infantería"
+        type = infantry
+        home = 2179
+    }
+
+	regiment = {
+        name = "4. División de Infantería"
+        type = infantry
+        home = 2171
+    }
+	
+    regiment = {
+        name = "1. División de Caballería"
+        type = cavalry
+        home = 2179
+    }
+
+	regiment = {
+        name = "2. División de Caballería"
+        type = cavalry
+        home = 2171
+    }
+}

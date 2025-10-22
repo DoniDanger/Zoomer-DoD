@@ -1,0 +1,66 @@
+leader = {
+	name = "Jose María Vargas"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+leader = {
+	name = "Jose Antonio Paez"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+leader = {
+	name = "Jose María Carreno"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_1.1
+}
+
+army = {
+    name = "Ejército de Castilla"
+    location = 2264
+    regiment = {
+        name = "1. División de Infantería"
+        type = infantry
+        home = 2264
+    }
+
+    regiment = {
+        name = "2. División de Infantería"
+        type = infantry
+        home = 2264
+    }
+
+    regiment = {
+        name = "3. División de Infantería"
+        type = infantry
+        home = 2267
+    }
+
+    regiment = {
+        name = "1. División de Caballería"
+        type = cavalry
+        home = 2269
+    }
+
+}
+
+navy = {
+    name = "Escuadra Unida del Castilla"
+    location = 2264
+    ship = {
+        name = "Guayaquileña"
+        type = frigate
+    }
+    ship = {
+        name = "Diligencia"
+        type = frigate
+    }
+
+}

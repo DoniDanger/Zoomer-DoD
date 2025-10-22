@@ -1,5 +1,6 @@
 capital = 2166
 primary_culture = mexican
+culture = tarascan
 religion = catholic
 government = prussian_constitutionalism
 plurality = 15
@@ -71,3 +72,5 @@ piston_steam_engine = 1
 #Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 0
+
+oob = "JLS_oob.txt"

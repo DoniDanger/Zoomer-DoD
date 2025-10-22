@@ -3054,7 +3054,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size = 600
+		size = 1400
 	}
 
 	farmers = {

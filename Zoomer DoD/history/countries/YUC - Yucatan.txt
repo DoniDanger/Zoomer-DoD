@@ -47,3 +47,5 @@ upper_house = {
 }
 
 set_country_flag = new_world_nation
+
+oob = "YUC_oob.txt"

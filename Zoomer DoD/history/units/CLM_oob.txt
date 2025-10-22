@@ -3,16 +3,6 @@ INC = {
    truce_until = "1841.1.1"
 }
 
-##Starting NFs
-#	national_focus=
-#	{
-#"96"="colonize"
-#	}
-#	colonize=
-#	{
-#		96=50
-#	}
-
 leader = {
 	name = "Juan Manuel Santos"
 	type = land
@@ -47,59 +37,59 @@ leader = {
 
 army = {
 	name = "Ejército de Andagoya"
-	location = 2253
+	location = 2204
    	regiment = {
 		name= "1. Brigada de Infantería"
 		type = infantry
-		home = 2170
+		home = 2256
 	}
 
 	regiment = {
 		name= "2. Brigada de Infantería"
 		type = infantry
-		home = 2170
+		home = 2250
 	}
 	regiment = {
 		name= "3. Brigada de Infantería"
 		type = infantry
-		home = 132
+		home = 2247
 	}
 
 	regiment = {
 		name= "4. Brigada de Infantería"
 		type = infantry
-		home = 2156
+		home = 2252
 	}
 
 	regiment = {
 		name= "5. Brigada de Infantería"
 		type = infantry
-		home = 2173
+		home = 2254
 	}
 
 	regiment = {
 		name= "1. Brigada de Caballería"
 		type = hussar
-		home = 2173
+		home = 2255
 	}
 
 	regiment = {
 		name= "2. Brigada de Caballería"
 		type = hussar
-		home = 2251
+		home = 2197
 	}
 
 	regiment = {
 		name= "3. Brigada de Caballería"
 		type = hussar
-		home = 2161
+		home = 2193
 	}
 
 }
 
 army = {
 	name = "Ejército de Liberación"
-	location = 2295
+	location = 2253
 	regiment = {
 		name= "1. División de Infantería"
 		type = infantry
@@ -133,42 +123,42 @@ army = {
 	regiment = {
 		name= "3. División de Caballería"
 		type = hussar
-		home = 2172
+		home = 2176
 	}
 
 }
 
 army = {
 	name = "Ejército del Norte"
-	location = 2148
+	location = 2152
 	regiment = {
 		name= "1.Division Cos"
 		type = infantry
-		home = 2172
+		home = 2145
 	}
 
 	regiment = {
 		name= "2.Division Cos"
 		type = infantry
-		home = 2164
+		home = 2138
 	}
 
 	regiment = {
 		name= "3.Division Cos"
 		type = infantry
-		home = 2164
+		home = 2138
 	}
 	
 	regiment = {
 		name= "4.Division Cos"
 		type = infantry
-		home = 2302
+		home = 2139
 	}
 	
 	regiment = {
 		name= "5.Division Cos"
 		type = artillery
-		home = 2295
+		home = 2139
 	}
 
 }
@@ -179,42 +169,63 @@ army = {
 	regiment = {
 		name= "1.Oajaca y Tlaxcala"
 		type = infantry
-		home = 2295
+		home = 2178
 	}
 
 	regiment = {
 		name= "2.Oajaca y Tlaxcala"
 		type = infantry
-		home = 2279
+		home = 2177
 	}
 
 	regiment = {
 		name= "3.Oajaca y Tlaxcala"
 		type = infantry
-		home = 2279
+		home = 2177
 	}
 
 }
 
 army = {
 	name = "Ejército de la Revolución"
-	location = 2174
+	location = 2172
 	regiment = {
 		name= "1.Division Comonfort"
 		type = infantry
-		home = 2251
+		home = 2173
 	}
 
 	regiment = {
 		name= "2.Division Comonfort"
 		type = infantry
-		home = 2264
+		home = 2173
 	}
 
 	regiment = {
 		name= "3.Division Comonfort"
 		type = dragoon
-		home = 2197
+		home = 2167
 	}
 
+}
+
+navy = {
+    name = "Escuadra Unida del Colombia"
+    location = 2162
+    ship = {
+        name = "Guayaquileña"
+        type = frigate
+    }
+    ship = {
+        name = "Diligencia"
+        type = frigate
+    }
+	ship = {
+        name = "Veracruz"
+        type = frigate
+    }
+    ship = {
+        name = "Tampico"
+        type = frigate
+    }
 }

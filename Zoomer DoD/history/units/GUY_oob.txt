@@ -1,0 +1,10 @@
+army = {
+    name = "Ejército de Guyana"
+    location = 2240
+    regiment = {
+        name = "1. División de Infantería"
+        type = infantry
+        home = 2240
+    }
+
+}

@@ -67,4 +67,4 @@ piston_steam_engine = 1
 consciousness = 2
 nonstate_consciousness = 0
 
-oob = "PEU_oob.txt"
+oob = "ARE_oob.txt"
