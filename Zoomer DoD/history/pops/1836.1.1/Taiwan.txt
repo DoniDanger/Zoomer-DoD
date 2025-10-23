@@ -14,6 +14,12 @@
 		size = 1325
 	}
 
+	bureaucrats = {
+		culture = min
+		religion = mahayana
+		size = 1000
+	}
+
 	artisans = {
 		culture = chugoku
 		religion = mahayana
@@ -23,13 +29,7 @@
 	farmers = {
 		culture = chugoku
 		religion = mahayana
-		size = 121225
-	}	
-
-	slaves = {
-		culture = chugoku
-		religion = mahayana
-		size = 20000
+		size = 141225
 	}
 
 	aristocrats = {
@@ -65,41 +65,31 @@
 	farmers = {
 		culture = chugoku
 		religion = mahayana
-		size = 165000
+		size = 95000
 	}
+
 	farmers = {
-		culture = micronesian
+		culture = min
 		religion = mahayana
-		size = 18150
-	}
-	farmers = {
-		culture = micronesian
-		religion = animist
-		size = 18150
+		size = 106300
 	}	
 }
 #Taitung (67k - 268k) #now part of Taiwan  
 2562 = {
 	farmers = {
-		culture = micronesian
-		religion = animist
-		size = 17000
-	}
-	
-	slaves = {
-		culture = micronesian
-		religion = animist
-		size = 20000
-	}
-	
-	aristocrats = {
-		culture = micronesian
-		religion = animist
-		size = 1000
+		culture = min
+		religion = mahayana
+		size = 37000
 	}
 	
 	aristocrats = {
 		culture = chugoku
+		religion = mahayana
+		size = 1000
+	}
+	
+	aristocrats = {
+		culture = min
 		religion = mahayana
 		size = 150
 	}
@@ -178,25 +168,25 @@
 	}
 
 	officers = {
-		culture = chugoku
+		culture = min
 		religion = mahayana
 		size = 750
 	}
 
 	clergymen = {
-		culture = chugoku
+		culture = min
 		religion = mahayana
 		size = 1225
 	}
 
 	artisans = {
-		culture = chugoku
+		culture = min
 		religion = mahayana
 		size = 6150
 	}
 
 	farmers = {
-		culture = chugoku
+		culture = min
 		religion = mahayana
 		size = 110625
 	}
