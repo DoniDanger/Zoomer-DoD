@@ -2,21 +2,29 @@ leader = {
 	name = "Yao Ming"
 	type = land
 	date = 1836.1.1
-	personality = careless
-	background = drillmaster
+	personality = defence_2.1
+	background = attack_3.1
+}
+
+leader = {
+	name = "Zhe Fun"
+	type = land
+	date = 1836.1.1
+	personality = defence_2.1
+	background = attack_1.1
 }
 
 leader = {
 	name = "Shi Le"
 	type = sea
 	date = 1836.1.1
-	personality = pisspoor
-	background = war_college
+	personality = defence_2.1
+	background = attack_2.1
 }
 
 army = {
-	name = "Army of the King of Zhourao"
-	location = 2468
+	name = "King's Army of Zhourao"
+	location = 1645
 	regiment = {
 		name= "1. Royal infantry"
 		type = infantry
@@ -70,8 +78,8 @@ army = {
 }
 
 army = {
-	name = "Army of Sugbu"
-	location = 1456
+	name = "Zhourao Expeditionary Army"
+	location = 1676
 	
 	regiment = {
 		name = "1. Infantry"
@@ -107,21 +115,6 @@ army = {
 		name = "1. Cuirassier"
 		type = cuirassier
 		home = 2492
-	}
-	regiment = {
-		name = "2. Cuirassier"
-		type = cuirassier
-		home = 2491
-	}
-	regiment = {
-		name = "4. Infantry"
-		type = infantry
-		home = 2493
-	}
-	regiment = {
-		name = "5. Infantry"
-		type = infantry
-		home = 2477
 	}
 }
 
@@ -181,9 +174,30 @@ army = {
 	}
 }
 
+army = {
+	name = "Zhourao Home Guard"
+	location = 2468
+	
+	regiment = {
+		name = "1. Cuirassier"
+		type = cuirassier
+		home = 2491
+	}
+	regiment = {
+		name = "1. Infantry"
+		type = infantry
+		home = 2493
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = infantry
+		home = 2477
+	}
+}
+	
 navy = {
 	name = "Fleet of Zhourao"
-	location = 2468
+	location = 1485
 
 	ship = {
 		name= "Zhourao"
@@ -411,3 +425,32 @@ navy = {
 	}
 }
 
+navy = {
+	name = "Zhourao Convoy Fleet"
+	location = 2468
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+}

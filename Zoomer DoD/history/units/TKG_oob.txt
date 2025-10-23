@@ -1,3 +1,11 @@
+leader = {
+	name = "Miyamoto Uesugii"
+	type = land
+	date = 1836.1.1
+	personality = defence_2.1
+	background = attack_3.1
+}
+
 army = {
 	name = "Japanese Liberation Army"
 	location = 1649
@@ -25,7 +33,7 @@ army = {
 	regiment = {
 		name = "2. Hussar"
 		type = hussar
-		home = 1675
+		home = 1649
 	}
 	regiment = {
 		name = "3. Hussar"
@@ -35,7 +43,7 @@ army = {
 	regiment = {
 		name = "1. Cuirassier"
 		type = cuirassier
-		home = 1675
+		home = 1672
 	}
 	regiment = {
 		name = "2. Cuirassier"
@@ -51,6 +59,42 @@ army = {
 		name = "5. Infantry"
 		type = infantry
 		home = 1672
+	}
+}
+
+army = {
+	name = "Sendai Guard Regiment"
+	location = 1668
+	
+	regiment = {
+		name = "1. Infantry"
+		type = infantry
+		home = 1675
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = infantry
+		home = 1675
+	}
+	regiment = {
+		name = "3. Infantry"
+		type = infantry
+		home = 1675
+	}
+	regiment = {
+		name = "1. Hussar"
+		type = hussar
+		home = 1675
+	}
+	regiment = {
+		name = "1. Cuirassier"
+		type = cuirassier
+		home = 1675
+	}
+	regiment = {
+		name = "2. Cuirassier"
+		type = cuirassier
+		home = 1675
 	}
 }
 

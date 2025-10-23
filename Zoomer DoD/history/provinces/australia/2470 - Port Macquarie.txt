@@ -1,6 +1,6 @@
 owner = GAN
 controller = GAN
 add_core = GAN
-trade_goods = grain
+trade_goods = coal
 life_rating = 35
 

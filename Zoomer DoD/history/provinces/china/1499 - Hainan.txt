@@ -1,6 +1,8 @@
-owner = GNG
-controller = GNG
+owner = GAN
+controller = GAN
 add_core = GNG
 add_core = CHI
 trade_goods = fish
 life_rating = 32
+colonial = 2
+

@@ -21,77 +21,80 @@ country_event = {
         set_global_flag = money_setup
 
         DUA = {
-            treasury = 100000
+            treasury = 150000
         }
 		SCA = {
-            treasury = 100000
+            treasury = 150000
         }
 		BRG = {
-            treasury = 100000
+            treasury = 150000
         }
 		BOH = {
-            treasury = 100000
+            treasury = 150000
         }
         SPA = {
-            treasury = 70000
+            treasury = 100000
         }
         ARA = {
-            treasury = 70000
+            treasury = 100000
         }
 		JAP = {
-            treasury = 70000
+            treasury = 100000
+        }
+		GAN = {
+            treasury = 75000
         }
         CLM = {
-            treasury = 45000
+            treasury = 75000
         }
         TUR = {
-            treasury = 45000
+            treasury = 75000
         }
 		PLC = {
-            treasury = 45000
+            treasury = 75000
         }
         MUS = {
-            treasury = 45000
+            treasury = 75000
         }
         HUN = {
-            treasury = 20000
+            treasury = 45000
         }
         VEN = {
-            treasury = 20000
+            treasury = 45000
         }
         NBG = {
-            treasury = 20000
+            treasury = 45000
         }
 		PLA = {
-            treasury = 20000
+            treasury = 45000
         }
 		VIN = {
-            treasury = 20000
+            treasury = 45000
         }
 		LOT = {
-            treasury = 20000
+            treasury = 45000
         }
 		AMA = {
-            treasury = 20000
+            treasury = 45000
         }
 		INC = {
-            treasury = 20000
+            treasury = 45000
         }
 		PRV = {
-            treasury = 20000
+            treasury = 45000
         }
 		BAV = {
-            treasury = 20000
+            treasury = 45000
         }
 		MUG = {
-            treasury = 20000
+            treasury = 45000
         }
         any_country = {
             limit = {
                 exists = yes
                 is_secondary_power = yes
             }
-            treasury = 12500
+            treasury = 20000
         }
         any_country = {
             limit = {
@@ -99,7 +102,7 @@ country_event = {
                 is_secondary_power = no
                 is_greater_power = no
             }
-            treasury = 10000
+            treasury = 15000
         }
     }
 }

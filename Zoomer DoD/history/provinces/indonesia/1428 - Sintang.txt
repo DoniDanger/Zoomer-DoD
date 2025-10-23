@@ -1,6 +1,8 @@
-owner = LFG
-controller = LFG
+owner = GAN
+controller = GAN
 add_core = LFG
+add_core = GAN
 add_core = NUS
 trade_goods = coffee
-life_rating = 15
+life_rating = 20
+

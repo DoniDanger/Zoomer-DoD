@@ -10,18 +10,59 @@ OMA = {
 	influence_value = 25
 }
 
-TAI = {
+LST = {
 	value = 100		#relation
 	level = 3		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 35
+	influence_value = 0
 }
 
-TRA = {
+CAS = {
 	value = 100		#relation
 	level = 3		#3=cordial, 4 = friendly, 5 sphere
-	influence_value = 35
+	influence_value = 0
 }
 
+QUI = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+ARE = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+GUY = {
+	value = 100		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+AZT = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+JLS = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+ELS = {
+	value = 75		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
+
+YUC = {
+	value = 100		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 0
+}
 
 leader = {
 	name = "Francisco Aguirre"

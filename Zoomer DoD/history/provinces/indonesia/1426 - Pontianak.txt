@@ -1,6 +1,7 @@
-owner = LFG
-controller = LFG
+owner = GAN
+controller = GAN
 add_core = LFG
+add_core = GAN
 add_core = NUS
-trade_goods = grain
+trade_goods = tropical_wood
 life_rating = 32

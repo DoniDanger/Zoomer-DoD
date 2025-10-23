@@ -17,7 +17,7 @@
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 1850
+        size = 2250
     }
 
     aristocrats = {
@@ -41,7 +41,7 @@
 	craftsmen = {
         culture = ganguan
         religion = mahayana
-        size = 18750
+        size = 28750
     }
 
     farmers = {
@@ -354,7 +354,7 @@
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 115
+        size = 215
     }
 
     soldiers = {
@@ -432,7 +432,7 @@
 	bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 800
+        size = 1200
     }
 	
     artisans = {
@@ -468,7 +468,7 @@
 	craftsmen = {
         culture = ganguan
         religion = mahayana
-        size = 9200
+        size = 19200
     }
 }
 #Warnambool (8000/2000 POPS)
@@ -688,7 +688,7 @@
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 223
+        size = 423
     }
 
     soldiers = {
@@ -783,6 +783,12 @@
         size = 1074
     }
 
+	craftsmen = {
+        culture = ganguan
+        religion = mahayana
+        size = 8750
+    }
+	
     artisans = {
         culture = ganguan
         religion = mahayana
@@ -810,7 +816,7 @@
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 520
+        size = 820
     }
 
     soldiers = {
@@ -1104,6 +1110,12 @@
         size = 1150
     }
 
+	craftsmen = {
+        culture = ganguan
+        religion = mahayana
+        size = 4750
+    }
+	
     farmers = {
         culture = aborigine
         religion = animist
@@ -1343,7 +1355,7 @@
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 157
+        size = 257
     }
 
     officers = {
