@@ -1,11 +1,10 @@
-name = "War for Japanese Supremacy"
+name = "Phoenix Invasion"
 
 1835.10.2 = {
-	add_attacker = JAP
-  	add_defender = GAN
+	add_attacker = JAP 
+	add_defender = GAN
 	add_defender = TNG
-	add_defender = TKG
-
+	
 	# actor
 	# receiver
 	# casus_belli - cb type
@@ -13,15 +12,14 @@ name = "War for Japanese Supremacy"
 	# state_province_id - target state capital
   
 	war_goal = {
-		casus_belli = acquire_core_state_large
-		state_province_id = 2681
+		casus_belli = annex_core_country
 		actor = JAP
 		receiver = TNG
 	}
-
 	war_goal = {
-		casus_belli = annex_core_country
+		casus_belli = acquire_core_state_large
+		state_province_id = 2681
 		actor = JAP
-		receiver = TKG
+		receiver = GAN
 	}
 }

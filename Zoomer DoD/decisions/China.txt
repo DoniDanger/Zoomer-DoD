@@ -1,4 +1,62 @@
 political_decisions = {
+	crush_gaungdong_traitors = {
+		potential = {
+			tag = TAI
+			NOT = {
+				has_country_flag = gaungdong_crushed_taiping
+			}
+		}
+		allow = {
+			owns = 1504
+		}
+		effect = {
+			GNG = { all_core = { add_core = THIS }}
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = {
+							owns = 1501
+							owns = 1500
+							owns = 1550
+						}
+					}
+				}
+				owner = {
+					badboy = 14
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							owns = 1501
+							owns = 1500
+							owns = 1550
+						}
+						NOT = {
+							AND = {
+								owns = 1501
+								owns = 1500
+								owns = 1550
+							}
+						}
+					}
+				}
+				owner = {
+					badboy = 7
+				}
+			}
+			set_country_flag = gaungdong_crushed_taiping
+		}
+		ai_will_do = { 
+			factor = 1 
+			modifier = { 
+			factor = 0 
+				badboy = 16
+			}
+		}
+	}
+			
 	form_china_chagatai = {
       picture = form_china
   		potential = {

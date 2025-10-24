@@ -1,5 +1,9 @@
 TAI = {
-   value = -20
+   value = -150
+   truce_until = "1840.1.1"
+}
+GNG = {
+   value = -150
    truce_until = "1840.1.1"
 }
 
@@ -7,15 +11,15 @@ leader = {
 	name = "Zheng Jing"
 	type = land
 	date = 1836.1.1
-	personality = undisciplined
-	background = hussar_school
+	personality = defence_1.1
+	background = attack_1.1
 }   
 leader = {
 	name = "Li Zicheng"
 	type = land
 	date = 1836.1.1
-	personality = choleric
-	background = sinner
+	personality = defence_1.1
+	background = attack_1.1
 }
 
 
@@ -23,67 +27,111 @@ leader = {
 	name = "Zheng Keshuang"
 	type = sea
 	date = 1836.1.1
-	personality = shrinking_violet
-	background = aristocrat
+	personality = defence_1.1
+	background = attack_1.1
 }
 
 
 army = {
-	name = "Formosa Garrison"
-	location = 1485
+	name = "Army of the Phoenix Emperor"
+	location = 1482
 	
 	regiment = {
 		name = "1. Infantry"
 		type = irregular
-		home = 1485
+		home = 1482
 	}
 	regiment = {
 		name = "2. Infantry"
 		type = irregular
-		home = 1485
+		home = 1482
 	}
 	regiment = {
 		name = "3. Infantry"
 		type = irregular
-		home = 2406
+		home = 1482
 	}
 	regiment = {
 		name = "1. Hussar"
 		type = cavalry
-		home = 2562
+		home = 1486
 	}
 	regiment = {
 		name = "2. Hussar"
 		type = cavalry
-		home = 2562
+		home = 1486
 	}
 	regiment = {
 		name = "3. Hussar"
 		type = cavalry
-		home = 2562
+		home = 1486
 	}
 	regiment = {
 		name = "1. Cuirassier"
 		type = irregular
-		home = 2681
+		home = 1486
 	}
 	regiment = {
 		name = "2. Cuirassier"
 		type = irregular
-		home = 2681
+		home = 1483
 	}
 	regiment = {
 		name = "4. Infantry"
 		type = irregular
-		home = 1455
+		home = 1483
 	}
 }
 
-
+army = {
+	name = "Formosa Remnant Army"
+	location = 1487
+	
+	regiment = {
+		name = "1. Infantry"
+		type = irregular
+		home = 1487
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = irregular
+		home = 1484
+	}
+	regiment = {
+		name = "3. Infantry"
+		type = irregular
+		home = 1484
+	}
+	regiment = {
+		name = "1. Hussar"
+		type = cavalry
+		home = 1546
+	}
+	regiment = {
+		name = "2. Hussar"
+		type = cavalry
+		home = 1546
+	}
+	regiment = {
+		name = "3. Hussar"
+		type = cavalry
+		home = 1610
+	}
+	regiment = {
+		name = "1. Cuirassier"
+		type = irregular
+		home = 1611
+	}
+	regiment = {
+		name = "2. Cuirassier"
+		type = irregular
+		home = 1608
+	}
+}
 
 navy = {
 	name = "Fleet of the Phoenix Emperor"
-	location = 1485
+	location = 1482
   
   ship = {
 		name= "Shanghai"
@@ -152,11 +200,10 @@ navy = {
 
 }
 
-
-TAI = {
-	value = -150		#relation
+MIG = { 
+	value = -150 		#relation
 }
 
-MIG = { 
+JAP = { 
 	value = -150 		#relation
 }

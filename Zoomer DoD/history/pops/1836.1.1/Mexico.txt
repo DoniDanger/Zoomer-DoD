@@ -33,7 +33,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 325
+		size= 1325
 
 		militancy = 5
 	}
@@ -191,7 +191,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 300
+		size= 1300
 
 		militancy = 7
 	}
@@ -420,7 +420,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 625
+		size= 1425
 
 	}
 
@@ -502,7 +502,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 525
+		size= 1525
 
 	}
 
@@ -571,7 +571,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 625
+		size= 1325
 
 	}
 
@@ -809,7 +809,7 @@
 	bureaucrats = {
 		culture = mexican
 		religion = catholic
-		size = 70
+		size = 370
 	}
 
 	officers = {
@@ -891,7 +891,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 500
+		size= 1400
 		militancy = 9
 	}
 
@@ -1024,7 +1024,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 250
+		size= 1550
 
 	}
 
@@ -1463,50 +1463,47 @@
 		culture = mexican
 		religion = catholic
 		size = 725
-		militancy = 9
 	}
 
 	bureaucrats = {
 		culture = mexican
 		religion = catholic
-		size = 325
-		militancy = 9
+		size = 525
 	}
 
 	officers = {
 		culture = mexican
 		religion = catholic
 		size = 75
-		militancy = 9
 	}
 
 	clergymen = {
 		culture = mexican
 		religion = catholic
 		size = 425
-		militancy = 9
+		
 	}
 
 	artisans = {
 		culture = mexican
 		religion = catholic
 		size = 3850
-		militancy = 9
+		
 	}
 
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 525
+		size= 2525
 
-		militancy = 9
+		
 	}
 
 	farmers = {
 		culture = mexican
 		religion = catholic
 		size = 9175
-		militancy = 9
+		
 	}
 
 	aristocrats = {
@@ -1582,6 +1579,12 @@
 		size = 150
 	}
 
+	bureaucrats = {
+		culture = mexican
+		religion = catholic
+		size = 350
+	}
+	
 	clergymen = {
 		culture = mexican
 		religion = catholic
@@ -2085,7 +2088,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 500
+		size = 2500
 
 		militancy = 5
 	}
@@ -2158,6 +2161,12 @@
 		size = 425
 	}
 
+	bureaucrats = {
+		culture = mexican
+		religion = catholic
+		size = 350
+	}
+	
 	clergymen = {
 		culture = mexican
 		religion = catholic
@@ -2173,7 +2182,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 250
+		size = 1750
 	}
 
 	farmers = {
@@ -2749,7 +2758,7 @@
 	bureaucrats = {
 		culture = mexican
 		religion = catholic
-		size = 450
+		size = 1450
 	}
 
 	officers = {
@@ -2764,6 +2773,12 @@
 		size = 775
 	}
 
+	craftsmen = {
+		culture = mexican
+		religion = catholic
+		size = 27000
+	}
+	
 	artisans = {
 		culture = mexican
 		religion = catholic
@@ -2785,13 +2800,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 3000
-	}
-
-	soldiers = {
-		culture = mexican
-		religion = catholic
-		size = 600
+		size = 8600
 	}
 
 	farmers = {
@@ -2806,6 +2815,12 @@
 		size = 250
 	}
 
+	craftsmen = {
+		culture = nahua
+		religion = catholic
+		size = 19250
+	}
+	
 	artisans = {
 		culture = nahua
 		religion = catholic
@@ -2821,7 +2836,7 @@
 	soldiers = {
 		culture = nahua
 		religion = catholic
-		size = 3000
+		size = 3400
 	}
 
 	farmers = {
@@ -2868,6 +2883,12 @@
 		size = 1050
 	}
 
+	bureaucrats = {
+		culture = mexican
+		religion = catholic
+		size = 150
+	}
+	
 	clergymen = {
 		culture = mexican
 		religion = catholic
@@ -2883,7 +2904,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 275
+		size = 1675
 	}
 
 	farmers = {
@@ -2907,7 +2928,7 @@
 	soldiers = {
 		culture = nahua
 		religion = catholic
-		size = 650
+		size = 1350
 	}
 
 	farmers = {
@@ -2947,7 +2968,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 500
+		size = 1500
 	}
 
 	farmers = {
@@ -2971,7 +2992,7 @@
 	soldiers = {
 		culture = nahua
 		religion = catholic
-		size = 700
+		size = 1200
 	}
 
 	farmers = {

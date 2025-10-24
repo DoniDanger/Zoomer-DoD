@@ -26,6 +26,12 @@
 		size = 325
 	}
 
+	craftsmen = {
+		culture = russian
+		religion = orthodox
+		size = 5200
+	}
+	
 	artisans = {
 		culture = russian
 		religion = orthodox
@@ -2348,6 +2354,12 @@
 		size = 1050
 	}
 
+	craftsmen = {
+		culture = russian
+		religion = orthodox
+		size = 42500
+	}
+	
 	artisans = {
 		culture = russian
 		religion = orthodox
@@ -2655,6 +2667,12 @@
 		size = 1650
 	}
 
+	craftsmen = {
+		culture = russian
+		religion = orthodox
+		size = 14800
+	}
+	
 	artisans = {
 		culture = russian
 		religion = orthodox

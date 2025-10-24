@@ -11,7 +11,7 @@
 	bureaucrats = {
 		culture = baltic_german
 		religion = protestant
-		size = 75 
+		size = 175 
 	}
 
 	officers = {
@@ -91,7 +91,7 @@
 	bureaucrats = {
 		culture = scandinavian
 		religion = protestant
-		size = 100
+		size = 250
 	}
 
 	officers = {
@@ -4650,7 +4650,7 @@
 	bureaucrats = {
 		culture = south_german
 		religion = catholic
-		size = 1050 
+		size = 1550 
 	}
 
 	officers = {
@@ -4662,9 +4662,15 @@
 	craftsmen = {
 		culture = south_german
 		religion = catholic
-		size = 13000
+		size = 23000
 	}
   
+	craftsmen = {
+		culture = south_german
+		religion = protestant
+		size = 4500
+	}
+	
   capitalists = {
 		culture = south_german
 		religion = catholic
@@ -4898,7 +4904,7 @@
 	bureaucrats = {
 		culture = south_german
 		religion = catholic
-		size = 800 
+		size = 1800 
 	}
 
 	officers = {
@@ -4934,10 +4940,16 @@
 	craftsmen = {
 		culture = south_german
 		religion = catholic
-		size = 11000
+		size = 27000
 	} 
   
-  capitalists = {
+	craftsmen = {
+		culture = south_german
+		religion = protestant
+		size = 3400
+	} 
+	
+	capitalists = {
 		culture = south_german
 		religion = catholic
 		size = 105
@@ -5204,6 +5216,12 @@
 		size = 825  
 	}
 
+	craftsmen = {
+		culture = baltic_german
+		religion = protestant
+		size = 16500   
+	}
+	
 	artisans = {
 		culture = baltic_german
 		religion = protestant

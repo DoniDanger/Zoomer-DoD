@@ -2,10 +2,14 @@ owner = BRG
 controller = BRG
 add_core = BRG
 trade_goods = iron
-life_rating = 35
-1861.1.1 = { railroad = 3 }
-1861.1.1 = {
-	owner = LUX
-	controller = LUX
-	remove_core = NET
+life_rating = 38
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
 }

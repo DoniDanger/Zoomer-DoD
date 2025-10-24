@@ -342,6 +342,12 @@
 		size = 850
 	}
 
+	craftsmen = {
+		culture = dutch
+		religion = protestant
+		size = 22000
+	}
+	
 	artisans = {
 		culture = dutch
 		religion = protestant
@@ -524,6 +530,12 @@
 		size = 200
 	}
 
+	craftsmen = {
+		culture = dutch
+		religion = protestant
+		size = 4500
+	}
+	
 	artisans = {
 		culture = dutch
 		religion = protestant

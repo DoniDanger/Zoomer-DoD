@@ -32,6 +32,39 @@ political_decisions = {
 		}
 	}
   
+	crush_the_shogunate = {
+		potential = {
+			tag = JAP
+			NOT = {
+				has_country_flag = crushed_shogunate_japan
+			}
+		}
+		allow = {
+			OR = {
+				NOT = { war_with = GAN }
+				NOT = { war_with = TKG }
+				war = no
+			}
+			owns = 1657
+		}
+		effect = {
+			war = {
+				target = TKG
+				attacker_goal = {
+				casus_belli = annex_core_country
+				}
+			}
+			set_country_flag = crushed_shogunate_japan
+		}
+		ai_will_do = { 
+			factor = 1 
+			modifier = { 
+			factor = 0 
+				war = yes
+			}
+		}
+	}
+	
 	shogunate_japan_collapse = {
 		potential = {
 			tag = JAP
@@ -79,6 +112,14 @@ political_decisions = {
 					remove_core = TKG
 					add_core = JAP
 				}
+			}
+			set_country_flag = shogunate_japan_collapse_flag
+		}
+		ai_will_do = { 
+			factor = 1 
+			modifier = { 
+			factor = 0 
+				badboy = 11
 			}
 		}
 	}

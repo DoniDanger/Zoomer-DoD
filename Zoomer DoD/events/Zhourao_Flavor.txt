@@ -54,3 +54,19 @@ country_event = {   #Japan is informed of the looting
 		}
 		
 }
+
+country_event = {   #Qinqiu is informed of the invasion
+
+	id = 48502
+
+	title = "EVTNAME48502"
+	desc = "EVTDESC48502"
+	picture = "boshin_war"
+	
+	is_triggered_only = yes
+
+	option = {
+		name = "We must repel the invaders."
+		prestige = -1
+	}
+}

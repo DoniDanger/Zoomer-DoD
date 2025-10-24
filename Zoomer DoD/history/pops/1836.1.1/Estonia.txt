@@ -5,7 +5,13 @@
 	aristocrats = {
 		culture = estonian
 		religion = protestant
-		size = 700
+		size = 600
+	}
+	
+	bureaucrats = {
+		culture = estonian
+		religion = protestant
+		size = 400
 	}
 	
     clergymen = {
@@ -38,6 +44,12 @@
 		size = 700
 	}
 
+	bureaucrats = {
+		culture = scandinavian
+		religion = protestant
+		size = 300
+	}
+	
     clergymen = {
         culture = scandinavian
         religion = protestant

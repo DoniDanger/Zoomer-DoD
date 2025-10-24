@@ -361,6 +361,12 @@
 		size = 700
 	}
 
+	craftsmen = {
+		culture = burgundian
+		religion = protestant
+		size = 28000
+	}
+	
 	artisans = {
 		culture = burgundian
 		religion = protestant
@@ -560,6 +566,18 @@
 		size = 775
 	}
 
+	craftsmen = {
+		culture = rheinish
+		religion = protestant
+		size = 9900
+	}
+	
+	craftsmen = {
+		culture = burgundian
+		religion = protestant
+		size = 3200
+	}
+	
 	artisans = {
 		culture = burgundian
 		religion = protestant
@@ -1939,6 +1957,12 @@
 		size = 1450
 	}
 
+	craftsmen = {
+		culture = burgundian
+		religion = protestant
+		size = 22000
+	}
+	
 	artisans = {
 		culture = burgundian
 		religion = protestant
@@ -3336,7 +3360,7 @@
 	bureaucrats = {
 		culture = north_italian
 		religion = catholic
-		size = 200
+		size = 500
 	}
 
 	craftsmen = {

@@ -217,57 +217,57 @@ army = {
 
 army = {
 	name = "Min Contingent"
-	location = 1482
+	location = 1609
 	
 	regiment = {
 		name = "1. Infantry"
 		type = infantry
-		home = 1482
+		home = 1605
 	}
 	regiment = {
 		name = "2. Infantry"
 		type = infantry
-		home = 1482
+		home = 1539
 	}
 	regiment = {
 		name = "3. Infantry"
 		type = infantry
-		home = 1482
+		home = 1537
 	}
 	regiment = {
 		name = "4. Infantry"
 		type = infantry
-		home = 1484
+		home = 1540
 	}
 	regiment = {
 		name = "5. Infantry"
 		type = infantry
-		home = 1484
+		home = 1543
 	}
 	regiment = {
 		name = "1. Cuirassier"
 		type = cuirassier
-		home = 1487
+		home = 1543
 	}
 	regiment = {
 		name = "1. Hussar"
 		type = hussar
-		home = 1486
+		home = 1540
 	}
 	regiment = {
 		name = "1. Artillery"
 		type = artillery
-		home = 1608
+		home = 1571
 	}
 	regiment = {
 		name = "2. Artillery"
 		type = artillery
-		home = 1610
+		home = 1540
 	}
 	regiment = {
 		name = "3. Artillery"
 		type = artillery
-		home = 1611
+		home = 1476
 	}
 }
 

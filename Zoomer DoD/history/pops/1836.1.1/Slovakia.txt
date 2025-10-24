@@ -26,6 +26,12 @@
 		size = 1200 
 	}
 
+	craftsmen = {
+		culture = slovak
+		religion = catholic
+		size = 6200
+	}
+	
 	artisans = {
 		culture = slovak
 		religion = catholic
@@ -69,6 +75,12 @@
 		size = 200  
 	}
 
+	craftsmen = {
+		culture = hungarian
+		religion = catholic
+		size = 1250 
+	}
+	
 	artisans = {
 		culture = hungarian
 		religion = catholic
@@ -94,6 +106,12 @@
 		size = 125
 	}
 
+	craftsmen = {
+		culture = hungarian
+		religion = protestant
+		size = 1100  
+	}
+	
 	artisans = {
 		culture = hungarian
 		religion = protestant

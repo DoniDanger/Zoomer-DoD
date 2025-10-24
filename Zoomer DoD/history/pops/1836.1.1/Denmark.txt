@@ -38,7 +38,7 @@
 	bureaucrats = {
 		culture = scandinavian
 		religion = protestant
-		size = 350
+		size = 950
 	}
 
 	officers = {
@@ -53,6 +53,12 @@
 		size = 375
 	}
 
+	craftsmen = {
+		culture = scandinavian
+		religion = protestant
+		size = 14000
+	}
+	
 	artisans = {
 		culture = scandinavian
 		religion = protestant
@@ -182,7 +188,7 @@
 	bureaucrats = {
 		culture = scandinavian
 		religion = protestant
-		size = 180
+		size = 320
 	}
 
 	clergymen = {
@@ -225,7 +231,7 @@
 	bureaucrats = {
 		culture = baltic_german
 		religion = protestant
-		size = 20
+		size = 80
 	}
 
 	officers = {
@@ -463,6 +469,12 @@
 		size = 50
 	}
 
+	bureaucrats = {
+		culture = scandinavian
+		religion = protestant
+		size = 70
+	}
+	
 	artisans = {
 		culture = scandinavian
 		religion = protestant

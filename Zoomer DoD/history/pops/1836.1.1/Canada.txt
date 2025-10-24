@@ -1867,6 +1867,12 @@
 		religion = animist
 		size = 1750
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1675
+	}
 }
 #Sault Ste Marie (8000/2000 POPS)
 51 = {
@@ -1893,6 +1899,12 @@
 		religion = animist
 		size= 15
 
+	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 675
 	}
 }
 #Sudbury (8000/2000 POPS)
@@ -1925,6 +1937,12 @@
 		culture = iroquois
 		religion = animist
 		size = 16750
+	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 4675
 	}
 }
 #Barrie (4000/1000 POPS)
@@ -1965,6 +1983,11 @@
 		size = 13670
 	}
 
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 3675
+	}
 }
 #Pickle Lake (1200/3000 POPS)
 2594 = {
@@ -2030,7 +2053,7 @@
 	soldiers = {
 		culture = iroquois
 		religion = animist
-		size= 1115
+		size = 3215
 
 	}
 
@@ -2038,6 +2061,12 @@
 		culture = iroquois
 		religion = animist
 		size = 40445
+	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 13675
 	}
 }
 #Windsor (36000/9000 POPS)
@@ -2065,6 +2094,12 @@
 		culture = iroquois
 		religion = animist
 		size = 28350
+	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 9675
 	}
 }
 #Hamilton (68000/17000 POPS)
@@ -2104,6 +2139,12 @@
 		culture = iroquois
 		religion = animist
 		size = 15700
+	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 8675
 	}
 }
 #Kingston (72000/18000 POPS)
@@ -2148,7 +2189,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 1700
+		size = 6700
 	}
 }
 #Ottawa (44000/11000 POPS)
@@ -2199,7 +2240,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 3700
+		size = 9700
 	}
 }
 #Quebec Region : 676000
@@ -2237,6 +2278,11 @@
 		size = 630
 	}
 
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 675
+	}
 }
 #Erik Cove (2400/600 POPS)
 2592 = {
@@ -2302,6 +2348,11 @@
 		size = 180
 	}
 
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 675
+	}
 }
 #Port Harrison (2400/600 POPS)
 2626 = {
@@ -2366,6 +2417,12 @@
 		religion = animist
 		size = 360
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 675
+	}
 }
 #Fort George (1600/400 POPS)
 2593 = {
@@ -2398,6 +2455,12 @@
 		culture = algonquin
 		religion = animist
 		size = 360
+	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 675
 	}
 }
 #ruled by Britain in 1836
@@ -2442,7 +2505,7 @@
 	soldiers = {
 		culture = vinlander
 		religion = protestant
-		size= 1050
+		size= 4550
 
 	}
 
@@ -2613,6 +2676,12 @@
 		size = 500
 	}
 
+	craftsmen = {
+		culture = vinlander
+		religion = protestant
+		size = 13400
+	}
+	
 	artisans = {
 		culture = vinlander
 		religion = protestant
@@ -2628,7 +2697,7 @@
 	soldiers = {
 		culture = vinlander
 		religion = protestant
-		size = 2000
+		size = 8400
 	}
 
 	farmers = {
@@ -2738,7 +2807,7 @@
 	craftsmen = {
 		culture = vinlander
 		religion = protestant
-		size = 2520
+		size = 3520
 	}
   
   capitalists = {
@@ -2768,7 +2837,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 22567
+		size = 32567
 	}
 }
 #Bathurst (64000/16000 POPS)
@@ -2903,7 +2972,7 @@
 	soldiers = {
 		culture = vinlander
 		religion = protestant
-		size= 600
+		size= 2600
 
 	}
 
@@ -3113,7 +3182,7 @@
 	soldiers = {
 		culture = vinlander
 		religion = protestant
-		size= 650
+		size= 4650
 
 	}
 

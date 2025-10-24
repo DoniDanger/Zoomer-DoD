@@ -1,16 +1,24 @@
 political_decisions = {
 	shield_of_levant = {
 		potential = {
-			tag = IRQ
+			OR = {
+				tag = IRQ
+				AND = {
+					tag = PER
+					has_country_flag = persiania
+				}
+			}
 			NOT = {	has_country_flag = levantines }
-			NOT = {	has_country_flag = persiania }
+			NOT = {
+				has_global_flag = repudiated_iraqi_claims_levant
+			}
 		}
 
 		allow = {
-			NOT = { war = yes }
+			war = no
 			NOT = {	UAR = { exists = yes } }
 			NOT = { is_vassal = yes }
-			civilized = yes
+			owns = 923
 			IRQ = {
 				all_core = {
 					OR = {
@@ -19,11 +27,23 @@ political_decisions = {
 					}
 				}
 			}
+			OR = { 
+				AND = {
+					ideological_thought = 1
+					tag = IRQ 
+				}
+				AND = {
+					state_n_government = 1
+					tag = PER 
+					owns = 897
+				}
+			}
+			NOT = { has_global_flag = repudiated_iraqi_claims_levant }
 		}
 		effect = {
 			prestige = 10
 			set_country_flag = levantines
-			remove_accepted_culture = persian
+			#remove_accepted_culture = persian
 			relation = { who = TUR value = -150 }
 			EGY_897 = {
 				add_core = THIS
@@ -49,16 +69,15 @@ political_decisions = {
 		}
 	}
 
-	persiania = {
+	swords_of_iraq = {
 		potential = {
 			tag = IRQ
-			NOT = {	has_country_flag = persiania }
-			NOT = {	has_country_flag = levantines }
+			NOT = {	has_country_flag = swords_of_iraq }
 		}
 
 		allow = {
 			NOT = {	ARY = { exists = yes } }
-			NOT = { war = yes }
+			war = no
 			NOT = { is_vassal = yes }
 			IRQ = {
 				all_core = {
@@ -77,16 +96,68 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 5
-			set_country_flag = persiania
-			primary_culture = persian 
-			add_accepted_culture = mashriqi 
+			add_accepted_culture = persian
+			set_country_flag = swords_of_iraq
 			PER_1127 = {
 				add_core = THIS
 			}
 			PER_1135 = {
 				add_core = THIS
 			}
+			QAJ = { all_core = { add_core = THIS }}
+			ZND = { all_core = { add_core = THIS }}
 		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	persiania = {
+    picture = persia_map
+		potential = {
+			tag = IRQ
+			NOT = { has_country_flag = persiania }
+		}
+		allow = {
+			NOT = { war = yes }
+			prestige = 15
+			owns = 1121
+            owns = 1135
+            owns = 1127
+			OR = { QAJ = { exists = no } tag = QAJ }
+			OR = { ZND = { exists = no } tag = ZND }
+		}
+		effect = {
+            prestige = 20
+            change_tag = PER
+			primary_culture = persian 
+			add_accepted_culture = mashriqi 
+            add_accepted_culture = persian
+            any_country = {
+                limit = {
+                    is_culture_group = iranian
+                    OR = {
+                        in_sphere = THIS
+                        vassal_of = THIS
+                    }
+                }
+            country_event = 11101
+            }
+			random_owned = {
+				limit = {
+					ZND = { exists = no }
+				}
+				ZND = { all_core = { remove_core = ZND } }
+			}
+			random_owned = {
+				limit = {
+					QAJ = { exists = no }
+				}
+				QAJ = { all_core = { remove_core = QAJ } }
+			}
+			set_country_flag = persiania 
+		}
+		
 		ai_will_do = {
 			factor = 1
 		}

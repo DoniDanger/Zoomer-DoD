@@ -2,10 +2,24 @@ owner = SCA
 controller = SCA
 add_core = SCA
 trade_goods = fish
-life_rating = 40
-#state_building = {
-#	level = 1
-#	building = lumber_mill
-#	upgrade = yes
-#}
-1861.1.1 = { railroad = 2 }
+life_rating = 45
+state_building = {
+	level = 1
+	building = lumber_mill
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = canned_food_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = paper_mill
+	upgrade = yes
+}

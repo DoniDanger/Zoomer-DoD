@@ -3378,6 +3378,12 @@
 		size = 800
 	}
 
+	craftsmen = {
+		culture = plantagenian
+		religion = catholic
+		size = 13650
+	}
+	
 	artisans = {
 		culture = plantagenian
 		religion = catholic
@@ -4103,6 +4109,12 @@
 		religion = animist
 		size = 1800
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1800
+	}
 }
 #Granite Falls (8000/2000 POPS)
 156 = {
@@ -4168,6 +4180,12 @@
 		religion = animist
 		size = 1800
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1800
+	}
 }
 #Duluth (8000/2000 POPS)
 158 = {
@@ -4201,6 +4219,12 @@
 		religion = animist
 		size = 1800
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1800
+	}
 }
 #Wisconsin Region (36000)
 #ruled by the USA/parts under de facto under Native Control
@@ -4229,6 +4253,12 @@
 		culture = algonquin
 		religion = animist
 		size = 3700
+	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 3675
 	}
 }
 #Eau Claire (4000/1000 POPS)
@@ -4293,6 +4323,12 @@
 		religion = animist
 		size = 900
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1800
+	}
 }
 #Green Bay (8000/2000 POPS)
 161 = {
@@ -4324,6 +4360,12 @@
 		culture = algonquin
 		religion = animist
 		size = 900
+	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1800
 	}
 }
 #Madison (8000/2000 POPS)
@@ -4376,6 +4418,12 @@
 		religion = animist
 		size = 900
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1800
+	}
 }
 #Illinois Region (452000)
 #ruled by the USA
@@ -4405,6 +4453,12 @@
 		religion = animist
 		size = 925
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1800
+	}
 }
 #Rockford (44000/11000 POPS)
 164 = {
@@ -4432,6 +4486,12 @@
 		religion = animist
 		size = 1250
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1800
+	}
 }
 #Champaign (36000/9000 POPS)
 165 = {
@@ -4458,6 +4518,12 @@
 		culture = iroquois
 		religion = animist
 		size = 1400
+	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 1800
 	}
 }
 #Peoria (100000/25000 POPS)
@@ -4651,7 +4717,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 1675
+		size = 5675
 	}
 
 	clergymen = {
@@ -4777,7 +4843,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 1200
+		size = 1600
 	}
 
 	slaves = {
@@ -4840,7 +4906,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 950
+		size = 4950
 	}
 
 	slaves = {
@@ -4918,7 +4984,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 1040
+		size = 5040
 	}
 }
 #Grand Rapids (POPS)
@@ -4963,7 +5029,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 560
+		size = 4560
 	}
 
 	farmers = {
@@ -5014,7 +5080,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 650
+		size = 4650
 	}
 
 	farmers = {
@@ -5047,7 +5113,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 850
+		size = 3850
 	}
 
 	aristocrats = {
@@ -5125,6 +5191,12 @@
 		religion = animist
 		size = 1800
 	}
+	
+	farmers = {
+		culture = vinlander
+		religion = protestant
+		size = 3850
+	}
 }
 #Ohio Region (1344000)
 #ruled by the USA
@@ -5170,7 +5242,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 1600
+		size = 5600
 	}
 
 	clergymen = {
@@ -5233,7 +5305,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 2600
+		size = 6600
 	}
 
 	clergymen = {
@@ -5296,7 +5368,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 2425
+		size = 6425
 	}
 
 	clergymen = {
@@ -5353,7 +5425,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 2600
+		size = 6600
 	}
 
 	clergymen = {
@@ -5410,7 +5482,7 @@
 	farmers = {
 		culture = vinlander
 		religion = protestant
-		size = 2750
+		size = 6750
 	}
 
 	clergymen = {
@@ -9466,7 +9538,7 @@
 	craftsmen = {
 		culture = septiman
 		religion = protestant
-		size = 550
+		size = 2550
 	}
 
 	artisans = {
@@ -9543,7 +9615,7 @@
 	craftsmen = {
 		culture = septiman
 		religion = protestant
-		size = 750
+		size = 2750
 	}
 
 	artisans = {
@@ -9620,7 +9692,7 @@
 	craftsmen = {
 		culture = septiman
 		religion = protestant
-		size = 16250
+		size = 21250
 	}
 
 	artisans = {
@@ -9853,6 +9925,12 @@
 		size = 450
 	}
 
+	craftsmen = {
+		culture = vinlander
+		religion = protestant
+		size = 6520
+	}
+	
 	artisans = {
 		culture = vinlander
 		religion = protestant
@@ -9862,7 +9940,7 @@
 	soldiers = {
 		culture = vinlander
 		religion = protestant
-		size= 600
+		size= 3600
 
 	}
 

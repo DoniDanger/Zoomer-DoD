@@ -353,6 +353,12 @@
 		size = 4200
 	}
 
+	craftsmen = {
+		culture = ruthenian
+		religion = orthodox
+		size = 4200
+	}
+	
 	soldiers = {
 		culture = ruthenian
 		religion = orthodox

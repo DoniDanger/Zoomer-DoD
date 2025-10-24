@@ -146,6 +146,12 @@
 		size = 400 
 	}
 	
+	craftsmen = {
+		culture = south_german
+		religion = catholic
+		size = 3500
+	}
+	
 	artisans = {
 		culture = south_german
 		religion = catholic
@@ -183,6 +189,12 @@
 		size = 1250
 	}
 
+	craftsmen = {
+		culture = hungarian
+		religion = catholic
+		size = 9000
+	}
+	
 	artisans = {
 		culture = hungarian
 		religion = catholic
@@ -241,6 +253,12 @@
 		size = 225 
 	}
 
+	craftsmen = {
+		culture = hungarian
+		religion = protestant
+		size = 6750
+	}
+	
 	artisans = {
 		culture = hungarian
 		religion = protestant
@@ -552,6 +570,12 @@
 		size = 825
 	}
 
+	craftsmen = {
+		culture = hungarian
+		religion = catholic
+		size = 14500
+	}
+	
 	artisans = {
 		culture = hungarian
 		religion = catholic
@@ -589,6 +613,12 @@
 		size = 450  
 	}
 
+	craftsmen = {
+		culture = hungarian
+		religion = protestant
+		size = 10500  
+	}
+	
 	artisans = {
 		culture = hungarian
 		religion = protestant
@@ -663,6 +693,12 @@
 		size = 250
 	}
 
+	craftsmen = {
+		culture = south_german
+		religion = catholic
+		size = 4500 
+	}
+	
 	artisans = {
 		culture = south_german
 		religion = catholic

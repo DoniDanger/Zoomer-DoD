@@ -557,7 +557,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		name = "The Gran Colombian dream has perished. We must live on as Mexico."
 			#change_tag_no_core_switch = MEX
 			#any_owned = {
 			#	limit = {
@@ -635,6 +634,10 @@ country_event = {
 				secede_province = CAS
 			}
 		set_global_flag = gran_colombian_collapse
+	}
+	
+	option = {
+		name = "The Gran Colombian dream has perished. We must live on as Mexico."
 	}
 }
 
@@ -811,7 +814,6 @@ country_event = {
 	}
 	
 	immediate = {
-		name = "We must drive these dogs back to the sea."
 			any_owned = { 
 				limit = {
 					is_core = LST
@@ -894,6 +896,10 @@ country_event = {
 				secede_province = CAS
 			}
 			SPA = { country_event = 46453 }
+	}
+	
+	option = {
+		name = "We must drive these dogs back to the sea."
 	}
 }
 

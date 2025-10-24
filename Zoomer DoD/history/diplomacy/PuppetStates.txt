@@ -98,13 +98,6 @@ vassal = {
 	end_date = 1937.1.1
 }
 
-vassal = {
-	first = GAN
-	second = TKG
-	start_date = 1836.1.1
-	end_date = 1937.1.1
-}
-
 ### Peace of San Salvador ###
 ## Spanish Subjugation 
 #Gran Colombia

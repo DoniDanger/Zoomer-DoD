@@ -14,6 +14,12 @@
 		size = 1300
 	}
 
+	bureaucrats = {
+		culture = scandinavian
+		religion = protestant
+		size = 280
+	}
+	
 	officers = {
 		culture = baltic_german
 		religion = protestant
@@ -793,6 +799,18 @@
 		size = 75  
 	}
 
+	craftsmen = {
+		culture = baltic_german
+		religion = protestant
+		size = 9500  
+	}
+	
+	craftsmen = {
+		culture = polish
+		religion = catholic
+		size = 5000
+	}
+	
 	artisans = {
 		culture = baltic_german
 		religion = protestant
@@ -1230,6 +1248,18 @@
 		size = 325  
 	}
 
+	craftsmen = {
+		culture = baltic_german
+		religion = protestant
+		size = 2650   
+	}
+	
+	craftsmen = {
+		culture = polish
+		religion = catholic
+		size = 1750 
+	}
+	
 	artisans = {
 		culture = baltic_german
 		religion = protestant
@@ -1806,6 +1836,24 @@
 		size = 925
 	}
 
+	craftsmen = {
+		culture = polish
+		religion = catholic
+		size = 8650
+	}
+	
+	craftsmen = {
+		culture = ruthenian
+		religion = orthodox
+		size = 4650
+	}
+	
+	craftsmen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 2650
+	}
+	
 	artisans = {
 		culture = polish
 		religion = catholic
@@ -2537,9 +2585,16 @@
 	
 	craftsmen = {
 		culture = polish
-		religion = protestant
-		size = 20000
+		religion = catholic
+		size = 21400
 	}
+	
+	craftsmen = {
+		culture = polish
+		religion = protestant
+		size = 7900
+	}
+	
 	soldiers = {
 		culture = polish
 		religion = catholic
@@ -2894,6 +2949,12 @@
 		size = 925
 	}
 
+	craftsmen = {
+		culture = polish
+		religion = catholic
+		size = 4750
+	}
+	
 	artisans = {
 		culture = polish
 		religion = catholic
@@ -2925,6 +2986,12 @@
 		size = 150
 	}
 
+	craftsmen = {
+		culture = ashkenazi
+		religion = jewish
+		size = 2500
+	}
+	
 	artisans = {
 		culture = ashkenazi
 		religion = jewish

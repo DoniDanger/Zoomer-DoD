@@ -7,15 +7,14 @@ political_decisions = {
 		}
 		
 		allow = { 
-			all_core = {
-				owned_by = THIS
-			}
 			state_n_government = 1
+			war = no
+			owns = 2468
 		}
 			
 		effect = { 
 		prestige = 25
-		badboy = 10
+		badboy = 5
 		set_country_flag = austral_destiny
 			AST_1097 = { 
 				add_core = GAN 
@@ -51,21 +50,22 @@ political_decisions = {
 	
 	assimilate_tributaries = { 
 		potential = { 
-		tag = GAN
-		NOT = { has_country_flag = assimilate_tributaries } 
-		NOT = { has_country_flag = aborigine_acc } 
+			tag = GAN
+			NOT = { has_country_flag = assimilate_tributaries } 
+			NOT = { has_country_flag = aborigine_acc } 
 		}
 		
 		allow = { 
-		nationalism_n_imperialism = 1 
-		biologism = 1 
+			nationalism_n_imperialism = 1 
+			biologism = 1 
 		}
 		
 		effect = { 
-		set_country_flag = assimilate_tributaries 
-		any_owned = {
+			set_country_flag = assimilate_tributaries 
+			any_owned = {
 				limit = {
 					is_core = GAN
+					NOT = { is_core = CHI }
 				}
 				add_province_modifier = {
 					name = assimilate_tributaries_modif
@@ -82,26 +82,145 @@ political_decisions = {
 		}
 	}
 	
-	i_love_min = { 
-	picture = zuharra
+	consolidate_tungning_control = { 
+		picture = zuharra
 		potential = { 
-		tag = GAN 
-		NOT = { has_country_flag = austral_destiny }
+			tag = GAN 
+			NOT = { has_country_flag = consolidated_tungning_control }
 		}
 		
 		allow = { 
 			war = no
+			OR = {
+				owns = 1485
+				ideological_thought = 1
+			}
 		}
 		
 		effect = { 
 			add_accepted_culture = min
-			set_country_flag = i_loved_min
-			TNG = { all_core = { add_core = THIS } 
+			CHI_2562 = {
+				add_core = THIS
+			}
+			TNG = { all_core = { add_core = THIS } }
+			set_country_flag = consolidated_tungning_control
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	renew_the_phoenix_invasion = { 
+		picture = zuharra
+		potential = { 
+			tag = GAN 
+			has_country_flag = consolidated_tungning_control
+			NOT = { has_country_flag = renewed_phoenix_invasion }
+		}
+		
+		allow = { 
+			war = no
+			TNG = { all_core = { owned_by = THIS } }
+			state_n_government = 1
+		}
+		
+		effect = { 
+			set_country_flag = renewed_phoenix_invasion
+			MIG = { all_core = { add_core = THIS } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	legacy_of_the_phoenix_emperor = { 
+		picture = zuharra
+		potential = { 
+			tag = GAN 
+			has_country_flag = renewed_phoenix_invasion
+			NOT = { has_country_flag = phoenix_emperor_legacy }
+		}
+		
+		allow = { 
+			war = no
+			TNG = { all_core = { owned_by = THIS } }
+			MIG = { all_core = { owned_by = THIS } }
+			nationalism_n_imperialism = 1
+		}
+		
+		effect = { 
+			add_accepted_culture = nanfaren
+			add_accepted_culture = zhuang
+			set_country_flag = phoenix_emperor_legacy
+			GNG = { all_core = { add_core = THIS } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	claim_protectorship_tungning = { 
+		picture = zuharra
+		potential = { 
+			tag = GAN 
+			TNG = { exists = yes }
+			NOT = { has_country_flag = claimed_protectorship_tungning }
+		}
+		
+		allow = { 
+			war = no
+			owns = 1485
+			TNG = { vassal_of = THIS }
+		}
+		
+		effect = { 
+			inherit = TNG
+			CHI_2562 = {
+				any_pop = {
+					limit = {
+						has_pop_culture = min
+					}
+					literacy = 0.1
+				}
+			}
+			set_country_flag = claimed_protectorship_tungning
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	man_in_the_castle = {
+		picture = high_castle
+		potential = {
+			tag = GAN
+			NOT = { has_country_flag = high_castle }
+			has_country_flag = phoenix_emperor_legacy
+			owns = 1649
+		}
+
+		allow = {
+			war = no
+			nationalism_n_imperialism = 1
+			is_greater_power = yes
+			DNG = { is_greater_power = no }
+		}
+	
+		effect = {
+			prestige = 10
+			set_country_flag = high_castle
+			badboy = 20
+			DNG = { country_event = 48502 } #334302
+			casus_belli = {
+				target = DNG
+				type = conquest
+				months = 24
+			}
+			war = {
+				target = DNG
+				attacker_goal = { casus_belli = conquest }
 			}
 		}
-	ai_will_do = {
-				factor = 1
-			}
 	}
 	
 	poni_subjugation = { 
@@ -109,28 +228,28 @@ political_decisions = {
 		picture = borneo_map 
 		
 		potential = { 
-		OR = {
-			tag = LFG 
-			tag = GAN
-		}
-		NOT = { has_country_flag = poni }
+			OR = {
+				tag = LFG 
+				tag = GAN
+			}
+			NOT = { has_country_flag = poni }
 		}
 		
 		allow = { 
-		state_n_government = 1 
-		all_core = { owned_by = THIS }
-		KLM = { all_core = { owned_by = THIS } }
-		KTI = { all_core = { owned_by = THIS } } 
-		BRU = { all_core = { owned_by = THIS } } 
-		1397 = { owned_by = THIS }
+			state_n_government = 1 
+			LFG = { all_core = { owned_by = THIS } }
+			KLM = { all_core = { owned_by = THIS } }
+			KTI = { all_core = { owned_by = THIS } } 
+			BRU = { all_core = { owned_by = THIS } } 
+			1397 = { owned_by = THIS }
 		}
 		
 		effect = { 
-		KLM = { all_core = { add_core = THIS } }
-		KTI = { all_core = { add_core = THIS } } 
-		BRU = { all_core = { add_core = THIS } } 
-		1397 = { add_core = THIS }
-		set_country_flag = poni 
+			KLM = { all_core = { add_core = THIS } }
+			KTI = { all_core = { add_core = THIS } } 
+			BRU = { all_core = { add_core = THIS } } 
+			1397 = { add_core = THIS }
+			set_country_flag = poni 
 		}
 	}
 	
@@ -139,27 +258,27 @@ political_decisions = {
 		picture = dayaks
 		
 		potential = { 
-		OR = {
-			tag = LFG 
-			tag = GAN
-		}
-		has_country_flag = poni 
-		NOT = { has_country_flag = bornean_acc }
+			OR = {
+				tag = LFG 
+				tag = GAN
+			}
+			has_country_flag = poni 
+			NOT = { has_country_flag = bornean_acc }
 		}
 		
 		allow = { 
-		nationalism_n_imperialism = 1 
-		biologism = 1 
+			nationalism_n_imperialism = 1 
+			biologism = 1 
 		}
 		effect = { 
-		add_accepted_culture = dayak 
-		prestige = 25 
-		any_pop = { 
-		limit = { culture = dayak }
-		militancy = -1 
-		consciousness = 2 
+			add_accepted_culture = dayak 
+			prestige = 25 
+			any_pop = { 
+				limit = { culture = dayak }
+					militancy = -1 
+					consciousness = 2 
 			}
-		set_country_flag = bornean_acc
+			set_country_flag = bornean_acc
 		}
 	}
 }

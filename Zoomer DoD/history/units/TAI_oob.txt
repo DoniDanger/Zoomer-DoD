@@ -292,6 +292,11 @@ TKG = {
 }
 
 TNG = {
-   value = -20
+   value = -150
    truce_until = "1840.1.1"
+}
+
+GAN = {
+	value = -50
+	truce_until = 1838.1.1
 }

@@ -20,6 +20,12 @@
         size = 800
     }
 
+	 craftsmen = {
+        culture = latvian
+        religion = protestant
+        size = 8500
+    }
+	
     artisans = {
         culture = latvian
         religion = protestant
@@ -104,6 +110,12 @@
         size = 500
     }
 
+	bureaucrats = {
+		culture = scandinavian
+		religion = protestant
+		size = 400
+	}
+	
 	clergymen = {
 		culture = scandinavian
 		religion = protestant

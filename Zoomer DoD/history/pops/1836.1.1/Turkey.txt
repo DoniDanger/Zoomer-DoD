@@ -308,6 +308,12 @@
 		size = 2325
 	}
 
+	craftsmen = {
+		culture = turkish
+		religion = sunni
+		size = 28500
+	}
+	
 	artisans = {
 		culture = turkish
 		religion = sunni

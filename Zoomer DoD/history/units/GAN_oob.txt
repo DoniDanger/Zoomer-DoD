@@ -1,3 +1,13 @@
+TAI = {
+	value = -50
+	truce_until = 1838.1.1
+}
+
+GNG = {
+	value = -50
+	truce_until = 1838.1.1
+}
+
 leader = {
 	name = "Yao Ming"
 	type = land
@@ -24,7 +34,7 @@ leader = {
 
 army = {
 	name = "King's Army of Zhourao"
-	location = 1645
+	location = 1484
 	regiment = {
 		name= "1. Royal infantry"
 		type = infantry
@@ -79,7 +89,7 @@ army = {
 
 army = {
 	name = "Zhourao Expeditionary Army"
-	location = 1676
+	location = 1486
 	
 	regiment = {
 		name = "1. Infantry"

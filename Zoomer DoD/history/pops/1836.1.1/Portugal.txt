@@ -10,13 +10,13 @@
   craftsmen = {
 		culture = castilian
 		religion = catholic
-		size = 2500
+		size = 16500
 	}    
     
   craftsmen = {
 		culture = portuguese
 		religion = catholic
-		size = 2500
+		size = 20500
 	}
   
   capitalists = {
@@ -40,7 +40,7 @@
 	bureaucrats = {
 		culture = portuguese
 		religion = catholic
-		size = 240
+		size = 840
 	}
 
 	clergymen = {
@@ -89,7 +89,7 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 560
+		size = 1060
 	}
 
 	clergymen = {
@@ -244,7 +244,7 @@
 	bureaucrats = {
 		culture = portuguese
 		religion = catholic
-		size = 488
+		size = 888
 	}
 
 	clergymen = {
@@ -310,7 +310,7 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 162
+		size = 562
 	}
 
 	clergymen = {
@@ -549,7 +549,7 @@
 	bureaucrats = {
 		culture = portuguese
 		religion = catholic
-		size = 67
+		size = 167
 	}
 
 	clergymen = {
@@ -592,7 +592,7 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 83
+		size = 183
 	}
 
 	clergymen = {
@@ -762,7 +762,7 @@
 	bureaucrats = {
 		culture = portuguese
 		religion = catholic
-		size = 100
+		size = 400
 	}
 
 	clergymen = {
