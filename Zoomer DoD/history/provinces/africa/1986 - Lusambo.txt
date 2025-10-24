@@ -1,5 +1,4 @@
-owner = LBA
-controller = LBA
+
 add_core = LBA
 add_core = KUB
 trade_goods = tropical_wood

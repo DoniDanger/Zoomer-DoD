@@ -1,3 +1,5 @@
+owner = PLA
+controller = PLA
 add_core = OCE
 add_core = PLA
 trade_goods = grain

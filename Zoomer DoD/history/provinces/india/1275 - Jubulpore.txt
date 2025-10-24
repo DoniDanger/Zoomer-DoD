@@ -4,5 +4,5 @@ add_core = BUN
 add_core = HND
 add_core = MUG
 add_core = GWA
-trade_goods = dye
+trade_goods = silk
 life_rating = 32

@@ -3,5 +3,5 @@ controller = BEN
 add_core = HND
 #add_core = MUG
 add_core = BEN
-trade_goods = dye
+trade_goods = silk
 life_rating = 32

@@ -3,5 +3,5 @@ controller = TUR
 add_core = SER
 add_core = YUG
 add_core = TUR
-trade_goods = grain
+trade_goods = iron
 life_rating = 35

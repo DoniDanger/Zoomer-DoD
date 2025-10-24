@@ -3,5 +3,5 @@ controller = TNG
 add_core = JAP
 add_core = TNG
 add_core = CHI
-trade_goods = tea
+trade_goods = fish
 life_rating = 35

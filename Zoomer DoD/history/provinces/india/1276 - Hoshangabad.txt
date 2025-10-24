@@ -3,5 +3,5 @@ controller = MUG
 add_core = GWA
 add_core = MUG
 add_core = HND
-trade_goods = dye
+trade_goods = wool
 life_rating = 32

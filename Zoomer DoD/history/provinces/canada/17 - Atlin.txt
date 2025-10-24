@@ -1,3 +1,6 @@
+owner = JAP
+controller = JAP
+add_core = KKN
 add_core = DNG
 trade_goods = timber
 terrain = new_world_montane_tundra

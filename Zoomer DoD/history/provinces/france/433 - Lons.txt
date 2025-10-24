@@ -3,6 +3,6 @@ controller = BRG
 add_core = BRG
 add_core = LRR
 fort = 1 
-trade_goods = grain
+trade_goods = cattle
 life_rating = 34
 
