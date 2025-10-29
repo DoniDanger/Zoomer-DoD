@@ -2722,3 +2722,10 @@ capital_supply = {
     supply_limit = 1000
     icon = 17
 }
+
+hungarian_national_guard = {
+	core_pop_militancy_modifier = -0.02
+	administrative_efficiency_modifier = 0.02
+	mobilisation_size = 0.1
+	icon = 1
+}

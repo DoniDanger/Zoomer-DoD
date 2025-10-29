@@ -10,6 +10,7 @@ country_event = {
 	clr_global_flag = crown_stefen
 	relation = { who = HUN value = 200 }
 	diplomatic_influence = { who = HUN value = 400 }
+	HUN = { set_country_flag = stefen_crown_hungary }
 	ai_chance = { 
 	factor = 10
 	modifier = { 

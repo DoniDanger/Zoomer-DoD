@@ -322,7 +322,7 @@ political_decisions = {
 		potential = { 
 		tag = ARI 
 		has_country_flag = latin_empire
-		PRV = { exists = yes }
+		PRV = { exists = yes ai = yes }
 		is_greater_power = yes 
 		NOT = { 458 = { owned_by = PRV } }
 		NOT = { 455 = { owned_by = PRV } }

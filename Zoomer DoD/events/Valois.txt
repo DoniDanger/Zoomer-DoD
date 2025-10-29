@@ -221,12 +221,14 @@ country_event = {
 		any_country = {
 			limit = {
 				has_country_flag = alliance_valois
+				exists = yes
 			}
 			country_event = 110609
 		}
 		any_country = {
 			limit = {
 				has_country_flag = alliance_valois_p
+				exists = yes
 			}
 			country_event = 110610
 		}

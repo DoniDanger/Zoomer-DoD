@@ -1,4 +1,48 @@
 political_decisions = {
+	secure_valois_italy = {
+	picture = valois_italy
+		potential = {
+			NOT = { has_country_flag = secured_valois_italy }
+			NOT = { exists = ITA }
+			NOT = { exists = ARI }
+			tag = PRV
+		}	
+		allow = {
+			OR = {
+				NOT = { part_of_sphere = yes }
+				NOT = { in_sphere = ARA }
+			}
+			FRR = {
+				OR = {
+				NOT = { exists = yes }
+				in_sphere = THIS
+				vassal_of = THIS
+				}
+			}
+			owns = 749
+			owns = 744
+		}
+		
+		effect = {
+			prestige = 15
+			ITA = { all_core = { add_core = THIS }}
+			any_country = {
+				limit = {
+					primary_culture = north_italian
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			set_country_flag = secured_valois_italy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	restore_valois_italy = {
 	picture = valois_italy
 		potential = {
@@ -13,20 +57,15 @@ political_decisions = {
 				NOT = { part_of_sphere = yes }
 				NOT = { in_sphere = ARA }
 			}
-			NOT = { war = yes }
-			744 = {
-				owned_by = THIS	
-				}
-			FRR = {
-				OR = {
-				NOT = { exists = yes }
-				in_sphere = THIS
-				vassal_of = THIS
-				}
-			}
-			749 = {
-				owned_by = THIS	
-				}
+			war = no
+			owns = 720
+			owns = 726
+			owns = 749
+			owns = 742
+			owns = 724
+			owns = 744
+			owns = 746
+			owns = 738
 		}
 		
 		effect = {
@@ -36,11 +75,15 @@ political_decisions = {
 							is_core = THIS
 					}
 					add_core = ITA
+					remove_core = PRV
 			}
 			any_country = {
 				any_owned = {
 						limit = {
-							is_core = THIS
+							AND = {
+								is_core = THIS
+								is_core = ITA
+							}
 					}
 					remove_core = PRV
 				}
@@ -58,6 +101,8 @@ political_decisions = {
 			change_tag = ITA
 			add_accepted_culture = north_italian
 			capital = 749
+			FRA_451 = { add_core = PRV }
+			FRA_467 = { add_core = PRV }
 			set_country_flag = valois_italy
 		}
 		ai_will_do = {
@@ -134,23 +179,28 @@ political_decisions = {
 
 		potential = { 
 			tag = ITA 
-			has_country_flag = valois_italy		
 			NOT = { has_country_flag = occitania_claimed }
 		}
 
 		allow = {
 			owns = 470
-			owns = 465
 			owns = 451
-			owns = 754
-			owns = 757
-			owns = 749
-			owns = 726
-			owns = 720
-			owns = 739
-			owns = 742
-			owns = 724
-			nationalism_n_imperialism = 1
+			OR = {
+				nationalism_n_imperialism = 1
+				AND = {
+					owns = 465
+					owns = 754
+					owns = 757
+					owns = 749
+					owns = 726
+					owns = 720
+					owns = 739
+					owns = 742
+					owns = 724
+					has_country_flag = valois_italy		
+					state_n_government = 1
+				}
+			}
 		}
 
 		effect = { 

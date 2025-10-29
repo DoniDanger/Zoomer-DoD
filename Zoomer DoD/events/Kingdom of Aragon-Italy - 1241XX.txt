@@ -86,6 +86,7 @@ country_event = {
 		}
 	owns = 1725
 	TUN = { civilized = no }
+	TUN = { exists = yes }
 	year = 1860 
 	is_greater_power = yes 
 	war = no 

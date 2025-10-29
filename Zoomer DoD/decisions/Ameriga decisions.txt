@@ -288,7 +288,7 @@ political_decisions = {
 		}
 		
 		effect = { 
-				badboy = 15
+				badboy = 8
 	set_global_flag = Amerigue
 	LOT = {
 			all_core = {
@@ -319,7 +319,7 @@ political_decisions = {
 		}
 		
 		effect = { 
-		badboy = 15
+		badboy = 8
 		AMA = {
 			all_core = {
 					add_core = THIS
@@ -524,7 +524,7 @@ political_decisions = {
 	}
 	
 	effect = { 
-	badboy = 10 
+	badboy = 5 
 	set_country_flag = guyana_claim
 	ENG_1979 = { 
 		add_core = THIS }
@@ -602,7 +602,7 @@ political_decisions = {
 	}
 	}
 	effect = { 
-	badboy = 15 
+	badboy = 7 
 	set_country_flag = granada_claim
 	GRA = { all_core = { add_core = AZL } }
 	PNM = { all_core = { add_core = AZL } }
@@ -1084,7 +1084,7 @@ political_decisions = {
 		
 		effect = { 
 		set_country_flag = NAN_cone 
-		badboy = 12
+		badboy = 7
 		SA_6 = { add_core = THIS add_core = NAN }
 		SA_9 = { add_core = THIS add_core = NAN }
 		NAN_5 = { add_core = THIS }

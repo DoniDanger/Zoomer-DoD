@@ -73,7 +73,7 @@ country_event = {
 				NOT = { is_core = THIS }
 				is_core = MGH
 			}
-			secede_province = MGH
+			change_controller = MGH
 		}
 		ai_chance = {
 			factor = 100

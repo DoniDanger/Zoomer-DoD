@@ -3,11 +3,13 @@ political_decisions = {
 	integrating_irish_sca = {
 		potential = {
 			tag = SCA
+			has_country_flag = irish_control_sca
 			NOT = { has_country_flag = irish_acc }
 		}
 	
 		allow = { 
 			IRE = { all_core = { owned_by = THIS } }
+			biologism = 1 
 			nationalism_n_imperialism = 1 
 		}
 		
@@ -15,6 +17,25 @@ political_decisions = {
 			set_country_flag = irish_acc
 			add_accepted_culture = irish 
 			prestige = 25
+		}
+	
+	}
+	
+	control_irish_sca = {
+		potential = {
+			tag = SCA
+			NOT = { has_country_flag = irish_control_sca }
+		}
+	
+		allow = { 
+			IRE = { any_core = { owned_by = THIS } }
+			nationalism_n_imperialism = 1 
+		}
+		
+		effect = {
+			set_country_flag = irish_control_sca
+			IRE = { all_core = { add_core = THIS } }
+			badboy = 8
 		}
 	
 	}

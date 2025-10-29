@@ -460,12 +460,36 @@ political_decisions = {
 			is_greater_power = yes 
 			owns = 575
 			owns = 570
-			revolution_n_counterrevolution = 1 
+			nationalism_n_imperialism = 1 
+			OR = { 
+				year = 1860
+				biologism = 1		
 			}
+		}
 		
 		effect = { 
 			set_country_flag = BRG_rhein
 			add_accepted_culture = rheinish 
+			prestige = 10		
+		}
+	}
+	
+	integrate_rhenish_duchies = { 
+		potential = { 
+			tag = BRG 
+			NOT = { has_country_flag = integrated_rhenish_duchies }
+			NOT = { GER = { exists = yes } } 
+			}
+		
+		allow = { 
+			is_greater_power = yes 
+			owns = 575
+			owns = 570
+			nationalism_n_imperialism = 1 
+			}
+		
+		effect = { 
+			set_country_flag = integrated_rhenish_duchies
 			any_country = {
 				limit = {	
 					OR = {
@@ -486,7 +510,14 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
-			
+			FRI = { all_core = { add_core = THIS }}
+			MNR = { all_core = { add_core = THIS }}
+			BEG = { all_core = { add_core = THIS }}
+			NAS = { all_core = { add_core = THIS }}
+			FRM = { all_core = { add_core = THIS }}
+			BAD = { all_core = { add_core = THIS }}
+			HES = { all_core = { add_core = THIS }}
+			SWI_605 = { add_core = THIS }
 		}
 	}
 	
@@ -511,6 +542,25 @@ political_decisions = {
 		}
 	}
 	
+	integrate_france_brg = { 
+		picture = form_OCC
+		potential = { 
+			tag = BRG  
+			has_country_flag = brg_occitania_dominated 
+			NOT = { has_country_flag = brg_occitania_integrated }
+		}
+		
+		allow = { 
+			revolution_n_counterrevolution = 1 
+			FRA = { all_core = { owned_by = THIS } }
+		}
+		
+		effect = { 
+			add_accepted_culture = breton
+			set_country_flag = brg_occitania_integrated
+		}
+	}
+	
 	brg_dominate_occitania = { 
 		picture = form_OCC
 		potential = { 
@@ -529,6 +579,26 @@ political_decisions = {
 		OCC = { all_core = { add_core = THIS } }
 		prestige = 10
 		set_country_flag = brg_occitania_dominated
+		}
+	}
+	
+	integrate_occitania_brg = { 
+		picture = form_OCC
+		potential = { 
+			tag = BRG  
+			has_country_flag = brg_occitania_dominated 
+			NOT = { has_country_flag = brg_occitania_integrated }
+		}
+		
+		allow = { 
+			revolution_n_counterrevolution = 1 
+			OCC = { all_core = { owned_by = THIS } }
+		}
+		
+		effect = { 
+			add_accepted_culture = occitan
+			prestige = 10
+			set_country_flag = brg_occitania_integrated
 		}
 	}
 }

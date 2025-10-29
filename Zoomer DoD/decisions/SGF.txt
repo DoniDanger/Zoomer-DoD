@@ -43,17 +43,17 @@ political_decisions = {
 					}
 				}
 			}
-			SWI = {
-				all_core = {
-					owner = {
-						OR = {
-							tag = THIS
-							in_sphere = THIS
-							vassal_of = THIS
-						}
-					}
-				}
-			}
+			#SWI = {
+			#	all_core = {
+			#		owner = {
+			#			OR = {
+			#				tag = THIS
+			#				in_sphere = THIS
+			#				vassal_of = THIS
+			#			}
+			#		}
+			#	}
+			#}
 		}
 		
 		effect = {
@@ -118,8 +118,6 @@ political_decisions = {
 			#Tirol
 			AUS_612 = {
 				add_core = SGF
-			}
-			change_tag = SGF
 		}
 		ai_will_do = {
 			factor = 1
