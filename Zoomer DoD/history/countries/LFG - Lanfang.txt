@@ -4,7 +4,8 @@ religion = mahayana
 government = democracy
 plurality = 25
 nationalvalue = nv_order
-literacy = 0.29
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 
@@ -66,3 +67,5 @@ consciousness = 1
 nonstate_consciousness = 3
 
 oob = "LFG_oob.txt"
+
+decision=literacy_setup_1836

@@ -4,7 +4,8 @@ religion = catholic
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_order
-literacy = 0.6
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -77,3 +78,5 @@ basic_chemistry = 1
 # Starting Consciousness
 consciousness = 4
 nonstate_consciousness = 2
+
+decision=literacy_setup_1836

@@ -6,8 +6,9 @@ religion = mahayana
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.03
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 civilized = yes
 
 
@@ -71,3 +72,5 @@ late_enlightenment_philosophy = 1
 introspectionism = 1
 piston_steam_engine = 1
 mechanical_production = 1
+
+decision=literacy_setup_1836

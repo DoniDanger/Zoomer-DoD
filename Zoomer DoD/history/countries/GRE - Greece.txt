@@ -4,7 +4,8 @@ religion = orthodox
 government = democracy
 plurality = 15
 nationalvalue = nv_order
-literacy = 0.24
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 5
 
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = four_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = quota_immigration
 
 set_country_flag = orthodox_country
@@ -75,8 +77,10 @@ oob = "GRE_oob.txt"
 	
 
 	government = prussian_constitutionalism
-	plurality = 15
-	literacy = 0.27
+	literacy = 0.01
+non_state_culture_literacy = 0.01
+	literacy = 0.01
+non_state_culture_literacy = 0.01.27
 
 # Political reforms
 slavery = no_slavery
@@ -146,3 +150,5 @@ school_reforms = no_schools
 
 #Inventions
 }
+
+decision=literacy_setup_1836

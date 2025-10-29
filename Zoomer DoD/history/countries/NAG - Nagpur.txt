@@ -4,8 +4,9 @@ religion = hindu
 government = feudal_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.04
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = no_slavery
@@ -64,8 +65,9 @@ nonstate_consciousness = 0
 
 oob = "NAG_oob.txt"
 1861.1.1 = {
-	literacy = 0.08
-	non_state_culture_literacy = 0.04
+	literacy = 0.01
+non_state_culture_literacy = 0.01
+	
 
 	foreign_training = yes_foreign_training
 	foreign_weapons = yes_foreign_weapons
@@ -79,3 +81,5 @@ oob = "NAG_oob.txt"
 modern_winemaking = yes
 
 }
+
+decision=literacy_setup_1836

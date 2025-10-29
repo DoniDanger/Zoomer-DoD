@@ -4,7 +4,8 @@ religion = catholic
 government = hms_government
 plurality = 20
 nationalvalue = nv_order
-literacy = 0.55
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 
@@ -71,3 +72,4 @@ guild_based_production = 1
 piston_steam_engine = 1
 mechanized_mining = 1
 basic_chemistry = 1
+decision=literacy_setup_1836

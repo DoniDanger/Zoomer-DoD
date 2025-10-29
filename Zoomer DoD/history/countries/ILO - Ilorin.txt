@@ -4,8 +4,8 @@ religion = sunni
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.003
-non_state_culture_literacy = 0.02
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 # Political reforms
 slavery = yes_slavery
@@ -60,3 +60,4 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "ILO_oob.txt"
+decision=literacy_setup_1836

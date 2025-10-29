@@ -12,8 +12,8 @@ religion = mahayana
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_autocracy
-literacy = 0.04
-non_state_culture_literacy = 0.02
+literacy = 0.01
+non_state_culture_literacy = 0.01
 is_releasable_vassal = no
 
 # Political reforms
@@ -39,7 +39,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = all_voting_pops
+child_labor = child_labor_legal
+citizens_rights = all_voting_pops
 border_policy = closed_borders
 
 set_country_flag = mahayana_country
@@ -91,3 +92,5 @@ military_staff_system = 1
 modern_winemaking = yes
 
 }
+
+decision=literacy_setup_1836

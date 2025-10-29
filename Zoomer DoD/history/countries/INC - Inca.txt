@@ -5,7 +5,8 @@ religion = inti
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_autocracy
-literacy = 0.05
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 # Political reforms
 slavery = yes_slavery
@@ -79,3 +80,4 @@ nonstate_consciousness = 0
 schools = culture_tech_school
 
 oob = "INC_oob.txt"
+decision=literacy_setup_1836

@@ -10,7 +10,8 @@ religion = sunni
 government = democracy
 plurality = 25
 nationalvalue = nv_tradition
-literacy = 0.04
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 # Political reforms
 slavery = no_slavery
@@ -58,3 +59,5 @@ upper_house = {
 	communist = 0
 }
 
+
+decision=literacy_setup_1836

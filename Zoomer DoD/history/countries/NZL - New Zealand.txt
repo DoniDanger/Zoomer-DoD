@@ -4,7 +4,8 @@ religion = protestant
 government = hms_government
 plurality = 20
 nationalvalue = nv_liberty
-literacy = 0.5
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 
@@ -55,3 +56,5 @@ set_country_flag = new_world_nation
 
 #Inventions
 }
+
+decision=literacy_setup_1836

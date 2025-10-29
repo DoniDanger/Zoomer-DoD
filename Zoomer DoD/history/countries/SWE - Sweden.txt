@@ -6,7 +6,8 @@ religion = protestant
 government = hms_government
 plurality = 20
 nationalvalue = nv_order
-literacy = 0.8
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 10
 
@@ -33,7 +34,8 @@ school_reforms = no_schools
 conscription = four_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = protestant_country
@@ -94,8 +96,10 @@ decision = pass_folkskolereformen
 
 1861.1.1 = {
 	oob = "/1861/SWE_oob.txt"
-	plurality = 20
-	literacy = 0.95
+	literacy = 0.01
+non_state_culture_literacy = 0.01
+	literacy = 0.01
+non_state_culture_literacy = 0.01.95
 
 # Political reforms
 slavery = no_slavery
@@ -187,3 +191,5 @@ school_reforms = low_schools
 
 #Inventions
 }
+
+decision=literacy_setup_1836

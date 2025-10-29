@@ -7,8 +7,8 @@ religion = mahayana
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.036
-non_state_culture_literacy = 0.02
+literacy = 0.01
+non_state_culture_literacy = 0.01
 prestige = 5
 civilized = no
 
@@ -66,8 +66,9 @@ nonstate_consciousness = 0
 
 oob = "MCK_oob.txt"
 1861.1.1 = {
-	literacy = 0.07
-	non_state_culture_literacy = 0.04
+	literacy = 0.01
+non_state_culture_literacy = 0.01
+	
 
 	foreign_weapons = yes_foreign_weapons
 	army_schools = yes_army_schools
@@ -82,3 +83,5 @@ oob = "MCK_oob.txt"
 
 }
 
+
+decision=literacy_setup_1836

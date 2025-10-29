@@ -8,6 +8,7 @@ government = democracy
 plurality = 25
 nationalvalue = nv_autocracy
 literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 # is_releasable_vassal = no
 
@@ -50,3 +51,5 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+decision=literacy_setup_1836

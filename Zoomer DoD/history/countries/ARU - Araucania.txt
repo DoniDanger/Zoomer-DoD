@@ -4,7 +4,8 @@ religion = inti
 government = democracy
 plurality = 25
 nationalvalue = nv_enlightenment
-literacy = 0.08
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 set_country_flag = new_world_nation
 
@@ -63,3 +64,4 @@ upper_house = {
 }
 
 oob = "ARU_oob.txt"
+decision=literacy_setup_1836

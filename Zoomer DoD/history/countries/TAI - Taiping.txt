@@ -7,8 +7,8 @@ government = absolute_monarchy
 plurality = 5
 prestige = 10
 nationalvalue = nv_order
-literacy = 0.036
-non_state_culture_literacy = 0.02
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -70,3 +70,4 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "TAI_oob.txt"
+decision=literacy_setup_1836

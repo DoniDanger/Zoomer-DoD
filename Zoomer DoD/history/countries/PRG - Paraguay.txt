@@ -5,8 +5,9 @@ religion = catholic
 government = presidential_dictatorship
 plurality = 5.0
 nationalvalue = nv_autocracy
-literacy = 0.11
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 civilized = yes
 prestige = 2
 
@@ -34,7 +35,8 @@ school_reforms = low_schools
 conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -116,3 +118,5 @@ oob = "PRG_oob.txt"
 
 #Inventions
 }
+
+decision=literacy_setup_1836

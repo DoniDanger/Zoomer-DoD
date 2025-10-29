@@ -4,7 +4,8 @@ religion = protestant
 government = theocracy
 plurality = 25.0
 nationalvalue = nv_order
-literacy = 0.8
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 2
 
@@ -80,3 +81,5 @@ consciousness = 3
 nonstate_consciousness = 1
 
 oob = "MNR_oob.txt"
+
+decision=literacy_setup_1836

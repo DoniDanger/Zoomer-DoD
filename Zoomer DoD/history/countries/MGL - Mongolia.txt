@@ -5,8 +5,9 @@ religion = gelugpa
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.02
-non_state_culture_literacy = 0.01 #Chinese
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 prestige = 3
 
 # Political reforms
@@ -32,7 +33,8 @@ school_reforms = no_schools
 conscription = mandatory_service
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = closed_borders
 
 set_country_flag = gelugpa_country
@@ -63,10 +65,13 @@ consciousness = 2
 nonstate_consciousness = 1
 
 1861.1.1 = {
-	literacy = 0.04
-	non_state_culture_literacy = 0.07 #Chinese
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 
 	#Military Reforms
 	foreign_training = yes_foreign_training
 }
 
+
+decision=literacy_setup_1836

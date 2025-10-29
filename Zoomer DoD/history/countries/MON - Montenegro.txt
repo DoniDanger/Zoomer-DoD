@@ -4,8 +4,9 @@ religion = orthodox
 government = theocracy
 plurality = 25.0
 nationalvalue = nv_autocracy
-literacy = 0.1
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 civilized = yes
 prestige = 1
 
@@ -33,7 +34,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = quota_immigration
 
 set_country_flag = orthodox_country
@@ -78,7 +80,8 @@ oob = "MON_oob.txt"
 1861.1.1 = {
 	oob = "/1861/MON_oob.txt"
 	plurality = 50
-	literacy = 0.17
+	literacy = 0.01
+non_state_culture_literacy = 0.01
 }
 1861.1.1 = {
 # Technologies
@@ -124,3 +127,5 @@ oob = "MON_oob.txt"
 
 #Inventions
 }
+
+decision=literacy_setup_1836

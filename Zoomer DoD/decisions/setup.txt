@@ -135,4 +135,331 @@ political_decisions = {
             }
         }
     }
+    literacy_setup_1836 = {
+        potential = {
+            always = no
+        }
+        allow = {
+        }
+        effect = {
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = north_german
+                        has_pop_culture = south_german
+						has_pop_culture = rheinish
+						has_pop_culture = baltic_german
+						has_pop_culture = scandinavian
+                    }
+                }
+                literacy = 0.79
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = dutch
+                        has_pop_culture = burgundian
+                    }
+                }
+                literacy = 0.74
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = septiman
+						has_pop_culture = vinlander
+						has_pop_culture = plantagenian
+                        has_pop_culture = czech
+						has_pop_culture = finnish
+                    }
+                }
+                literacy = 0.59
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+						has_pop_culture = anglois
+						has_pop_culture = chugoku
+					}
+                }
+                literacy = 0.54
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = scottish
+                        has_pop_culture = north_italian
+                    }
+                }
+                literacy = 0.49
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = english
+                        has_pop_culture = lithuanian
+                        has_pop_culture = japanese
+						has_pop_culture = venetian
+                        has_pop_culture = polish
+                    }
+                }
+                literacy = 0.39
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = french
+                    }
+                }
+                literacy = 0.34
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = anglo_saxon
+                        has_pop_culture = breton
+						has_pop_culture = welsh
+                        has_pop_culture = catalan
+						has_pop_culture = latvian
+						has_pop_culture = estonian
+                    }
+                }
+                literacy = 0.29
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+						has_pop_culture = provencal
+                        has_pop_culture = romanian
+						has_pop_culture = ashkenazi
+                        has_pop_culture = persian
+						has_pop_culture = castilian
+                    }
+                }
+                literacy = 0.24
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = slovak
+                        has_pop_culture = mexican
+                        has_pop_culture = portuguese
+						has_pop_culture = basque
+                        has_pop_culture = south_italian
+						has_pop_culture = slovak
+                    }
+                }
+                literacy = 0.19
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = slovene
+						has_pop_culture = croat
+                        has_pop_culture = romanian
+                        has_pop_culture = georgian
+                        has_pop_culture = turkmen
+						has_pop_culture = ruthenian
+						has_pop_culture = greek
+                    }
+                }
+                literacy = 0.14
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = kirgiz
+                        has_pop_culture = uzbek
+                        has_pop_culture = uighur
+                        has_pop_culture = serb
+                        has_pop_culture = ugrian
+                        is_culture_group = southeast_asian
+                        has_pop_culture = iroquois
+                        has_pop_culture = cherokee
+                        has_pop_culture = tatar
+                        has_pop_culture = armenian
+                        has_pop_culture = hazara
+                        has_pop_culture = russian
+                        has_pop_culture = kazak
+						has_pop_culture = bosniak
+						has_pop_culture = bulgarian
+						has_pop_culture = albanian
+						has_pop_culture = crimean
+						has_pop_culture = korean
+                    }
+                }
+                literacy = 0.09
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+						has_pop_culture = turkish
+						has_pop_culture = sephardic
+						has_pop_culture = syriac
+                        has_pop_culture = tajik
+                    }
+                }
+                literacy = 0.065
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = berber
+                        has_pop_culture = bedouin
+                        has_pop_culture = nilotic
+                        has_pop_culture = maures
+                        is_culture_group = inca
+                        is_culture_group = african_diaspora_cultures
+                        has_pop_culture = misri
+                        has_pop_culture = turkmen
+                        has_pop_culture = maghrebi
+                        has_pop_culture = mashriqi
+                        has_pop_culture = manchu
+                        has_pop_culture = azerbaijani
+                        has_pop_culture = pashtun
+                        has_pop_culture = kurdish
+                    }
+                }
+                literacy = 0.04
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = dagestani
+                        has_pop_culture = chechen
+                        has_pop_culture = siberian
+                        has_pop_culture = yakut
+                        has_pop_culture = tibetan
+                        has_pop_culture = amhara
+                        has_pop_culture = somali
+						has_pop_culture = druze
+						has_pop_culture = assyrian
+						has_pop_culture = astrakhani
+						has_pop_culture = oirat
+						has_pop_culture = circassian
+						has_pop_culture = kalash
+                    }
+                }
+                literacy = 0.03
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        is_culture_group = east_asian
+                        is_culture_group = southern_african
+                        is_culture_group = native_american
+                    }
+                }
+                literacy = 0.025
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = forest_bantu
+                        has_pop_culture = hausa
+                        has_pop_culture = tuareg
+                    }
+                }
+                literacy = 0.005
+            }
+            any_pop = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            is_culture_group = east_asian
+                            is_culture_group = dravidian
+                            is_culture_group = south_asian
+                            has_pop_culture = baluchi
+                            has_pop_culture = forest_bantu
+                            has_pop_culture = hausa
+                        }                                
+                    }
+                    strata = rich
+                }
+                literacy = 0.1
+            }
+            any_pop = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            is_culture_group = east_asian
+                            is_culture_group = dravidian
+                            is_culture_group = south_asian
+                            has_pop_culture = baluchi
+                            has_pop_culture = forest_bantu
+                            has_pop_culture = hausa
+                        }                                
+                    }
+                    strata = middle
+                }
+                literacy = 0.05
+            }
+            any_pop = {
+                limit = {
+                    is_culture_group = east_asian
+                    strata = rich
+                }
+                literacy = 0.04
+            }
+            any_pop = {
+                limit = {
+                    is_culture_group = east_asian
+                    strata = middle
+                }
+                literacy = 0.08
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        is_culture_group = dravidian
+                        is_culture_group = south_asian
+                        has_pop_culture = baluchi
+                    }
+                }
+                literacy = 0.04
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        is_culture_group = dravidian
+                        is_culture_group = south_asian
+                        has_pop_culture = baluchi
+                    }
+                    strata = rich
+                }
+                literacy = 0.05
+            }
+            any_pop = {
+                limit = {
+                    OR = {
+                        is_culture_group = dravidian
+                        is_culture_group = south_asian
+                        has_pop_culture = baluchi
+                    }                        
+                    strata = middle
+                }
+                literacy = 0.02
+            }
+            any_pop = {
+                limit = {
+                    type = slaves
+                }
+                literacy = -0.1
+            }
+            any_pop = {
+                limit = {
+                    is_accepted_culture = no
+                    location = { NOT = { is_core = THIS } }
+                }
+                literacy = -0.05
+            }
+            any_pop = {
+                limit = {
+                    is_accepted_culture = no
+                    location = { is_core = THIS }
+                }
+                literacy = -0.025
+            }
+        }
+    }
 }

@@ -5,7 +5,8 @@ religion = mahayana
 government = hms_government
 plurality = 20
 nationalvalue = nv_order
-literacy = 0.38
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 11
 
@@ -85,3 +86,4 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "GAN_oob.txt"
+decision=literacy_setup_1836

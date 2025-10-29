@@ -4,7 +4,8 @@ religion = catholic
 government = democracy
 plurality = 25
 nationalvalue = nv_liberty
-literacy = 0.1
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 1
 
@@ -72,3 +73,4 @@ consciousness = 2
 nonstate_consciousness = 0
 
 oob = "QUI_oob.txt"
+decision=literacy_setup_1836

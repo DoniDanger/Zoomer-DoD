@@ -5,7 +5,8 @@ religion = protestant
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_order
-literacy = 0.40
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 
@@ -80,3 +81,4 @@ consciousness = 2
 nonstate_consciousness = 0
 
 oob = "NAN_oob.txt"
+decision=literacy_setup_1836

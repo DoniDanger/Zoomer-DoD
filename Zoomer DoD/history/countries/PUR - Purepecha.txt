@@ -4,7 +4,8 @@ religion = catholic
 government = democracy
 plurality = 25
 nationalvalue = nv_order
-literacy = 0.2
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -61,3 +62,4 @@ classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 enlightenment_thought = 1
 piston_steam_engine = 1
+decision=literacy_setup_1836

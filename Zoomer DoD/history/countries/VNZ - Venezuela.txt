@@ -4,8 +4,9 @@ religion = catholic
 government = democracy
 plurality = 25
 nationalvalue = nv_order
-literacy = 0.05
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 civilized = yes
 prestige = 3
 
@@ -32,7 +33,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -78,8 +80,9 @@ oob = "VNZ_oob.txt"
 1861.1.1 = {
 	oob = "/1861/VNZ_oob.txt"
 	plurality = 25
-	literacy = 0.12
-	non_state_culture_literacy = 0.05
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 }
 1861.1.1 = {
 # Technologies
@@ -124,3 +127,5 @@ oob = "VNZ_oob.txt"
 
 #Inventions
 }
+
+decision=literacy_setup_1836

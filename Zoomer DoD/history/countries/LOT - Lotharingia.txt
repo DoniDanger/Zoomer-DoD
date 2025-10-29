@@ -4,7 +4,8 @@ religion = protestant
 government = presidential_dictatorship
 plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.38
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 5
 
@@ -83,3 +84,4 @@ nonstate_consciousness = 1
 schools = army_tech_school
 
 oob = "LOT_oob.txt"
+decision=literacy_setup_1836

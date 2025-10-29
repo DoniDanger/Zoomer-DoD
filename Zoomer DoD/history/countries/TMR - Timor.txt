@@ -5,7 +5,8 @@ religion = catholic
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.03
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 # Political reforms
 slavery = no_slavery
@@ -30,7 +31,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -49,3 +51,5 @@ upper_house = {
 # Inventions
 #bottling_process = yes
 modern_winemaking = yes
+
+decision=literacy_setup_1836

@@ -4,7 +4,8 @@ religion = protestant
 government = democracy
 plurality = 25
 nationalvalue = nv_liberty
-literacy = 0.38
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 5
 
@@ -85,3 +86,4 @@ paternalism = yes
 # Starting Consciousness
 consciousness = 2
 nonstate_consciousness = 1
+decision=literacy_setup_1836

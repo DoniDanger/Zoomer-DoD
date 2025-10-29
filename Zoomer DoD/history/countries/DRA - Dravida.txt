@@ -9,7 +9,8 @@ religion = hindu
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_enlightenment
-literacy = 0.02
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 is_releasable_vassal = no
 
@@ -56,3 +57,4 @@ upper_house = {
 # Inventions
 #bottling_process = yes
 modern_winemaking = yes
+decision=literacy_setup_1836

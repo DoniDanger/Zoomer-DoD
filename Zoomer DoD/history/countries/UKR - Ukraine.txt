@@ -4,7 +4,8 @@ religion = orthodox
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_autocracy
-literacy = 0.15
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = four_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = orthodox_country
@@ -78,3 +80,5 @@ govt_flag = {
 
 #Inventions
 }
+
+decision=literacy_setup_1836

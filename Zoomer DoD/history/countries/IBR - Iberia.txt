@@ -7,7 +7,8 @@ religion = catholic
 government = hms_government
 plurality = 20
 nationalvalue = nv_order
-literacy = 0.13
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -55,3 +56,5 @@ govt_flag = {
 	government = hms_government
 	flag = democracy
 }
+
+decision=literacy_setup_1836

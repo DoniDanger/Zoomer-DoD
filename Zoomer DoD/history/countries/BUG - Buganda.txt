@@ -9,7 +9,8 @@ government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
 literacy = 0.01
-non_state_culture_literacy = 0
+non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = no_slavery
@@ -34,7 +35,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = animist_country
@@ -60,3 +62,5 @@ oob = "BUG_oob.txt"
 1861.1.1 = {
 	oob = "/1861/BUG_oob.txt"
 }
+
+decision=literacy_setup_1836

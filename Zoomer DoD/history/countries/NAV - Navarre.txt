@@ -5,7 +5,8 @@ religion = protestant
 government = prussian_constitutionalism
 plurality = 15
 nationalvalue = nv_order
-literacy = 0.13
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -82,3 +83,4 @@ consciousness = 3
 nonstate_consciousness = 1
 
 oob = "NAV_oob.txt"
+decision=literacy_setup_1836

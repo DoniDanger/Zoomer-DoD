@@ -4,8 +4,9 @@ religion = catholic
 government = presidential_dictatorship
 plurality = 10
 nationalvalue = nv_order
-literacy = 0.17
-non_state_culture_literacy = 0.05
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 civilized = yes
 
 # Political reforms
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -64,3 +66,5 @@ enlightenment_thought = 1
 piston_steam_engine = 1
 
 oob = "ELS_oob.txt"
+
+decision=literacy_setup_1836

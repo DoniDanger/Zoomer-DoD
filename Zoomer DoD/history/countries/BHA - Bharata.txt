@@ -24,7 +24,8 @@ religion = hindu
 government = hms_government
 plurality = 20
 nationalvalue = nv_enlightenment
-literacy = 0.02
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 is_releasable_vassal = no
 set_country_flag = hindu_country
@@ -82,3 +83,4 @@ foreign_training = yes_foreign_training
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
+decision=literacy_setup_1836

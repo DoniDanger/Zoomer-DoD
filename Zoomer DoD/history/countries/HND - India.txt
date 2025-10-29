@@ -18,7 +18,8 @@ religion = hindu
 government = hms_government
 plurality = 20
 nationalvalue = nv_equality
-literacy = 0.02
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 ruling_party =  AAA_conservative_5
 upper_house = {
@@ -56,7 +57,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = hindu_country
@@ -66,3 +68,5 @@ schools = unciv_tech_school
 # Inventions
 #bottling_process = yes
 modern_winemaking = yes
+
+decision=literacy_setup_1836

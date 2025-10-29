@@ -5,8 +5,9 @@ religion = mahayana
 government = prussian_constitutionalism
 plurality = 15
 nationalvalue = nv_liberty
-literacy = 0.08
-non_state_culture_literacy = 0.05
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 prestige = 10
 civilized = yes
 
@@ -71,3 +72,4 @@ nonstate_consciousness = 0
 schools = naval_tech_school
 
 oob = "TNG_oob.txt"
+decision=literacy_setup_1836

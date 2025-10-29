@@ -4,8 +4,9 @@ religion = fetishist
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.04
-non_state_culture_literacy = 0.024
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = yes_slavery
@@ -59,3 +60,4 @@ nonstate_consciousness = 0
 schools = commerce_tech_school
 
 oob = "NRI_oob.txt"
+decision=literacy_setup_1836

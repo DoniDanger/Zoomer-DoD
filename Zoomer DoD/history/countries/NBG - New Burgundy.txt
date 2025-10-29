@@ -4,7 +4,8 @@ religion = protestant
 government = democracy
 plurality = 25
 nationalvalue = nv_liberty
-literacy = 0.60
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 15
 
@@ -89,3 +90,4 @@ nonstate_consciousness = 1
 schools = industrial_tech_school
 
 oob = "NBG_oob.txt"
+decision=literacy_setup_1836

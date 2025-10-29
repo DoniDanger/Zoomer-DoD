@@ -4,7 +4,8 @@ religion = shinto
 government = prussian_constitutionalism
 plurality = 15
 nationalvalue = nv_autocracy
-literacy = 0.43
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 25
 
@@ -79,3 +80,5 @@ oob = "JAP_oob.txt"
 # Inventions
 #bottling_process = yes
 modern_winemaking = yes
+
+decision=literacy_setup_1836

@@ -9,7 +9,8 @@ religion = protestant
 government = democracy
 plurality = 25
 nationalvalue = nv_tradition
-literacy = 0.04
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 # Political reforms
 slavery = no_slavery
@@ -34,7 +35,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = protestant_country
@@ -52,3 +54,5 @@ upper_house = {
 	communist = 0
 }
 
+
+decision=literacy_setup_1836

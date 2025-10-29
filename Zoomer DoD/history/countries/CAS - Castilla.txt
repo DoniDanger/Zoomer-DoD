@@ -4,7 +4,8 @@ religion = catholic
 government = hms_government
 plurality = 20
 nationalvalue = nv_order
-literacy = 0.12
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -64,3 +65,5 @@ enlightenment_thought = 1
 piston_steam_engine = 1
 
 oob = "CAS_oob.txt"
+
+decision=literacy_setup_1836

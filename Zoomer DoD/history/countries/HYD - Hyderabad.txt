@@ -6,8 +6,9 @@ religion = sunni
 government = feudal_monarchy
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.03
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = no_slavery
@@ -64,8 +65,9 @@ nonstate_consciousness = 0
 oob = "HYD_oob.txt"
 1861.1.1 = {
 	oob = "/1861/HYD_oob.txt"
-	literacy = 0.10
-	non_state_culture_literacy = 0.05
+	literacy = 0.01
+non_state_culture_literacy = 0.01
+	
 
 	foreign_training = yes_foreign_training
 	foreign_weapons = yes_foreign_weapons
@@ -79,3 +81,5 @@ oob = "HYD_oob.txt"
 	# Inventions
 
 }
+
+decision=literacy_setup_1836

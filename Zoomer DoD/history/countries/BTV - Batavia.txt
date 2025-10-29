@@ -4,7 +4,8 @@ religion = protestant
 government = presidential_dictatorship
 plurality = 0.0
 nationalvalue = nv_liberty
-literacy = 0.25
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 is_releasable_vassal = no
 
@@ -80,3 +81,4 @@ consciousness = 3
 nonstate_consciousness = 1
 
 oob = "TRN_oob.txt"
+decision=literacy_setup_1836

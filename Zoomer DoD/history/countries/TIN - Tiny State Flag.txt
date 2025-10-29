@@ -3,7 +3,8 @@ primary_culture = polar_bears
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_order
-literacy = 1
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = no
 is_releasable_vassal = no
 
@@ -36,3 +37,5 @@ upper_house = { # inherit
 	socialist = 0
 	communist = 0
 }
+
+decision=literacy_setup_1836

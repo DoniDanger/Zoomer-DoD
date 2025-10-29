@@ -4,8 +4,9 @@ religion = theravada
 government = absolute_monarchy
 plurality = 20
 nationalvalue = nv_tradition
-literacy = 0.02
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = yes_slavery
@@ -30,7 +31,8 @@ school_reforms = no_schools
 conscription = mandatory_service
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = closed_borders
 
 set_country_flag = theravada_country
@@ -62,8 +64,9 @@ modern_winemaking = yes
 oob = "SIA_oob.txt"
 1861.1.1 = {
 	oob = "/1861/SIA_oob.txt"
-	literacy = 0.10
-	non_state_culture_literacy = 0.05
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 	
 	#Economic Reforms
 	land_reform = yes_land_reform
@@ -81,3 +84,5 @@ govt_flag = {
 	government = hms_government
 	flag = theocracy
 }
+
+decision=literacy_setup_1836

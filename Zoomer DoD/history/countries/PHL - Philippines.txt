@@ -5,7 +5,8 @@ religion = catholic
 government = presidential_dictatorship
 plurality = 0.0
 nationalvalue = nv_equality
-literacy = 0.28
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 # Political reforms
 slavery = no_slavery
@@ -30,7 +31,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -91,3 +93,5 @@ nonstate_consciousness = 2
 
 #Inventions
 }
+
+decision=literacy_setup_1836

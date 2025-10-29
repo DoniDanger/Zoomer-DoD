@@ -4,8 +4,9 @@ religion = mahayana
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.05
-non_state_culture_literacy = 0.04
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 prestige = 1
 
 # Political reforms
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = closed_borders
 
 set_country_flag = mahayana_country
@@ -75,3 +77,5 @@ oob = "CHI_oob.txt"
 	set_global_flag = yang
 	decision = clear_out_the_manchu_elite
 }
+
+decision=literacy_setup_1836

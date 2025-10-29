@@ -4,8 +4,9 @@ religion = hindu
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.03
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = no_slavery
@@ -62,3 +63,4 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "MDR_oob.txt"
+decision=literacy_setup_1836

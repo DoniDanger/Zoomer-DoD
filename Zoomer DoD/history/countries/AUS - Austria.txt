@@ -4,7 +4,8 @@ religion = catholic
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_autocracy
-literacy = 0.6
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 15
 
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -95,8 +97,9 @@ oob = "AUS_oob.txt"
 1861.1.1 = {
 	ruling_party = AUS_conservative_3
 	plurality = 5
-	literacy = 0.60
-	non_state_culture_literacy = 0.15
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 
 # Technologies
 	post_napoleonic_thought = 1
@@ -163,3 +166,5 @@ oob = "AUS_oob.txt"
 #Inventions
 
 }
+
+decision=literacy_setup_1836

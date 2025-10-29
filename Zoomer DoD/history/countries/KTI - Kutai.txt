@@ -5,8 +5,9 @@ religion = sunni
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.03
-non_state_culture_literacy = 0
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = no_slavery
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 ruling_party = KTI_conservative
@@ -62,3 +64,5 @@ oob = "KTI_oob.txt"
 	foreign_weapons = yes_foreign_weapons
 	flintlock_rifles = 1
 }
+
+decision=literacy_setup_1836

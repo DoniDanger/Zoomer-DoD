@@ -5,8 +5,9 @@ religion = hindu
 government = prussian_constitutionalism
 plurality = 15
 nationalvalue = nv_tradition
-literacy = 0.035
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = no_slavery
@@ -84,3 +85,5 @@ flintlock_rifles = 1
 modern_winemaking = yes
 
 }
+
+decision=literacy_setup_1836

@@ -6,7 +6,8 @@ religion = catholic
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_might
-literacy = 0.75
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 #GreaterPowers = prestige
@@ -92,3 +93,4 @@ consciousness = 4
 nonstate_consciousness = 2
 
 schools = army_tech_school
+decision=literacy_setup_1836

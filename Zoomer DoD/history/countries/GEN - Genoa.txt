@@ -5,7 +5,8 @@ religion = catholic
 government = merchant_republic
 plurality = 15
 nationalvalue = nv_order
-literacy = 0.38
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 
@@ -83,3 +84,4 @@ nonstate_consciousness = 1
 schools = commerce_tech_school
 
 oob = "GEN_oob.txt"
+decision=literacy_setup_1836

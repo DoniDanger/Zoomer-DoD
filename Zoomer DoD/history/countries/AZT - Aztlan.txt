@@ -5,7 +5,8 @@ religion = catholic
 government = democracy
 plurality = 25
 nationalvalue = nv_order
-literacy = 0.1
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 set_country_flag = new_world_nation
@@ -62,3 +63,4 @@ enlightenment_thought = 1
 piston_steam_engine = 1
 
 oob = "AZT_oob.txt"
+decision=literacy_setup_1836

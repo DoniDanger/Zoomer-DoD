@@ -5,7 +5,8 @@ religion = jewish
 government = democracy
 plurality = 25
 nationalvalue = nv_productivity
-literacy = 0.87
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = four_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = jewish_country
@@ -229,3 +231,5 @@ precision_work = yes
 	advanced_ore_smelting_processes = yes
 	bessemer_steel = yes
 }
+
+decision=literacy_setup_1836

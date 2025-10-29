@@ -4,7 +4,8 @@ religion = sunni
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.029
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 is_releasable_vassal = no
 set_country_flag = sunni_country
@@ -62,3 +63,4 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "PER_oob.txt"
+decision=literacy_setup_1836

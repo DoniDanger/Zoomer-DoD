@@ -5,7 +5,8 @@ religion = mahayana
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.06
+literacy = 0.01
+non_state_culture_literacy = 0.01
 prestige = 1
 
 # Political reforms
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = mahayana_country
@@ -76,3 +78,4 @@ education_reform = yes_education_reform
 flintlock_rifles = 1
 
 }
+decision=literacy_setup_1836

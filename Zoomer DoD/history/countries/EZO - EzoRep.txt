@@ -5,8 +5,9 @@ religion = shinto
 government = democracy
 plurality = 25
 nationalvalue = nv_autocracy
-literacy = 0.6
-non_state_culture_literacy = 0.30
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 civilized = yes
 prestige = 2
 
@@ -33,7 +34,8 @@ school_reforms = no_schools
 conscription = mandatory_service
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = shinto_country
@@ -62,3 +64,5 @@ flintlock_rifles = 1
 
 }
 
+
+decision=literacy_setup_1836

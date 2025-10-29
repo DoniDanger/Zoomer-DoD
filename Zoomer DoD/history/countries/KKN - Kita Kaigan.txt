@@ -5,7 +5,8 @@ religion = mahayana
 government = democracy
 plurality = 25
 nationalvalue = nv_liberty
-literacy = 0.18
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -76,3 +77,4 @@ nonstate_consciousness = 0
 schools = commerce_tech_school
 
 oob = "KKN_oob.txt"
+decision=literacy_setup_1836

@@ -4,7 +4,8 @@ religion = protestant
 government = absolute_monarchy
 plurality = 15
 nationalvalue = nv_productivity
-literacy = 0.70
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 10
 
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = quota_immigration
 
 set_country_flag = protestant_country
@@ -64,8 +66,10 @@ oob = "NET_oob.txt"
 1861.1.1 = {
 government = prussian_constitutionalism
 ruling_party = HOL_liberal
-plurality = 15
-literacy = 0.82
+literacy = 0.01
+non_state_culture_literacy = 0.01
+literacy = 0.01
+non_state_culture_literacy = 0.01.82
 
 # Political reforms
 slavery = yes_slavery
@@ -154,3 +158,5 @@ school_reforms = acceptable_schools
 
 #Inventions
 }
+
+decision=literacy_setup_1836

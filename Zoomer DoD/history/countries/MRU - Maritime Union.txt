@@ -5,7 +5,8 @@ religion = protestant
 government = hms_government
 plurality = 20
 nationalvalue = nv_liberty
-literacy = 0.6
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = protestant_country
@@ -49,3 +51,5 @@ upper_house = {
 
 set_country_flag = new_world_nation
 
+
+decision=literacy_setup_1836

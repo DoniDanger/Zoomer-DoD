@@ -4,8 +4,8 @@ religion = catholic
 government = presidential_dictatorship
 plurality = 25
 nationalvalue = nv_liberty
-literacy = 0.12
-non_state_culture_literacy = 0.02
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 5
 
@@ -32,7 +32,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -83,8 +84,7 @@ religion = catholic
 government = democracy
 plurality = 25
 nationalvalue = nv_order
-literacy = 0.17
-non_state_culture_literacy = 0.02
+
 prestige = 12
 
 # Political reforms
@@ -164,3 +164,5 @@ upper_house = {
 
 #Inventions
 }
+
+decision=literacy_setup_1836

@@ -6,8 +6,9 @@ religion = orthodox
 government = democracy
 plurality = 20
 nationalvalue = nv_autocracy
-literacy = 0.15
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 civilized = yes
 
 is_releasable_vassal = no
@@ -38,7 +39,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = closed_borders
 
 set_country_flag = orthodox_country
@@ -83,8 +85,9 @@ oob = "RUS_oob.txt"
 	decision = russian_vladivostok
 	ruling_party = RUS_reactionary
 	plurality = 20
-	literacy = 0.15
-	non_state_culture_literacy = 0.1
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 
 # Technologies
 	post_napoleonic_thought = 1
@@ -161,3 +164,5 @@ oob = "RUS_oob.txt"
 	school_reforms = no_schools
 	
 }
+
+decision=literacy_setup_1836

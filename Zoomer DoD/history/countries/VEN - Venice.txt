@@ -5,7 +5,8 @@ religion = catholic
 government = merchant_republic
 plurality = 15
 nationalvalue = nv_productivity
-literacy = 0.4
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 18
 
@@ -91,3 +92,5 @@ oob = "VEN_oob.txt"
 
 #Inventions
 }
+
+decision=literacy_setup_1836

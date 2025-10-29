@@ -6,8 +6,9 @@ religion = shiite
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.03
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 is_releasable_vassal = no
 
 # Political reforms
@@ -66,8 +67,9 @@ nonstate_consciousness = 0
 oob = "PER_oob.txt"
 1861.1.1 = {
 	oob = "/1861/PER_oob.txt"
-	literacy = 0.12
-	non_state_culture_literacy = 0.06
+	literacy = 0.01
+non_state_culture_literacy = 0.01
+	
 
 	foreign_training = yes_foreign_training
 	foreign_weapons = yes_foreign_weapons
@@ -82,3 +84,5 @@ oob = "PER_oob.txt"
 	# Inventions
 
 }
+
+decision=literacy_setup_1836

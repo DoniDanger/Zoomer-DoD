@@ -4,7 +4,8 @@ religion = sunni
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_order
-literacy = 0.2
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -30,7 +31,8 @@ school_reforms = no_schools
 conscription = four_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 ruling_party = AAA_conservative_5
@@ -51,3 +53,5 @@ set_country_flag = sunni_country
 
 #Inventions
 }
+
+decision=literacy_setup_1836

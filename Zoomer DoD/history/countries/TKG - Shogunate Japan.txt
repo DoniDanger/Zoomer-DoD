@@ -4,8 +4,9 @@ religion = mahayana
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.40
-non_state_culture_literacy = 0.04
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 prestige = 10
 civilized = yes
 
@@ -81,3 +82,5 @@ consciousness = 0
 nonstate_consciousness = 0
 
 oob = "TKG_oob.txt"
+
+decision=literacy_setup_1836

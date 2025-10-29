@@ -17,6 +17,7 @@ government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_autocracy
 literacy = 0.01
+non_state_culture_literacy = 0.01
 
 # Political reforms
 slavery = yes_slavery
@@ -77,3 +78,5 @@ upper_house = {
 
 #Inventions
 }
+
+decision=literacy_setup_1836

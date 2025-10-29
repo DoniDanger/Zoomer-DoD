@@ -4,8 +4,9 @@ religion = sunni
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_tradition
-literacy = 0.02
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = no_slavery
@@ -30,7 +31,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 ruling_party = KUT_conservative
@@ -60,8 +62,7 @@ nonstate_consciousness = 0
 oob = "KUT_oob.txt"
 1861.1.1 = {
 	oob = "/1861/KUT_oob.txt"
-	literacy = 0.04
-	non_state_culture_literacy = 0.02
+		
 
 	#Military Reforms
 	foreign_weapons = yes_foreign_weapons
@@ -69,3 +70,5 @@ oob = "KUT_oob.txt"
 	#Technologies
 	flintlock_rifles = 1
 }
+
+decision=literacy_setup_1836

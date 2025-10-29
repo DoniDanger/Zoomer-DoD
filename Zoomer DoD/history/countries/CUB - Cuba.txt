@@ -5,7 +5,8 @@ religion = catholic
 government = presidential_dictatorship
 plurality = 0.5
 nationalvalue = nv_order
-literacy = 0.17
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -31,7 +32,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = quota_immigration
 
 set_country_flag = catholic_country
@@ -62,3 +64,4 @@ classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 enlightenment_thought = 1
 piston_steam_engine = 1
+decision=literacy_setup_1836

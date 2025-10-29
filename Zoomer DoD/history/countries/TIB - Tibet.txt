@@ -7,6 +7,7 @@ nationalvalue = nv_tradition
 literacy = 0.01
 non_state_culture_literacy = 0.01
 
+
 # Political reforms
 slavery = no_slavery
 upper_house_composition = appointed
@@ -30,7 +31,8 @@ school_reforms = no_schools
 conscription = no_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = closed_borders
 
 set_country_flag = gelugpa_country
@@ -58,8 +60,9 @@ modern_winemaking = yes
 oob = "TIB_oob.txt"
 1861.1.1 = {
 	oob = "/1861/TIB_oob.txt"
-	literacy = 0.04
-	non_state_culture_literacy = 0.07 #Chinese
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 
 	#Military Reforms
 	foreign_weapons = yes_foreign_weapons
@@ -68,3 +71,5 @@ oob = "TIB_oob.txt"
 	flintlock_rifles = 1
 
 }
+
+decision=literacy_setup_1836

@@ -15,7 +15,8 @@ religion = sunni
 government = hms_government
 plurality = 20
 nationalvalue = nv_enlightenment
-literacy = 0.02
+literacy = 0.01
+non_state_culture_literacy = 0.01
 # Political reforms
 
 slavery = no_slavery
@@ -72,3 +73,4 @@ admin_reform = yes_admin_reform
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
+decision=literacy_setup_1836

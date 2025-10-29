@@ -5,7 +5,8 @@ religion = catholic
 government = prussian_constitutionalism
 plurality = 15
 nationalvalue = nv_liberty
-literacy = 0.24
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 
@@ -85,3 +86,4 @@ nonstate_consciousness = 1
 schools = commerce_tech_school
 
 oob = "ARA_oob.txt"
+decision=literacy_setup_1836

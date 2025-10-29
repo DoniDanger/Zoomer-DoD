@@ -7,6 +7,7 @@ nationalvalue = nv_tradition
 literacy = 0.01
 non_state_culture_literacy = 0.01
 
+
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
@@ -30,7 +31,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = peonage
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 ruling_party = AAA_conservative_4
@@ -59,6 +61,9 @@ nonstate_consciousness = 0
 oob = "NEJ_oob.txt"
 1861.1.1 = {
 	oob = "/1861/NEJ_oob.txt"
-	literacy = 0.11
-	non_state_culture_literacy = 0.04
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 }
+
+decision=literacy_setup_1836

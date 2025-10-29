@@ -4,7 +4,8 @@ religion = protestant
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_might
-literacy = 0.70
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 
@@ -77,3 +78,4 @@ consciousness = 3
 nonstate_consciousness = 1
 
 oob = "BRN_oob.txt"
+decision=literacy_setup_1836

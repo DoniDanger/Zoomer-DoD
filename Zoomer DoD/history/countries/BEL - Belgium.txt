@@ -6,8 +6,9 @@ religion = catholic
 government = hms_government
 plurality = 20
 nationalvalue = nv_liberty
-literacy = 0.45
-non_state_culture_literacy = 0.5 #Germans/Dutch
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 civilized = yes
 prestige = 5
 
@@ -34,7 +35,8 @@ school_reforms = no_schools
 conscription = mandatory_service
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = open_borders
 
 set_country_flag = catholic_country
@@ -91,8 +93,9 @@ oob = "BEL_oob.txt"
 1861.1.1 = {
 	oob = "/1861/BEL_oob.txt"
 	plurality = 20
-	literacy = 0.65
-	non_state_culture_literacy = 0.65
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 }
 1861.1.1 = {
 ruling_party = BEL_liberal
@@ -167,3 +170,5 @@ ruling_party = BEL_liberal
 
 #Inventions
 }
+
+decision=literacy_setup_1836

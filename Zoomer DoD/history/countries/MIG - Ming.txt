@@ -5,8 +5,9 @@ religion = mahayana
 government = presidential_dictatorship
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.06
-non_state_culture_literacy = 0.04
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 
 # Political reforms
 slavery = yes_slavery
@@ -65,3 +66,4 @@ nonstate_consciousness = 0
 schools = culture_tech_school
 
 oob = "MIG_oob.txt"
+decision=literacy_setup_1836

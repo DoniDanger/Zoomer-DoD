@@ -4,7 +4,8 @@ religion = animist
 government = feudal_monarchy
 plurality = 0.05
 nationalvalue = nv_tradition
-literacy = 0.15
+literacy = 0.01
+non_state_culture_literacy = 0.01
 
 set_country_flag = new_world_nation
 set_country_flag = animist_country
@@ -57,3 +58,5 @@ upper_house = {
 	socialist = 0
 	communist = 0
 }
+
+decision=literacy_setup_1836

@@ -6,8 +6,9 @@ religion = catholic
 government = prussian_constitutionalism
 plurality = 15
 nationalvalue = nv_equality
-literacy = 0.6
-non_state_culture_literacy = 0.15
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 civilized = yes
 
 #GreaterPowers = prestige
@@ -102,3 +103,4 @@ upper_house = {
 }
 
 oob = "DUA_oob.txt"
+decision=literacy_setup_1836

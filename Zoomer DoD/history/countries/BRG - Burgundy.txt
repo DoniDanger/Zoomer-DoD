@@ -5,7 +5,8 @@ religion = protestant
 government = hms_government
 plurality = 20
 nationalvalue = nv_order
-literacy = 0.75
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 60
 
@@ -91,3 +92,4 @@ nonstate_consciousness = 1
 schools = industrial_tech_school
 
 oob = "BRG_oob.txt"
+decision=literacy_setup_1836

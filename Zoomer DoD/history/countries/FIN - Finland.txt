@@ -6,8 +6,9 @@ religion = protestant
 government = democracy
 plurality = 25
 nationalvalue = nv_productivity
-literacy = 0.7
-non_state_culture_literacy = 0.04
+literacy = 0.01
+non_state_culture_literacy = 0.01
+
 civilized = yes
 prestige = 5
 
@@ -76,3 +77,5 @@ mechanized_mining = 1
 basic_chemistry = 1
 piston_steam_engine = 1
 
+
+decision=literacy_setup_1836

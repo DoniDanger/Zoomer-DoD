@@ -9,6 +9,7 @@ nationalvalue = nv_tradition
 literacy = 0.01
 non_state_culture_literacy = 0.01
 
+
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
@@ -68,8 +69,9 @@ oob = "EGY_oob.txt"
 1861.1.1 = {
 	oob = "/1861/EGY_oob.txt"
 	prestige = 5
-	literacy = 0.10
-	non_state_culture_literacy = 0.05
+	literacy = 0.01
+non_state_culture_literacy = 0.01
+	
 }
 1861.1.1 = {
 
@@ -89,3 +91,5 @@ army_command_principle = 1
 # Inventions
 
 }
+
+decision=literacy_setup_1836

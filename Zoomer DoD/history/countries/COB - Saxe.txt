@@ -5,7 +5,8 @@ religion = protestant
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_order
-literacy = 0.8
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 5
 
@@ -33,7 +34,8 @@ school_reforms = no_schools
 conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = protestant_country
@@ -86,8 +88,9 @@ oob = "COB_oob.txt"
 1861.1.1 = {
 	oob = "/1861/COB_oob.txt"
 	plurality = 5
-	literacy = 0.90
-	non_state_culture_literacy = 0.45
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 }
 1861.1.1 = {
 # Technologies
@@ -163,3 +166,5 @@ oob = "COB_oob.txt"
 #Inventions
 
 }
+
+decision=literacy_setup_1836

@@ -4,7 +4,8 @@ religion = protestant
 government = hms_government
 plurality = 20
 nationalvalue = nv_equality
-literacy = 0.8
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 5
 
@@ -31,7 +32,8 @@ school_reforms = low_schools
 conscription = one_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = open_borders
 
 set_country_flag = protestant_country
@@ -173,3 +175,4 @@ school_reforms = low_schools
 
 #Inventions
 }
+decision=literacy_setup_1836

@@ -7,6 +7,7 @@ nationalvalue = nv_tradition
 literacy = 0.01
 non_state_culture_literacy = 0.01
 
+
 # Political reforms
 slavery = yes_slavery
 upper_house_composition = appointed
@@ -30,7 +31,8 @@ school_reforms = no_schools
 conscription = one_year_draft
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = culture_voting_only
+child_labor = child_labor_legal
+citizens_rights = culture_voting_only
 border_policy = closed_borders
 
 set_country_flag = gelugpa_country
@@ -61,8 +63,7 @@ oob = "BHU_oob.txt"
 }
 1861.1.1 = {
 
-	literacy = 0.04
-	non_state_culture_literacy = 0.02
+		
 
 	#Military Reforms
 	foreign_weapons = yes_foreign_weapons
@@ -71,3 +72,4 @@ oob = "BHU_oob.txt"
 	flintlock_rifles = 1
 
 }
+decision=literacy_setup_1836

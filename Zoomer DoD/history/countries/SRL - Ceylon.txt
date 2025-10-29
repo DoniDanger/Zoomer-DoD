@@ -5,7 +5,8 @@ religion = theravada
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_progress
-literacy = 0.15
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = no
 
 # Political reforms
@@ -64,3 +65,5 @@ foreign_officers = yes_foreign_officers
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
+
+decision=literacy_setup_1836

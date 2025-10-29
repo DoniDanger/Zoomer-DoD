@@ -5,8 +5,9 @@ religion = sunni
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_autocracy
-literacy = 0.08
+literacy = 0.01
 non_state_culture_literacy = 0.01
+
 civilized = yes
 
 #GreaterPowers = prestige
@@ -35,7 +36,8 @@ school_reforms = no_schools
 conscription = mandatory_service
 debt_law = serfdom
 penal_system = capital_punishment
-child_labor = child_labor_legalcitizens_rights = primary_culture_only
+child_labor = child_labor_legal
+citizens_rights = primary_culture_only
 border_policy = closed_borders
 
 ruling_party = AAA_conservative_1
@@ -84,8 +86,9 @@ oob = "TUR_oob.txt"
 	oob = "/1861/TUR_oob.txt"
 	prestige = 85
 	plurality = 5
-	literacy = 0.25
-	non_state_culture_literacy = 0.15
+	
+	non_state_culture_literacy = 0.01
+non_state_culture_literacy = 0.01
 }
 1861.1.1 = {
 ruling_party = TUR_conservative
@@ -134,3 +137,5 @@ ruling_party = TUR_conservative
 
 #Inventions
 }
+
+decision=literacy_setup_1836

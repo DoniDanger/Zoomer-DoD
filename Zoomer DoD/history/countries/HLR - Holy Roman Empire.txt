@@ -8,7 +8,8 @@ religion = catholic
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_might
-literacy = 0.75
+literacy = 0.01
+non_state_culture_literacy = 0.01
 civilized = yes
 
 # Political reforms
@@ -95,3 +96,4 @@ nonstate_consciousness = 2
 schools = army_tech_school
 
 oob = "BOH_oob.txt"
+decision=literacy_setup_1836
