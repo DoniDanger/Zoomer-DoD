@@ -318,6 +318,7 @@ political_decisions = {
                         has_pop_culture = azerbaijani
                         has_pop_culture = pashtun
                         has_pop_culture = kurdish
+                        is_culture_group = chinese
                     }
                 }
                 literacy = 0.04
@@ -345,7 +346,6 @@ political_decisions = {
             any_pop = {
                 limit = {
                     OR = {
-                        is_culture_group = east_asian
                         is_culture_group = southern_african
                         is_culture_group = native_american
                     }
@@ -366,7 +366,6 @@ political_decisions = {
                 limit = {
                     NOT = {
                         OR = {
-                            is_culture_group = east_asian
                             is_culture_group = dravidian
                             is_culture_group = south_asian
                             has_pop_culture = baluchi
@@ -382,7 +381,6 @@ political_decisions = {
                 limit = {
                     NOT = {
                         OR = {
-                            is_culture_group = east_asian
                             is_culture_group = dravidian
                             is_culture_group = south_asian
                             has_pop_culture = baluchi
@@ -393,20 +391,6 @@ political_decisions = {
                     strata = middle
                 }
                 literacy = 0.05
-            }
-            any_pop = {
-                limit = {
-                    is_culture_group = east_asian
-                    strata = rich
-                }
-                literacy = 0.04
-            }
-            any_pop = {
-                limit = {
-                    is_culture_group = east_asian
-                    strata = middle
-                }
-                literacy = 0.08
             }
             any_pop = {
                 limit = {
@@ -445,20 +429,6 @@ political_decisions = {
                     type = slaves
                 }
                 literacy = -0.1
-            }
-            any_pop = {
-                limit = {
-                    is_accepted_culture = no
-                    location = { NOT = { is_core = THIS } }
-                }
-                literacy = -0.05
-            }
-            any_pop = {
-                limit = {
-                    is_accepted_culture = no
-                    location = { is_core = THIS }
-                }
-                literacy = -0.025
             }
         }
     }
