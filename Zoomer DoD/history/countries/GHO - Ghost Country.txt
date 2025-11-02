@@ -43,7 +43,6 @@ upper_house = { # inherit
 	communist = 0
 }
 
-decision = 1836_states
 decision = 1836_capital_supply
 
 decision=literacy_setup_1836

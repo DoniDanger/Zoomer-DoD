@@ -42,7 +42,7 @@ country_event = {
 	trigger = {
 		tag = JAP
 		war = no         
-		NOT = { has_global_flag = korea_status_resolved }
+		has_global_flag = zhourao_war
 	}
 	
 	mean_time_to_happen = {
@@ -50,7 +50,7 @@ country_event = {
 	}	
 	option = {
 		name = "EVTOPTB334212"
-		set_global_flag = korea_status_resolved
+		clr_global_flag = zhourao_war
 	}
 }
 

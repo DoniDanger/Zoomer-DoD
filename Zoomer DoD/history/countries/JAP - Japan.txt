@@ -82,3 +82,4 @@ oob = "JAP_oob.txt"
 modern_winemaking = yes
 
 decision=literacy_setup_1836
+decision=zhourao_war_setup

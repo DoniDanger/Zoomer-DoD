@@ -1676,6 +1676,10 @@ country_event = {
 	mean_time_to_happen = {
 		months = 36
 		modifier = {
+			factor = 3
+			has_global_flag = zhourao_war
+		}
+		modifier = {
 			factor = 1.25
 			THIS = {
 				relation = {
