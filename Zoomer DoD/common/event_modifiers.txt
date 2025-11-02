@@ -2729,3 +2729,6 @@ hungarian_national_guard = {
 	mobilisation_size = 0.1
 	icon = 1
 }
+
+sizing_cooldown = {
+}

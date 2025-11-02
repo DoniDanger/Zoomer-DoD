@@ -52,6 +52,7 @@ country_event = {   #Japan is informed of the looting
 			rich_strata = { reduce_pop = 0.9 militancy = 3 money = -10 }
 			middle_strata = { reduce_pop = 0.98 militancy = 3 money = -5 }
 		}
+	}
 		
 }
 

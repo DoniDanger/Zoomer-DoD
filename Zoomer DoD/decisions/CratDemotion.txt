@@ -2,6 +2,7 @@ political_decisions = {
 	demote_crats = {
 		potential = {
 			NOT = { has_country_modifier = recently_demoted }
+			ai = no
 		}
 		
 		allow = {

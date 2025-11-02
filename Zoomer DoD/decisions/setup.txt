@@ -107,13 +107,246 @@ political_decisions = {
 	1836_states = {
 		potential = {
 			tag = GHO
-			NOT = { has_country_flag = 1836 }
+			always = no
 		}
 		allow = {
-            tag = GHO
 		}
 		effect = { 
-			country_event = 700700
+            add_country_modifier = {
+                name = sizing_cooldown
+                duration = 365
+            }
+            any_country = { 
+                limit = {
+                    OR = {
+                        war = no
+                        AND = {
+                            war = yes
+                            OR = {
+                                tag = TUR
+                                tag = TRI
+                                tag = TEX
+                                tag = MEX
+                                tag = JAP
+                                tag = GAN
+                                tag = TNG
+                                tag = TKG
+                            }
+                            NOT = { 
+                                year = 1837 
+                            }
+                        }
+                    }
+                    
+                }
+                any_owned = { 
+                    limit = {
+                        state_scope = { 
+                            NOT = { total_pops = 100000 }
+                        }
+                        NOT = { is_core = CHI }
+                    }
+                    add_core = TIN
+                    remove_core = SMA
+                    remove_core = MED 
+                    remove_core = LRG 
+                    remove_core = HUG 
+                }
+            }
+            any_country = { 
+                limit = {
+                    OR = {
+                        war = no
+                        AND = {
+                            war = yes
+                            OR = {
+                                tag = TUR
+                                tag = TRI
+                                tag = TEX
+                                tag = MEX
+                                tag = JAP
+                                tag = GAN
+                                tag = TNG
+                                tag = TKG
+                            }
+                            NOT = { 
+                                year = 1837 
+                            }
+                        }
+                    }
+                    
+                }
+                any_owned = { 
+                    limit = {
+                        OR = {
+                            AND = {
+                                state_scope = { 
+                                    total_pops = 100000
+                                    NOT = { total_pops = 400000 }
+                                }
+                                NOT = { is_core = CHI }
+                            }
+                            AND = {
+                                state_scope = { 
+                                    total_pops = 100000
+                                    NOT = { total_pops = 1000000 }
+                                }
+                                is_core = CHI
+                            }
+                        }
+                    }
+                    add_core = SMA 
+                    remove_core = TIN
+                    remove_core = MED 
+                    remove_core = LRG 
+                    remove_core = HUG 
+                }
+            }
+            any_country = { 
+                limit = {
+                    OR = {
+                        war = no
+                        AND = {
+                            war = yes
+                            OR = {
+                                tag = TUR
+                                tag = TRI
+                                tag = TEX
+                                tag = MEX
+                                tag = JAP
+                                tag = GAN
+                                tag = TNG
+                                tag = TKG
+                            }
+                            NOT = { 
+                                year = 1837 
+                            }
+                        }
+                    }
+                    
+                }
+                any_owned = {  
+                    limit = {
+                        OR = {
+                            AND = {
+                                state_scope = { 
+                                    total_pops = 400000
+                                    NOT = { total_pops = 700000 }
+                                }
+                                NOT = { is_core = CHI }
+                            }
+                            AND = {
+                                state_scope = { 
+                                    total_pops = 1000000
+                                    NOT = { total_pops = 2000000 }
+                                }
+                                is_core = CHI
+                            }
+                        }
+                    }
+                    add_core = MED
+                    remove_core = TIN
+                    remove_core = SMA 
+                    remove_core = LRG 
+                    remove_core = HUG 
+                } 
+            }		
+            any_country = { 
+                limit = {
+                    OR = {
+                        war = no
+                        AND = {
+                            war = yes
+                            OR = {
+                                tag = TUR
+                                tag = TRI
+                                tag = TEX
+                                tag = MEX
+                                tag = JAP
+                                tag = GAN
+                                tag = TNG
+                                tag = TKG
+                            }
+                            NOT = { 
+                                year = 1837 
+                            }
+                        }
+                    }
+                    
+                }
+                any_owned = {  
+                    limit = {
+                        OR = {
+                            AND = {
+                                state_scope = { 
+                                    total_pops = 700000
+                                    NOT = { total_pops = 1000000 }
+                                }
+                                NOT = { is_core = CHI }
+                            }
+                            AND = {
+                                state_scope = { 
+                                    total_pops = 2000000
+                                    NOT = { total_pops = 3000000 }
+                                }
+                                is_core = CHI
+                            }
+                        }
+                    }
+                    add_core = LRG
+                    remove_core = TIN
+                    remove_core = SMA 
+                    remove_core = MED 
+                    remove_core = HUG 
+                } 
+            }
+            any_country = {
+                limit = {
+                    OR = {
+                        war = no
+                        AND = {
+                            war = yes
+                            OR = {
+                                tag = TUR
+                                tag = TRI
+                                tag = TEX
+                                tag = MEX
+                                tag = JAP
+                                tag = GAN
+                                tag = TNG
+                                tag = TKG
+                            }
+                            NOT = { 
+                                year = 1837 
+                            }
+                        }
+                    }
+                    
+                }
+                any_owned = { 
+                    limit = {
+                        OR = {
+                            AND = {
+                                state_scope = { 
+                                    total_pops = 1000000
+                                }
+                                NOT = { is_core = CHI }
+                            }
+                            AND = {
+                                state_scope = { 
+                                    total_pops = 3000000
+                                }
+                                is_core = CHI
+                            }
+                        }
+                    }
+                    add_core = HUG 
+                    remove_core = TIN
+                    remove_core = SMA 
+                    remove_core = MED 
+                    remove_core = LRG 
+                } 
+            }
 			set_country_flag = 1836
 		}
 	}
@@ -217,7 +450,6 @@ political_decisions = {
             any_pop = {
                 limit = {
                     OR = {
-                        has_pop_culture = anglo_saxon
                         has_pop_culture = breton
 						has_pop_culture = welsh
                         has_pop_culture = catalan
@@ -247,7 +479,6 @@ political_decisions = {
                         has_pop_culture = portuguese
 						has_pop_culture = basque
                         has_pop_culture = south_italian
-						has_pop_culture = slovak
                     }
                 }
                 literacy = 0.19
@@ -309,7 +540,7 @@ political_decisions = {
                         has_pop_culture = bedouin
                         has_pop_culture = nilotic
                         has_pop_culture = maures
-                        is_culture_group = inca
+                        is_culture_group = mesoandean
                         is_culture_group = african_diaspora_cultures
                         has_pop_culture = misri
                         has_pop_culture = turkmen
@@ -328,7 +559,6 @@ political_decisions = {
                 limit = {
                     OR = {
                         has_pop_culture = dagestani
-                        has_pop_culture = chechen
                         has_pop_culture = siberian
                         has_pop_culture = yakut
                         has_pop_culture = tibetan
@@ -348,7 +578,8 @@ political_decisions = {
                 limit = {
                     OR = {
                         is_culture_group = southern_african
-                        is_culture_group = native_american
+                        is_culture_group = native_south_american
+                        is_culture_group = native_north_american
                     }
                 }
                 literacy = 0.025
@@ -433,9 +664,9 @@ political_decisions = {
             }
         }
     }
-    decision_name = {
+    zhourao_war_setup = {
         potential = { 
-            tag = jap
+            tag = JAP
         }
     
         allow = {

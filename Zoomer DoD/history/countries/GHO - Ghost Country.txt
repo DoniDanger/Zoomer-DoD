@@ -1,10 +1,6 @@
-capital = 1128
-primary_culture = polar_bears
-
-set_country_flag = world_bank_off
-set_country_flag = ghostland
-
-religion = placeholder
+capital = 3321
+primary_culture = english
+religion = protestant
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_order
@@ -44,5 +40,5 @@ upper_house = { # inherit
 }
 
 decision = 1836_capital_supply
-
 decision=literacy_setup_1836
+decision = 1836_states

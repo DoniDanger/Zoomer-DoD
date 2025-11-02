@@ -1,2 +1,4 @@
 owner = GHO
 controller = GHO
+life_rating = 5
+trade_goods = grain
