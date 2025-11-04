@@ -25,6 +25,7 @@ political_decisions = {
 	}
 	
 	end_gran_colombian_dream = { 
+		picture = restore_order_GC
 		potential = { 
 			tag = SPA
 			NOT = {
@@ -47,13 +48,14 @@ political_decisions = {
 	}
 	
 	reorganize_spanish_colonial_administration = { 
+		picture = restore_order_GC
 		potential = { 
 			tag = SPA
 			NOT = {
-				has_recently_lost_war = yes 
 				has_country_flag = total_colombian_victory 
 				has_global_flag = spanish_evacuation_colonies
 				has_global_flag = treaty_of_andagoya
+				has_global_flag = peaceful_colombian_independence
 			}
 		}
 		
@@ -61,6 +63,7 @@ political_decisions = {
 			has_global_flag = gran_colombian_collapse
 			NOT = { war_with = CLM }
 			CLM = { vassal_of = THIS }
+			NOT = { has_recently_lost_war = yes }
 		}
 			
 		effect = {
@@ -69,6 +72,7 @@ political_decisions = {
 	}
 	
 	violate_san_salvador_treaty = { 
+		picture = restore_order_GC
 		potential = { 
 			tag = SPA
 			NOT = {
@@ -137,16 +141,18 @@ political_decisions = {
 		picture = "Federales"
 		
 		potential = { 
-		tag = CLM 
-		NOT = { has_country_flag = gendarmerie_CLM }
+			tag = CLM 
+			NOT = { has_country_flag = gendarmerie_CLM }
 		}
 		
 		allow = { 
-		state_n_government = 1 
-		NOT = { num_of_revolts = 1 }
-		OR = {
-			average_militancy = 3
-			average_consciousness = 4
+			state_n_government = 1 
+			NOT = { num_of_revolts = 1 }
+			OR = {
+				average_militancy = 3
+				average_consciousness = 4
+				has_global_flag = treaty_of_andagoya
+				has_global_flag = spanish_evacuation_colonies
 			}
 		}
 		
@@ -159,22 +165,30 @@ political_decisions = {
 	sponsor_transcontinental = { 
 		
 		potential = { 
-		OR = { 
-		tag = CLM 
-		tag = LST 
-		tag = ARC
+			OR = { 
+				tag = CLM 
+				tag = LST 
+				tag = ARC
 			}
-		owns = 137 
-		owns = 136
-		owns = 105
-		owns = 104 
-		owns = 100 
-		owns = 90 
-		NOT = { has_global_flag = transcontinental_railroad }
+			OR = {
+				owns = 137 
+				owns = 136
+				owns = 105
+				owns = 104 
+				owns = 100 
+				owns = 90 
+			}
+			NOT = { has_global_flag = transcontinental_railroad }
 		}
 		
 		allow = { 
-		iron_railroad = 1 
+			owns = 137 
+			owns = 136
+			owns = 105
+			owns = 104 
+			owns = 100 
+			owns = 90 
+			iron_railroad = 1 
 		}
 		
 		effect = { 
@@ -249,12 +263,13 @@ political_decisions = {
 	Congress_CLM = { 
 		potential = { 
 			tag = CLM
-	        war= no
 			NOT = { has_country_flag = fired_congress }
 		}
 		
 		allow = { 
-           ideological_thought = 1
+			war = no
+			is_vassal = no
+			ideological_thought = 1
 		}
 		
 		effect = { 
@@ -268,12 +283,13 @@ political_decisions = {
 					NOT = { culture = central_american }
 					}
 			}
-			militancy = 2
+			militancy = -2
       		consciousness = 4
 		}
 		add_accepted_culture = lusitanian
 		add_accepted_culture = central_american
 		add_accepted_culture = granadan
+		country_event = 46431
 		government = democracy
 		political_reform = state_equal_weight
 		political_reform = universal_weighted_voting
@@ -290,5 +306,47 @@ political_decisions = {
 		}
 	}
 	
+	congress_on_the_indians = { 
+		potential = { 
+			tag = CLM
+			NOT = { has_country_flag = clm_indian_congress }
+		}
+		
+		allow = { 
+			war = no
+			is_vassal = no
+			OR = {
+				AND = {
+					ideological_thought = 1
+					has_country_flag = alliance_with_the_natives
+				}
+				nationalism_n_imperialism = 1
+			}
+		}
+		
+		effect = { 
+			set_country_flag = clm_indian_congress
+			any_pop = {
+			limit = {
+				OR = { 
+					NOT = { culture = mexican }
+					NOT = { culture = lusitanian }
+					NOT = { culture = central_american }
+					}
+			}
+				militancy = 2
+				consciousness = 4
+			}
+			add_accepted_culture = nahua
+			add_accepted_culture = tarascan
+			add_accepted_culture = zapotec
+			add_accepted_culture = mayan
+			prestige = 10
+		}
+		
+		ai_will_do =  {
+		factor = 1
+		}
+	}
 	
 }

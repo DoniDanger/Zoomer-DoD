@@ -9,6 +9,38 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
+		name = "EVTOPTA46431"
+		government = democracy			
+		political_reform = state_equal_weight
+		political_reform = universal_weighted_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = first_past_the_post
+		political_reform = gerrymandering
+		prestige = 5
+		primary_culture = mexican
+		add_accepted_culture = lusitanian
+    	add_accepted_culture = central_american
+		add_accepted_culture = granadan
+		add_country_modifier = {
+			name = united_colombian_dream 
+			duration = 1825
+		}
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 0
+				ruling_party_ideology = reactionary
+			}
+			modifier = {
+				factor = 0.5
+				ruling_party_ideology = conservative
+			}
+		}
+	}
+
+	option = {
 		name = "EVTOPTA46430"
 		government = prussian_constitutionalism
     	political_reform = wealth_voting
@@ -22,6 +54,13 @@ country_event = {
 		add_accepted_culture = lusitanian
     	add_accepted_culture = central_american
 		add_accepted_culture = granadan
+		add_country_modifier = {
+			name = united_colombian_dream 
+			duration = 365
+		}
+		ai_chance = {
+			factor = 20
+		}
 	}
 }
 
@@ -37,18 +76,23 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA46431"
-		government = democracy
-    		political_reform = universal_weighted_voting
-    		political_reform = state_equal_weight
-    		political_reform = yes_meeting
-    		political_reform = free_press
-    		political_reform = state_controlled
-    		political_reform = secret_ballots
+		government = democracy			
+		political_reform = state_equal_weight
+		political_reform = universal_weighted_voting
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = non_socialist
+		political_reform = first_past_the_post
+		political_reform = gerrymandering
 		prestige = 5
 		primary_culture = mexican
 		add_accepted_culture = lusitanian
     	add_accepted_culture = central_american
 		add_accepted_culture = granadan
+		add_country_modifier = {
+			name = united_colombian_dream 
+			duration = 3650
+		}
 		ai_chance = {
 			factor = 80
 			modifier = {
@@ -63,18 +107,49 @@ country_event = {
 	}
 
 	option = {
-		name = "EVTOPTB46431"
-		prestige = -5
-		set_country_flag = granadans_refusal
-		any_pop = {
-  			limit = {
-  				NOT = { culture = mexican }
-  			}
-  			militancy = 3
-          		consciousness = 3
-  		}
+		name = "EVTOPTA46430"
+		government = prussian_constitutionalism
+    	political_reform = wealth_voting
+    	political_reform = state_equal_weight
+    	political_reform = yes_meeting
+    	political_reform = free_press
+    	political_reform = state_controlled
+    	political_reform = secret_ballots
+		prestige = 10
+		primary_culture = mexican
+		add_accepted_culture = lusitanian
+    	add_accepted_culture = central_american
+		add_accepted_culture = granadan
+		add_country_modifier = {
+			name = united_colombian_dream 
+			duration = 1825
+		}
 		ai_chance = {
 			factor = 20
+		}
+	}
+	
+	option = {
+		name = "The Republic will be reorganized into the First Colombian Empire"
+		government = absolute_monarchy
+    	political_reform = none_voting
+    	political_reform = appointed
+    	political_reform = yes_meeting
+    	political_reform = state_press
+    	political_reform = state_controlled
+    	political_reform = secret_ballots
+		prestige = 15
+		primary_culture = mexican
+		add_accepted_culture = lusitanian
+    	add_accepted_culture = central_american
+		add_accepted_culture = granadan
+		add_country_modifier = {
+			name = united_colombian_dream 
+			duration = 365
+		}
+		set_country_flag = empiregc
+		ai_chance = {
+			factor = 0
 		}
 	}
 }

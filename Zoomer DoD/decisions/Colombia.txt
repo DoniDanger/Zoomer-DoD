@@ -339,145 +339,43 @@ political_decisions = {
 			}
 		}
 
-		embrace_colombian_unity = {
-		
-			picture = emperor_liberal_clm
-		
-			potential = {
-				tag = CLM
-				has_country_flag = empiregc
-				NOT = { has_global_flag = fall_of_all_the_colombia }
+	embrace_colombian_unity = {
+	
+		picture = emperor_liberal_clm
+	
+		potential = {
+			tag = CLM
+			has_country_flag = empiregc
+			government = absolute_monarchy
+			NOT = { has_global_flag = fall_of_all_the_colombia }
+		}
+		allow = {
+			NOT = { average_militancy = 4 }
+			war = no
+			MEX = {
+				all_core = {
+					owned_by = THIS
+				}
 			}
-			allow = {
-				NOT = { average_militancy = 1 }
-				is_greater_power = yes
-				NOT = { war = yes }
-				CLM = {
-					all_core = {
-						owned_by = THIS
+		}
+		effect = {
+			any_pop = {
+				limit = {
+					OR = {
+						NOT = { culture = mexican }
+						culture = mexican
 					}
 				}
-			}
-			effect = {
-				any_pop = {
-					limit = {
-						OR = {
-							NOT = { culture = mexican }
-							culture = mexican
-						}
-					}
-           				consciousness = 3
-    				}
-				clr_country_flag = empiregc
-				country_event = 46433
-			}
-			ai_will_do = {
-				factor = 1
-			}
+          				consciousness = 3
+    			}
+			clr_country_flag = empiregc
+			country_event = 46430
 		}
-		
-		restore_greater_salvador = { 
-		
-		picture = restore_order_GC
-		
-		potential = { 
-		tag = SPA 
-		war = no
-		has_global_flag = partial_peace 
-		UCA = { exists = yes } 
-		CLM = { NOT = { exists = yes } }
+		ai_will_do = {
+			factor = 1
 		}
+	}
 		
-		allow = { 
-		is_greater_power = yes 
-		war = no 
-		}
-		
-		effect = { 
-		badboy = 5 
-		any_country = {
-			limit = {
-			tag = UCA
-			}
-		country_event = 46484
-			}
-		}
-			
-		ai_will_do = { 
-		factor = 1 
-				}
-		
-		}
-		
-		restore_lusitania = { 
-		picture = restore_order_GC
-		potential = { 
-		tag = SPA 
-		has_global_flag = partial_peace 
-		war = no
-		LST = { exists = yes }
-		CLM = { NOT = { exists = yes } }
-		UCA = { NOT = { exists = yes } }
-		}
-		
-		allow = { 
-		is_greater_power = yes 
-		war = no 
-		}
-		
-		effect = { 
-		any_country = {
-			limit = {
-			tag = LST
-			}
-		country_event = 46484
-			}
-		badboy = 5 
-			}
-		
-		ai_will_do = { 
-		factor = 1 
-			}
-		}
-		
-		restore_mexico = { 
-		picture = restore_order_GC
-		
-		potential = { 
-		tag = SPA 
-		has_global_flag = partial_peace 
-		war = no
-		CLM = { NOT = { exists = yes } }
-		LST = { NOT = { exists = yes } }
-		UCA = { NOT = { exists = yes } }
-		}
-		
-		allow = { 
-		is_greater_power = yes 
-		war = no 
-		}
-		
-		effect = { 
-		badboy = 15 
-		any_country = {
-			limit = {
-			OR = { 
-			tag = MEX
-			tag = JLS
-			tag = ZAP
-			tag = PUR
-			tag = AZT
-				}
-			}
-		country_event = 46484
-			}	
-		}
-		
-		ai_will_do = { 
-			factor = 1 
-			}
-		
-		}
 		
 	marching_apache = {
 		potential = {
@@ -677,7 +575,7 @@ political_decisions = {
 			}
 			nationalism_n_imperialism = 1
 			OR = {
-				rank = 4
+				rank = 8
 				revolution_n_counterrevolution = 1
 			}
 		}
@@ -727,34 +625,45 @@ political_decisions = {
 		picture = universidad_mexico 
 		
 		potential = { 
-		tag = CLM 
-		rank = 16 
-		NOT = { has_country_flag = university_MEX }
+			tag = CLM 
+			NOT = { has_country_flag = university_MEX }
 		}
 		
 		allow = { 
-		nationalism_n_imperialism = 1 
-		biologism = 1 
-		NOT = { religious_policy = moralism }
+			rank = 16 
+			OR = {
+				AND = {
+					has_global_flag = treaty_of_andagoya
+					state_n_government = 1
+				}
+				AND = {
+					has_global_flag = spanish_evacuation_colonies
+					state_n_government = 1
+					NOT = { religious_policy = moralism }
+				}
+				AND = {
+					nationalism_n_imperialism = 1 
+					biologism = 1 
+					NOT = { religious_policy = moralism }
+				}
+			}
 		}
 		
 		effect = { 
-		set_country_flag = university_MEX 
-		any_pop = { 
-		literacy = 0.1
+			set_country_flag = university_MEX 
+			any_pop = { literacy = 0.1 }
+			any_pop = { 
+				limit = { culture = mexican }
+				literacy = 0.15
 			}
-		any_pop = { 
-		limit = { culture = mexican }
-		literacy = 0.05
+			social_reform = public 
+			scaled_militancy = {
+				issue = moralism
+				factor = 3
 			}
-		social_reform = public 
-		scaled_militancy = {
-			issue = moralism
-			factor = 3
-			}
-		scaled_consciousness = {
-			issue = moralism
-			factor = 5
+			scaled_consciousness = {
+				issue = moralism
+				factor = 5
 			}
 		}
 	}

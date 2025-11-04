@@ -11,7 +11,13 @@ form_iberia = {
 		allow = {
 			NOT = { war = yes }
 			prestige = 30
-			state_n_government = 1
+			OR = {
+				state_n_government = 1
+				AND = {
+					has_country_flag = colonial_empire_reestablished
+					revolution_n_counterrevolution
+				}
+			}
 			SPA = {
 				all_core = {
 					owned_by = THIS
@@ -83,90 +89,225 @@ form_iberia = {
 		}	
 	}
 	
-	emperor_of_india = { 
+emperor_of_india = { 
 	
 	picture = "emperor_of_india"
 	
 	potential = { 
-	tag = SPA  
-	OR = { 
-	has_global_flag = spaCLM.Occupation
-	has_global_flag = spaCLM_divided
-	has_global_flag = spaCLM_Vice_royalties
-	has_country_flag = partial_peace_MEX
+		tag = SPA  
+		NOT = {
+			has_country_flag = total_colombian_victory 
+			has_global_flag = spanish_evacuation_colonies
+			has_global_flag = treaty_of_andagoya
+			has_global_flag = peaceful_colombian_independence
 		}
-	NOT = { has_country_flag = emperor_of_india }
+		NOT = { has_country_flag = emperor_of_india }
 	}
 	
 	allow = { 
-	nationalism_n_imperialism = 1 
-	2172 = {
-		OR = { 
-	owned_by = THIS 
-	owner = { vassal_of = SPA }
-			} 
-		} 
-	2254 = {
-		OR = { 
-	owned_by = THIS 
-	owner = { vassal_of = SPA }
-			} 
-		} 
-	2191 = {
-		OR = { 
-	owned_by = THIS 
-	owner = { vassal_of = SPA }
-			} 
-		} 
-	2264 = {
-		OR = { 
-	owned_by = THIS 
-	owner = { vassal_of = SPA }
-			} 
-		} 
-	133 = {
-		OR = { 
-	owned_by = THIS 
-	owner = { vassal_of = SPA }
-			} 
-		} 
-	2279 = {
-		OR = { 
-	owned_by = THIS 
-	owner = { vassal_of = SPA }
-			} 
-		} 
+		has_country_flag = colonial_empire_reestablished
+		nationalism_n_imperialism = 1 
+		MEX = {
+			all_core = { 
+				OR = {
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+					owned_by = THIS
+				}
+			}
+		}
+		QUI = {
+			all_core = { 
+				OR = {
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+					owned_by = THIS
+				}
+			}
+		}
+		GRA = {
+			all_core = { 
+				OR = {
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+					owned_by = THIS
+				}
+			}
+		}
+		UCA = {
+			all_core = { 
+				OR = {
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+					owned_by = THIS
+				}
+			}
+		}
 	}
 	
 	effect = { 
-	prestige = 100 
-	set_country_flag = emperor_of_india 
+		prestige = 50 
+		any_country = {		
+			limit = { 
+				ai = yes
+				vassal_of = SPA 
+					OR = { 
+						tag = ARE
+						tag = GRA
+						tag = LST
+						tag = QUI
+						tag = MEX
+						tag = UCA
+					} 
+				}
+			country_event = 333222
+			annex_to = THIS
+		}
+		MEX = { all_core = { add_core = THIS }}
+		GRA = { all_core = { add_core = THIS }}
+		CLM = { all_core = { add_core = THIS }}
+		set_country_flag = emperor_of_india 
 	}
+}
 	
-	
-	}
-	
-	mancomunidad_de_naciones = { 
+mancomunidad_de_naciones = { 
+	picture = restore_order_GC
 	potential = { 
-	tag = SPA  
-	has_country_flag = spaCLM
-	NOT = { has_country_flag = mancomunidad }
-	government = hms_government
+		tag = SPA  
+		has_country_flag = emperor_of_india
+		NOT = { has_country_flag = mancomunidad }
 	}
 	
 	allow = { 
-	revolution_n_counterrevolution = 1 
+		nationalism_n_imperialism = 1
+		biologism = 1
+		year = 1860
 	}
 	
 	effect = {
-	set_country_flag = mancomunidad	
-	any_country = { 
-	limit = { 
-		vassal_of = SPA 		
+		prestige = 25
+		add_accepted_culture = mexican
+		add_accepted_culture = salvadorian
+		add_accepted_culture = granadan
+		government = hms_government
+		political_reform = state_equal_weight
+		political_reform = universal_weighted_voting
+		political_reform = yes_meeting
+		political_reform = censored_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = non_secret_ballots
+		set_country_flag = mancomunidad	
+	}	
+	
+}
+
+integrate_arequipa_viceroyalty = {
+	picture = restore_order_GC
+	potential = { 
+		tag = SPA  
+		NOT = { has_country_flag = integrated_arequipa_viceroyalty }
+	}
+	
+	allow = { 
+		war = no
+		ARE = {
+			all_core = { 
+				OR = {
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+					owned_by = THIS
+				}
 			}
-		country_event = 333222
+		}
+		nationalism_n_imperialism = 1
+		has_country_flag = emperor_of_india
+	}
+	
+	effect = {
+		prestige = 10
+		any_country = {		
+			limit = { 
+				ai = yes
+				vassal_of = SPA 
+				tag = ARE
+				war = no
+			}
+			country_event = 333222
+			annex_to = THIS
+		}
+		ARE = { all_core = { add_core = THIS }}
+		set_country_flag = integrated_arequipa_viceroyalty	
+	}	
+	
+}
+
+defend_lusitanian_frontier = { 
+	picture = restore_order_GC
+	potential = { 
+		tag = SPA  
+		has_country_flag = emperor_of_india
+		NOT = { has_country_flag = defended_lusitanian_frontier }
+	}
+	
+	allow = { 
+		war = no
+		revolution_n_counterrevolution = 1 
+		LST = {
+			all_core = { 
+				OR = {
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+					owned_by = THIS
+				}
 			}
 		}
 	}
+	
+	effect = {
+		prestige = 10
+		add_accepted_culture = lusitanian
+		LST = { all_core = { add_core = THIS }}
+		set_country_flag = defended_lusitanian_frontier	
+	}	
+	
+}
+
+defend_andean_frontier = { 
+	picture = restore_order_GC
+	potential = { 
+		tag = SPA  
+		has_country_flag = emperor_of_india
+		NOT = { has_country_flag = defended_andean_frontier }
+	}
+	
+	allow = { 
+		war = no
+		revolution_n_counterrevolution = 1 
+		ARE = {
+			all_core = { 
+				OR = {
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+					owned_by = THIS
+				}
+			}
+		}
+		QUI = {
+			all_core = { 
+				OR = {
+					owner = { in_sphere = THIS }
+					owner = { vassal_of = THIS }
+					owned_by = THIS
+				}
+			}
+		}
+	}
+	
+	effect = {
+		prestige = 10
+		add_accepted_culture = andean
+		set_country_flag = defended_andean_frontier	
+	}	
 	
 }

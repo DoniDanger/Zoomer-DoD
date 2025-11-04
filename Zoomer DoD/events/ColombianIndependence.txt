@@ -47,6 +47,7 @@ country_event = {
 			name = war_of_colombian_liberation 
 			duration = 1825
 		}
+		set_country_flag = appeal_hispanic_liberation
 		SPA = { country_event = { id= 46438 months = 6 }}
 	}
 	
@@ -60,6 +61,7 @@ country_event = {
 			name = alliance_with_the_natives 
 			duration = 1825
 		}
+		set_country_flag = alliance_with_the_natives 
 		SPA = { country_event = { id= 46438 months = 6 }}
 	}
 }
@@ -434,7 +436,7 @@ country_event = {
 	
 	option = {
 		name = "Gran Colombia will determine its own fate."
-		set_country_flag = peaceful_colombian_independence
+		set_global_flag = peaceful_colombian_independence
 		prestige = 10
 		add_country_modifier = {
 			name = united_colombian_dream 
