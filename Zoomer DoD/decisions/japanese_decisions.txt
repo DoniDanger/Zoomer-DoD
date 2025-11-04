@@ -221,6 +221,65 @@ political_decisions = {
 		}
 	}
 
+	sphere_puppets = {
+		potential = { 
+			tag = JAP
+			OR = {
+				SHU = {
+					vassal_of = THIS
+					NOT = {
+						in_sphere = THIS
+					}
+				}
+				HUI = {
+					vassal_of = THIS
+					NOT = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+	
+		allow = {
+		}
+	
+		effect = {
+			random_owned = {
+				limit = {
+					owner = {
+						HUI = {
+							vassal_of = THIS
+						}
+					}
+				}
+				owner = {
+					diplomatic_influence = {
+						who = HUI
+						value = 500
+					}
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						SHU = {
+							vassal_of = THIS
+						}
+					}
+				}
+				owner = {
+					diplomatic_influence = {
+						who = SHU
+						value = 500
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	#Miscellaneous garbage
   annex_hawaii = {
 		potential = {

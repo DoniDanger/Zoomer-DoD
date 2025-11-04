@@ -435,6 +435,8 @@ political_decisions = {
                         has_pop_culture = japanese
 						has_pop_culture = venetian
                         has_pop_culture = polish
+                        has_pop_culture = ganguan
+                        has_pop_culture = qingqiuan
                     }
                 }
                 literacy = 0.39
@@ -467,6 +469,7 @@ political_decisions = {
 						has_pop_culture = ashkenazi
                         has_pop_culture = persian
 						has_pop_culture = castilian
+                        has_pop_culture = beornian
                     }
                 }
                 literacy = 0.24
@@ -475,7 +478,6 @@ political_decisions = {
                 limit = {
                     OR = {
                         has_pop_culture = slovak
-                        has_pop_culture = mexican
                         has_pop_culture = portuguese
 						has_pop_culture = basque
                         has_pop_culture = south_italian
@@ -491,7 +493,6 @@ political_decisions = {
                         has_pop_culture = romanian
                         has_pop_culture = georgian
                         has_pop_culture = turkmen
-						has_pop_culture = ruthenian
 						has_pop_culture = greek
                     }
                 }
@@ -518,6 +519,8 @@ political_decisions = {
 						has_pop_culture = albanian
 						has_pop_culture = crimean
 						has_pop_culture = korean
+                        is_culture_group = latin_american
+						has_pop_culture = ruthenian
                     }
                 }
                 literacy = 0.09
