@@ -1,6 +1,7 @@
-owner = INC
-controller = INC
+owner = ARE
+controller = ARE
 add_core = INC
+add_core = CHL
 trade_goods = grain
 terrain = montane_forest
 life_rating = 35

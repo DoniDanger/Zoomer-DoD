@@ -4,7 +4,4 @@ add_core = CLM
 add_core = LST
 add_core = MEX
 trade_goods = cattle
-life_rating = 35
-1861.1.1 = {
-	naval_base = 1
-}
+life_rating = 37

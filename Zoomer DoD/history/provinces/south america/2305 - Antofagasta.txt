@@ -1,6 +1,8 @@
-owner = INC
-controller = INC
+owner = ARE
+controller = ARE
+add_core = ARE
 add_core = INC
+add_core = CHL
 trade_goods = sulphur
 terrain = new_world_desert
-life_rating = 30
+life_rating = 32

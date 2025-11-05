@@ -3,4 +3,4 @@ controller = AMA
 add_core = AMA
 trade_goods = coal
 terrain = savanna
-life_rating = 25
+life_rating = 33

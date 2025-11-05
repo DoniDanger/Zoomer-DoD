@@ -34,6 +34,20 @@ country_event = {
 			}
 			militancy = -4
 		}
+		any_owned = {
+			limit = {
+				is_core = ENL 
+				owned_by = THIS	
+			}
+			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
+		}
+		any_owned = {
+			limit = {
+				is_core = IRE 
+				owned_by = THIS	
+			}
+			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
+		}
 		ai_chance = { 
 		factor = 50
 		}
@@ -52,6 +66,20 @@ country_event = {
 			}
 			militancy = -4
 		}
+		any_owned = {
+			limit = {
+				is_core = FRA 
+				owned_by = THIS	
+			}
+			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
+		}
+		any_owned = {
+			limit = {
+				is_core = OCC 
+				owned_by = THIS	
+			}
+			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
+		}
 		ai_chance = { 
 			factor = 20
 			}
@@ -62,6 +90,34 @@ country_event = {
 		add_country_modifier = { 
 			name = anglois_dilemma
 			duration = 15000
+		}
+		any_owned = {
+			limit = {
+				is_core = FRA 
+				owned_by = THIS	
+			}
+			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
+		}
+		any_owned = {
+			limit = {
+				is_core = OCC 
+				owned_by = THIS	
+			}
+			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
+		}
+		any_owned = {
+			limit = {
+				is_core = ENL 
+				owned_by = THIS	
+			}
+			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
+		}
+		any_owned = {
+			limit = {
+				is_core = IRE 
+				owned_by = THIS	
+			}
+			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
 		}
 		ai_chance = { 
 			factor = 30

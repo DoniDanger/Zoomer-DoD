@@ -107,6 +107,13 @@ vassal = {
 	start_date = 1815.11.9
 	end_date = 1860.1.1
 }
+#Arequipa
+vassal = {
+	first = SPA
+	second = ARE
+	start_date = 1815.11.9
+	end_date = 1860.1.1
+}
 
 ## Spanish Dependencies/Loyalists
 #Castillia
@@ -164,18 +171,4 @@ vassal = {
 	second = QUI
 	start_date = 1815.11.9
 	end_date = 1860.1.1
-}
-
-## Granadan Frontier Republics 
-#Arequipa
-alliance = {
-	first="SPA"
-	second="ARE"
-	start_date="1815.11.9"
-}
-#Quito
-alliance = {
-	first="SPA"
-	second="QUI"
-	start_date="1815.11.9"
 }

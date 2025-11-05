@@ -61,7 +61,7 @@ country_event = {
 			name = alliance_with_the_natives 
 			duration = 1825
 		}
-		set_country_flag = alliance_with_the_natives 
+		set_country_flag = alliance_with_the_natives
 		SPA = { country_event = { id= 46438 months = 6 }}
 	}
 }
@@ -120,6 +120,11 @@ country_event = {
 		release_vassal = CLM
 		leave_alliance = CLM
 		diplomatic_influence = { who = CLM value = -400 }
+		
+		release_vassal = ARE
+		leave_alliance = ARE
+		diplomatic_influence = { who = ARE value = -400 }
+		
 		casus_belli = {
             target = CLM
             type = make_puppet
@@ -131,9 +136,37 @@ country_event = {
 			defender_goal = { casus_belli = assert_colombian_dominance }
 			call_ally = yes
         }
+		
+		casus_belli = {
+            target = ARE
+            type = make_puppet
+            months = 60
+        }
+		ARE = {
+			casus_belli = {
+				target = QUI
+				type = conquest
+				months = 24
+			}
+			casus_belli = {
+				target = SPA
+				type = release_puppet
+				months = 24
+			}
+		}
+		war = {
+            target = ARE
+            attacker_goal = { casus_belli = make_puppet }
+			defender_goal = {
+				casus_belli = release_puppet
+				country = QUI
+			}
+			call_ally = yes
+        }
 		any_country = {
 			limit = { has_country_modifier = peace_of_san_salvador } 
 			remove_country_modifier = peace_of_san_salvador 	
+			clr_country_flag = peace_of_san_salvador 
 		}
 		set_global_flag = 2nd_colombian_independence_war
 	}
@@ -169,37 +202,48 @@ country_event = {
 			name = united_colombian_dream 
 			duration = 1825
 		}
+		SPA = {
+			release_vassal = ARE
+			leave_alliance = ARE
+			diplomatic_influence = { who = ARE value = -400 }
+		}
 		any_country = { 
 			limit = {  
-				vassal_of = SPA 
-				OR = { 
-					tag = ARE
-					tag = CAS
-					tag = LST
-					tag = ELS
-					tag = YUC
-					tag = GUY
-					tag = AZT
-					tag = JLS
-					tag = QUI
-				} 
+				OR = {
+					AND = {
+						vassal_of = SPA 
+						OR = { 
+							tag = CAS
+							tag = LST
+							tag = ELS
+							tag = YUC
+							tag = GUY
+							tag = AZT
+							tag = JLS
+							tag = QUI
+						} 
+					}
+				}
 			}
 			country_event = 46440
 		}
 		any_country = { 
 			limit = {
-				NOT = { vassal_of = SPA }
-				OR = { 
-					tag = ARE
-					tag = CAS
-					tag = LST
-					tag = ELS
-					tag = YUC
-					tag = GUY
-					tag = AZT
-					tag = JLS
-					tag = QUI
-				} 
+				OR = {
+					AND = {
+						NOT = { vassal_of = SPA }
+						OR = { 
+							tag = CAS
+							tag = LST
+							tag = ELS
+							tag = YUC
+							tag = GUY
+							tag = AZT
+							tag = JLS
+							tag = QUI
+						} 
+					}
+				}
 			}
 			country_event = 46441
 		}
@@ -220,6 +264,20 @@ country_event = { ### Annexation
 		FROM = { inherit = THIS }
 		ai_chance = { 
 		factor = 100 
+		}
+	}
+	
+	option = {
+		name = "I have free will and do not want this."
+		relation = { who = CLM value = -150 }
+		relation = { who = SPA value = -300 }
+		SPA = {
+			release_vassal = THIS
+			leave_alliance = THIS
+			diplomatic_influence = { who = THIS value = -400 }
+		}
+		ai_chance = { 
+		factor = 0 
 		}
 	}
 }
@@ -279,37 +337,48 @@ country_event = {
 	option = {
 		name = "The Spanish may have left, but the struggle continues."
 		prestige = 10
+		SPA = {
+			release_vassal = ARE
+			leave_alliance = ARE
+			diplomatic_influence = { who = ARE value = -400 }
+		}
 		any_country = { 
 			limit = {  
-				vassal_of = SPA 
-				OR = { 
-					tag = ARE
-					tag = CAS
-					tag = LST
-					tag = ELS
-					tag = YUC
-					tag = GUY
-					tag = AZT
-					tag = JLS
-					tag = QUI
-				} 
+				OR = {
+					AND = {
+						vassal_of = SPA 
+						OR = { 
+							tag = CAS
+							tag = LST
+							tag = ELS
+							tag = YUC
+							tag = GUY
+							tag = AZT
+							tag = JLS
+							tag = QUI
+						} 
+					}
+				}
 			}
 			country_event = 46440
 		}
 		any_country = { 
 			limit = {  
-				NOT = { vassal_of = SPA }
-				OR = { 
-					tag = ARE
-					tag = CAS
-					tag = LST
-					tag = ELS
-					tag = YUC
-					tag = GUY
-					tag = AZT
-					tag = JLS
-					tag = QUI
-				} 
+				OR = {
+					AND = {
+						NOT = { vassal_of = SPA }
+						OR = { 
+							tag = CAS
+							tag = LST
+							tag = ELS
+							tag = YUC
+							tag = GUY
+							tag = AZT
+							tag = JLS
+							tag = QUI
+						} 
+					}
+				}
 			}
 			country_event = 46441
 		}
@@ -372,10 +441,12 @@ country_event = {
 	option = {
 		name = "At least we still have Cuba."
 		prestige = -15
+		release_vassal = ARE
+		leave_alliance = ARE
+		diplomatic_influence = { who = ARE value = -400 }
 		any_country = { 
-			limit = {  
+			limit = { 
 				OR = { 
-					tag = ARE
 					tag = LST
 					tag = ELS
 					tag = YUC
@@ -442,37 +513,47 @@ country_event = {
 			name = united_colombian_dream 
 			duration = 1095
 		}
-		any_country = { 
-			limit = {  
-				vassal_of = SPA 
-				OR = { 
-					tag = ARE
-					tag = CAS
-					tag = LST
-					tag = ELS
-					tag = YUC
-					tag = GUY
-					tag = AZT
-					tag = JLS
-					tag = QUI
-				} 
-			}
-			country_event = 46440
+		SPA = {
+			release_vassal = ARE
+			leave_alliance = ARE
+			diplomatic_influence = { who = ARE value = -400 }
 		}
 		any_country = { 
 			limit = {  
-				NOT = { vassal_of = SPA }
-				OR = { 
-					tag = ARE
-					tag = CAS
-					tag = LST
-					tag = ELS
-					tag = YUC
-					tag = GUY
-					tag = AZT
-					tag = JLS
-					tag = QUI
-				} 
+				OR = {
+					AND = {
+						vassal_of = SPA 
+						OR = { 
+							tag = CAS
+							tag = LST
+							tag = ELS
+							tag = YUC
+							tag = GUY
+							tag = AZT
+							tag = JLS
+							tag = QUI
+						} 
+					}
+				}
+			}
+		}
+		any_country = { 
+			limit = {  
+				OR = {
+					AND = {
+						NOT = { vassal_of = SPA }
+						OR = { 
+							tag = CAS
+							tag = LST
+							tag = ELS
+							tag = YUC
+							tag = GUY
+							tag = AZT
+							tag = JLS
+							tag = QUI
+						} 
+					}
+				}
 			}
 			country_event = 46441
 		}
@@ -524,14 +605,14 @@ country_event = {
 		create_vassal = YUC
 		create_vassal = CAS
 		create_vassal = QUI
-		create_vassal = ARE
+		#create_vassal = ARE
 		create_vassal = GUY
 		create_vassal = MEX
 		SAN = { all_core = { add_core = CAS remove_core = SAN }}
 		CAS = { inherit = GUY }
 		CAS = { change_tag = GRA }
-		ARE = { all_core = { add_core = QUI remove_core = ARE }}
-		QUI = { inherit = ARE }
+		#ARE = { all_core = { add_core = QUI remove_core = ARE }}
+		#QUI = { inherit = ARE }
 		ELS = { change_tag = UCA }
 		AZT = { inherit = JLS }
 		JLS = { all_core = { add_core = AZT remove_core = JLS }}
@@ -617,12 +698,12 @@ country_event = {
 				}
 				secede_province = QUI
 			}
-			any_owned = {
-				limit = {
-					is_core = ARE
-				}
-				secede_province = ARE
-			}
+			#any_owned = {
+			#	limit = {
+			#		is_core = ARE
+			#	}
+			#	secede_province = ARE
+			#}
 			any_owned = {
 				limit = {
 					is_core = GUY
@@ -683,15 +764,15 @@ country_event = {
 			has_global_flag = gran_colombian_collapse
 		}
 		OR = {
-			AND = { LST = { all_core = { controlled_by = THIS }} LST = { exists = yes }}
-			AND = { YUC = { all_core = { controlled_by = THIS }} YUC = { exists = yes }}
-			AND = { AZT = { all_core = { controlled_by = THIS }} AZT = { exists = yes }}
-			AND = { JLS = { all_core = { controlled_by = THIS }} JLS = { exists = yes }}
-			AND = { ELS = { all_core = { controlled_by = THIS }} ELS = { exists = yes }}
-			AND = { SAN = { all_core = { controlled_by = THIS }} CAS = { exists = yes }}
-			AND = { GUY = { all_core = { controlled_by = THIS }} GUY = { exists = yes }}
-			AND = { QUI = { all_core = { controlled_by = THIS }} QUI = { exists = yes }}
-			AND = { ARE = { all_core = { controlled_by = THIS }} ARE = { exists = yes }}
+			AND = { NOT = { LST = { any_core = { controlled_by = LST }}} LST = { exists = yes }}
+			AND = { NOT = { YUC = { any_core = { controlled_by = YUC }}} YUC = { exists = yes }}
+			AND = { NOT = { AZT = { any_core = { controlled_by = AZT }}} AZT = { exists = yes }}
+			AND = { NOT = { JLS = { any_core = { controlled_by = JLS }}} JLS = { exists = yes }}
+			AND = { NOT = { ELS = { any_core = { controlled_by = ELS }}} ELS = { exists = yes }}
+			AND = { NOT = { CAS = { any_core = { controlled_by = CAS }}} CAS = { exists = yes }}
+			AND = { NOT = { GUY = { any_core = { controlled_by = GUY }}} GUY = { exists = yes }}
+			AND = { NOT = { QUI = { any_core = { controlled_by = QUI }}} NOT = { QUI = { any_core = { controlled_by = ARE }}} QUI = { exists = yes }}
+			#AND = { NOT = { ARE = { any_core = { controlled_by = ARE }}} ARE = { exists = yes }}
 		}
 	}
 	
@@ -705,7 +786,7 @@ country_event = {
 				limit = {
 					tag = YUC
 					exists = yes
-					YUC = { all_core = { controlled_by = CLM }}
+					NOT = { YUC = { any_core = { controlled_by = YUC }}}
 				}
 				annex_to = CLM
 			}
@@ -713,7 +794,7 @@ country_event = {
 				limit = {
 					tag = LST
 					exists = yes
-					LST = { all_core = { controlled_by = CLM }}
+					NOT = { LST = { any_core = { controlled_by = LST }}}
 				}
 				annex_to = CLM
 			}
@@ -721,7 +802,7 @@ country_event = {
 				limit = {
 					tag = ELS
 					exists = yes
-					ELS = { all_core = { controlled_by = CLM }}
+					NOT = { ELS = { any_core = { controlled_by = ELS }}}
 				}
 				annex_to = CLM
 			}
@@ -729,7 +810,7 @@ country_event = {
 				limit = {
 					tag = AZT
 					exists = yes
-					AZT = { all_core = { controlled_by = CLM }}
+					NOT = { AZT = { any_core = { controlled_by = AZT }}} 
 				}
 				annex_to = CLM
 			}
@@ -737,7 +818,7 @@ country_event = {
 				limit = {
 					tag = JLS
 					exists = yes
-					JLS = { all_core = { controlled_by = CLM }}
+					NOT = { JLS = { any_core = { controlled_by = JLS }}}
 				}
 				annex_to = CLM
 			}
@@ -745,23 +826,24 @@ country_event = {
 				limit = {
 					tag = CAS
 					exists = yes
-					SAN = { all_core = { controlled_by = CLM }}
+					 NOT = { CAS = { any_core = { controlled_by = CAS }}}
 				}
 				annex_to = CLM
 			}
-			random_country = {
-				limit = {
-					tag = ARE
-					exists = yes
-					ARE = { all_core = { controlled_by = CLM }}
-				}
-				annex_to = CLM
-			}
+			#random_country = {
+			#	limit = {
+			#		tag = ARE
+			#		exists = yes
+			#		NOT = { ARE = { any_core = { controlled_by = ARE }}}
+			#	}
+			#	annex_to = CLM
+			#}
 			random_country = {
 				limit = {
 					tag = QUI
 					exists = yes
-					QUI = { all_core = { controlled_by = CLM }}
+					NOT = { QUI = { any_core = { controlled_by = QUI }}}
+					NOT = { QUI = { any_core = { controlled_by = ARE }}}
 				}
 				annex_to = CLM
 			}
@@ -769,7 +851,7 @@ country_event = {
 				limit = {
 					tag = GUY
 					exists = yes
-					GUY = { all_core = { controlled_by = CLM }}
+					NOT = { GUY = { any_core = { controlled_by = GUY }}}
 				}
 				annex_to = CLM
 			}
@@ -801,7 +883,7 @@ country_event = {
 			AND = { NOT = { CAS = { any_core = { controlled_by = THIS }}} CAS = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { GUY = { any_core = { controlled_by = THIS }}} GUY = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { QUI = { any_core = { controlled_by = THIS }}} QUI = { any_core = { owned_by = THIS }} }
-			AND = { NOT = { ARE = { any_core = { controlled_by = THIS }}} ARE = { any_core = { owned_by = THIS }} }
+			#AND = { NOT = { ARE = { any_core = { controlled_by = THIS }}} ARE = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { JLS = { any_core = { controlled_by = THIS }}} JLS = { any_core = { owned_by = THIS }} }
 			
 			AND = { NOT = { ZAP = { any_core = { controlled_by = THIS }}} ZAP = { any_core = { owned_by = THIS }} }
@@ -876,13 +958,13 @@ country_event = {
 				}
 				secede_province = QUI
 			}
-			any_owned = {
-				limit = {
-					is_core = ARE
-					NOT = { ARE = { any_core = { controlled_by = THIS }}}
-				}
-				secede_province = ARE
-			}
+			#any_owned = {
+			#	limit = {
+			#		is_core = ARE
+			#		NOT = { ARE = { any_core = { controlled_by = THIS }}}
+			#	}
+			#	secede_province = ARE
+			#}
 			any_owned = {
 				limit = {
 					is_core = GUY
@@ -919,18 +1001,22 @@ country_event = {
 		name = "Gran Colombia will determine its own fate."
 		any_country = { 
 			limit = {  
-				NOT = { vassal_of = SPA }
-				OR = { 
+				OR = {
 					tag = ARE
-					tag = CAS
-					tag = LST
-					tag = ELS
-					tag = YUC
-					tag = GUY
-					tag = AZT
-					tag = JLS
-					tag = QUI
-				} 
+					AND = {
+						NOT = { vassal_of = SPA }
+						OR = { 
+							tag = CAS
+							tag = LST
+							tag = ELS
+							tag = YUC
+							tag = GUY
+							tag = AZT
+							tag = JLS
+							tag = QUI
+						} 
+					}
+				}
 			}
 			country_event = 46454
 		}
@@ -939,7 +1025,7 @@ country_event = {
 
 country_event = { ### Vassal Gained
 	id = 46454
-	title = "Collapse of Spanish Authority"
+	title = "Restoration of Spanish Authority"
 	desc = "EVTDESC46454"
 	picture = "administration"
 
@@ -958,3 +1044,4 @@ country_event = { ### Vassal Gained
 		}
 	}
 }
+

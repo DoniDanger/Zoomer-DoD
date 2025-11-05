@@ -7,4 +7,5 @@ add_core = TAP
 add_core = INC
 trade_goods = timber
 terrain = montane_forest
-life_rating = 31
+life_rating = 35
+

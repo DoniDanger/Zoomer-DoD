@@ -1,6 +1,7 @@
-owner = INC
-controller = INC
+owner = ARE
+controller = ARE
+add_core = ARE
 add_core = INC
 trade_goods = precious_metal
-life_rating = 30
+life_rating = 32
 terrain = new_world_semidesert

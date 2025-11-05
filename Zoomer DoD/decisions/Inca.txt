@@ -89,4 +89,194 @@ political_decisions = {
 				factor = 1
 			}
 		}
+		
+		restore_sapa_inca = {
+		picture = Incas
+			potential = {
+				tag = ARE
+				NOT = { has_country_flag = restored_sapa_inca }
+				NOT = { has_country_flag = reunited_andean_viceroyalties }
+				NOT = { has_global_flag = Hispanic_Andes }
+				INC = { exists = no }
+			}
+			allow = {
+				NOT = { war = yes }
+				is_vassal = no
+				owns = 2302
+				owns = 2304
+				owns = 2310
+			}
+			effect = {
+				change_tag = INC
+				prestige = 25
+				capital = 2302
+				add_accepted_culture = aimara
+				religion = inti
+				set_country_flag = restored_sapa_inca
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		reunite_andean_viceroyalties = {
+		picture = Incas
+			potential = {
+				tag = ARE
+				NOT = { has_country_flag = reunited_andean_viceroyalties }
+				NOT = { has_country_flag = restored_sapa_inca }
+				NOT = { has_global_flag = Hispanic_Andes }
+			}
+			allow = {
+				NOT = { has_country_flag = restored_sapa_inca }
+				NOT = { war = yes }
+				is_vassal = no
+				owns = 2302
+				owns = 2304
+				OR = {
+					QUI = {
+						any_core = {
+							owned_by = THIS
+						}
+					
+					}
+					AND = {
+						QUI = { 
+							exists = yes
+							war = no
+							is_vassal = no
+						}
+					}
+				}
+			}
+			effect = {
+				prestige = 10
+				primary_culture = andean
+				add_accepted_culture = quechua
+				QUI = { all_core = { add_core = THIS }}
+				any_country = { 
+					limit = {
+						is_vassal = no
+						war = no
+						tag = QUI
+						exists = yes
+					}
+					THIS = { inherit = QUI }
+				}
+				random_country = {
+					limit = {
+						tag = QUI
+						exists = yes
+						ai = yes
+						is_vassal = no
+						war = no
+					}
+					THIS = { inherit = QUI }
+				}
+				set_country_flag = reunited_andean_viceroyalties
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		advance_granadan_frontier = {
+			picture = Incas
+			potential = {
+				tag = ARE
+				has_country_flag = reunited_andean_viceroyalties
+				NOT = { has_country_flag = advanced_granadan_frontier }
+				NOT = { has_global_flag = Hispanic_Andes }
+			}
+			allow = {
+				NOT = { war = yes }
+				is_vassal = no
+				owns = 2302
+				owns = 2304
+				state_n_government = 1
+				QUI = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+			effect = {
+				prestige = 10
+				GRA = { all_core = { add_core = THIS }}
+				add_accepted_culture = granadan
+				set_country_flag = advanced_granadan_frontier
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		integrate_chilean_viceroyalty = {
+			picture = Incas
+			potential = {
+				OR = { 
+					tag = ARE
+					tag = GRA
+				}
+				has_country_flag = reunited_andean_viceroyalties
+				NOT = { has_country_flag = integrated_chilean_viceroyalty }
+				NOT = { has_global_flag = Hispanic_Andes }
+			}
+			allow = {
+				NOT = { war = yes }
+				is_vassal = no
+				owns = 2369
+				owns = 2305
+				owns = 2324
+				nationalism_n_imperialism = 1
+				CHL = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+			effect = {
+				prestige = 5
+				CHL = { all_core = { add_core = THIS }}
+				set_country_flag = integrated_chilean_viceroyalty
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		unite_andean_granadan_state = {
+			picture = Incas
+			potential = {
+				tag = ARE
+				has_country_flag = reunited_andean_viceroyalties
+				NOT = { has_country_flag = united_andes_granada }
+				NOT = { has_global_flag = Hispanic_Andes }
+			}
+			allow = {
+				war = no
+				owns = 2302
+				owns = 2304
+				nationalism_n_imperialism = 1
+				GRA = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+			effect = {
+				change_tag = GRA
+				prestige = 10
+				add_accepted_culture = granadan
+				nationalvalue = nv_liberty 
+				add_country_modifier = {
+				  name = the_homestead_act2
+				  duration = -1
+				}
+				set_country_flag = united_andes_granada
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
 }

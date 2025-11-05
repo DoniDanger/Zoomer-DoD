@@ -1,10 +1,7 @@
-owner = INC
-controller = INC
+owner = ARE
+controller = ARE
+add_core = ARE
 add_core = INC
+add_core = CHL
 trade_goods = wool
 life_rating = 35
-1861.1.1 = {
-	owner = BOL
-	controller = BOL
-	remove_core = ARC
-}

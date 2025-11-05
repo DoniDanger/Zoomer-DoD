@@ -385,6 +385,10 @@ political_decisions = {
 		capital = 2447
 		LOT = { all_core = { add_core = AZL } }
 		add_accepted_culture = lotharian
+		add_country_modifier = {
+				  name = the_homestead_act2
+				  duration = 1825
+			  }
 		AMA = { all_core = { remove_core = AMA	} }
 		any_country = {
 				limit = {
@@ -450,6 +454,10 @@ political_decisions = {
 		change_tag = AZL
 		capital = 2447
 		AMA = { all_core = { add_core = AZL } }
+		add_country_modifier = {
+				  name = the_homestead_act2
+				  duration = 1825
+			  }
 		add_accepted_culture = amazonian
 		LOT = { all_core = { remove_core = LOT	} }
 		any_country = {
