@@ -692,3 +692,81 @@
 		size = 1100
 	}
 }
+#Kampen (80000/20000 POPS)
+3325 = {
+	aristocrats = {
+		culture = dutch
+		religion = protestant
+		size = 150
+	}
+
+	clergymen = {
+		culture = dutch
+		religion = protestant
+		size = 100
+	}
+
+	artisans = {
+		culture = dutch
+		religion = protestant
+		size = 1100
+	}
+
+	soldiers = {
+		culture = dutch
+		religion = protestant
+		size= 1100
+
+	}
+
+	farmers = {
+		culture = dutch
+		religion = protestant
+		size = 26750
+	}
+
+	artisans = {
+		culture = ashkenazi
+		religion = jewish
+		size = 1100
+	}
+}
+#Almere (80000/20000 POPS)
+3326 = {
+	aristocrats = {
+		culture = dutch
+		religion = protestant
+		size = 150
+	}
+
+	clergymen = {
+		culture = dutch
+		religion = protestant
+		size = 100
+	}
+
+	artisans = {
+		culture = dutch
+		religion = protestant
+		size = 1100
+	}
+
+	soldiers = {
+		culture = dutch
+		religion = protestant
+		size= 1100
+
+	}
+
+	farmers = {
+		culture = dutch
+		religion = protestant
+		size = 46750
+	}
+
+	farmers = {
+		culture = ashkenazi
+		religion = jewish
+		size = 3100
+	}
+}

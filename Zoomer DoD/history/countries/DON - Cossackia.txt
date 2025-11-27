@@ -1,10 +1,11 @@
 capital = 1047
-primary_culture = ukrainian
+primary_culture = cossack
+culture = ruthenian
 religion = orthodox
 government = absolute_monarchy
 plurality = 5
 nationalvalue = nv_order
-literacy = 0.01
+literacy = 0.17
 non_state_culture_literacy = 0.01
 civilized = yes
 

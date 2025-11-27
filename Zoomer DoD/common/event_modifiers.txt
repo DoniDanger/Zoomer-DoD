@@ -2738,3 +2738,14 @@ underground_nationalist_movements = {
 	non_accepted_pop_consciousness_modifier = 0.03 
 	icon = 15
 }
+
+nationalist_movement_suppression = {
+	immigrant_push = -0.2
+	local_RGO_output = -0.15
+	farm_rgo_eff = -0.2
+	mine_rgo_eff = -0.2
+	non_accepted_pop_militancy_modifier = -0.02
+	non_accepted_pop_consciousness_modifier = -0.03 
+	pop_militancy_modifier = 0.05
+	icon = 20
+}

@@ -578,3 +578,55 @@
         size = 121
     }
 }
+
+#Sordavala
+2652 = {
+	aristocrats = { 
+		culture = scandinavian
+		religion = protestant
+		size = 504
+	}
+
+	officers = { 
+		culture = scandinavian
+		religion = protestant
+		size = 96
+	}
+
+	farmers = { 
+		culture = finnish
+		religion = protestant
+		size = 2400
+	}
+
+	farmers = { 
+		culture = north_russian
+		religion = orthodox
+		size = 1650
+	}
+
+	farmers = { 
+		culture = north_russian
+		religion = orthodox
+		size = 1650
+	}
+
+	farmers = { 
+		culture = finnish
+		religion = orthodox
+		size = 4350
+	}
+
+	farmers = { 
+		culture = finnish
+		religion = orthodox
+		size = 2850
+	}
+
+	farmers = { 
+		culture = finnish
+		religion = orthodox
+		size = 1500
+	}
+
+}

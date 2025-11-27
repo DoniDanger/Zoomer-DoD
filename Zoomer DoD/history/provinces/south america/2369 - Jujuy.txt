@@ -2,7 +2,7 @@ owner = ARE
 controller = ARE
 add_core = ARE
 add_core = INC
-add_core = CHL
+add_core = QOL
 trade_goods = iron
 life_rating = 35
 

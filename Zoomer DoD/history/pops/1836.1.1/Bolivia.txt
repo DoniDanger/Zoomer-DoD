@@ -4,43 +4,43 @@
 2310 = {
 	aristocrats = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 1000
 	}
 
 	bureaucrats = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 1600
 	}
 
 	officers = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 500
 	}
 
 	capitalists = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 50
 	}
 
 	clergymen = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 2300
 	}
 
 	artisans = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 10000
 	}
 
 	artisans = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 10000
 	}
 
@@ -52,96 +52,235 @@
 
 	soldiers = {
 		culture = quechua
-		religion = inti
-		size = 3000
+		religion = catholic
+		size = 1600
 	}
 
 	soldiers = {
 		culture = quechua
 		religion = inti
-		size = 3000
+		size = 1500
 	}
 
-	soldiers = {
+	farmers = {
+		culture = quechua
+		religion = catholic
+		size = 124175
+	}
+
+	aristocrats = {
 		culture = quechua
 		religion = inti
-		size = 2000
+		size = 175
+	}
+
+	clergymen = {
+		culture = quechua
+		religion = inti
+		size = 150
+	}
+
+	artisans = {
+		culture = quechua
+		religion = inti
+		size = 3100
 	}
 
 	farmers = {
 		culture = quechua
 		religion = inti
-		size = 124175
+		size = 11650
+	}
+
+	clergymen = {
+		culture = aimara
+		religion = inti
+		size = 50
+	}
+
+	artisans = {
+		culture = aimara
+		religion = inti
+		size = 300
+	}
+
+	farmers = {
+		culture = aimara
+		religion = inti
+		size = 9575
+	}
+	
+	aristocrats = {
+		culture = aimara
+		religion = catholic
+		size = 1000
+	}
+
+	clergymen = {
+		culture = aimara
+		religion = catholic
+		size = 1000
+	}
+
+	soldiers = {
+		culture = aimara
+		religion = catholic
+		size= 1400
+
+	}
+
+	artisans = {
+		culture = aimara
+		religion = catholic	
+		size = 7000
+	}
+
+	farmers = {
+		culture = aimara
+		religion = catholic
+		size = 60000
+	}
+
+	clergymen = {
+		culture = aimara
+		religion = inti	
+		size = 200
+	}
+
+	artisans =  {
+		culture = quechua
+		religion = inti
+		size = 500
+	}
+
+	farmers = {
+		culture = quechua
+		religion = inti
+		size = 8000
 	}
 }
 #Cochabamba (352000/88000 POPS)
 2311 = {
 	aristocrats = {
 		culture = quechua
-		religion = inti	
+		religion = catholic	
 		size = 200
 	}
 
 	clergymen = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 1300
 	}
 
 	artisans = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 10000
 	}
 
 	artisans = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 3250
 	}
 
 	soldiers = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 1500
 	}
 
 	farmers = {
 		culture = quechua
+		religion = catholic
+		size = 61500
+	}
+	
+	farmers = {
+		culture = quechua
 		religion = inti
-		size = 81500
+		size = 21500
 	}
 }
 #Oruro (40000/10000 POPS)
 2312 = {
 	aristocrats = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 225
 	}
 
 	clergymen = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 575
 	}
 
 	artisans = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 6350
 	}
 
 	soldiers = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 1200
 	}
 
 	farmers = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 46575
+	}
+	
+	aristocrats = {
+		culture = aimara
+		religion = catholic
+		size = 225
+	}
+
+	clergymen = {
+		culture = quechua
+		religion = catholic
+		size = 200
+	}
+
+	artisans = {
+		culture = quechua
+		religion = inti
+		size = 4130
+	}
+
+	farmers = {
+		culture = quechua
+		religion = inti
+		size = 19317
+	}
+
+	clergymen = {
+		culture = aimara
+		religion = inti
+		size = 992
+	}
+
+	artisans = {
+		culture = aimara
+		religion = inti
+		size = 6860
+	}
+
+	soldiers = {
+		culture = aimara
+		religion = inti
+		size = 1200
+	}
+
+	farmers = {
+		culture = aimara
+		religion = catholic
+		size = 32053
 	}
 }
 #Chuquisaca Region (288000)
@@ -215,36 +354,99 @@
 		size = 21100
 	}
 }
+#Antipukara
+2313 = { 
+
+	aristocrats = {
+		culture = quechua
+		religion = inti
+		size = 15
+	}
+
+	clergymen = {
+		culture = quechua
+		religion = inti
+		size = 150
+	}
+
+	clergymen = {
+		culture = quechua
+		religion = inti
+		size = 300
+	}
+			
+	soldiers = {
+		culture = quechua
+		religion = inti
+		size = 1200
+	}
+		
+	artisans = {
+		culture = quechua
+		religion = inti
+		size = 1200
+	}
+	
+	farmers = {
+		culture = quechua
+		religion = inti
+		size = 3600
+	}
+	
+	farmers = { 
+		culture = aimara
+		religion = inti
+		size = 2400
+	}
+	
+	artisans = {
+		culture = quechua
+		religion = inti	
+		size = 2000
+	}
+
+	farmers = {
+		culture = guarani
+		religion = inti
+		size = 4500
+	}
+
+	farmers = {
+		culture = guarani
+		religion = animist
+		size = 6400
+	}
+}
 #Potosi (120000/30000 POPS)
 2314 = {
 	aristocrats = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 625
 	}
 
 	soldiers = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size= 1025
 
 	}
 
 	clergymen = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 125
 	}
 
 	artisans = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 1350
 	}
 
 	farmers = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 25525
 	}
 
@@ -276,31 +478,31 @@
 2315 = {
 	aristocrats = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 275
 	}
 
 	clergymen = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 50
 	}
 
 	artisans = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 600
 	}
 
 	soldiers = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size= 900
 	}
 
 	farmers = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 11225
 	}
 
@@ -361,6 +563,69 @@
 		culture = guarani
 		religion = animist
 		size = 2775
+	}
+}
+#Umasuyu (76000/19000 POPS)
+2330 = {
+	aristocrats = {
+		culture = quechua
+		religion = inti
+		size = 340
+	}
+
+	clergymen = {
+		culture = quechua
+		religion = inti
+		size = 550
+	}
+
+	artisans = {
+		culture = quechua
+		religion = inti
+		size = 4500
+	}
+
+	soldiers = {
+		culture = quechua
+		religion = inti
+		size = 1000
+	}
+
+	farmers = {
+		culture = quechua
+		religion = inti	
+		size = 12350
+	}
+
+	aristocrats = {
+		culture = amazonian_native
+		religion = animist
+		size = 100
+	}
+
+	clergymen = {
+		culture = amazonian_native
+		religion = animist
+		size = 50
+	}
+
+	artisans = {
+		culture = amazonian_native
+		religion = animist
+		size = 300
+	}
+
+	soldiers = {
+		culture = amazonian_native
+		religion = animist
+		size= 75
+
+	}
+
+	farmers = {
+		culture = amazonian_native
+		religion = animist
+		size = 5475
 	}
 }
 #San Ignacio (20000/5000 POPS)
@@ -468,31 +733,31 @@
 	aristocrats = {
 		culture = quechua
 		religion = inti
-		size = 340
+		size = 140
 	}
 
 	clergymen = {
 		culture = quechua
 		religion = inti
-		size = 550
+		size = 50
 	}
 
 	artisans = {
 		culture = quechua
 		religion = inti
-		size = 8500
+		size = 500
 	}
 
 	soldiers = {
 		culture = quechua
 		religion = inti
-		size = 1000
+		size = 200
 	}
 
 	farmers = {
 		culture = quechua
 		religion = inti	
-		size = 29350
+		size = 3350
 	}
 
 	aristocrats = {

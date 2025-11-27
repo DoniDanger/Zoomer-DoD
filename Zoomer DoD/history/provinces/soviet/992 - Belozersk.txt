@@ -1,5 +1,6 @@
-owner = NOV
-controller = NOV
+owner = BLO
+controller = BLO
+add_core = BLO
 add_core = RUS
 add_core = NOV
 trade_goods = cattle

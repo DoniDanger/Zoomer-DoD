@@ -1,9 +1,8 @@
-owner = ARE
-controller = ARE
+owner = QUI
+controller = QUI
 add_core = CLM
 add_core = INC
-add_core = ARE
-add_core = GRA
+add_core = QUI
 trade_goods = fish
 terrain = dryhills
 life_rating = 37

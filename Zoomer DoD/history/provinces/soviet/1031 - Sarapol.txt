@@ -1,8 +1,7 @@
-owner = NOV
-controller = NOV
+owner = VYA
+controller = VYA
+add_core = VYA
 add_core = RUS
-add_core = MUS
 add_core = NOV
-add_core = SIB
 trade_goods = iron
 life_rating = 35

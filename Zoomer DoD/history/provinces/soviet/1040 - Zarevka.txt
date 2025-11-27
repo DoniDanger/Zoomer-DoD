@@ -1,7 +1,8 @@
-owner = ASK
-controller = ASK
+owner = AKT
+controller = AKT
+add_core = AKT
+add_core = UKR
 add_core = ASK
-add_core = RUS
 add_core = TAR
 trade_goods = wool
 life_rating = 35

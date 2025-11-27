@@ -1,7 +1,7 @@
-owner = NOV
-controller = NOV
+owner = UGG
+controller = UGG
+add_core = UGG
 add_core = RUS
-add_core = MUS
 add_core = NOV
 trade_goods = timber
 life_rating = 35

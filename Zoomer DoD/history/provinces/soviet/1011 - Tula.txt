@@ -2,5 +2,6 @@ owner = MUS
 controller = MUS
 add_core = RUS
 add_core = MUS
+add_core = RYA
 trade_goods = coal
 life_rating = 40

@@ -33,7 +33,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 1325
+		size= 650
 
 		militancy = 5
 	}
@@ -191,7 +191,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 1300
+		size= 650
 
 		militancy = 7
 	}
@@ -277,7 +277,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 1250
+		size= 650
 		militancy = 9
 	}
 
@@ -334,7 +334,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 1250
+		size= 650
 
 	}
 
@@ -420,7 +420,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 1425
+		size= 650
 
 	}
 
@@ -502,7 +502,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 1525
+		size= 650
 
 	}
 

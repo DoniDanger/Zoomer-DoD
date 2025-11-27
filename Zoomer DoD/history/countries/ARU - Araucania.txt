@@ -1,13 +1,11 @@
-capital = 2396
+capital = 2329
 primary_culture = patagonian
 religion = inti
-government = democracy
+government = absolute_monarchy
 plurality = 25
 nationalvalue = nv_enlightenment
-literacy = 0.01
+literacy = 0.04
 non_state_culture_literacy = 0.01
-
-set_country_flag = new_world_nation
 
 # Political reforms
 slavery = no_slavery

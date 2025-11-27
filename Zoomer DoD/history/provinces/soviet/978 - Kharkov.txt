@@ -1,19 +1,18 @@
-owner = CRI
-controller = CRI
-add_core = CRI
+owner = KHK
+controller = KHK
+add_core = KHK
+add_core = UKR
 add_core = RUS
-add_core = TAR
+add_core = PLC
 trade_goods = coal
 life_rating = 35
-1861.1.1 = { 
-	state_building = {
-		level = 1
-		building = steel_factory
-		upgrade = yes
-	} 
-	state_building = {
-		level = 1
-		building = cement_factory
-		upgrade = yes
-	} 
-}
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+} 
+state_building = {
+	level = 1
+	building = cement_factory
+	upgrade = yes
+} 

@@ -5364,7 +5364,7 @@
 	farmers = {
 		culture = baltic_german
 		religion = protestant
-		size = 47275
+		size = 37275
 	}
 
 	clergymen = {
@@ -5414,7 +5414,7 @@
 	farmers = {
 		culture = lithuanian
 		religion = protestant
-		size = 3800 
+		size = 23800 
 	}
 }
 

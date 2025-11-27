@@ -3,6 +3,30 @@
 # Special countries...
 REB 	= 	"countries/rebels.txt"
 
+### DoD Fan Fork
+BSK	    = "countries/Bashkiria.txt"
+KZN		= "countries/Kazan.txt" 
+VOR    = "countries/DonHost.txt" 
+AKT     = "countries/Akhtuba.txt"
+ZAZ     = "countries/Zaporizhian.txt" 
+KHK     = "countries/Kharkov.txt"
+KIE		= "countries/Kiev.txt"
+
+VYA		= "countries/Vyatka.txt" 
+PRM		= "countries/Yugra.txt" 
+RYA     = "countries/Ryazan.txt"
+NZH     = "countries/Nizhny.txt" 
+MAR     = "countries/Mari.txt" 
+BLO		= "countries/Beloozero.txt" 
+UGG 	= "countries/Galich.txt" 
+MSC     = "countries/Moscow.txt" 
+
+QOL 	= "countries/Qulla.txt"
+
+##Disabled
+#SML     = "countries/Smolensk.txt" 
+#TVE     = "countries/Tver.txt" 
+
 ##DoD
 HLR		= "countries/Holy Roman Empire.txt"
 ARC		= "countries/Arcadia.txt" 

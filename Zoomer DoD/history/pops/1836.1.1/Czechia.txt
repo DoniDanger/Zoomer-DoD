@@ -828,86 +828,126 @@
 		size = 7610   
 	}
 }
-#Teschen (116000/29000 POPS)
+#Tesin (116000/29000 POPS)
 689 = {
-	clergymen = {
+	aristocrats = { 
 		culture = czech
 		religion = catholic
-		size = 125 
+		size = 769
 	}
 
-	artisans = {
+	artisans = { 
 		culture = czech
 		religion = catholic
-		size = 700
+		size = 2566
 	}
 
-	soldiers = {
+	bureaucrats = { 
 		culture = czech
 		religion = catholic
-		size= 125
-
+		size = 153
 	}
 
-	farmers = {
+	clergymen = { 
 		culture = czech
 		religion = catholic
-		size = 27050 
+		size = 769
 	}
 
-	clergymen = {
-		culture = south_german
-		religion = catholic
-		size = 20  
-	}
-
-	artisans = {
-		culture = south_german
-		religion = catholic
-		size = 100 
-	}
-
-	soldiers = {
-		culture = south_german
-		religion = catholic
-		size= 25
-
-	}
-
-	farmers = {
-		culture = south_german
-		religion = catholic
-		size = 955  
-	}
-
-	aristocrats = {
+	craftsmen = { 
 		culture = czech
 		religion = catholic
-		size = 350  
+		size = 4105
 	}
 
-	clergymen = {
+	farmers = { 
+		culture = czech
+		religion = catholic
+		size = 205
+	}
+
+	soldiers = { 
+		culture = czech
+		religion = catholic
+		size = 1539
+	}
+
+	farmers = { 
+		culture = czech
+		religion = protestant
+		size = 2199
+	}
+
+	bureaucrats = { 
 		culture = polish
 		religion = catholic
-		size = 150 
+		size = 731
 	}
 
-	artisans = {
+	farmers = { 
 		culture = polish
 		religion = catholic
-		size = 700
+		size = 39608
 	}
 
-	soldiers = {
+	farmers = { 
 		culture = polish
-		religion = catholic
-		size= 150
-
+		religion = protestant
+		size = 733
 	}
 
-	farmers = {
-		culture = polish
-		religion = catholic
-		size = 22650 
+	farmers = { 
+		culture = czech
+		religion = protestant
+		size = 13197
 	}
+
+	aristocrats = { 
+		culture = czech
+		religion = catholic
+		size = 329
+	}
+
+	artisans = { 
+		culture = czech
+		religion = catholic
+		size = 1099
+	}
+
+	bureaucrats = { 
+		culture = czech
+		religion = catholic
+		size = 65
+	}
+
+	clergymen = { 
+		culture = czech
+		religion = catholic
+		size = 329
+	}
+
+	craftsmen = { 
+		culture = czech
+		religion = catholic
+		size = 1759
+	}
+
+	farmers = { 
+		culture = czech
+		religion = catholic
+		size = 87
+	}
+
+	soldiers = { 
+		culture = czech
+		religion = catholic
+		size = 659
+	}
+
+	farmers = { 
+		culture = ashkenazi
+		religion = jewish
+		size = 2199
+	}
+
 }

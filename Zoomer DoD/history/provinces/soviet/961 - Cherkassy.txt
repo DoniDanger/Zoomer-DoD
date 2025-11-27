@@ -1,6 +1,9 @@
-owner = UKR
-controller = UKR
-add_core = PLC
+owner = ZAZ
+controller = ZAZ
+add_core = KIE
+add_core = ZAZ
+add_core = UKR
 add_core = RUT
+add_core = CRI
 trade_goods = cattle
 life_rating = 35

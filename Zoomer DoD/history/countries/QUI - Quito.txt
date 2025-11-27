@@ -1,16 +1,16 @@
 capital = 2279
-primary_culture = granadan
+primary_culture = andean
 religion = catholic
 government = democracy
 plurality = 25
 nationalvalue = nv_liberty
-literacy = 0.01
+literacy = 0.12
 non_state_culture_literacy = 0.01
 civilized = yes
-prestige = 1
+prestige = 5
 
 # Political reforms
-slavery = no_slavery
+slavery = yes_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = landed_voting
 public_meetings = yes_meeting

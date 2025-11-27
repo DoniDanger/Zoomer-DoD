@@ -1,6 +1,7 @@
-owner = SIB
-controller = SIB
+owner = PRM
+controller = PRM
+add_core = PRM
+add_core = NOV
 add_core = SIB
-add_core = RUS
 trade_goods = iron
 life_rating = 35

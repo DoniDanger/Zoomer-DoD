@@ -7,7 +7,7 @@ substate = {
 }
 substate = {
 	first = PLC
-	second = UKR
+	second = KIE
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }
@@ -23,6 +23,12 @@ substate = {
 	start_date = 1836.1.1
 	end_date = 1937.1.1
 }
+substate = {
+	first = PLC
+	second = KHK
+	start_date = 1836.1.1
+	end_date = 1937.1.1
+}
 
 # Aragonese-Navarran Personal Union
 vassal = {
@@ -34,12 +40,12 @@ vassal = {
 
 # SCA - Pskov
 
-vassal = {
-	first = SCA
-	second = PSV
-	start_date = 1815.11.9
-	end_date = 1864.1.1
-}
+#vassal = {
+#	first = SCA
+#	second = PSV
+#	start_date = 1815.11.9
+#	end_date = 1864.1.1
+#}
 
 
 # Oldenburg - Personal Union under Scandinavia

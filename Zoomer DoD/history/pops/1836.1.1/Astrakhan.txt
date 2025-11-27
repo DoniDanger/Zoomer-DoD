@@ -2,524 +2,644 @@
 #under the rule of Russia in 1836
 #Astrakhan (76000/19000 POPS)
 1036 = {
-	aristocrats = {
+	aristocrats = { 
 		culture = astrakhani
 		religion = sunni
-		size = 1100
+		size = 3000
 	}
 
-	bureaucrats = {
+	artisans = { 
 		culture = astrakhani
 		religion = sunni
-		size = 1700
+		size = 50750
 	}
 
-	clergymen = {
+	bureaucrats = { 
 		culture = astrakhani
 		religion = sunni
-		size = 1700
+		size = 1000
 	}
 
-	officers = {
+	clergymen = { 
 		culture = astrakhani
 		religion = sunni
 		size = 1500
 	}
 
-	artisans = {
+	officers = { 
 		culture = astrakhani
 		religion = sunni
-		size = 30000
+		size = 680
 	}
 
-	soldiers = {
+	farmers = { 
 		culture = astrakhani
 		religion = sunni
-		size= 600
-
+		size = 76316
 	}
 
-	farmers = {
+	slaves = { 
 		culture = astrakhani
 		religion = sunni
-		size = 24000
+		size = 11403
+	}
+
+	soldiers = { 
+		culture = astrakhani
+		religion = sunni
+		size = 5570
+	}
+
+	farmers = { 
+		culture = ashkenazi
+		religion = jewish
+		size = 8830
+	}
+
+	slaves = { 
+		culture = ashkenazi
+		religion = jewish
+		size = 1319
+	}
+
+	slaves = { 
+		culture = russian
+		religion = orthodox
+		size = 17661
+	}
+
+	slaves = { 
+		culture = russian
+		religion = orthodox
+		size = 2639
+	}
+
+	farmers = { 
+		culture = kazak
+		religion = sunni
+		size = 7064
+	}
+
+	slaves = { 
+		culture = kazak
+		religion = sunni
+		size = 1055
+	}
+
+	slaves = { 
+		culture = cossack
+		religion = orthodox
+		size = 12362
+	}
+
+	slaves = { 
+		culture = cossack
+		religion = orthodox
+		size = 1847
 	}
 }
 #Tsaritsyn (1072000/268000 POPS)
 1039 = {
-	aristocrats = {
-		culture = astrakhani
-		religion = sunni
-		size = 1250
+	aristocrats = { 
+		culture = cossack
+		religion = orthodox
+		size = 3325
 	}
 
-	clergymen = {
-		culture = astrakhani
-		religion = sunni
-		size = 400
+	artisans = { 
+		culture = cossack
+		religion = orthodox
+		size = 28750
 	}
 
-	artisans = {
-		culture = astrakhani
-		religion = sunni
-		size = 8800
+	bureaucrats = { 
+		culture = cossack
+		religion = orthodox
+		size = 950
 	}
 
-	farmers = {
-		culture = astrakhani
-		religion = sunni
-		size = 61000
+	clergymen = { 
+		culture = cossack
+		religion = orthodox
+		size = 950
 	}
 
-	soldiers = {
+	officers = { 
+		culture = cossack
+		religion = orthodox
+		size = 1425
+	}
+
+	soldiers = { 
+		culture = cossack
+		religion = orthodox
+		size = 15000
+	}
+
+	farmers = { 
+		culture = ashkenazi
+		religion = jewish
+		size = 10500
+	}
+
+	farmers = { 
+		culture = russian
+		religion = orthodox
+		size = 12600
+	}
+
+	serfs = { 
+		culture = tatar
+		religion = sunni
+		size = 29400
+	}
+
+	serfs = { 
+		culture = kirgiz
+		religion = sunni
+		size = 21000
+	}
+
+	serfs = { 
 		culture = astrakhani
 		religion = sunni
-		size= 550
-
+		size = 86100
 	}
 }
 #Zarevka (36000/9000 POPS)
 1040 = {
-	aristocrats = {
-		culture = astrakhani
-		religion = sunni
-		size = 450
+	aristocrats = { 
+		culture = cossack
+		religion = orthodox
+		size = 442
 	}
 
-	clergymen = {
-		culture = astrakhani
-		religion = sunni
-		size = 225
+	artisans = { 
+		culture = cossack
+		religion = orthodox
+		size = 4200
 	}
 
-	soldiers = {
-		culture = astrakhani
-		religion = sunni
-		size= 3300
-
+	bureaucrats = { 
+		culture = cossack
+		religion = orthodox
+		size = 184
 	}
 
-	artisans = {
-		culture = astrakhani
-		religion = sunni
-		size = 7350
+	clergymen = { 
+		culture = cossack
+		religion = orthodox
+		size = 184
 	}
 
-	soldiers = {
-		culture = astrakhani
-		religion = sunni
-		size= 150
+	farmers = { 
+		culture = cossack
+		religion = orthodox
+		size = 7985
 	}
 
-	farmers = {
-		culture = astrakhani
-		religion = sunni
-		size = 13650
+	soldiers = { 
+		culture = cossack
+		religion = orthodox
+		size = 2125
 	}
 
+	farmers = { 
+		culture = ashkenazi
+		religion = jewish
+		size = 5040
+	}
+
+	serfs = { 
+		culture = kirgiz
+		religion = sunni
+		size = 6720
+	}
+
+	serfs = { 
+		culture = astrakhani
+		religion = sunni
+		size = 57120
+	}
 }
 #Elitsa (124000/31000 POPS)
 1041 = {
-	clergymen = {
+	aristocrats = { 
 		culture = astrakhani
 		religion = sunni
-		size = 25
+		size = 860
 	}
 
-	artisans = {
+	artisans = { 
 		culture = astrakhani
 		religion = sunni
-		size = 50
+		size = 3250
 	}
 
-	soldiers = {
+	bureaucrats = { 
 		culture = astrakhani
 		religion = sunni
-		size= 25
-
+		size = 210
 	}
 
-	farmers = {
+	clergymen = { 
 		culture = astrakhani
 		religion = sunni
-		size = 900
+		size = 315
 	}
 
-	aristocrats = {
+	farmers = { 
 		culture = astrakhani
 		religion = sunni
-		size = 25
+		size = 43298
 	}
 
-	clergymen = {
+	slaves = { 
 		culture = astrakhani
 		religion = sunni
-		size = 25
+		size = 6469
 	}
 
-	artisans = {
+	soldiers = { 
 		culture = astrakhani
 		religion = sunni
-		size = 50
+		size = 1497
 	}
 
-	soldiers = {
-		culture = astrakhani
-		religion = sunni
-		size= 25
-
+	slaves = { 
+		culture = russian
+		religion = orthodox
+		size = 3393
 	}
 
-	farmers = {
-		culture = astrakhani
-		religion = sunni
-		size = 875
+	slaves = { 
+		culture = russian
+		religion = orthodox
+		size = 507
 	}
 
-	aristocrats = {
-		culture = oirat
-		religion = gelugpa
-		size = 650
+	slaves = { 
+		culture = cossack
+		religion = orthodox
+		size = 4524
 	}
 
-	clergymen = {
-		culture = oirat
-		religion = gelugpa
-		size = 275
-	}
-
-	artisans = {
-		culture = oirat
-		religion = gelugpa
-		size = 1450
-	}
-
-	soldiers = {
-		culture = oirat
-		religion = gelugpa
-		size= 300
-
-	}
-
-	farmers = {
-		culture = oirat
-		religion = gelugpa
-		size = 26325
+	slaves = { 
+		culture = cossack
+		religion = orthodox
+		size = 676
 	}
 }
 #Migolinskaya (84000/21000 POPS)
 1045 = {
-	aristocrats = {
-		culture = astrakhani
-		religion = sunni
-		size = 100
+	aristocrats = { 
+		culture = cossack
+		religion = orthodox
+		size = 442
 	}
 
-	clergymen = {
-		culture = astrakhani
-		religion = sunni
-		size = 125
+	artisans = { 
+		culture = cossack
+		religion = orthodox
+		size = 5950
 	}
 
-	artisans = {
-		culture = astrakhani
-		religion = sunni
-		size = 650
+	bureaucrats = { 
+		culture = cossack
+		religion = orthodox
+		size = 184
 	}
 
-	soldiers = {
-		culture = astrakhani
-		religion = sunni
-		size= 1000
-
+	clergymen = { 
+		culture = cossack
+		religion = orthodox
+		size = 184
 	}
 
-	farmers = {
-		culture = astrakhani
-		religion = sunni
-		size = 11125
+	farmers = { 
+		culture = cossack
+		religion = orthodox
+		size = 61325
 	}
 
-	aristocrats = {
-		culture = astrakhani
-		religion = sunni
-		size = 100
+	soldiers = { 
+		culture = cossack
+		religion = orthodox
+		size = 2125
 	}
 
-	
-	artisans = {
-		culture = astrakhani
-		religion = sunni
-		size = 400
+	farmers = { 
+		culture = russian
+		religion = orthodox
+		size = 8330
 	}
 
-	soldiers = {
-		culture = astrakhani
+	serfs = { 
+		culture = tatar
 		religion = sunni
-		size= 100
-
+		size = 10710
 	}
 
-	farmers = {
+	serfs = { 
+		culture = kirgiz
+		religion = sunni
+		size = 5950
+	}
+
+	serfs = { 
 		culture = astrakhani
 		religion = sunni
-		size = 7325
+		size = 23800
 	}
 }
 #Chirskaya (92000/23000 POPS)  #mongol = kalmyk  
 1046 = {
-	aristocrats = {
+	aristocrats = { 
+		culture = cossack
+		religion = orthodox
+		size = 442
+	}
+
+	artisans = { 
+		culture = cossack
+		religion = orthodox
+		size = 3100
+	}
+
+	bureaucrats = { 
+		culture = cossack
+		religion = orthodox
+		size = 184
+	}
+
+	clergymen = { 
+		culture = cossack
+		religion = orthodox
+		size = 184
+	}
+
+	farmers = { 
+		culture = cossack
+		religion = orthodox
+		size = 33025
+	}
+
+	soldiers = { 
+		culture = cossack
+		religion = orthodox
+		size = 2125
+	}
+
+	serfs = { 
 		culture = astrakhani
 		religion = sunni
-		size = 125
+		size = 17360
 	}
 
-	clergymen = {
-		culture = astrakhani
+	serfs = { 
+		culture = tatar
 		religion = sunni
-		size = 75
+		size = 2480
 	}
 
-	artisans = {
-		culture = astrakhani
+	serfs = { 
+		culture = crimean
 		religion = sunni
-		size = 500
-	}
-
-	soldiers = {
-		culture = astrakhani
-		religion = sunni
-		size= 100
-
-	}
-
-	farmers = {
-		culture = astrakhani
-		religion = sunni
-		size = 9200
-	}
-
-	aristocrats = {
-		culture = astrakhani
-		religion = sunni
-		size = 150
-	}
-
-	clergymen = {
-		culture = astrakhani
-		religion = sunni
-		size = 75
-	}
-
-	artisans = {
-		culture = astrakhani
-		religion = sunni
-		size = 400
-	}
-
-	soldiers = {
-		culture = astrakhani
-		religion = sunni
-		size= 100
-
-	}
-
-	farmers = {
-		culture = astrakhani
-		religion = sunni
-		size = 7275
-	}
-
-	aristocrats = {
-		culture = oirat
-		religion = gelugpa
-		size = 100
-	}
-
-	clergymen = {
-		culture = oirat
-		religion = gelugpa
-		size = 50
-	}
-
-	artisans = {
-		culture = oirat
-		religion = gelugpa
-		size = 250
-	}
-
-	soldiers = {
-		culture = oirat
-		religion = gelugpa
-		size= 50
-
-	}
-
-	farmers = {
-		culture = oirat
-		religion = gelugpa
-		size = 4550
+		size = 3100
 	}
 }
 #Azov (172000/43000 POPS)
 1047 = {
-	aristocrats = {
-		culture = astrakhani
+	aristocrats = { 
+		culture = crimean
 		religion = sunni
-		size = 400
+		size = 952
 	}
 
-	clergymen = {
-		culture = astrakhani
+	artisans = { 
+		culture = crimean
 		religion = sunni
-		size = 300
+		size = 5333
 	}
 
-	artisans = {
-		culture = astrakhani
+	bureaucrats = { 
+		culture = crimean
 		religion = sunni
-		size = 1650
+		size = 199
 	}
 
-	soldiers = {
-		culture = astrakhani
+	clergymen = { 
+		culture = crimean
 		religion = sunni
-		size= 2000
-
+		size = 793
 	}
 
-	farmers = {
-		culture = astrakhani
+	officers = { 
+		culture = crimean
 		religion = sunni
-		size = 24700
+		size = 135
 	}
 
-	aristocrats = {
-		culture = astrakhani
+	farmers = { 
+		culture = crimean
 		religion = sunni
-		size = 300
+		size = 19516
 	}
 
-	artisans = {
-		culture = astrakhani
+	serfs = { 
+		culture = crimean
 		religion = sunni
-		size = 750
+		size = 15967
 	}
 
-	soldiers = {
-		culture = astrakhani
+	soldiers = { 
+		culture = crimean
 		religion = sunni
-		size= 100
-
+		size = 4350
 	}
 
-	farmers = {
-		culture = astrakhani
+	aristocrats = { 
+		culture = turkish
 		religion = sunni
-		size = 7750
+		size = 47
 	}
 
-	aristocrats = {
-		culture = astrakhani
+	artisans = { 
+		culture = turkish
 		religion = sunni
-		size = 50
+		size = 266
 	}
 
-	clergymen = {
-		culture = astrakhani
+	bureaucrats = { 
+		culture = turkish
 		religion = sunni
-		size = 50
+		size = 10
 	}
 
-	artisans = {
-		culture = astrakhani
+	clergymen = { 
+		culture = turkish
 		religion = sunni
-		size = 850
+		size = 39
 	}
 
-	soldiers = {
-		culture = astrakhani
+	officers = { 
+		culture = turkish
 		religion = sunni
-		size= 25
-
+		size = 6
 	}
 
-	farmers = {
-		culture = astrakhani
+	farmers = { 
+		culture = turkish
 		religion = sunni
-		size = 1075
+		size = 977
 	}
 
-	clergymen = {
+	serfs = { 
+		culture = turkish
+		religion = sunni
+		size = 799
+	}
+
+	soldiers = { 
+		culture = turkish
+		religion = sunni
+		size = 95
+	}
+
+	farmers = { 
+		culture = ashkenazi
+		religion = jewish
+		size = 924
+	}
+
+	serfs = { 
+		culture = ashkenazi
+		religion = jewish
+		size = 756
+	}
+
+	farmers = { 
+		culture = north_italian
+		religion = catholic
+		size = 1848
+	}
+
+	serfs = { 
+		culture = north_italian
+		religion = catholic
+		size = 1512
+	}
+
+	farmers = { 
 		culture = greek
 		religion = orthodox
-		size = 25
+		size = 616
 	}
 
-	artisans = {
+	serfs = { 
 		culture = greek
 		religion = orthodox
-		size = 750
+		size = 504
 	}
 
-	soldiers = {
-		culture = greek
+	farmers = { 
+		culture = cossack
 		religion = orthodox
-		size= 25
-
+		size = 1540
 	}
 
-	farmers = {
-		culture = greek
+	serfs = { 
+		culture = cossack
 		religion = orthodox
-		size = 200
+		size = 1260
 	}
 }
 #Kuban Region (520000)
 #under the rule of Russia in 1836
 #Ekaterinodar (136000/34000 POPS)
 1048 = {
-	aristocrats = {
-		culture = astrakhani
-		religion = sunni
-		size = 400
-	}
-
-	clergymen = {
-		culture = astrakhani
-		religion = sunni
-		size = 300
-	}
-
-	artisans = {
-		culture = astrakhani
+	aristocrats = { 
+		culture = crimean
 		religion = sunni
 		size = 1000
 	}
 
-	soldiers = {
-		culture = astrakhani
+	artisans = { 
+		culture = crimean
 		religion = sunni
-		size= 1000
-
+		size = 7900
 	}
 
-	farmers = {
-		culture = astrakhani
+	bureaucrats = { 
+		culture = crimean
 		religion = sunni
-		size = 35625
+		size = 210
 	}
 
-	artisans = {
+	clergymen = { 
+		culture = crimean
+		religion = sunni
+		size = 833
+	}
+
+	officers = { 
+		culture = crimean
+		religion = sunni
+		size = 142
+	}
+
+	farmers = { 
+		culture = crimean
+		religion = sunni
+		size = 25940
+	}
+
+	serfs = { 
+		culture = crimean
+		religion = sunni
+		size = 21224
+	}
+
+	soldiers = { 
+		culture = crimean
+		religion = sunni
+		size = 4350
+	}
+
+	farmers = { 
+		culture = north_italian
+		religion = catholic
+		size = 1303
+	}
+
+	serfs = { 
+		culture = north_italian
+		religion = catholic
+		size = 1066
+	}
+
+	farmers = { 
 		culture = greek
 		religion = orthodox
-		size = 900
+		size = 2172
 	}
 
-	farmers = {
+	serfs = { 
 		culture = greek
 		religion = orthodox
-		size = 800
+		size = 1777
+	}
+
+	farmers = { 
+		culture = astrakhani
+		religion = sunni
+		size = 7386
+	}
+
+	serfs = { 
+		culture = astrakhani
+		religion = sunni
+		size = 6043
 	}
 }
 #Temen (60000/15000 POPS)
@@ -632,103 +752,46 @@
 }
 #Stavropol (188000/47000 POPS)
 1050 = {
-	clergymen = {
+	aristocrats = { 
 		culture = astrakhani
 		religion = sunni
-		size = 100
+		size = 860
 	}
 
-	artisans = {
+	artisans = { 
 		culture = astrakhani
 		religion = sunni
-		size = 1800
+		size = 6700
 	}
 
-	soldiers = {
+	bureaucrats = { 
 		culture = astrakhani
 		religion = sunni
-		size= 2150
-
+		size = 210
 	}
 
-	farmers = {
+	clergymen = { 
 		culture = astrakhani
 		religion = sunni
-		size = 40975
+		size = 315
 	}
 
-	aristocrats = {
+	farmers = { 
 		culture = astrakhani
 		religion = sunni
-		size = 750
+		size = 108243
 	}
 
-	bureaucrats = {
+	slaves = { 
 		culture = astrakhani
 		religion = sunni
-		size = 150
+		size = 16174
 	}
 
-	officers = {
+	soldiers = { 
 		culture = astrakhani
 		religion = sunni
-		size = 125
-	}
-
-	clergymen = {
-		culture = north_caucasian
-		religion = sunni
-		size = 125
-	}
-
-	artisans = {
-		culture = north_caucasian
-		religion = sunni
-		size = 650
-	}
-
-	soldiers = {
-		culture = north_caucasian
-		religion = sunni
-		size= 150
-
-	}
-
-	farmers = {
-		culture = north_caucasian
-		religion = sunni
-		size = 50000
-	}
-
-	aristocrats = {
-		culture = mongol
-		religion = gelugpa
-		size = 15
-	}
-
-	clergymen = {
-		culture = mongol
-		religion = gelugpa
-		size = 25
-	}
-
-	artisans = {
-		culture = mongol
-		religion = gelugpa
-		size = 50
-	}
-
-	soldiers = {
-		culture = mongol
-		religion = gelugpa
-		size= 10
-
-	}
-
-	farmers = {
-		culture = mongol
-		religion = gelugpa
-		size = 900
+		size = 1497
 	}
 }
 #Adygei (136000/34000 POPS)

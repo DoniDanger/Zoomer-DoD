@@ -1,5 +1,5 @@
 political_decisions = {
-		form_russia = {
+		declare_russian_empire = {
 			potential = {
 				is_culture_group = east_slavic	
 				
@@ -7,34 +7,28 @@ political_decisions = {
 				NOT = {
 					exists = RUS
 				}
+				OR = {
+					tag = MSC
+					NOT = { exists = MSC }
+				}
 			}
 		
 			allow = {
 				NOT = { war = yes }
 				state_n_government = 1
 				prestige = 10
-				MUS = {
-				all_core = {
-					owner = {
-						OR = {
-							tag = THIS
-							in_sphere = THIS
-							vassal_of = THIS
+				RUS = {
+					all_core = {
+						owner = {
+							OR = {
+								tag = THIS
+								in_sphere = THIS
+								vassal_of = THIS
+							}
 						}
 					}
 				}
-				}
-				NOV = {
-				all_core = {
-					owner = {
-						OR = {
-							tag = THIS
-							in_sphere = THIS
-							vassal_of = THIS
-						}
-					}
-				}
-			}
+			
 			}
 		
 			effect = {
@@ -42,6 +36,8 @@ political_decisions = {
 				change_tag = RUS
 				add_accepted_culture = russian
 				add_accepted_culture = ugrian
+				add_accepted_culture = cossack
+				add_accepted_culture = north_russian
 				any_country = {
 					limit = {
 						is_culture_group = east_slavic
@@ -58,7 +54,282 @@ political_decisions = {
 			}
 	}
 
-
+	form_russia = {
+			potential = {
+				is_culture_group = east_slavic	
+				
+				
+				NOT = {
+					exists = RUS
+					exists = MSC
+				}
+				NOT = { has_country_flag = formed_russian_tsardom }
+			}
+		
+			allow = {
+				war = no
+				owns = 1008
+				RYA = {
+					all_core = {
+						owner = {
+							OR = {
+								tag = THIS
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+				TVE = {
+					all_core = {
+						owner = {
+							OR = {
+								tag = THIS
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+				NZH = {
+					all_core = {
+						owner = {
+							OR = {
+								tag = THIS
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+				943 = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+		
+			effect = {
+				prestige = 20
+				change_tag = MSC
+				capital = 1008
+				add_accepted_culture = russian
+				any_country = {
+					limit = {
+						primary_culture = russian
+						   OR = {
+						    in_sphere = THIS
+							vassal_of = THIS
+							}
+					}
+					country_event = 11101
+				}
+				SML = { all_core = { add_core = THIS }}
+				set_country_flag = formed_russian_tsardom
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	
+	dominate_central_russia = {
+			potential = {
+				primary_culture = russian		
+				NOT = {
+					exists = RUS
+					exists = MSC
+				}
+				NOT = { has_country_flag = dominated_central_russia }
+			}
+		
+			allow = {
+				war = no
+				ideological_thought = 1
+				owns = 1008
+			}
+		
+			effect = {
+				badboy = 10
+				NZH = { all_core = { add_core = THIS }}
+				MUS = { all_core = { add_core = THIS }}
+				TVE = { all_core = { add_core = THIS }}
+				RYA = { all_core = { add_core = THIS }}
+				RUS_943 = { add_core = THIS }
+				set_country_flag = dominated_central_russia
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	
+	subjugate_northern_principalities = {
+			potential = {
+				is_culture_group = east_slavic			
+				OR = {
+					tag = MSC
+					tag = RUS
+				}
+				NOT = { has_country_flag = subjugated_northern_principalities }
+			}
+		
+			allow = {
+				war = no
+				#ideological_thought = 1
+				NOV = {
+					any_core = {
+						owner = {
+							OR = {
+								tag = THIS
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		
+			effect = {
+				prestige = 15
+				NOV = { all_core = { add_core = THIS }}
+				PSV = { all_core = { add_core = THIS }}
+				MAR = { all_core = { add_core = THIS }}
+				add_accepted_culture = north_russian
+				add_accepted_culture = ugrian
+				any_country = {
+					limit = {
+						primary_culture = north_russian
+						   OR = {
+						    in_sphere = THIS
+							vassal_of = THIS
+							}
+					}
+					country_event = 11101
+				}
+				set_country_flag = subjugated_northern_principalities
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	
+	vanquish_southern_khanates = {
+			potential = {
+				is_culture_group = east_slavic			
+				OR = {
+					tag = MSC
+					tag = RUS
+				}
+				NOT = { has_country_flag = vanquish_southern_khanates }
+			}
+		
+			allow = {
+				war = no
+				ideological_thought = 1
+				KZN = {
+					any_core = {
+						owner = {
+							OR = {
+								tag = THIS
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		
+			effect = {
+				prestige = 15
+				KZN = { all_core = { add_core = THIS }}
+				BSK = { all_core = { add_core = THIS }}
+				MAR = { all_core = { add_core = THIS }}
+				AKT = { all_core = { add_core = THIS }}
+				VOR = { all_core = { add_core = THIS }}
+				1182 = { add_core = THIS }
+				2610 = { add_core = THIS }
+				any_country = {
+					limit = {
+						primary_culture = tatar
+						   OR = {
+						    in_sphere = THIS
+							vassal_of = THIS
+							}
+					}
+					country_event = 11101
+				}
+				set_country_flag = vanquish_southern_khanates
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	
+	absorb_cossack_states = {
+			potential = {
+				is_culture_group = east_slavic			
+				OR = {
+					tag = MSC
+					tag = RUS
+				}
+				NOT = { has_country_flag = absorbed_cossack_states }
+			}
+		
+			allow = {
+				war = no
+				ideological_thought = 1
+				owns = 943
+				UKR = {
+					any_core = {
+						owner = {
+							OR = {
+								tag = THIS
+								in_sphere = THIS
+								vassal_of = THIS
+							}
+						}
+					}
+				}
+			}
+		
+			effect = {
+				prestige = 15
+				VOR = { all_core = { add_core = THIS }}
+				KHK = { all_core = { add_core = THIS }}
+				SML = { all_core = { add_core = THIS }}
+				RUS_980 = { add_core = THIS }
+				RUS_1039 = { add_core = THIS } 
+				RUS_1034 = { add_core = THIS }
+				add_accepted_culture = cossack
+				any_country = {
+					limit = {
+						primary_culture = cossack
+						   OR = {
+						    in_sphere = THIS
+							vassal_of = THIS
+							}
+					}
+					country_event = 11101
+				}
+				any_country = {
+					limit = {
+						primary_culture = ruthenian
+						   OR = {						    
+							vassal_of = THIS
+							}
+					}
+					country_event = 11101
+				}
+				set_country_flag = absorbed_cossack_states
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+	
 	mongolian_protectorate = {
 		potential = {
 			OR = { 

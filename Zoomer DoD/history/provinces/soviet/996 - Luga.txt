@@ -1,6 +1,6 @@
-owner = PSV
-controller = PSV
-add_core = RUS
+owner = SCA
+controller = SCA
+add_core = SCA
 add_core = NOV
 add_core = PSV
 trade_goods = grain

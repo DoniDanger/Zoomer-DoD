@@ -41,7 +41,7 @@
 	soldiers = {
 		culture = beornian
 		religion = protestant
-		size= 3000
+		size= 3500
 
 	}
 
@@ -49,6 +49,55 @@
 		culture = beornian
 		religion = protestant
 		size = 49825
+	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 1125
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 500
+	}
+
+	officers = {
+		culture = beornian
+		religion = protestant
+		size = 75
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 1091
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 8000
+	}
+	
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 2500
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 5000
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 24000
 	}
 }
 #Junin (56000/14000 POPS)
@@ -90,6 +139,101 @@
 		religion = protestant
 		size = 25550
 	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 275
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 383
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 5100
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 1000
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 22000
+	}
+}
+#Bradford (8000/2000 POPS)
+2363 = {
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 25
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 25
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 1800
+	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 275
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 383
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 600
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 1000
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 2000
+	}
+	
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 16000
+	}
 }
 #Azul (12000/3000 POPS)
 2350 = {
@@ -111,6 +255,49 @@
 		religion = protestant
 		size = 15700
 	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 75
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 700
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 80
+
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size = 800
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 4400
+	}
+	
+	farmers = {
+		culture = het
+		religion = animist
+		size = 3200
+	}
 }
 #La Plata (4000/1000 POPS)
 2351 = {
@@ -131,6 +318,61 @@
 		religion = protestant
 		size = 19000
 	}
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 275
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 383
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 600
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 1600
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 16200
+	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 75
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 600
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 13200
+	}
 }
 #Mar del Plata (12000/3000 POPS)
 2352 = {
@@ -150,6 +392,73 @@
 		culture = beornian
 		religion = protestant
 		size = 20700
+	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 15
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 25
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 3000
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 7200
+	}
+	
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size = 600
+	}
+	
+	farmers = {
+		culture = het
+		religion = animist
+		size = 2600
+	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 75
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 4000
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 600
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 7600
 	}
 }
 #Under loose authority of Argentina 1836
@@ -173,6 +482,130 @@
 		religion = protestant
 		size = 25
 	}
+	
+	aristocrats = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 370
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 90
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 3400
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 525
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 3200
+	}
+	
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 164
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 370
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 90
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 4800
+	}
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 482
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 2000
+	}
 }
 #Bahia Blanca (24000/6000 POPS)
 2354 = {
@@ -192,6 +625,43 @@
 		culture = beornian
 		religion = protestant
 		size = 50
+	}
+	
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 150
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 180
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 50
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 6600
+	}
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+	
+	farmers = {
+		culture = het
+		religion = animist
+		size = 4800
 	}
 }
 #Carmen (20000/5000 POPS)
@@ -225,6 +695,124 @@
 		culture = patagonian
 		religion = animist
 		size = 1425
+	}
+	
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 125
+	}
+	
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 200
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 4200
+	}
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 3400
+	}
+	
+	aristocrats = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 600
+
+	}
+	
+	farmers = {
+		culture = patagonian
+		religion = animist
+		size = 200
+	}
+	
+	farmers = {
+		culture = het
+		religion = animist
+		size = 2000
+	}
+
+	aristocrats = {
+		culture = patagonian
+		religion = animist
+		size = 75
+	}
+
+	clergymen = {
+		culture = patagonian
+		religion = animist
+		size = 75
+	}
+
+	farmers = {
+		culture = patagonian
+		religion = animist
+		size = 3200
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 250
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 800
 	}
 }
 #Corrientes Region (164000)
@@ -504,6 +1092,64 @@
 		religion = animist
 		size = 2400
 	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 125
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 850
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 4000
+	}
+
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 13200
+	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 125
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 332
+	}
+
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 5400
+	}
+
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 3525
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 12800
+	}
 }
 #Reconquista (56000/14000 POPS)
 2362 = {
@@ -549,32 +1195,98 @@
 		religion = protestant
 		size = 19350
 	}
-}
-#Rosario (8000/2000 POPS)
-2363 = {
-	aristocrats = {
-		culture = beornian
-		religion = protestant
-		size = 25
+	
+	clergymen = {
+		culture = guarani
+		religion = animist
+		size = 282
 	}
 
-	clergymen = {
+	artisans = {
+		culture = guarani
+		religion = animist
+		size = 770
+	}
+
+	soldiers = {
+		culture = guarani
+		religion = animist
+		size= 150
+
+	}
+
+	farmers = {
+		culture = guarani
+		religion = animist
+		size = 2875
+	}
+
+
+	aristocrats = {
 		culture = beornian
 		religion = protestant
 		size = 50
 	}
 
-	soldiers = {
+	bureaucrats = {
 		culture = beornian
 		religion = protestant
-		size= 25
+		size = 18
+	}
 
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
 	}
 
 	farmers = {
 		culture = beornian
 		religion = protestant
-		size = 1800
+		size = 4860
+	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 125
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 220
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 600
+
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 2800
+	}
+
+	farmers = {
+		culture = guarani
+		religion = animist
+		size = 4200
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 7600
 	}
 }
 #Chaco Region (76000) #see Paraguay.txt for balance of region
@@ -630,6 +1342,43 @@
 		religion = protestant
 		size = 1200
 	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 20
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 80
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 4200
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 600
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 16200
+	}
+	
+	farmers = {
+		culture = guarani
+		religion = animist
+		size = 3200
+	}
 }
 #Villa Angela (16000/4000 POPS)
 2365 = {
@@ -675,6 +1424,56 @@
 		culture = beornian
 		religion = protestant
 		size = 900
+	}
+	
+	aristocrats = {
+		culture = guarani
+		religion = inti
+		size = 50
+	}
+
+	clergymen = {
+		culture = guarani
+		religion = inti
+		size = 75
+	}
+
+	soldiers = {
+		culture = guarani
+		religion = inti
+		size= 125
+
+	}
+
+	farmers = {
+		culture = guarani
+		religion = inti
+		size = 3752
+	}
+
+	farmers = {
+		culture = guarani
+		religion = animist
+		size = 1000
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 25
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 500
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 2800
 	}
 }
 #Under loose authority of Paraguay 1836
@@ -759,63 +1558,92 @@
 }
 #Salta Region (36000)
 #Under rule of Argentina 1836
-#Santa Rosa - Former Bechar (20000/5000 POPS)
-1714 = {
-	aristocrats = {
-		culture = aimara
-		religion = inti
-		size = 5
-	}
-
-	bureaucrats = {
-		culture = aimara
-		religion = inti
-		size = 15
-	}
-
-	clergymen = {
-		culture = aimara
-		religion = inti
-		size = 10
-	}
-	
-	artisans = {
-		culture = aimara
-		religion = inti
-		size = 10
-	}
-
-	soldiers = {
-		culture = aimara
-		religion = inti
-		size = 60
-	}
-
-	farmers = {
-		culture = aimara
-		religion = inti
-		size = 300
-	}
-	
-	farmers = {
-		culture = quechua
-		religion = inti
-		size = 200
-	}
-}
 
 #Salta (16000/4000 POPS)
 2368 = {
 	aristocrats = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 175
 	}
 
 	bureaucrats = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 215
+	}
+
+	officers = {
+		culture = quechua
+		religion = catholic
+		size = 110
+	}
+
+	clergymen = {
+		culture = quechua
+		religion = catholic
+		size = 250
+	}
+
+	artisans = {
+		culture = quechua
+		religion = catholic
+		size = 6500
+	}
+
+	soldiers = {
+		culture = quechua
+		religion = catholic
+		size = 1500
+	}
+
+	farmers = {
+		culture = quechua
+		religion = catholic
+		size = 6000
+	}
+
+	aristocrats = {
+		culture = aimara
+		religion = catholic
+		size = 100
+	}
+
+	clergymen = {
+		culture = aimara
+		religion = catholic
+		size = 200
+	}
+
+	artisans = {
+		culture = aimara
+		religion = catholic	
+		size = 3400
+	}
+
+	soldiers = {
+		culture = aimara
+		religion = catholic
+		size= 500
+
+	}
+
+	farmers = {
+		culture = aimara
+		religion = catholic
+		size = 26300
+	}
+	
+	aristocrats = {
+		culture = quechua
+		religion = inti
+		size = 180
+	}
+
+	bureaucrats = {
+		culture = quechua
+		religion = inti
+		size = 230
 	}
 
 	officers = {
@@ -827,7 +1655,7 @@
 	clergymen = {
 		culture = quechua
 		religion = inti
-		size = 250
+		size = 372
 	}
 
 	artisans = {
@@ -839,48 +1667,102 @@
 	soldiers = {
 		culture = quechua
 		religion = inti
-		size = 1500
+		size = 600
 	}
 
 	farmers = {
 		culture = quechua
 		religion = inti
-		size = 12000
+		size = 5000
 	}
 
 	aristocrats = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
 		size = 100
 	}
 
 	clergymen = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
-		size = 200
+		size = 258
 	}
 
 	artisans = {
-		culture = aimara
+		culture = diaguita
 		religion = inti	
-		size = 3400
+		size = 3510
 	}
 
 	soldiers = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
-		size= 3000
+		size= 400
 
 	}
 
 	farmers = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
-		size = 22300
+		size = 25000
 	}
 }
 #Jujuy (8000/2000 POPS)
 2369 = {
+	aristocrats = {
+		culture = quechua
+		religion = catholic
+		size = 25
+	}
+
+	clergymen = {
+		culture = quechua
+		religion = catholic
+		size = 150
+	}
+
+	artisans = {
+		culture = quechua
+		religion = catholic
+		size = 3800
+	}
+
+	farmers = {
+		culture = quechua
+		religion = catholic
+		size = 4700
+	}
+
+	aristocrats = {
+		culture = aimara
+		religion = catholic	
+		size = 50
+	}
+
+	clergymen = {
+		culture = aimara
+		religion = catholic
+		size = 100
+	}
+
+	artisans = {
+		culture = aimara
+		religion = catholic
+		size = 4400
+	}
+
+	soldiers = {
+		culture = aimara
+		religion = catholic
+		size= 500
+	}
+
+	farmers = {
+		culture = aimara
+		religion = catholic
+		size = 14900
+	}
+	
 	aristocrats = {
 		culture = quechua
 		religion = inti
@@ -890,208 +1772,221 @@
 	clergymen = {
 		culture = quechua
 		religion = inti
-		size = 150
+		size = 210
 	}
 
 	artisans = {
 		culture = quechua
 		religion = inti
-		size = 3800
+		size = 4300
 	}
 
 	farmers = {
 		culture = quechua
 		religion = inti
-		size = 8700
+		size = 4700
 	}
 
 	aristocrats = {
-		culture = aimara
+		culture = diaguita
 		religion = inti	
 		size = 50
 	}
 
 	clergymen = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
-		size = 100
+		size = 248
 	}
 
 	artisans = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
-		size = 4400
+		size = 2100
 	}
 
 	soldiers = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
 		size= 500
 	}
 
 	farmers = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
-		size = 10900
+		size = 9900
 	}
-}
-#Cochinoca (4000/1000 POPS)
-2370 = {
-	aristocrats = {
-		culture = quechua
-		religion = inti
-		size = 150
-	}
-
-	clergymen = {
-		culture = quechua
-		religion = inti
-		size = 125
-	}
-
-	soldiers = {
-		culture = quechua
-		religion = inti
-		size= 500
-
-	}
-
-	artisans = {
-		culture = quechua
-		religion = inti	
-		size = 1200
-	}
-
-	farmers = {
-		culture = quechua
-		religion = inti
-		size = 16400
-	}
-
-	clergymen = {
-		culture = aimara
-		religion = inti	
-		size = 250
-	}
-
-	artisans =  {
-		culture = aimara
-		religion = inti
-		size = 2300
-	}
-
-	farmers = {
-		culture = aimara
-		religion = inti
-		size = 23600
-	}
-}
-#Equia (4000/1000 POPS)
-2371 = {
-	aristocrats = {
-		culture = quechua
-		religion = inti
-		size = 145
-	}
-
-	clergymen = {
-		culture = quechua
-		religion = inti
-		size = 325
-	}
-
-	soldiers = {
-		culture = aimara
-		religion = inti
-		size= 250
-	}
-
-	clergymen = {	
-		culture = aimara
-		religion = inti
-		size = 100
-	}
-
-	artisans = {
-		culture = aimara
-		religion = inti
-		size = 2300
-	}
-
-	farmers = {
-		culture = aimara
-		religion = inti
-		size = 18000
-	}
-
-	artisans = {	
-		culture = quechua
-		religion = inti	
-		size = 1200
-	}
-
-	farmers = {
-		culture = quechua
-		religion = inti
-		size = 10400
-	}
-
 }
 #Rivadavia (4000/1000 POPS)
 2372 = {
 	aristocrats = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 15
 	}
 
 	clergymen = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 225
 	}
 
 	clergymen = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 225
 	}
 
 	artisans = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 1000
 	}
 
 	artisans = {
 		culture = aimara
-		religion = inti	
+		religion = catholic	
 		size = 2000
 	}
 
 	soldiers = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size= 10
 
 	}
 
 	farmers = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 9500
 	}
 
 	farmers = {
 		culture = quechua
+		religion = catholic
+		size = 6400
+	}
+	
+	aristocrats = {
+		culture = diaguita
+		religion = inti
+		size = 15
+	}
+
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 150
+	}
+
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 300
+	}
+
+	artisans = {
+		culture = diaguita
+		religion = inti
+		size = 1000
+	}
+	
+	farmers = {
+		culture = diaguita
+		religion = inti
+		size = 3200
+	}
+	
+	soldiers = {
+		culture = diaguita
+		religion = inti
+		size = 600
+	}
+	
+	artisans = {
+		culture = diaguita
+		religion = inti	
+		size = 2000
+	}
+
+	soldiers = {
+		culture = guarani
+		religion = animist
+		size= 10
+
+	}
+
+	farmers = {
+		culture = guarani
 		religion = inti
 		size = 6400
+	}
+
+	farmers = {
+		culture = guarani
+		religion = animist
+		size = 4400
 	}
 }
 #Tucuman Region (36000)
 #Under rule of Argentina 1836
 #Tucuman (20000/5000 POPS)
 2373 = {
+	aristocrats = {
+		culture = quechua
+		religion = catholic
+		size = 100
+	}
+
+	bureaucrats = {
+		culture = quechua
+		religion = catholic
+		size = 150
+	}
+
+	officers = {
+		culture = quechua
+		religion = catholic
+		size = 100
+	}
+
+	clergymen = {
+		culture = aimara
+		religion = catholic
+		size = 100
+	}
+
+	artisans = {
+		culture = quechua
+		religion = catholic
+		size = 2500
+	}
+
+	soldiers = {
+		culture = quechua
+		religion = catholic
+		size = 1200
+	}
+
+	soldiers = {
+		culture = aimara
+		religion = catholic
+		size= 1500
+	}
+
+	farmers = {
+		culture = aimara
+		religion = catholic
+		size = 18225
+	}
+
+	farmers = {	
+		culture = quechua
+		religion = catholic	
+		size = 4700
+	}
+	
 	aristocrats = {
 		culture = quechua
 		religion = inti
@@ -1111,9 +2006,9 @@
 	}
 
 	clergymen = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
-		size = 100
+		size = 395
 	}
 
 	artisans = {
@@ -1122,20 +2017,8 @@
 		size = 2500
 	}
 
-	soldiers = {
-		culture = quechua
-		religion = inti
-		size = 1200
-	}
-
-	soldiers = {
-		culture = aimara
-		religion = inti
-		size= 3000
-	}
-
 	farmers = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
 		size = 18225
 	}
@@ -1150,37 +2033,109 @@
 2374 = {
 	aristocrats = {
 		culture = quechua
-		religion = inti
+		religion = catholic
 		size = 50
 	}
 
 	clergymen = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 275
 	}
 
 	artisans = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 3200
 	}
 
 	soldiers = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size= 25
 
 	}
 
 	farmers = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 22700
+	}
+	
+	aristocrats = {
+		culture = diaguita
+		religion = inti
+		size = 575
+	}
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 900
+	}
+
+	artisans = {
+		culture = diaguita
+		religion = inti
+		size = 8150
+	}
+
+	farmers = {
+		culture = diaguita
+		religion = inti
+		size = 42000
+	}
+
+	farmers = {
+		culture = quechua
+		religion = inti
+		size = 8200
+	}
+	
+	farmers = {
+		culture = aimara
+		religion = inti
+		size = 8200
+	}
+	
+	soldiers = {
+		culture = diaguita
+		religion = inti
+		size= 2600
 	}
 }
 #Vinchina (4000/1000 POPS)
 2375 = {
+	aristocrats = {
+		culture = quechua
+		religion = catholic
+		size = 15
+	}
+
+	clergymen = {
+		culture = aimara
+		religion = catholic
+		size = 125
+	}
+
+	artisans = {
+		culture = aimara
+		religion = catholic
+		size = 4500
+	}
+
+	soldiers = {
+		culture = aimara
+		religion = catholic
+		size= 10
+
+	}
+
+	farmers = {
+		culture = aimara
+		religion = catholic
+		size = 14900
+	}
+	
 	aristocrats = {
 		culture = quechua
 		religion = inti
@@ -1188,28 +2143,35 @@
 	}
 
 	clergymen = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
-		size = 125
+		size = 395
 	}
 
 	artisans = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
 		size = 4500
 	}
 
 	soldiers = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
 		size= 10
 
 	}
 
 	farmers = {
-		culture = aimara
+		culture = diaguita
 		religion = inti
-		size = 14900
+		size = 13900
+	}
+
+
+	farmers = {
+		culture = quechua
+		religion = inti
+		size = 1400
 	}
 }
 #Santiago del Estero Region (40000)
@@ -1276,51 +2238,194 @@
 		religion = inti
 		size = 1600
 	}
-}
-#Anatuya (16000/4000 POPS)
-2377 = {
+	
+	aristocrats = {
+		culture = guarani
+		religion = inti
+		size = 82
+	}
+
 	clergymen = {
-		culture = beornian
-		religion = protestant
-		size = 25
+		culture = guarani
+		religion = inti
+		size = 82
+	}
+
+	artisans = {
+		culture = guarani
+		religion = animist
+		size = 370
+	}
+
+	artisans = {
+		culture = guarani
+		religion = inti
+		size = 400
 	}
 
 	soldiers = {
-		culture = beornian
-		religion = protestant
-		size= 25
+		culture = guarani
+		religion = animist
+		size= 90
+
+	}
+
+	soldiers = {
+		culture = guarani
+		religion = inti
+		size= 300
 
 	}
 
 	farmers = {
-		culture = beornian
-		religion = protestant
-		size = 900
-	}
-
-	aristocrats = {
 		culture = guarani
 		religion = animist
+		size = 1575
+	}
+
+	farmers = {
+		culture = guarani
+		religion = inti
+		size = 2600
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
 		size = 50
 	}
 
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
 	clergymen = {
-		culture = guarani
-		religion = animist
-		size = 75
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 125
 	}
 
 	soldiers = {
-		culture = guarani
-		religion = animist
-		size= 25
+		culture = beornian
+		religion = protestant
+		size= 82
 
 	}
 
 	farmers = {
-		culture = guarani
+		culture = beornian
+		religion = protestant
+		size = 3200
+	}
+}
+#Anatuya (16000/4000 POPS)
+2377 = {
+	aristocrats = {
+		culture = het
 		religion = animist
-		size = 2700
+		size = 82
+	}
+
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 370
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 90
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 4200
+	}
+
+	aristocrats = {
+		culture = diaguita
+		religion = inti
+		size = 200
+	}
+
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 280
+	}
+
+	artisans = {
+		culture = diaguita
+		religion = inti
+		size = 3000
+	}
+
+	soldiers = {
+		culture = diaguita
+		religion = inti
+		size= 600
+	}
+
+	farmers = {
+		culture = diaguita
+		religion = inti
+		size = 1520
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 182
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 860
 	}
 }
 #Mailin (8000/2000 POPS)
@@ -1354,6 +2459,69 @@
 		culture = guarani
 		religion = animist
 		size = 1300
+	}
+	
+	clergymen = {
+		culture = guarani
+		religion = animist
+		size = 282
+	}
+
+	artisans = {
+		culture = guarani
+		religion = animist
+		size = 770
+	}
+
+	soldiers = {
+		culture = guarani
+		religion = animist
+		size= 150
+
+	}
+
+	farmers = {
+		culture = guarani
+		religion = animist
+		size = 4975
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 182
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 3860
 	}
 }
 #Cordoba Region (136000)
@@ -1399,14 +2567,7 @@
 	soldiers = {
 		culture = beornian
 		religion = protestant
-		size= 3000
-
-	}
-
-	soldiers = {
-		culture = beornian
-		religion = protestant
-		size= 2000
+		size= 1800
 
 	}
 
@@ -1420,6 +2581,68 @@
 		culture = guarani
 		religion = animist
 		size = 6000
+	}
+	
+	aristocrats = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 182
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 1270
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 390
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 4275
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 845
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 6860
 	}
 }
 #Villa Nueva (8000/2000 POPS)
@@ -1454,6 +2677,132 @@
 		religion = animist
 		size = 800
 	}
+	
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 370
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 390
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 3275
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 182
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 3400
+	}
+	
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 370
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 390
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 3275
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 182
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 3400
+	}
 }
 #Rio Cuarto (8000/2000 POPS)
 2381 = {
@@ -1481,6 +2830,69 @@
 		religion = protestant
 		size = 1800
 	}
+	
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 670
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 390
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 2975
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 182
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 2860
+	}
 }
 #San Luis (8000/2000 POPS)
 2383 = {
@@ -1507,6 +2919,75 @@
 		culture = beornian
 		religion = protestant
 		size = 1800
+	}
+	
+	aristocrats = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 870
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 190
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 4975
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 182
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 3560
 	}
 }
 #Under the loose rule of Argentina 1836
@@ -1536,6 +3017,75 @@
 		religion = protestant
 		size = 50
 	}
+	
+	aristocrats = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 440
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 690
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 2800
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 725
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 282
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 3400
+	}
 }
 #Mercedes (8000/2000 POPS)
 2384 = {
@@ -1562,6 +3112,168 @@
 		culture = beornian
 		religion = protestant
 		size = 10
+	}
+	
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 164
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 370
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 90
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 3800
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 482
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 2000
+	}
+	
+	aristocrats = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 370
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 90
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 2200
+	}
+
+	aristocrats = {
+		culture = diaguita
+		religion = inti
+		size = 200
+	}
+
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 280
+	}
+
+	artisans = {
+		culture = diaguita
+		religion = inti
+		size = 3000
+	}
+
+	soldiers = {
+		culture = diaguita
+		religion = inti
+		size= 600
+	}
+
+	farmers = {
+		culture = diaguita
+		religion = inti
+		size = 5520
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 182
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 860
 	}
 }
 #La Rioja Region (40000)
@@ -1610,6 +3322,56 @@
 		religion = inti
 		size = 13700
 	}
+	
+	aristocrats = {
+		culture = diaguita
+		religion = inti
+		size = 175
+	}
+
+	bureaucrats = {
+		culture = diaguita
+		religion = inti
+		size = 215
+	}
+
+	officers = {
+		culture = diaguita
+		religion = inti
+		size = 100
+	}
+
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 395
+	}
+
+	artisans = {
+		culture = diaguita
+		religion = inti	
+		size = 2500
+	}
+
+	soldiers = {
+		culture = diaguita
+		religion = inti
+		size= 250
+
+	}
+
+	farmers = {
+		culture = diaguita
+		religion = inti
+		size = 12300
+	}
+
+
+	farmers = {
+		culture = quechua
+		religion = inti
+		size = 1400
+	}
 }
 #Santa Rita (8000/2000 POPS)
 2386 = {
@@ -1643,71 +3405,246 @@
 		religion = inti
 		size = 900
 	}
+	
+	aristocrats = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	artisans = {
+		culture = het
+		religion = animist
+		size = 370
+	}
+
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 90
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 4200
+	}
+
+	aristocrats = {
+		culture = diaguita
+		religion = inti
+		size = 200
+	}
+
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 280
+	}
+
+	artisans = {
+		culture = diaguita
+		religion = inti
+		size = 3000
+	}
+
+	soldiers = {
+		culture = diaguita
+		religion = inti
+		size= 600
+	}
+
+	farmers = {
+		culture = diaguita
+		religion = inti
+		size = 1520
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 182
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 860
+	}
 }
 #San Juan de la Frontera (12000/3000 POPS)
 2387 = {
 	aristocrats = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 150
 	}
 
 	clergymen = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 175
 	}
 
 	artisans = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 4500
 	}
 
 	soldiers = {
 		culture = aimara
-		religion = inti
-		size= 1500
+		religion = catholic
+		size= 600
 	}
 
 	farmers = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 22700
+	}
+	
+	aristocrats = {
+		culture = diaguita
+		religion = inti
+		size = 150
+	}
+
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 395
+	}
+
+	artisans = {
+		culture = diaguita
+		religion = inti
+		size = 4500
+	}
+
+	soldiers = {
+		culture = diaguita
+		religion = inti
+		size= 600
+	}
+
+	farmers = {
+		culture = diaguita
+		religion = inti
+		size = 18000
+	}
+
+
+	farmers = {
+		culture = quechua
+		religion = inti
+		size = 4600
 	}
 }
 #Calingasta (4000/1000 POPS)
 2388 = {
 	aristocrats = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 15
 	}
 
 	clergymen = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 125
 	}
 
 
 	artisans = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 3200
 	}
 
 	soldiers = {
 		culture = aimara
-		religion = inti
-		size= 900
+		religion = catholic
+		size= 600
 
 	}
 
 	farmers = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 10900
+	}
+	
+	aristocrats = {
+		culture = diaguita
+		religion = inti
+		size = 15
+	}
+
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 395
+	}
+
+
+	artisans = {
+		culture = diaguita
+		religion = inti
+		size = 3200
+	}
+
+	soldiers = {
+		culture = diaguita
+		religion = inti
+		size= 600
+
+	}
+
+	farmers = {
+		culture = diaguita
+		religion = inti
+		size = 8500
+	}
+
+
+	farmers = {
+		culture = quechua
+		religion = inti
+		size = 1400
 	}
 }
 #Mendoza Region (32000)
@@ -1716,44 +3653,92 @@
 2389 = {
 	aristocrats = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 250
 	}
 
 	bureaucrats = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 250
 	}
 
 	officers = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 100
 	}
 
 	clergymen = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 375
 	}
 
 	artisans = {
 		culture = aimara
-		religion = inti
+		religion = catholic
 		size = 6700
 	}
 
 	soldiers = {
 		culture = aimara
-		religion = inti
-		size= 900
+		religion = catholic
+		size= 600
 	}
 
 	farmers = {
 		culture = aimara
+		religion = catholic
+		size = 12660
+	}
+	
+	aristocrats = {
+		culture = diaguita
 		religion = inti
-		size = 42660
+		size = 250
+	}
+
+	bureaucrats = {
+		culture = diaguita
+		religion = inti
+		size = 250
+	}
+
+	officers = {
+		culture = diaguita
+		religion = inti
+		size = 100
+	}
+
+	clergymen = {
+		culture = diaguita
+		religion = inti
+		size = 375
+	}
+
+	artisans = {
+		culture = diaguita
+		religion = inti
+		size = 6700
+	}
+
+	soldiers = {
+		culture = diaguita
+		religion = inti
+		size= 600
+	}
+
+	farmers = {
+		culture = diaguita
+		religion = inti
+		size = 48000
+	}
+
+	farmers = {
+		culture = quechua
+		religion = inti
+		size = 4200
 	}
 }
 #San Rafael (8000/2000 POPS)
@@ -1770,13 +3755,6 @@
 		size = 50
 	}
 
-	soldiers = {
-		culture = beornian
-		religion = protestant
-		size= 125
-
-	}
-
 	farmers = {
 		culture = beornian
 		religion = protestant
@@ -1787,6 +3765,164 @@
 		culture = aimara
 		religion = inti
 		size = 600
+	}
+	
+	clergymen = {
+		culture = patagonian
+		religion = animist
+		size = 152
+	}
+
+	artisans = {
+		culture = patagonian
+		religion = animist
+		size = 450
+	}
+
+	farmers = {
+		culture = patagonian
+		religion = animist
+		size = 800
+	}
+
+	clergymen = {
+		culture = patagonian
+		religion = animist
+		size = 152
+	}
+
+	artisans = {
+		culture = patagonian
+		religion = animist
+		size = 450
+	}
+
+	soldiers = {
+		culture = patagonian
+		religion = animist
+		size= 400
+
+	}
+
+	farmers = {
+		culture = patagonian
+		religion = animist
+		size = 1200
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 3500
+	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 10
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 125
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 482
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 660
+	}
+	
+	clergymen = {
+		culture = patagonian
+		religion = animist
+		size = 152
+	}
+
+	artisans = {
+		culture = patagonian
+		religion = animist
+		size = 450
+	}
+
+	farmers = {
+		culture = patagonian
+		religion = animist
+		size = 1200
+	}
+
+	clergymen = {
+		culture = patagonian
+		religion = animist
+		size = 152
+	}
+
+	artisans = {
+		culture = patagonian
+		religion = animist
+		size = 450
+	}
+
+	farmers = {
+		culture = patagonian
+		religion = animist
+		size = 400
+	}
+	
+	farmers = {
+		culture = het
+		religion = animist
+		size = 2600
+	}
+	
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 10
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 125
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 400
 	}
 }
 #Under the loose rule of Argentina 1836
@@ -1878,6 +4014,69 @@
 		culture = patagonian
 		religion = animist
 		size = 1000
+	}
+	
+	aristocrats = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+
+	clergymen = {
+		culture = het
+		religion = animist
+		size = 82
+	}
+	
+	soldiers = {
+		culture = het
+		religion = animist
+		size= 200
+
+	}
+
+	farmers = {
+		culture = het
+		religion = animist
+		size = 5445
+	}
+
+
+	aristocrats = {
+		culture = beornian
+		religion = protestant
+		size = 50
+	}
+
+	bureaucrats = {
+		culture = beornian
+		religion = protestant
+		size = 18
+	}
+
+	clergymen = {
+		culture = beornian
+		religion = protestant
+		size = 121
+	}
+
+	artisans = {
+		culture = beornian
+		religion = protestant
+		size = 425
+	}
+
+	soldiers = {
+		culture = beornian
+		religion = protestant
+		size= 600
+
+	}
+
+	farmers = {
+		culture = beornian
+		religion = protestant
+		size = 4860
 	}
 }
 #Bariloche (16000/4000 POPS)

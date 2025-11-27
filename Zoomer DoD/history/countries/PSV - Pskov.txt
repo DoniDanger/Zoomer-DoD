@@ -1,10 +1,10 @@
 capital = 1006
-primary_culture = russian
+primary_culture = north_russian
 religion = orthodox
 government = presidential_dictatorship # Lord Protector assigned by Scandinavian Emperor
-plurality = 0.0
+plurality = 5
 nationalvalue = nv_order
-literacy = 0.01
+literacy = 0.13
 non_state_culture_literacy = 0.01
 civilized = yes
 prestige = 5

@@ -2,12 +2,7 @@ owner = CAS
 controller = CAS
 add_core = CLM
 add_core = CAS
-add_core = SAN
 add_core = GRA
 add_core = TAP
 trade_goods = tropical_wood
 life_rating = 30
-
-1837.1.1 = {
-	controller = CLM
-}

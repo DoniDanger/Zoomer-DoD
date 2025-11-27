@@ -1,7 +1,6 @@
-owner = NOV
-controller = NOV
-add_core = RUS
-add_core = MUS
+owner = PRM
+controller = PRM
+add_core = PRM
 add_core = NOV
 add_core = SIB
 trade_goods = coal

@@ -2,6 +2,7 @@ capital = 706 #Krakow
 primary_culture = polish
 culture = lithuanian
 culture = ashkenazi
+#culture = galician
 religion = catholic
 government = hms_government
 plurality = 20
@@ -33,7 +34,7 @@ school_reforms = no_schools
 
 #New Reforms
 conscription = four_year_draft
-debt_law = debtors_prisons
+debt_law = serfdom
 penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only

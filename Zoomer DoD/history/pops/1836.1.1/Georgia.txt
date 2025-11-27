@@ -580,7 +580,7 @@
 		size= 1000
 	}
 
-	farmers = {
+	slaves = {
 		culture = russian
 		religion = orthodox
 		size = 13225

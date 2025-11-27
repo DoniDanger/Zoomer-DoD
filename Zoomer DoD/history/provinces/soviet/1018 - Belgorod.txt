@@ -1,6 +1,8 @@
-owner = MUS
-controller = MUS
-add_core = MUS
+owner = VOR
+controller = VOR
+add_core = KHK
+add_core = VOR
+add_core = UKR
 add_core = RUS
 trade_goods = grain
 life_rating = 35

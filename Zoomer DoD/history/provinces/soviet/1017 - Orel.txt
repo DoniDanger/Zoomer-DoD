@@ -1,6 +1,8 @@
 owner = MUS
 controller = MUS
-add_core = RUS
 add_core = MUS
+add_core = VOR
+add_core = UKR
+add_core = RUS
 trade_goods = timber
 life_rating = 35

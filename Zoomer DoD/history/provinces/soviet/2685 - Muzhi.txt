@@ -1,6 +1,8 @@
-owner = SIB
-controller = SIB
+owner = NOV
+controller = NOV
+add_core = NOV
 add_core = SIB
-add_core = RUS
 trade_goods = timber
 life_rating = 35
+
+
