@@ -457,6 +457,7 @@ political_decisions = {
                         has_pop_culture = catalan
 						has_pop_culture = latvian
 						has_pop_culture = estonian
+                        is_culture_group = latin_american
                     }
                 }
                 literacy = 0.29
@@ -519,7 +520,6 @@ political_decisions = {
 						has_pop_culture = albanian
 						has_pop_culture = crimean
 						has_pop_culture = korean
-                        is_culture_group = latin_american
 						has_pop_culture = ruthenian
                     }
                 }
