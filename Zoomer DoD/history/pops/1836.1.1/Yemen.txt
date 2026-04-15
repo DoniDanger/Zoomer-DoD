@@ -46,7 +46,7 @@
 	}
 
 	slaves = {
-		culture = kefficho
+		culture = east_african_cultures
 		religion = animist
 		size = 1500
 	}
@@ -85,7 +85,7 @@
 	}
 
 	slaves = {
-		culture = kefficho
+		culture = east_african_cultures
 		religion = animist
 		size = 3000
 	}
@@ -137,7 +137,7 @@
 	}
 
 	slaves = {
-		culture = kefficho
+		culture = east_african_cultures
 		religion = animist
 		size = 5000
 	}
@@ -183,7 +183,7 @@
 	}
 
 	slaves = {
-		culture = kefficho
+		culture = east_african_cultures
 		religion = animist
 		size = 800
 	}
@@ -279,7 +279,7 @@
 	}
 
 	slaves = {
-		culture = kefficho
+		culture = east_african_cultures
 		religion = animist
 		size = 3000
 	}
@@ -349,7 +349,7 @@
 	}
 
 	slaves = {
-		culture = kefficho
+		culture = east_african_cultures
 		religion = animist
 		size = 5000
 	}
@@ -419,7 +419,7 @@
 	}
 
 	slaves = {
-		culture = kefficho
+		culture = east_african_cultures
 		religion = animist
 		size = 3000
 	}
@@ -520,7 +520,7 @@
 	}
 	
 	slaves = {
-		culture = kefficho
+		culture = east_african_cultures
 		religion = animist
 		size = 1800
 	}

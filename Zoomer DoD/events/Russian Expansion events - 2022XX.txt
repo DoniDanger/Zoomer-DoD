@@ -61,13 +61,14 @@ country_event = {
         set_country_flag = southern_focus
         RUS_964 = { add_core = RUS } #Crimea
         RUS_965 = { add_core = RUS } #Cherson
-        RUS_1048 = { add_core = RUS } #Astrakhan
-        RUS_1041 = { add_core = RUS } #Ekaterinodar
+        RUS_1048 = { add_core = RUS } #Ekaterinodar
+        RUS_1041 = { add_core = RUS } #Astrakhan
         GEO_1 = { add_core = RUS } #Phasis
         RUS_1090 = { add_core = RUS } #Georgia proper
 		RUS_1102 = { add_core = RUS } #Azerbaijian
 		RUS_1098 = { add_core = RUS } #Armenia
-
+		RUS_1052 = { add_core = THIS } #North Caucasia
+		RUS_979 = { add_core = THIS } #Don
 
         ai_chance = { 
              factor = 33
@@ -83,7 +84,7 @@ country_event = {
         RUS_958 = { add_core = RUS } #Kiev
         RUS_955 = { add_core = RUS } #Rovne
         RUS_718 = { add_core = RUS } #Minsk
-
+		AUS_662 = { add_core = RUS } #East Galicia
         ai_chance = { 
              factor = 33
         }

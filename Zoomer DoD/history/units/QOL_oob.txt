@@ -1,0 +1,90 @@
+leader = {
+	name = "Nusta Huillac II"
+	type = land
+	date = 1836.1.1
+	personality = defence_3.1
+	background = attack_3.1
+}
+
+leader = {
+	name = "Huila de Aymara"
+	type = land
+	date = 1836.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+
+army = {
+    name = "Qullaw Restorationist Army"
+    location = 2369
+    regiment = {
+        name = "1. División de Infantería"
+        type = irregular
+        home = 2387
+    }
+
+    regiment = {
+        name = "2. División de Infantería"
+        type = irregular
+        home = 2389
+    }
+
+    regiment = {
+        name = "3. División de Infantería"
+        type = irregular
+        home = 2368
+    }
+
+    regiment = {
+        name = "1. División de Caballería"
+        type = cavalry
+        home = 2368
+    }
+
+	regiment = {
+        name = "2. División de Caballería"
+        type = cavalry
+        home = 2368
+    }
+	
+	regiment = {
+        name = "3. División de Caballería"
+        type = cavalry
+        home = 2368
+    }
+}
+
+army = {
+    name = "Aimara Tribal Army"
+    location = 2375
+    regiment = {
+        name = "1. División de Infantería"
+        type = irregular
+        home = 2374
+    }
+
+    regiment = {
+        name = "2. División de Infantería"
+        type = irregular
+        home = 2375
+    }
+
+    regiment = {
+        name = "3. División de Infantería"
+        type = irregular
+        home = 2374
+    }
+
+    regiment = {
+        name = "1. División de Caballería"
+        type = cavalry
+        home = 2389
+    }
+
+	regiment = {
+        name = "2. División de Caballería"
+        type = cavalry
+        home = 2373
+    }
+
+}

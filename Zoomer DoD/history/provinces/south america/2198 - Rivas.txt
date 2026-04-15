@@ -1,7 +1,6 @@
 owner = CLM
-controller = CLM
-add_core = CLM
-add_core = UCA
-add_core = NIC
+controller = CLM
+add_core = ELS
+add_core = CLM
 trade_goods = fish
 life_rating = 35

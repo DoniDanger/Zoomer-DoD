@@ -9,13 +9,13 @@
     }
 
     clergymen = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 75
     }
 
     artisans = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 350
     }
@@ -27,7 +27,7 @@
     }
 
     farmers = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 6375
     }
@@ -51,37 +51,37 @@
     }
 
     aristocrats = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = animist
         size = 250
     }
 
     aristocrats = {
-        culture = shona
+        culture = southern_african_cultures
         religion = animist
         size = 50
     }
 
     soldiers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = animist
         size = 150
     }
 
     soldiers = {
-        culture = shona
+        culture = southern_african_cultures
         religion = animist
         size = 25
     }
 
     soldiers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 25
     }
 
     bureaucrats = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = animist
         size = 5
     }
@@ -89,49 +89,49 @@
 #Nokaneng (12000/3000 POPS) 
 2076 = {
     clergymen = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 50
     }
 
     farmers = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 900
     }
 
     clergymen = {
-        culture = herero
+        culture = southern_african_cultures
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = herero
+        culture = southern_african_cultures
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = herero
+        culture = southern_african_cultures
         religion = animist
         size = 1800
     }
 
     officers = {
-        culture = herero
+        culture = southern_african_cultures
         religion = animist
         size = 20
     }
 
     bureaucrats = {
-        culture = herero
+        culture = southern_african_cultures
         religion = animist
         size = 20
     }
@@ -157,37 +157,37 @@
 #Tshabong (12000/3000 POPS) 
 2077 = {
     clergymen = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 1800
     }
 
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 25
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 50
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 900
     }
@@ -213,19 +213,19 @@
 #Mochidi (16000/4000 POPS) 
 2574 = {
     clergymen = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 200
     }
 
     farmers = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 3650
     }
@@ -252,37 +252,37 @@
 #Serowe (16000/4000 POPS) 
 2075 = {
     clergymen = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = animist
         size = 30
     }
 
     artisans = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = animist
         size = 1800
     }
 
     clergymen = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 50
     }
 
     artisans = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 100
     }
 
     farmers = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = animist
         size = 1800
     }

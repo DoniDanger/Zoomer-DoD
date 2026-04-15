@@ -6,3 +6,4 @@ add_core = QOL
 trade_goods = sulphur
 terrain = new_world_desert
 life_rating = 32
+is_slave = yes

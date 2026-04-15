@@ -1,5 +1,5 @@
-owner = GUY
-controller = GUY
+owner = CAS
+controller = CAS
 add_core = CLM
 add_core = GUY
 add_core = CAS

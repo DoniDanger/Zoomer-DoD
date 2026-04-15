@@ -1,0 +1,67 @@
+country_event = {
+	id = 66950
+	title = "Congress of Arequipa"
+	desc = "EVTDESC66901"
+	picture = "inca rebellion"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We must liberalize under Orbegoso and pursue a true confederation."
+		ai_chance = {
+			factor = 25
+		}
+		government = democracy 
+		ruling_party_ideology = liberal
+		political_reform = universal_voting
+		political_reform = population_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+	}
+
+	option = {
+		name = "Andres saved the nation, not liberalism."
+		ai_chance = {
+			factor = 25
+		}
+		government = presidential_dictatorship
+		ruling_party_ideology = reactionary
+		political_reform = none_voting
+		political_reform = no_meeting
+		political_reform = censored_press
+		political_reform = no_trade_unions
+		political_reform = underground_parties
+		political_reform = nobody_gets_out
+		political_reform = appointed
+	}
+	
+	option = {
+		name = "Install a puppet Incan king, with Andres as his minister."
+		ai_chance = {
+			factor = 25
+		}
+		government = absolute_monarchy 
+		political_reform = none_voting
+		political_reform = no_meeting
+		political_reform = censored_press
+		political_reform = no_trade_unions
+		political_reform = underground_parties
+		political_reform = nobody_gets_out
+		political_reform = appointed
+	}
+	
+	option = {
+		name = "A liberal government under an Incan king will appease everyone equally."
+		ai_chance = {
+			factor = 25
+		}
+		government = hms_government
+		political_reform = state_equal_weight
+		political_reform = universal_weighted_voting
+		political_reform = yes_meeting
+		political_reform = censored_press
+		political_reform = no_trade_unions
+		political_reform = first_past_the_post
+		political_reform = non_secret_ballots
+	}
+}

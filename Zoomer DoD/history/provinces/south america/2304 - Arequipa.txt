@@ -4,4 +4,6 @@ add_core = INC
 add_core = ARE
 trade_goods = sulphur
 terrain = new_world_semidesert
-life_rating = 32
+life_rating = 35
+naval_base = 1
+is_slave = yes

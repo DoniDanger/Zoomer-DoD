@@ -5,49 +5,49 @@
 #Cape Town (173000/43250 POPS)
 2087 = {
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 50
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 750
     }
 
     soldiers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 1375
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 4050
     }
 
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 35
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 525
     }
 
     soldiers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 313
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 8435
     }
@@ -137,7 +137,7 @@
     }
 
     aristocrats = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 70
     }
@@ -149,37 +149,37 @@
     }
 
     aristocrats = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 17
     }
 
     aristocrats = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = animist
         size = 28
     }
 
     aristocrats = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = animist
         size = 10
     }
 
     soldiers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 70
     }
 
     soldiers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = animist
         size = 17
     }
 
     soldiers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = animist
         size = 7
     }
@@ -187,37 +187,37 @@
 #Worcester (117700/29425 POPS)
 2089 = {
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 50
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 250
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 7600
     }
 
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 52
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 105
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 690
     }
@@ -241,19 +241,19 @@
     }
 
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 35
     }
 
     artisans = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 70
     }
 
     farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 6755
     }
@@ -303,19 +303,19 @@
 #Swettenham (69700/17425 POPS)
 2090 = {
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 75
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 200
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 6625
     }
@@ -339,13 +339,13 @@
     }
 
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 52
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 70
     } 
@@ -437,37 +437,37 @@
     }
 
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 24
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 35
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 2023
     }
 
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 25
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 100
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = protestant
         size = 1450
     }
@@ -531,19 +531,19 @@
 #Springbok (12000/3000 POPS)
 2088 = {
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 35
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 105
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 1925
     }
@@ -619,25 +619,25 @@
     }
 
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 35
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 70
     }
 
     soldiers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 52
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 3360
     }
@@ -703,7 +703,7 @@
     }
 
     soldiers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 17
     }
@@ -711,37 +711,37 @@
 #Calvinia (23300/5825 POPS)
 2093 = {
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 17
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 35
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = animist
         size = 2030
     }
 
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 17
     }
 
     artisans = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 35
     }
 
     farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = animist
         size = 1312
     }
@@ -785,13 +785,13 @@
 #De Aar (30600/7650 POPS) 
 2558 = {
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 28
     }
  
    farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 3192
     }
@@ -848,7 +848,7 @@
 #Kimberley (156000/39000 POPS)
 2094 = {
     clergymen = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = fetishist
         size = 224
     }
@@ -878,7 +878,7 @@
     }
 
     farmers = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = fetishist
         size = 16272
     }
@@ -911,7 +911,7 @@
 #Dikathong (20000/5000 POPS)
 2095 = {
     clergymen = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = fetishist
         size = 280
     }
@@ -923,7 +923,7 @@
     }
 
     farmers = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = fetishist
         size = 4604
     }
@@ -963,49 +963,49 @@
     }
 
     clergymen = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 24
     }
 
     artisans = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 70
     }
 
     farmers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 5730
     }
 
     clergymen = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 10
     }
 
     farmers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 672
     }
 
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = fetishist
         size = 17
     }
 
     artisans = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = fetishist
         size = 35
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = fetishist
         size = 1030
     }
@@ -1121,37 +1121,37 @@
     }
 
     clergymen = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 14
     }
 
     farmers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 2128
     }
 
     clergymen = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 8
     }
 
     farmers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 476
     }
 
     clergymen = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = fetishist
         size = 14
     }
 
     farmers = {
-        culture = khoisan
+        culture = southern_african_cultures
         religion = fetishist
         size = 2156
     }
@@ -1178,13 +1178,13 @@
 #Bisho (80000/20000 POPS)
 2098 = {
     clergymen = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 106
     }
 	
     soldiers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 3000
     }	
@@ -1196,7 +1196,7 @@
     }
 
     farmers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 9152
     }
@@ -1216,19 +1216,19 @@
 #Mathele (80000/20000 POPS)
 2099 = {
     clergymen = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 206
     }
 	
     soldiers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 3000
     }	
 
     farmers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 16152
     }
@@ -1248,18 +1248,18 @@
 #Umtata (144000/36000 POPS)
 2100 = {
     clergymen = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 212
     }
 	soldiers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 3000
     }	
 
     farmers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 23240
     }
@@ -1300,13 +1300,13 @@
     }
 
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 266
     }
 
     farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 24360
     }
@@ -1333,31 +1333,31 @@
 2102 = {
 
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 126
     }
 	
 	soldiers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = protestant
         size = 6000
     }
 
     farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 10206
     }
 
     clergymen = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 28
     }
 
     farmers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 2562
     }
@@ -1395,13 +1395,13 @@
     }
 
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 112
     }
 
     farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 10458
     }
@@ -1422,7 +1422,7 @@
 2104 = {
 
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 360
     }
@@ -1434,7 +1434,7 @@
     }
 
     farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 32226
     }
@@ -1487,13 +1487,13 @@
     }
 
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 196
     }
 
     farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 10528
     }
@@ -1537,13 +1537,13 @@
     }
 
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 140
     }
 
     farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 5754
     }
@@ -1582,25 +1582,25 @@
     }
 
     clergymen = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = fetishist
         size = 70
     }
 
     farmers = {
-        culture = tswana
+        culture = southern_african_cultures
         religion = fetishist
         size = 8918
     }
 
     clergymen = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 84
     }
 
     farmers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 4942
     }
@@ -1653,25 +1653,25 @@
     }
 
     clergymen = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 28
     }
 
     farmers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 1470
     }
 
     clergymen = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 42
     }
 
     farmers = {
-        culture = sotho
+        culture = southern_african_cultures
         religion = fetishist
         size = 4690
     }
@@ -1716,13 +1716,13 @@
     }
 
     clergymen = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 700
     }
 
     farmers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 11636
     }
@@ -1761,25 +1761,25 @@
     }
 
     clergymen = {
-        culture = african_minor
+        culture = central_african_cultures
         religion = fetishist
         size = 42
     }
 
     farmers = {
-        culture = african_minor
+        culture = central_african_cultures
         religion = fetishist
         size = 2632
     }
 
     clergymen = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 28
     }
 
     farmers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 980
     }
@@ -1820,37 +1820,37 @@
     }
 
     clergymen = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 75
     }
 
     artisans = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 400
     }
 
     farmers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 7275
     }
 
     clergymen = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 225
     }
 
     artisans = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 1050
     }
 
     farmers = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 21050
     }
@@ -1858,19 +1858,19 @@
 #Ladysmith (156000/39000 POPS)
 2112 = {
     clergymen = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 400
     }
 
     artisans = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 1950
     }
 
     farmers = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 28900
     }
@@ -1878,49 +1878,49 @@
 #Ulundi (320000/80000 POPS)
 2113 = {
     aristocrats = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 2725
     }
 
     bureaucrats = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 25
     }
 
     officers = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 150
     }
 
     clergymen = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 825
     }
 
     artisans = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 4000
     }
 
     soldiers = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 23250
     }
 
     farmers = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 57450
     }
 
     aristocrats = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 150
     }
@@ -1932,7 +1932,7 @@
     }
 
     soldiers = {
-        culture = xhosa
+        culture = southern_african_cultures
         religion = fetishist
         size = 75
     }
@@ -1941,25 +1941,25 @@
 #Mbabane (160000/40000 POPS)  #now Swaziland
 2114 = {
     clergymen = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 162
     }
 
     farmers = {
-        culture = zulu
+        culture = southern_african_cultures
         religion = fetishist
         size = 8070
     }
 
     clergymen = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 240
     }
 
     farmers = {
-        culture = nguni
+        culture = southern_african_cultures
         religion = fetishist
         size = 23236
     }

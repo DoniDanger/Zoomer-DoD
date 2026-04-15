@@ -1,0 +1,61 @@
+leader = {
+	name = "Joaquin Prieto"
+	type = land
+	date = 1836.1.1
+	personality = defence_1.1
+	background = attack_3.1
+}
+
+leader = {
+	name = "Manuel Bulnes"
+	type = land
+	date = 1836.1.1
+	personality = defence_2.1
+	background = attack_1.1
+}
+
+army = {
+    name = "Ejército de Santiago"
+    location = 2322
+    regiment = {
+        name = "1. División de Infantería"
+        type = infantry
+        home = 2324
+    }
+
+    regiment = {
+        name = "2. División de Infantería"
+        type = infantry
+        home = 2324
+    }
+
+    regiment = {
+        name = "3. División de Infantería"
+        type = infantry
+        home = 2324
+    }
+
+    regiment = {
+        name = "1. División de Caballería"
+        type = cavalry
+        home = 2325
+    }
+
+	regiment = {
+        name = "2. División de Caballería"
+        type = cavalry
+        home = 2325
+    }
+	
+	regiment = {
+        name = "3. División de Caballería"
+        type = cavalry
+        home = 2305
+    }
+	
+	regiment = {
+        name = "4. División de Caballería"
+        type = cavalry
+        home = 2305
+    }
+}

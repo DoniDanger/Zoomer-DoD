@@ -48,6 +48,11 @@ political_decisions = {
 					}
 					country_event = 11101
 				}
+				MSC = { all_core = { add_core = THIS remove_core = MSC }}
+				UGG = { all_core = { add_core = THIS remove_core = UGG }}
+				BLO = { all_core = { add_core = THIS remove_core = BLO }}
+				VYA = { all_core = { add_core = THIS remove_core = VYA }}
+				MAR = { all_core = { add_core = THIS remove_core = MAR }}
 			}
 			ai_will_do = {
 				factor = 1
@@ -69,36 +74,16 @@ political_decisions = {
 			allow = {
 				war = no
 				owns = 1008
-				RYA = {
-					all_core = {
-						owner = {
-							OR = {
-								tag = THIS
-								in_sphere = THIS
-								vassal_of = THIS
-							}
-						}
-					}
+				OR = {
+					ideological_thought = 1
+					military_score = 45
 				}
-				TVE = {
-					all_core = {
-						owner = {
-							OR = {
-								tag = THIS
-								in_sphere = THIS
-								vassal_of = THIS
-							}
-						}
-					}
-				}
-				NZH = {
-					all_core = {
-						owner = {
-							OR = {
-								tag = THIS
-								in_sphere = THIS
-								vassal_of = THIS
-							}
+				1012 = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
 						}
 					}
 				}
@@ -128,38 +113,10 @@ political_decisions = {
 					}
 					country_event = 11101
 				}
-				SML = { all_core = { add_core = THIS }}
-				set_country_flag = formed_russian_tsardom
-			}
-			ai_will_do = {
-				factor = 1
-			}
-	}
-	
-	dominate_central_russia = {
-			potential = {
-				primary_culture = russian		
-				NOT = {
-					exists = RUS
-					exists = MSC
-				}
-				NOT = { has_country_flag = dominated_central_russia }
-			}
-		
-			allow = {
-				war = no
-				ideological_thought = 1
-				owns = 1008
-			}
-		
-			effect = {
-				badboy = 10
-				NZH = { all_core = { add_core = THIS }}
 				MUS = { all_core = { add_core = THIS }}
-				TVE = { all_core = { add_core = THIS }}
-				RYA = { all_core = { add_core = THIS }}
 				RUS_943 = { add_core = THIS }
-				set_country_flag = dominated_central_russia
+				BLR = { all_core = { add_core = THIS }}
+				set_country_flag = formed_russian_tsardom
 			}
 			ai_will_do = {
 				factor = 1
@@ -178,7 +135,10 @@ political_decisions = {
 		
 			allow = {
 				war = no
-				#ideological_thought = 1
+				OR = {
+					ideological_thought = 1
+					military_score = 35
+				}
 				NOV = {
 					any_core = {
 						owner = {
@@ -228,7 +188,10 @@ political_decisions = {
 		
 			allow = {
 				war = no
-				ideological_thought = 1
+				OR = {
+					ideological_thought = 1
+					military_score = 40
+				}
 				KZN = {
 					any_core = {
 						owner = {
@@ -248,7 +211,9 @@ political_decisions = {
 				BSK = { all_core = { add_core = THIS }}
 				MAR = { all_core = { add_core = THIS }}
 				AKT = { all_core = { add_core = THIS }}
-				VOR = { all_core = { add_core = THIS }}
+				RUS_1052 = { add_core = THIS }
+				RUS_1048 = { add_core = THIS }
+				RUS_979 = { add_core = THIS }
 				1182 = { add_core = THIS }
 				2610 = { add_core = THIS }
 				any_country = {
@@ -280,7 +245,10 @@ political_decisions = {
 		
 			allow = {
 				war = no
-				ideological_thought = 1
+				OR = {
+					ideological_thought = 1
+					military_score = 40
+				}
 				owns = 943
 				UKR = {
 					any_core = {
@@ -297,7 +265,7 @@ political_decisions = {
 		
 			effect = {
 				prestige = 15
-				VOR = { all_core = { add_core = THIS }}
+				DON = { all_core = { add_core = THIS }}
 				KHK = { all_core = { add_core = THIS }}
 				SML = { all_core = { add_core = THIS }}
 				RUS_980 = { add_core = THIS }
@@ -402,6 +370,7 @@ political_decisions = {
 		allow = {
 			RUS_339 = { owned_by = THIS }
 			RUS_349 = { owned_by = THIS }
+			owns = 994
 		}
 
 		effect = {
@@ -421,7 +390,7 @@ political_decisions = {
 			factor = 1
 		}
 	}
-
+	
 	#Rostov retains its name.
 	move_capital_to_rostov = {
 		potential = {
@@ -435,8 +404,21 @@ political_decisions = {
 			RUS_964 = { owned_by = THIS }
 			RUS_980 = { owned_by = THIS }
 			RUS_1048 = { owned_by = THIS }
+			RUS_979 = { owned_by = THIS } #Don
+			RUS_1041 = { owned_by = THIS }
+			RUS_1039 = { owned_by = THIS }
+			UKR = { exists = no }
+			AKT = { exists = no }
+			DON = { exists = no }
 		}
 		effect = {
+			add_accepted_culture = cossack
+			RUS_979 = { add_core = UKR remove_core = CRI remove_core = ASK remove_core = TAR }
+			RUS_980 = { add_core = UKR remove_core = CRI remove_core = ASK remove_core = TAR }
+			RUS_1041 = { add_core = UKR remove_core = CRI remove_core = ASK remove_core = TAR }
+			RUS_1039 = { add_core = UKR remove_core = CRI remove_core = ASK remove_core = TAR }
+			release = UKR
+			inherit = UKR
 			prestige = 10
 			capital = 979
 			979 = {
@@ -446,6 +428,8 @@ political_decisions = {
 						duration = 7300
 	 				}
 			}
+			DON = { all_core = { add_core = THIS remove_core = DON }}
+			AKT = { all_core = { add_core = THIS remove_core = AKT }}
 			set_country_flag = RUS_moved_capital 
 		}
 		ai_will_do = {
@@ -463,12 +447,22 @@ political_decisions = {
 		}
 		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
 		allow = {
-			revolution_n_counterrevolution = 1 
+			year = 1860
+			OR = {
+				AND = {
+					nationalism_n_imperialism = 1 
+					owns = 718
+					owns = 958
+					owns = 959
+				} 
+				revolution_n_counterrevolution = 1
+			}
 			biologism = 1 
 		}
 		effect = {
 			prestige = 5
 			add_accepted_culture = ruthenian
+			add_accepted_culture = galician
 			set_country_flag = ruthenian_culture
 		}
 		ai_will_do = {
@@ -485,7 +479,7 @@ political_decisions = {
 		}
 		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
 		allow = {
-			nationalism_n_imperialism = 1 
+			revolution_n_counterrevolution = 1 
 		}
 		effect = {
 			prestige = 5
@@ -505,7 +499,8 @@ political_decisions = {
 			NOT = { has_country_flag = crimean_culture }
 		}
 		allow = {
-			phenomenology_n_hermeneutic = 1
+			nationalism_n_imperialism = 1
+			biologism = 1
 		}
 		effect = {
 			prestige = 5
@@ -516,6 +511,29 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	integrate_caucasians = {
+		potential = {
+			tag = RUS
+			has_country_flag = southern_focus
+			NOT = { has_country_flag = caucasian_culture }
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+		}
+		effect = {
+			prestige = 5
+			add_accepted_culture = georgian
+			add_accepted_culture = armenian
+			add_accepted_culture = ossetian
+			add_accepted_culture = dagestani
+			set_country_flag = caucasian_culture
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	#sea to sea cultures
 	integrate_baltic_cultures = {
 		potential = {
@@ -562,11 +580,38 @@ political_decisions = {
 		
 		effect = {
 			prestige = 10
+			add_accepted_culture = oirat
 			add_accepted_culture = kazak
 			add_accepted_culture = mongol
 			add_accepted_culture = siberian
 		}
 	}
+	
+	i_heart_uzbekistan = {
+		potential = {
+			tag = RUS
+			has_country_flag = sea_to_sea_focus
+			NOT = { accepted_culture = kazak }
+			NOT = { accepted_culture = mongol }
+			NOT = { has_country_flag = uzbekistan_hearted }
+		}
+		
+		allow = {
+			nationalism_n_imperialism = 1
+			biologism = 1
+			owns = 1199
+		}
+		
+		effect = {
+			prestige = 10
+			add_accepted_culture = uzbek
+			add_accepted_culture = tatar
+			add_accepted_culture = kirgiz
+			add_accepted_culture = uighur
+			set_country_flag = uzbekistan_hearted
+		}
+	}
+
 	core_alaska = {
 		potential = {
 			tag = RUS

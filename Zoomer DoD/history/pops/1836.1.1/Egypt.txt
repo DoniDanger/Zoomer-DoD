@@ -1157,7 +1157,7 @@
 	}
 
 	farmers = {
-		culture = nubian
+		culture = sudanese
 		religion = sunni
 		size = 650
 	}
@@ -1509,20 +1509,20 @@
 	}
 
 	artisans = {
-		culture = nubian
+		culture = sudanese
 		religion = sunni
 		size = 250
 	}
 
 	soldiers = {
-		culture = nubian
+		culture = sudanese
 		religion = sunni
 		size= 100
 
 	}
 
 	farmers = {
-		culture = nubian
+		culture = sudanese
 		religion = sunni
 		size = 6890
 	}

@@ -622,7 +622,7 @@
 	}
 	
 	slaves = {
-		culture = forest_bantu #african_minor
+		culture = central_african_cultures #central_african_cultures
 		religion = animist
 		size = 1000
 	}

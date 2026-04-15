@@ -4,3 +4,4 @@ add_core = INC
 add_core = ARE
 trade_goods = wool
 life_rating = 40
+is_slave = yes

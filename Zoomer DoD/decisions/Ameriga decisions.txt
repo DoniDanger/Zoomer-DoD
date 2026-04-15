@@ -49,7 +49,6 @@ political_decisions = {
 			tag = HBE
 		}
 			OR = {
-				2391 = { empty = yes }
 				2392 = { empty = yes }
 				2394 = { empty = yes }
 			}
@@ -61,7 +60,7 @@ political_decisions = {
 			OR = {
 				state_n_government = 1
 				year = 1870
-				2328 = { empty = no }
+				2332 = { empty = no }
 			}
 		}
 		effect = {
@@ -78,15 +77,9 @@ political_decisions = {
 			random_owned = {
 				limit = {
 					2392 = { empty = yes }
-					2391 = { empty = no }
+					2355 = { empty = no }
 				}
 				2392 = { secede_province = THIS }
-			}
-			random_owned = {
-				limit = {
-					2391 = { empty = yes }
-				}
-				2391 = { secede_province = THIS }
 			}
 		}
 		ai_will_do = {
@@ -97,71 +90,48 @@ political_decisions = {
 	occupation_of_araucaniaINC = {
 		picture = INC_colony
 		potential = {
-			tag = INC
+			OR = {
+				tag = INC
+				tag = ARE
+				tag = GRA
+			}
 			OR = {
 				2332 = { empty = yes }
 				2333 = { empty = yes }
 				2334 = { empty = yes }
 				2335 = { empty = yes }
 			}
-			owns = 2330
+			owns = 2331
 			NOT = { has_country_flag = occupation_of_araucania }
 		}
 		allow = {
-			OR = {
-				nationalism_n_imperialism = 1
-				2398 = { empty = no }
-			}
+			nationalism_n_imperialism = 1
+			owns = 2329
 		}
 		effect = {
 			set_country_flag = occupation_of_araucania
 			prestige = 5
 			random_owned = {
 				limit = {
+					2332 = { empty = yes }
 					2333 = { empty = yes }
-					2334 = { empty = no }
+					1714 = { empty = no }
+				}
+				2332 = { secede_province = THIS }
+			}	
+			random_owned = {
+				limit = {
+					2333 = { empty = yes }
+					2332 = { empty = no }
 				}
 				2333 = { secede_province = THIS }
 			}
 			random_owned = {
 				limit = {
 					2334 = { empty = yes }
-					2332 = { empty = no }
+					2333 = { empty = no }
 				}
 				2334 = { secede_province = THIS }
-			}
-
-			random_owned = {
-				limit = {
-					2329 = { empty = yes }
-					2330 = { empty = no }
-					2331 = { empty = no }
-				}
-				2329 = { secede_province = THIS }
-			}		
-			random_owned = {
-				limit = {
-					2328 = { empty = yes }
-					2332 = { empty = yes }
-					2329 = { empty = no }
-				}
-				2328 = { secede_province = THIS }
-			}	
-			random_owned = {
-				limit = {
-					2332 = { empty = yes }
-					2333 = { empty = yes }
-					2334 = { empty = no }
-				}
-				2332 = { secede_province = THIS }
-			}	
-			random_owned = {
-				limit = {
-					2331 = { empty = yes }
-					2327 = { empty = no }
-					2330 = { empty = no }
-				}
-				2331 = { secede_province = THIS }
 			}
 		}
 		
@@ -1074,6 +1044,30 @@ political_decisions = {
 		}
 	}
 	
+	push_arequipan_border = { 
+	
+		picture = "NAN_Andes"
+	
+		potential = { 
+		OR = { 
+		tag = NAN 
+		tag = HBE 
+			}
+		NOT = { has_country_flag = pushed_arequipan_border }
+		}
+		
+		allow = { 
+			ideological_thought = 1
+		}
+		
+		effect = { 
+		set_country_flag = pushed_arequipan_border 
+		ARG_2387 = { add_core = THIS }
+		relation = { who = ARE value = -75 }
+		}
+	
+	}
+	
 	Beornian_Cone = { 
 	
 		picture = "NAN_Andes"
@@ -1087,7 +1081,9 @@ political_decisions = {
 		}
 		
 		allow = { 
-        state_n_government = 1
+			has_country_flag = pushed_arequipan_border
+			owns = 2374
+			state_n_government = 1
 		}
 		
 		effect = { 
@@ -1100,6 +1096,7 @@ political_decisions = {
 		INC_2389 = { add_core = THIS }
 		ARG_2387 = { add_core = THIS }
 		relation = { who = INC value = -150 }
+		add_accepted_culture = het
 		}
 	
 	}

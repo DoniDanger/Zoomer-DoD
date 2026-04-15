@@ -1,6 +1,7 @@
 capital = 2172
 primary_culture = nahua
 culture = tarascan
+culture = mexican
 religion = catholic
 government = democracy
 plurality = 25

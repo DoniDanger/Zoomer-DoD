@@ -444,7 +444,7 @@
 		size = 26525
 	}
 	slaves = {
-		culture = kilombero #african_minor
+		culture = east_african_cultures #central_african_cultures
 		religion = animist
 		size = 4000
 	}
@@ -513,7 +513,7 @@
 		size = 5160
 	}
 	slaves = {
-		culture = kilombero #african_minor
+		culture = east_african_cultures #central_african_cultures
 		religion = animist
 		size = 5000
 	}

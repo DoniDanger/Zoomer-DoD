@@ -81,7 +81,11 @@ country_event = {
 	is_greater_power = yes 
 	war = no 
 	TAR = { exists = no }
+	KZN = { exists = no }
+	BSK = { exists = no }
 	owns = 1034 
+	owns = 1044
+	owns = 1035
 	owns = 979 
 	owsn = 980 
 	}
@@ -94,7 +98,9 @@ country_event = {
 	
 	option = { 
 	name = "32418.A"
-	RUS_1034 = { remove_core = CRI remove_core = ASK remove_core = NOG remove_core = SIB remove_core = TAR }
+	RUS_1034 = { remove_core = CRI remove_core = ASK remove_core = NOG remove_core = SIB remove_core = TAR remove_core = KZN remove_core = BSK }
+	RUS_1020 = { remove_core = CRI remove_core = ASK remove_core = NOG remove_core = SIB remove_core = TAR remove_core = KZN remove_core = BSK }
+	RUS_1060 = { remove_core = CRI remove_core = ASK remove_core = NOG remove_core = SIB remove_core = TAR remove_core = KZN remove_core = BSK }
 	RUS_979 = { remove_core = CRI remove_core = ASK remove_core = NOG remove_core = SIB remove_core = TAR }
 	RUS_980 = { remove_core = CRI remove_core = ASK remove_core = NOG remove_core = SIB remove_core = TAR }
 	}

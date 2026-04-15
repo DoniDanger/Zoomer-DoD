@@ -496,7 +496,7 @@
 	}
 	
 	slaves = {
-		culture = forest_bantu
+		culture = central_african_cultures
 		religion = animist
 		size = 100
 	}

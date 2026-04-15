@@ -1,6 +1,5 @@
-owner = ELS
-controller = ELS
-add_core = UCA
+owner = CLM
+controller = CLM
 add_core = ELS
 add_core = CLM
 trade_goods = dye

@@ -1600,6 +1600,12 @@
 		size = 375
 	}
 
+	bureaucrats = {
+		culture = quechua
+		religion = catholic
+		size = 225
+	}
+	
 	clergymen = {
 		culture = aimara
 		religion = catholic
@@ -1649,6 +1655,12 @@
 		size = 375
 	}
 
+	bureaucrats = {
+		culture = andean
+		religion = catholic
+		size = 225
+	}
+	
 	clergymen = {
 		culture = andean
 		religion = catholic

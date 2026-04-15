@@ -2746,6 +2746,14 @@ west_african = {
 	leader = african
 	is_overseas = no
 	unit = AfricanGC
+	west_african_cultures  = {
+		color = {218 68 212}
+		first_names = { Muhammad Kumbari Sharif Yaji Baba Daud Abdullah Kanajeji Bugaya Usman Tsamiya
+		}
+
+		last_names = { al-Walid Abasama Zaki Kabe al-Hajj Zamnagawa Rumfa
+		}
+	}
 	akan = {
 		color = {88 68 147}
 		first_names = { Amanquatia Agyeman Onsei Kwaku Kofi Atakora Kwabena Mensa Owusu Akyampon Kwame Opoku 
@@ -2946,6 +2954,14 @@ central_african = {
 	leader = african
 	is_overseas = no
 	unit = AfricanGC
+	central_african_cultures = {
+		color = {162 175 65}
+		first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth
+		}
+
+		last_names = { Bolia Bokote Bongandu Ekonda Mbole Nkutu Ntomba Sengele Songomeno Dengese Tetela-Kusu
+		}
+	}
 	bakongo = {
 		color = {87 154 62}
 		first_names = { Poaty Loembe M'voudoukousala Pratt N'Gangue M'voumbe Mfutila Kivuzi Nteve Kenje
@@ -3092,6 +3108,14 @@ east_african = {
 	leader = african
 	is_overseas = no
 	unit = AfricanGC
+	east_african_cultures = {
+		color = {162 23 199}
+		first_names = { Ras Debela Alemayehu Dirribi Heile Gobana Tsegaye Tilahun Waqo Ahmad Galasa Hailu Yilma Abadula Abdus
+		}
+
+		last_names = { Makonnen Dacche Mideksa Dinsa Turnsaa Gemeda Eabisa Demissie Gessesse
+		}
+	}
 	amhara = {
 		color = {88 142 37}
 		first_names = { Amare Bekele Berhanu Saleh Haile Berihun Demissie Desta Geteye Girma Kelile Negasi Abebe Fakirta Adis Kassa Menelik }
@@ -3323,6 +3347,14 @@ southern_african = {
 	leader = african
 	is_overseas = no
 	unit = ZuluGC
+	southern_african_cultures = {
+		color = {49 58 156}
+		first_names = { Mthuthuzeli Nolizwe Nonceba Paki Sipliwo Themba Uuka Thandiwe 
+		}
+
+		last_names = { Behle Dosini Dlamini Gqunu Gxarha Hegebe Khawatu Khumalo Kwayi Maduna Qadi Rhadebe Ncuthu Mpemvu Sikhosana Xesibe Zangwa
+		}
+	}
 	chewa = {
 		color = {88 88 88}
 		first_names = { Andikan Amadi Aren Bahari Averey Bakari Bash Bayode Bitalo Chane Chata Dakarai Davu Dume Fabunni Gamba Genet Guban Hajari Haruni Ife Ilo Issay Jabari Jabilo Jaguan Kabili Kamwimbile Kasim Kenyi Khairi Makalo Mansa Morathi Musawenkosi Raimi Razi Reth

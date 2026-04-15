@@ -1,13 +1,6 @@
 capital = 2574
 primary_culture = afro_south_african
-culture = zulu
-culture = khoisan
-culture = sotho
-culture = nguni
-culture = tswana
-culture = herero
-culture = african_minor
-culture = xhosa
+culture = southern_african_cultures
 religion = protestant
 government = democracy
 plurality = 25

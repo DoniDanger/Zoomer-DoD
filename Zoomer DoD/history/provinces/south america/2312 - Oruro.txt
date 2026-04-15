@@ -6,3 +6,4 @@ add_core = QOL
 trade_goods = iron
 life_rating = 32
 terrain = new_world_semidesert
+is_slave = yes

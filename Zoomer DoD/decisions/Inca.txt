@@ -12,7 +12,7 @@ political_decisions = {
 				2302 = { owned_by = THIS }
 			}
 			effect = {
-				prestige = 20
+				prestige = 10
 				capital = 2302
 			}
 			ai_will_do = {
@@ -29,16 +29,21 @@ political_decisions = {
 				NOT = { has_global_flag = Hispanic_Andes }
 			}
 			allow = {
-				NOT = { war = yes }
+				war = no
 				INC = {
 					all_core = {
-							owned_by = THIS	
+						OR = {
+						empty = yes
+						owned_by = THIS
 						}
 					}
+				}
 			}
 			effect = {
 				prestige = 20
 				set_global_flag = death_toGRC
+				government = absolute_monarchy
+				QUI = { all_core = { add_core = THIS }}
 				2247 = { add_core = THIS }
 				2248 = { add_core = THIS }
 				2249 = { add_core = THIS }
@@ -52,6 +57,9 @@ political_decisions = {
 				2288 = { add_core = THIS }
 				2289 = { add_core = THIS }
 				2401 = { add_core = THIS }
+				2256 = { add_core = THIS }
+				2257 = { add_core = THIS }
+				2258 = { add_core = THIS }
 				set_country_flag = empire_del_inca
 				add_country_modifier = {
 					name = empire_del_inca
@@ -76,9 +84,12 @@ political_decisions = {
 				NOT = { war = yes }
 				INC = {
 					all_core = {
-							owned_by = THIS
+						OR = {
+						empty = yes
+						owned_by = THIS
 						}
 					}
+				}
 			}
 			effect = {
 				prestige = 10
@@ -98,9 +109,13 @@ political_decisions = {
 				NOT = { has_country_flag = reunited_andean_viceroyalties }
 				NOT = { has_global_flag = Hispanic_Andes }
 				INC = { exists = no }
+				NOT = { government = democracy }
 			}
 			allow = {
-				NOT = { war = yes }
+				has_country_flag = arequipa_congress
+				NOT = { has_country_flag = reunited_andean_viceroyalties }
+				NOT = { government = democracy }
+				war = no
 				is_vassal = no
 				owns = 2302
 				owns = 2304
@@ -108,8 +123,10 @@ political_decisions = {
 			}
 			effect = {
 				change_tag = INC
-				prestige = 25
+				prestige = 10
 				capital = 2302
+				primary_culture = quechua 
+				add_accepted_culture = andean
 				add_accepted_culture = aimara
 				religion = inti
 				set_country_flag = restored_sapa_inca
@@ -119,8 +136,98 @@ political_decisions = {
 			}
 		}
 		
+		reintegrate_qollaw_kingdom = {
+			picture = Incas
+			potential = {
+				tag = INC
+				NOT = { has_country_flag = reintegrated_qollaw_kingdom }
+			}
+			allow = {
+				war = no
+				is_vassal = no
+				owns = 2369
+				owns = 2305
+				owns = 2324
+				state_n_government = 1
+				CHL = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+			effect = {
+				prestige = 5
+				add_accepted_culture = diaguita
+				CHL = { all_core = { add_core = THIS }}
+				set_country_flag = reintegrated_qollaw_kingdom
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		restore_arequipan_confederation = {
+			picture = Incas
+			potential = {
+				tag = ARE
+				NOT = { has_country_flag = arequipa_confed_restored }
+			}
+			allow = {
+				NOT = { 
+					war_with = CHL
+					war_with = QOL
+					CHL = { exists = yes }
+					QOL = { exists = yes }
+				}
+				is_vassal = no
+				owns = 2304
+			}
+			effect = {
+				prestige = 10
+				war_exhaustion = -5
+				CHL = { all_core = { add_core = THIS }}
+				QOL = { 
+					all_core = { 
+						add_core = THIS 
+						remove_core = QOL 
+					}
+				}
+				any_pop = {
+					limit = {
+						is_accepted_culture = yes
+					}
+					militancy = -2
+					consciousness = 2
+				}      
+				set_country_flag = arequipa_confed_restored
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		congress_of_arequipa = {
+			picture = Incas
+			potential = {
+				tag = ARE
+				NOT = { has_country_flag = arequipa_congress }
+			}
+			allow = {
+				has_country_flag = arequipa_confed_restored
+				is_vassal = no
+				owns = 2304
+			}
+			effect = {
+				country_event = 66950
+				set_country_flag = arequipa_congress
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 		reunite_andean_viceroyalties = {
-		picture = Incas
+			picture = Incas
 			potential = {
 				tag = ARE
 				NOT = { has_country_flag = reunited_andean_viceroyalties }
@@ -128,8 +235,9 @@ political_decisions = {
 				NOT = { has_global_flag = Hispanic_Andes }
 			}
 			allow = {
+				has_country_flag = arequipa_congress
 				NOT = { has_country_flag = restored_sapa_inca }
-				NOT = { war = yes }
+				war = no
 				is_vassal = no
 				owns = 2302
 				owns = 2304
@@ -196,7 +304,10 @@ political_decisions = {
 				state_n_government = 1
 				QUI = {
 					all_core = {
+						OR = {
+						empty = yes
 						owned_by = THIS
+						}
 					}
 				}
 			}
@@ -211,7 +322,7 @@ political_decisions = {
 			}
 		}
 		
-		integrate_chilean_viceroyalty = {
+		federalize_santiago = {
 			picture = Incas
 			potential = {
 				OR = { 
@@ -219,11 +330,11 @@ political_decisions = {
 					tag = GRA
 				}
 				has_country_flag = reunited_andean_viceroyalties
-				NOT = { has_country_flag = integrated_chilean_viceroyalty }
+				NOT = { has_country_flag = federalized_santiago }
 				NOT = { has_global_flag = Hispanic_Andes }
 			}
 			allow = {
-				NOT = { war = yes }
+				war = no
 				is_vassal = no
 				owns = 2369
 				owns = 2305
@@ -237,8 +348,9 @@ political_decisions = {
 			}
 			effect = {
 				prestige = 5
+				add_accepted_culture = aimara
 				CHL = { all_core = { add_core = THIS }}
-				set_country_flag = integrated_chilean_viceroyalty
+				set_country_flag = federalized_santiago
 			}
 			ai_will_do = {
 				factor = 1
@@ -252,6 +364,7 @@ political_decisions = {
 				has_country_flag = reunited_andean_viceroyalties
 				NOT = { has_country_flag = united_andes_granada }
 				NOT = { has_global_flag = Hispanic_Andes }
+				GRA = { exists = no }
 			}
 			allow = {
 				war = no
@@ -260,7 +373,10 @@ political_decisions = {
 				nationalism_n_imperialism = 1
 				GRA = {
 					all_core = {
+						OR = {
+						empty = yes
 						owned_by = THIS
+						}
 					}
 				}
 			}

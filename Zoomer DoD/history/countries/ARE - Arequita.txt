@@ -1,5 +1,6 @@
 capital = 2304
-primary_culture = quechua
+primary_culture = andean 
+culture = quechua
 religion = catholic
 government = presidential_dictatorship
 plurality = 10
@@ -36,7 +37,7 @@ health_care = no_health_care
 unemployment_subsidies = no_subsidies
 pensions = no_pensions
 
-ruling_party = AAA_conservative_4
+ruling_party = AAA_reactionary_2
 upper_house = {
 	fascist = 0
 	liberal = 29
@@ -61,6 +62,10 @@ classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 enlightenment_thought = 1
 piston_steam_engine = 1
+mechanical_production = 1
+military_staff_system = 1
+clipper_design = 1
+basic_chemistry = 1
 
 # Inventions
 

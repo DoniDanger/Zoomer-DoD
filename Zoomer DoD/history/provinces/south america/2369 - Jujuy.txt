@@ -1,8 +1,8 @@
 owner = ARE
-controller = ARE
+controller = QOL
 add_core = ARE
 add_core = INC
 add_core = QOL
 trade_goods = iron
 life_rating = 35
-
+is_slave = yes

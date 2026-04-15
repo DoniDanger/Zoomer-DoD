@@ -113,17 +113,22 @@ political_decisions = {
 				tag = NAN
 				NOT = { has_country_flag = claim_old_england }  
 				NOT = { has_country_flag = holy_britannia }
+				NOT = { has_country_flag = NAN_cone }
 			}
 		
 			allow = {
+				NOT = { has_country_flag = NAN_cone }
 				state_n_government = 1
 				HBE = { exists = no }
 				NOT = { war = yes }
+				owns = 2344
+				owns = 2447
+				owns = 2463
+				owns = 2431
 			}
 		
 			effect = {
-				prestige = 25
-				
+				prestige = 25			
 				NAN = { all_core = { add_core = HBE	} }
 				AMA = { all_core = { add_core = HBE	} }
 				ARU = { all_core = { add_core = HBE	} }
@@ -136,6 +141,44 @@ political_decisions = {
 			}
 			ai_will_do = {
 				factor = 0
+			}
+	}
+	
+	extend_britannian_citizenship = {
+      		picture = HBE
+			potential = {
+				tag = HBE
+				NOT = { has_country_flag = claim_old_england }  
+				has_country_flag = holy_britannia 
+				NOT = { has_country_flag = extended_britannian_citizenship }
+			}
+		
+			allow = {
+				nationalism_n_imperialism = 1
+				NOT = { 
+					LOT = { exists = yes }
+					AMA = { exists = yes }
+					AZL = { exists = yes }
+				}
+				THIS = {
+					all_core = {
+						OR = {
+						empty = yes
+						owned_by = THIS
+						}
+					}
+				}
+				war = no
+			}
+		
+			effect = {
+				prestige = 10			
+				add_accepted_culture = lotharian
+				add_accepted_culture = amazonian
+				set_country_flag = extended_britannian_citizenship
+			}
+			ai_will_do = {
+				factor = 1
 			}
 	}
 }

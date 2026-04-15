@@ -1,5 +1,6 @@
 capital = 1028
 primary_culture = north_russian
+culture = ugrian
 religion = orthodox
 government = democracy
 plurality = 5

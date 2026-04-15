@@ -2,16 +2,24 @@ leader = {
 	name = "Luis Jose de Orbegoso"
 	type = land
 	date = 1836.1.1
-	personality = defence_1.1
-	background = attack_1.1
+	personality = defence_2.1
+	background = attack_4.1
 }
 
 leader = {
 	name = "Jose Miguel de Velasco"
 	type = land
 	date = 1836.1.1
+	personality = defence_3.1
+	background = attack_2.1
+}
+
+leader = {
+	name = "Andres de Santa Cruz"
+	type = land
+	date = 1836.1.1
 	personality = defence_1.1
-	background = attack_1.1
+	background = attack_3.1
 }
 
 army = {
@@ -26,19 +34,82 @@ army = {
     regiment = {
         name = "2. División de Infantería"
         type = infantry
+        home = 2304
+    }
+
+    regiment = {
+        name = "3. División de Infantería"
+        type = infantry
+        home = 2312
+    }
+
+    regiment = {
+        name = "1. División de Caballería"
+        type = cavalry
+        home = 2312
+    }
+
+	regiment = {
+        name = "1. División de Cannons"
+        type = artillery
+        home = 2310
+    }
+	
+	regiment = {
+        name = "2. División de Cannons"
+        type = artillery
+        home = 2311
+    }
+}
+
+army = {
+    name = "Ejército de Cusco"
+    location = 2302
+    regiment = {
+        name = "1. División de Infantería"
+        type = infantry
+        home = 2302
+    }
+
+    regiment = {
+        name = "2. División de Infantería"
+        type = infantry
         home = 2302
     }
 
     regiment = {
         name = "3. División de Infantería"
         type = infantry
-        home = 2302
+        home = 2299
     }
 
     regiment = {
         name = "1. División de Caballería"
         type = cavalry
-        home = 2302
+        home = 2330
     }
 
+	regiment = {
+        name = "2. División de Caballería"
+        type = cavalry
+        home = 2303
+    }
+	
+	regiment = {
+        name = "3. División de Caballería"
+        type = cavalry
+        home = 2303
+    }
+	
+	regiment = {
+        name = "4. División de Caballería"
+        type = cavalry
+        home = 2310
+    }
+	
+	regiment = {
+        name = "4. División de Cannons"
+        type = artillery
+        home = 2310
+    }
 }

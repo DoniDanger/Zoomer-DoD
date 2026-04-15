@@ -160,7 +160,7 @@
 	}
 
 	slaves = {
-		culture = forest_bantu
+		culture = central_african_cultures
 		religion = animist
 		size = 8000
 	}
@@ -469,7 +469,7 @@
 	}
 
 	slaves = {
-		culture = forest_bantu	
+		culture = central_african_cultures	
 		religion = animist
 		size = 2000
 	}
@@ -673,7 +673,7 @@
 	}
 
 	slaves = {
-		culture = forest_bantu
+		culture = central_african_cultures
 		religion = animist
 		size = 4000
 	}
@@ -848,7 +848,7 @@
 	}
 
 	slaves = {
-		culture = forest_bantu
+		culture = central_african_cultures
 		religion = animist
 		size = 50
 	}
@@ -1275,7 +1275,7 @@
 	}
 
 	slaves = {
-		culture = forest_bantu
+		culture = central_african_cultures
 		religion = animist
 		size = 20000
 	}
@@ -1586,7 +1586,7 @@
 	}
 
 	slaves = {
-		culture = forest_bantu
+		culture = central_african_cultures
 		religion = animist
 		size = 1500
 	}

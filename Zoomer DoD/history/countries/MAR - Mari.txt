@@ -1,5 +1,5 @@
 capital = 2680
-primary_culture = volgaic
+primary_culture = ugrian
 religion = orthodox
 government = presidential_dictatorship
 plurality = 3

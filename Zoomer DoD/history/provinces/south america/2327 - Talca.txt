@@ -1,5 +1,5 @@
-owner = ARE
-controller = ARE
+owner = CHL
+controller = CHL
 add_core = INC
 add_core = CHL
 trade_goods = grain

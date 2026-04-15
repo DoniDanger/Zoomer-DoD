@@ -1,0 +1,29 @@
+name = "Huillac-Arequipa War"
+
+1835.2.2 = {
+	add_attacker = ARE
+	add_defender = QOL
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = conquest
+		actor = ARE
+		receiver = QOL
+	}
+
+	war_goal = {
+		casus_belli = conquest
+		actor = QOL
+		receiver = ARE
+	}
+
+}
+
+1836.6.6 = {
+	rem_attacker = ARE
+	rem_defender = QOL
+}

@@ -252,7 +252,7 @@
 }
 3321 = {
     farmers = {
-        culture = forest_bantu
+        culture = central_african_cultures
         religion = animist
         size = 1
     }

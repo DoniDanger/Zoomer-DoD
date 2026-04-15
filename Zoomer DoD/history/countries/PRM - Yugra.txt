@@ -1,6 +1,7 @@
 capital = 1058
 primary_culture = north_russian
 culture = cossack
+culture = ugrian
 religion = orthodox
 government = democracy
 plurality = 5
