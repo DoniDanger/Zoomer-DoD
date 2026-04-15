@@ -121,10 +121,6 @@ country_event = {
 		leave_alliance = CLM
 		diplomatic_influence = { who = CLM value = -400 }
 		
-		release_vassal = ARE
-		leave_alliance = ARE
-		diplomatic_influence = { who = ARE value = -400 }
-		
 		casus_belli = {
             target = CLM
             type = make_puppet
@@ -134,33 +130,6 @@ country_event = {
             target = CLM
             attacker_goal = { casus_belli = make_puppet }
 			defender_goal = { casus_belli = assert_colombian_dominance }
-			call_ally = yes
-        }
-		
-		casus_belli = {
-            target = ARE
-            type = make_puppet
-            months = 60
-        }
-		ARE = {
-			casus_belli = {
-				target = QUI
-				type = conquest
-				months = 24
-			}
-			casus_belli = {
-				target = SPA
-				type = release_puppet
-				months = 24
-			}
-		}
-		war = {
-            target = ARE
-            attacker_goal = { casus_belli = make_puppet }
-			defender_goal = {
-				casus_belli = release_puppet
-				country = QUI
-			}
 			call_ally = yes
         }
 		any_country = {
@@ -217,9 +186,9 @@ country_event = {
 							tag = LST
 							tag = ELS
 							tag = YUC
-							tag = GUY
+							
 							tag = AZT
-							tag = JLS
+							
 							tag = QUI
 						} 
 					}
@@ -237,9 +206,9 @@ country_event = {
 							tag = LST
 							tag = ELS
 							tag = YUC
-							tag = GUY
+							
 							tag = AZT
-							tag = JLS
+							
 							tag = QUI
 						} 
 					}
@@ -352,9 +321,7 @@ country_event = {
 							tag = LST
 							tag = ELS
 							tag = YUC
-							tag = GUY
 							tag = AZT
-							tag = JLS
 							tag = QUI
 						} 
 					}
@@ -372,9 +339,8 @@ country_event = {
 							tag = LST
 							tag = ELS
 							tag = YUC
-							tag = GUY
+							
 							tag = AZT
-							tag = JLS
 							tag = QUI
 						} 
 					}
@@ -450,9 +416,9 @@ country_event = {
 					tag = LST
 					tag = ELS
 					tag = YUC
-					tag = GUY
+					
 					tag = AZT
-					tag = JLS
+					
 				} 
 			}
 			country_event = 46443
@@ -528,9 +494,9 @@ country_event = {
 							tag = LST
 							tag = ELS
 							tag = YUC
-							tag = GUY
+							
 							tag = AZT
-							tag = JLS
+							
 							tag = QUI
 						} 
 					}
@@ -547,9 +513,9 @@ country_event = {
 							tag = LST
 							tag = ELS
 							tag = YUC
-							tag = GUY
+							
 							tag = AZT
-							tag = JLS
+							
 							tag = QUI
 						} 
 					}
@@ -599,32 +565,21 @@ country_event = {
 	option = {
 		name = "Our authority in the Amerigas will never be questioned again."
 		create_vassal = AZT
-		create_vassal = JLS
 		create_vassal = LST
 		create_vassal = ELS
 		create_vassal = YUC
 		create_vassal = CAS
 		create_vassal = QUI
-		#create_vassal = ARE
-		create_vassal = GUY
-		create_vassal = MEX
 		SAN = { all_core = { add_core = CAS remove_core = SAN }}
-		CAS = { inherit = GUY }
 		CAS = { change_tag = GRA }
-		#ARE = { all_core = { add_core = QUI remove_core = ARE }}
-		#QUI = { inherit = ARE }
-		ELS = { change_tag = UCA }
-		AZT = { inherit = JLS }
-		JLS = { all_core = { add_core = AZT remove_core = JLS }}
 		AZT = { add_accepted_culture = mexican add_accepted_culture = tarascan add_accepted_culture = zapotec }
 		AZT = { inherit = CLM }
 		AZT = { change_tag = MEX }
 		diplomatic_influence = { who = MEX value = 400 }
 		diplomatic_influence = { who = LST value = 400 }
-		diplomatic_influence = { who = UCA value = 400 }
+		diplomatic_influence = { who = ELS value = 400 }
 		diplomatic_influence = { who = GRA value = 400 }
 		diplomatic_influence = { who = QUI value = 400 }
-		diplomatic_influence = { who = CAS value = 400 }
 		set_country_flag = colonial_empire_reestablished
 	}
 }
@@ -641,12 +596,12 @@ country_event = {
 	
 	immediate = {
 			#change_tag_no_core_switch = MEX
-			#any_owned = {
-			#	limit = {
-			#		is_core = AZT
-			#	}
-			#	secede_province = AZT
-			#}
+			any_owned = {
+				limit = {
+					is_core = AZT
+				}
+				secede_province = AZT
+			}
 			MEX_2170 = { secede_province = AZT } #Morelia
 			MEX_2173 = { secede_province = AZT } #Zacatecas
 			MEX_2177 = { secede_province = AZT } #Oaxaca
@@ -670,12 +625,6 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					is_core = NIC
-				}
-				secede_province = ELS
-			}
-			any_owned = {
-				limit = {
 					is_core = PNM
 				}
 				secede_province = ELS
@@ -688,27 +637,9 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					is_core = JLS
-				}
-				secede_province = JLS
-			}
-			any_owned = {
-				limit = {
 					is_core = QUI
 				}
 				secede_province = QUI
-			}
-			#any_owned = {
-			#	limit = {
-			#		is_core = ARE
-			#	}
-			#	secede_province = ARE
-			#}
-			any_owned = {
-				limit = {
-					is_core = GUY
-				}
-				secede_province = GUY
 			}
 			any_owned = {
 				limit = {
@@ -720,7 +651,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "The Gran Colombian dream has perished. We must live on as Mexico."
+		name = "The Gran Colombian dream has perished."
 	}
 }
 
@@ -767,12 +698,9 @@ country_event = {
 			AND = { NOT = { LST = { any_core = { controlled_by = LST }}} LST = { exists = yes }}
 			AND = { NOT = { YUC = { any_core = { controlled_by = YUC }}} YUC = { exists = yes }}
 			AND = { NOT = { AZT = { any_core = { controlled_by = AZT }}} AZT = { exists = yes }}
-			AND = { NOT = { JLS = { any_core = { controlled_by = JLS }}} JLS = { exists = yes }}
 			AND = { NOT = { ELS = { any_core = { controlled_by = ELS }}} ELS = { exists = yes }}
 			AND = { NOT = { CAS = { any_core = { controlled_by = CAS }}} CAS = { exists = yes }}
-			AND = { NOT = { GUY = { any_core = { controlled_by = GUY }}} GUY = { exists = yes }}
 			AND = { NOT = { QUI = { any_core = { controlled_by = QUI }}} NOT = { QUI = { any_core = { controlled_by = ARE }}} QUI = { exists = yes }}
-			#AND = { NOT = { ARE = { any_core = { controlled_by = ARE }}} ARE = { exists = yes }}
 		}
 	}
 	
@@ -816,42 +744,18 @@ country_event = {
 			}
 			random_country = {
 				limit = {
-					tag = JLS
-					exists = yes
-					NOT = { JLS = { any_core = { controlled_by = JLS }}}
-				}
-				annex_to = CLM
-			}
-			random_country = {
-				limit = {
 					tag = CAS
 					exists = yes
 					 NOT = { CAS = { any_core = { controlled_by = CAS }}}
 				}
 				annex_to = CLM
 			}
-			#random_country = {
-			#	limit = {
-			#		tag = ARE
-			#		exists = yes
-			#		NOT = { ARE = { any_core = { controlled_by = ARE }}}
-			#	}
-			#	annex_to = CLM
-			#}
 			random_country = {
 				limit = {
 					tag = QUI
 					exists = yes
 					NOT = { QUI = { any_core = { controlled_by = QUI }}}
 					NOT = { QUI = { any_core = { controlled_by = ARE }}}
-				}
-				annex_to = CLM
-			}
-			random_country = {
-				limit = {
-					tag = GUY
-					exists = yes
-					NOT = { GUY = { any_core = { controlled_by = GUY }}}
 				}
 				annex_to = CLM
 			}
@@ -881,10 +785,7 @@ country_event = {
 			#AND = { NOT = { AZT = { any_core = { controlled_by = THIS }}} AZT = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { ELS = { any_core = { controlled_by = THIS }}} ELS = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { CAS = { any_core = { controlled_by = THIS }}} CAS = { any_core = { owned_by = THIS }} }
-			AND = { NOT = { GUY = { any_core = { controlled_by = THIS }}} GUY = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { QUI = { any_core = { controlled_by = THIS }}} QUI = { any_core = { owned_by = THIS }} }
-			#AND = { NOT = { ARE = { any_core = { controlled_by = THIS }}} ARE = { any_core = { owned_by = THIS }} }
-			AND = { NOT = { JLS = { any_core = { controlled_by = THIS }}} JLS = { any_core = { owned_by = THIS }} }
 			
 			AND = { NOT = { ZAP = { any_core = { controlled_by = THIS }}} ZAP = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { NIC = { any_core = { controlled_by = THIS }}} NIC = { any_core = { owned_by = THIS }} }
@@ -924,13 +825,6 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					is_core = NIC
-					NOT = { NIC = { any_core = { controlled_by = THIS }}}
-				}
-				secede_province = ELS
-			}
-			any_owned = {
-				limit = {
 					is_core = PNM
 					NOT = { PNM = { any_core = { controlled_by = THIS }}}
 				}
@@ -946,31 +840,10 @@ country_event = {
 			}
 			any_owned = {
 				limit = {
-					is_core = JLS
-					NOT = { JLS = { any_core = { controlled_by = THIS }}}
-				}
-				secede_province = JLS
-			}
-			any_owned = {
-				limit = {
 					is_core = QUI
 					NOT = { QUI = { any_core = { controlled_by = THIS }}}
 				}
 				secede_province = QUI
-			}
-			#any_owned = {
-			#	limit = {
-			#		is_core = ARE
-			#		NOT = { ARE = { any_core = { controlled_by = THIS }}}
-			#	}
-			#	secede_province = ARE
-			#}
-			any_owned = {
-				limit = {
-					is_core = GUY
-					NOT = { GUY = { any_core = { controlled_by = THIS }}}
-				}
-				secede_province = GUY
 			}
 			any_owned = {
 				limit = {
@@ -1010,9 +883,7 @@ country_event = {
 							tag = LST
 							tag = ELS
 							tag = YUC
-							tag = GUY
 							tag = AZT
-							tag = JLS
 							tag = QUI
 						} 
 					}

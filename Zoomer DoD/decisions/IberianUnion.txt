@@ -134,7 +134,7 @@ political_decisions = {
 					}
 				}
 			}
-			UCA = {
+			ELS = {
 				all_core = { 
 					OR = {
 						owner = { in_sphere = THIS }
@@ -157,7 +157,7 @@ political_decisions = {
 							tag = LST
 							tag = QUI
 							tag = MEX
-							tag = UCA
+							tag = ELS
 						} 
 					}
 				country_event = 333222
@@ -198,6 +198,59 @@ political_decisions = {
 			political_reform = first_past_the_post
 			political_reform = non_secret_ballots
 			set_country_flag = mancomunidad	
+		}	
+		
+	}
+	
+	restore_arequipa_viceroyalty = {
+		picture = restore_order_GC
+		potential = { 
+			tag = SPA  
+			NOT = { has_country_flag = restored_arequipa_viceroyalty }
+			NOT = {
+				has_country_flag = total_colombian_victory 
+				has_global_flag = spanish_evacuation_colonies
+				has_global_flag = treaty_of_andagoya
+				has_global_flag = peaceful_colombian_independence
+			}
+			ARE = { exists = yes }
+			NOT = { ARE = { vassal_of = THIS } }
+		}
+		
+		allow = { 
+			war = no
+			ARE = { exists = yes }
+			has_global_flag = 2nd_colombian_independence_war
+		}
+		
+		effect = {
+			casus_belli = {
+				target = ARE
+				type = make_puppet
+				months = 60
+			}
+			ARE = {
+				casus_belli = {
+					target = QUI
+					type = conquest
+					months = 24
+				}
+				casus_belli = {
+					target = SPA
+					type = release_puppet
+					months = 24
+				}
+			}
+			war = {
+				target = ARE
+				attacker_goal = { casus_belli = make_puppet }
+				defender_goal = {
+					casus_belli = release_puppet
+					country = QUI
+				}
+				call_ally = yes
+			}
+			set_country_flag = restored_arequipa_viceroyalty	
 		}	
 		
 	}

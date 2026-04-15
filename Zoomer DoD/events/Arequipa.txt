@@ -17,6 +17,24 @@ country_event = {
 		political_reform = population_equal_weight
 		political_reform = yes_meeting
 		political_reform = free_press
+		any_pop = {
+			 ideology = {
+			 	 value = liberal
+				  factor = 0.05
+			 } 
+			scaled_militancy = {
+					ideology = liberal
+					factor = -1
+			} 
+			scaled_consciousness = {
+					ideology = liberal
+					factor = 1
+			}
+		}
+		add_country_modifier = {
+			name = the_homestead_act2
+			duration = 730
+		}
 	}
 
 	option = {
