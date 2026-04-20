@@ -73,7 +73,13 @@ political_decisions = {
 		NOT = { has_country_flag = Hungarian_CRO }
 		}
 		allow = { 
-		state_n_government = 1 
+			OR = {
+				AND = {
+					ideological_thought = 1
+					has_country_flag = stefen_crown_hungary
+				}
+				state_n_government = 1 
+			}
 		}
 		
 		effect = { 
@@ -202,16 +208,16 @@ political_decisions = {
 		picture = "Triglav"
 	
 		potential = {
-		OR = {
-		tag = HUN
-		tag = CRO
-		}
-		NOT = { has_country_flag = accepted_slovenians }
+			OR = {
+				tag = HUN
+				tag = CRO
+			}
+			NOT = { has_country_flag = accepted_slovenians }
 		}
 		allow = { 
-		OR = { 
-		owns = 768 
-		owns = 767
+			OR = { 
+			owns = 768 
+			owns = 767
 			}
 		}
 		
@@ -237,6 +243,12 @@ political_decisions = {
 				AND = {
 					nationalism_n_imperialism = 1
 					owns = 794
+					owns = 802
+				}
+				AND = {
+					nationalism_n_imperialism = 1
+					owns = 794
+					has_country_flag = stefen_crown_hungary
 				}
 			}
 		}
@@ -260,7 +272,13 @@ political_decisions = {
 			NOT = { accepted_culture = romanian }
 		}
 		allow = {
-			revolution_n_counterrevolution = 1
+			OR = {
+				revolution_n_counterrevolution = 1
+				AND = {
+					has_country_flag = stefen_crown_hungary
+					nationalism_n_imperialism = 1
+				}
+			}
 			AND = {
 				NOT = { debt_law = serfdom }
 				NOT = { debt_law = peonage }
@@ -293,6 +311,26 @@ political_decisions = {
 			random_owned = { limit = { owner = { debt_law = debtors_prisons } } owner = { political_reform = bankruptcy  } }
 			prestige = 10
 			set_country_flag = hungarian_land_reform_flag
+		}
+	}
+	
+	sieze_stefen_crown = {
+	
+		picture = "hungary"
+		
+		potential = {
+			tag = HUN
+			NOT = { has_country_flag = siezed_stefen_crown }
+			NOT = { has_country_flag = stefen_crown_hungary }
+			has_global_flag = stefen_crown_bohemia
+		}
+		allow = {
+			controls = 625
+		}
+		effect = {
+			prestige = 25
+			set_country_flag = siezed_stefen_crown
+			set_country_flag = stefen_crown_hungary
 		}
 	}
 }

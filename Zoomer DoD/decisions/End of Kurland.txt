@@ -22,48 +22,70 @@ political_decisions = {
 			NOT = { has_country_flag = fall_of_kurland }
 		}	
 		allow = {
+			war = no
+			state_n_government = 1
 			NOT = { KRL = { war = yes } }
 			NOT = { war = yes }
-			KRL = { in_sphere = THIS }
+			KRL = { in_sphere = THIS war = no }
 		}
 		
 		effect = {
-			prestige = 15
+			prestige = 5
 			set_global_flag = fall_of_kurland
+			set_country_flag = fall_of_kurland
 			KRL = {
 				country_event = 333016
 			}
+			add_accepted_culture = latvian
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 
-kurland_annexation = { 
+	kurland_annexation = { 
 		potential = {
 			tag = SCA
 			is_greater_power = yes
 			has_country_flag = baltic_claimed
-			KRL = { exists = yes }
-			NOT = { has_country_flag = fall_of_kurland }
+			NOT = { has_country_flag = kurland_annexed }
 		}	
 		allow = {
-			NOT = { KRL = { war = yes } }
-			NOT = { war = yes }
-			KRL = { in_sphere = THIS }
+			war = no
 			owns = 690
 			owns = 695
+			state_n_government = 1
+			KRL = {
+				all_core = {
+					owner = {
+						OR = {
+							owned_by = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
+			PSV = {
+				all_core = {
+					owner = {
+						OR = {
+							owned_by = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}
 		}
 		
 		effect = {
-			prestige = 15
-			badboy = 5
-			set_global_flag = fall_of_kurland
+			prestige = 10
+			badboy = 3
+			set_country_flag = kurland_annexed
 			inherit = PSV
 			PSV = { all_core = { add_core = THIS } }
-			KRL = {
-				country_event = 333016
-			}
+			add_accepted_culture = latvian
 		}
 		ai_will_do = {
 			factor = 1

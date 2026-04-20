@@ -1,6 +1,7 @@
 political_decisions = {
 	
 		demand_end_spanish_protectorship = { 
+		picture = unite_gran_colombia
 		potential = { 
 			tag = CLM
 			NOT = { has_country_flag = demanded_spanish_protectorate_end }
@@ -25,10 +26,11 @@ political_decisions = {
 	}
 	
 	end_gran_colombian_dream = { 
-		picture = restore_order_GC
+		picture = spain_reconquest
 		potential = { 
 			tag = SPA
 			NOT = {
+				has_country_flag = ended_gran_colombia 
 				has_country_flag = total_colombian_victory 
 				has_global_flag = spanish_evacuation_colonies
 				has_global_flag = treaty_of_andagoya
@@ -44,14 +46,16 @@ political_decisions = {
 			
 		effect = {
 			CLM = { country_event = 46449 }
+			set_country_flag = ended_gran_colombia
 		}
 	}
 	
 	reorganize_spanish_colonial_administration = { 
-		picture = restore_order_GC
+		picture = spain_reconquest_vns
 		potential = { 
 			tag = SPA
 			NOT = {
+				has_country_flag = reorganized_spanish_colonies 
 				has_country_flag = total_colombian_victory 
 				has_global_flag = spanish_evacuation_colonies
 				has_global_flag = treaty_of_andagoya
@@ -68,11 +72,12 @@ political_decisions = {
 			
 		effect = {
 			country_event = 46448 
+			set_country_flag = reorganized_spanish_colonies
 		}
 	}
 	
 	violate_san_salvador_treaty = { 
-		picture = restore_order_GC
+		picture = spain_reconquest
 		potential = { 
 			tag = SPA
 			NOT = {
@@ -103,6 +108,7 @@ political_decisions = {
 	}
 	
 	secure_south_granada = { 
+		picture = peru_bolivia
 		potential = { 
 			OR = { 
 				tag = GRA 
@@ -206,6 +212,7 @@ political_decisions = {
 	}
 	
 	Cuba_CLM = { 
+		picture = "Cuba"
 		potential = { 
 			tag = CUB 
 			ai = yes 
@@ -261,6 +268,7 @@ political_decisions = {
 		}
 	}
 	Congress_CLM = { 
+		picture = "ecuador_const_1830"
 		potential = { 
 			tag = CLM
 			NOT = { has_country_flag = fired_congress }
@@ -307,6 +315,7 @@ political_decisions = {
 	}
 	
 	congress_on_the_indians = { 
+		picture = "ecuador_const_1830"
 		potential = { 
 			tag = CLM
 			NOT = { has_country_flag = clm_indian_congress }

@@ -53,7 +53,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 14610
+		size = 7610
 	}
 
 	farmers = { 
@@ -243,7 +243,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 7500
+		size = 3500
 	}
 
 	farmers = { 
@@ -435,7 +435,7 @@
 	soldiers = { 
 		culture = cossack
 		religion = orthodox
-		size = 8412
+		size = 4412
 	}
 
 	farmers = { 
@@ -470,6 +470,12 @@
 		size = 17800
 	}
 
+	bureaucrats = { 
+		culture = russian
+		religion = orthodox
+		size = 800
+	}
+	
 	bureaucrats = { 
 		culture = cossack
 		religion = orthodox
@@ -547,7 +553,7 @@
 	soldiers = { 
 		culture = cossack
 		religion = orthodox
-		size = 7412
+		size = 3412
 	}
 
 	farmers = { 
@@ -621,7 +627,7 @@
 	soldiers = { 
 		culture = cossack
 		religion = orthodox
-		size = 6000
+		size = 2400
 	}
 
 	 serfs = { 
@@ -2327,7 +2333,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 10000
+		size = 4200
 	}
 
 	farmers = { 
@@ -2495,7 +2501,7 @@
 	bureaucrats = { 
 		culture = russian
 		religion = orthodox
-		size = 2000
+		size = 1200
 	}
 
 	clergymen = { 
@@ -2525,7 +2531,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 15000
+		size = 7500
 	}
 
 	farmers = { 
@@ -2944,7 +2950,7 @@
 	bureaucrats = { 
 		culture = russian
 		religion = orthodox
-		size = 800
+		size = 2800
 	}
 
 	clergymen = { 
@@ -3104,7 +3110,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 3377
+		size = 1877
 	}
 }
 #Tula (1160000/290000 POPS)
@@ -3148,7 +3154,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 3177
+		size = 1877
 	}
 
 	farmers = { 
@@ -3210,7 +3216,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 10000
+		size = 3200
 	}
 
 	farmers = { 
@@ -3272,7 +3278,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 7500
+		size = 3500
 	}
 }
 #Nizhni Novgorod Region (4420000)
@@ -3294,7 +3300,7 @@
 	bureaucrats = { 
 		culture = russian
 		religion = orthodox
-		size = 825
+		size = 425
 	}
 
 	clergymen = { 
@@ -3324,7 +3330,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 7425
+		size = 3425
 	}
 
 	farmers = { 
@@ -3392,7 +3398,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 3177
+		size = 1477
 	}
 
 	farmers = { 
@@ -3460,7 +3466,7 @@
 	soldiers = { 
 		culture = russian
 		religion = orthodox
-		size = 3933
+		size = 1933
 	}
 }
 #Kostorma (312000/78000 POPS)
@@ -3504,7 +3510,7 @@
 	soldiers = { 
 		culture = north_russian
 		religion = orthodox
-		size = 3933
+		size = 2933
 	}
 
 	farmers = { 

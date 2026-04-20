@@ -42,6 +42,7 @@ political_decisions = {
 		effect = {
 			set_country_flag = lol_gg
 			country_event = 22240
+			add_accepted_culture = lithuanian 
 		}
 		ai_will_do = {
 			factor = 1
@@ -82,37 +83,49 @@ political_decisions = {
 			OR = {
 				LIT = { substate_of = PLC }
 				BLR = { substate_of = PLC }
-				UKR = { substate_of = PLC }
+				KIE = { substate_of = PLC }
 				PRU = { substate_of = PLC }
+				KHK = { substate_of = PLC }
+				ZAZ = { substate_of = PLC }
 			}
 		}
 	
 		allow = { 
-               state_n_government = 1
+			war = no
+			owns = 706
+            state_n_government = 1
 			OR = {
 				LIT = { substate_of = PLC }
 				BLR = { substate_of = PLC }
-				UKR = { substate_of = PLC }
+				KIE = { substate_of = PLC }
 				PRU = { substate_of = PLC }
+				KHK = { substate_of = PLC }
+				ZAZ = { substate_of = PLC }
 			}
 			OR = {
 				LIT = { substate_of = PLC }
-				BLR = { exists = no }
+				LIT = { exists = no }
 			}
 			OR = {
 				BLR = { substate_of = PLC }
 				BLR = { exists = no }
 			}
 			OR = {
-				UKR = { substate_of = PLC }
-				UKR = { exists = no }
+				KIE = { substate_of = PLC }
+				KIE = { exists = no }
 			}
 			OR = {
 				PRU = { substate_of = PLC }
 				PRU = { exists = no }
 			}
-			war = no
-			690 = { owned_by = THIS }
+			OR = {
+				KHK = { substate_of = PLC }
+				KHK = { exists = no }
+			}
+			OR = {
+				ZAZ = { substate_of = PLC }
+				ZAZ = { exists = no }
+			}
 		}
 	
 		effect = {
@@ -123,8 +136,10 @@ political_decisions = {
 					OR = {
 						tag = LIT
 						tag = BLR
-						tag = UKR
+						tag = KIE
 						tag = PRU
+						tag = KHK
+						tag = ZAZ
 					}
 					substate_of = THIS
 				}

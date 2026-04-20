@@ -83,7 +83,7 @@ political_decisions = {
 	}
 	
 	consolidate_tungning_control = { 
-		picture = zuharra
+		picture = imperial_decree_of_war
 		potential = { 
 			tag = GAN 
 			NOT = { has_country_flag = consolidated_tungning_control }
@@ -111,7 +111,7 @@ political_decisions = {
 	}
 	
 	renew_the_phoenix_invasion = { 
-		picture = zuharra
+		picture = imperial_decree_of_war
 		potential = { 
 			tag = GAN 
 			has_country_flag = consolidated_tungning_control
@@ -134,7 +134,7 @@ political_decisions = {
 	}
 	
 	legacy_of_the_phoenix_emperor = { 
-		picture = zuharra
+		picture = imperial_decree_of_war
 		potential = { 
 			tag = GAN 
 			has_country_flag = renewed_phoenix_invasion
@@ -160,7 +160,7 @@ political_decisions = {
 	}
 	
 	claim_protectorship_tungning = { 
-		picture = zuharra
+		picture = imperial_decree_of_war
 		potential = { 
 			tag = GAN 
 			TNG = { exists = yes }

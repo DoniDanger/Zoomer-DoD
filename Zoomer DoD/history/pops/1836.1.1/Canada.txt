@@ -2697,7 +2697,7 @@
 	soldiers = {
 		culture = vinlander
 		religion = protestant
-		size = 8400
+		size = 5400
 	}
 
 	farmers = {
@@ -3182,7 +3182,7 @@
 	soldiers = {
 		culture = vinlander
 		religion = protestant
-		size= 4650
+		size= 2650
 
 	}
 

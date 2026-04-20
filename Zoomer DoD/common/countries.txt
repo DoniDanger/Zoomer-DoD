@@ -24,7 +24,7 @@ MSC     = "countries/Moscow.txt"
 QOL 	= "countries/Qulla.txt"
 
 ##Disabled
-#SML     = "countries/Smolensk.txt" 
+SML     = "countries/Smolensk.txt" 
 #TVE     = "countries/Tver.txt" 
 
 ##DoD

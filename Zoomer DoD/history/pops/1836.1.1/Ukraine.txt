@@ -942,25 +942,25 @@
 	}
 
 	clergymen = { 
-		culture = polish
+		culture = galician
 		religion = catholic
 		size = 86
 	}
 
 	farmers = { 
-		culture = polish
+		culture = galician
 		religion = catholic
 		size = 261
 	}
 
 	serfs = { 
-		culture = polish
+		culture = galician
 		religion = catholic
 		size = 609
 	}
 
 	soldiers = { 
-		culture = polish
+		culture = galician
 		religion = catholic
 		size = 291
 	}

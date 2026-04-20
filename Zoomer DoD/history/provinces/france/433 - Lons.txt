@@ -4,5 +4,5 @@ add_core = BRG
 add_core = LRR
 fort = 1 
 trade_goods = cattle
-life_rating = 34
+life_rating = 35
 

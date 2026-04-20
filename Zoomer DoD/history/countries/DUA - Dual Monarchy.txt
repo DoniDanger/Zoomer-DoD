@@ -1,7 +1,7 @@
 capital = 425
 primary_culture = anglois
-culture = welsh
-culture = breton
+#culture = welsh
+#culture = breton
 religion = catholic
 government = prussian_constitutionalism
 plurality = 15
@@ -90,7 +90,7 @@ nonstate_consciousness = 1
 
 schools = culture_tech_school
 
-ruling_party = DUA_liberal_1 # Parti Modere
+ruling_party = DUA_conservative_1 # Parti Modere
 last_election = 1834.6.21
 upper_house = {
 	fascist = 0

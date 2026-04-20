@@ -2,7 +2,7 @@ country_event = {
 	id = 66950
 	title = "Congress of Arequipa"
 	desc = "EVTDESC66901"
-	picture = "inca rebellion"
+	picture = "peu_coup_one"
 
 	is_triggered_only = yes
 	
@@ -81,5 +81,21 @@ country_event = {
 		political_reform = no_trade_unions
 		political_reform = first_past_the_post
 		political_reform = non_secret_ballots
+	}
+}
+
+country_event = {
+	id = 66951
+	title = "The Spaniards Invade!"
+	desc = "EVTDESC66901"
+	picture = "spanish_andes"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will rue the day they crossed the Andes."
+		ai_chance = {
+			factor = 25
+		}
 	}
 }

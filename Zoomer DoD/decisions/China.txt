@@ -1,5 +1,6 @@
 political_decisions = {
 	crush_gaungdong_traitors = {
+		picture = heavenly_seal
 		potential = {
 			tag = TAI
 			NOT = {

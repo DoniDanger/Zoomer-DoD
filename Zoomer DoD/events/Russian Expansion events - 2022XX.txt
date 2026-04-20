@@ -2,7 +2,7 @@ country_event = {
     id = 202201
     title = "RUS_EXP_202201_t"
     desc = "RUS_EXP_202201_d"
-    picture = "administration"
+    picture = "russian_claims_on_holy_land"
 
     is_triggered_only = yes
 

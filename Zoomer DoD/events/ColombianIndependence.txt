@@ -4,9 +4,9 @@ country_event = {
 
 	title = "Peace of San Salvador"
 	desc = "EVTDESC46435"
-	picture = "Administration"
 	fire_only_once = yes
-
+	picture = "gran_colombia_2"
+	
 	trigger = {
 		OR = {
 			tag = SPA
@@ -33,9 +33,9 @@ country_event = {
 
 	title = "Spanish Reject end to Protectorship"
 	desc = "EVTDESC46436"
-	picture = "Administration"
 	fire_only_once = yes
 	is_triggered_only = yes
+	picture = "bolivar"
 	
 	option = {
 		name = "Liberation is a struggle every Latinx dreams of."
@@ -72,9 +72,9 @@ country_event = {
 
 	title = "Spanish Violate Peace of San Salvador"
 	desc = "EVTDESC46437"
-	picture = "Administration"
 	fire_only_once = yes
 	is_triggered_only = yes
+	picture = "bolivar"
 	
 	option = {
 		name = "Liberation is a struggle every Latinx dreams of."
@@ -109,8 +109,8 @@ country_event = {
 
 	title = "2nd War of Colombian Independence"
 	desc = "EVTDESC46438"
-	picture = "Administration"
 	major = yes
+	picture = "colombian_military"
 	
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -147,9 +147,9 @@ country_event = {
 
 	title = "Treaty of Andagoya"
 	desc = "EVTDESC46439"
-	picture = "Administration"
 	fire_only_once = yes
 	major = yes
+	picture = "bolivar_is_happy"
 	
 	trigger = {
 		tag = CLM
@@ -224,7 +224,7 @@ country_event = { ### Annexation
 	id = 46440
 	title = "Colombia Demands Integration"
 	desc = "EVTDESC46440"
-	picture = "administration"
+	picture = "colombian_military"
 
 	is_triggered_only = yes
 	
@@ -255,7 +255,7 @@ country_event = { ### Annexation Choice
 	id = 46441
 	title = "Colombia Demands Integration"
 	desc = "EVTDESC46441"
-	picture = "administration"
+	picture = "colombian_military"
 
 	is_triggered_only = yes
 	
@@ -263,7 +263,7 @@ country_event = { ### Annexation Choice
 		name = "We stand a better chance with the Colombians."
 		FROM = { inherit = THIS }
 		ai_chance = { 
-		factor = 80 
+		factor = 60 
 		}
 	}
 	
@@ -277,7 +277,7 @@ country_event = { ### Annexation Choice
 			diplomatic_influence = { who = THIS value = -400 }
 		}
 		ai_chance = { 
-		factor = 20 
+		factor = 40 
 		}
 	}
 }
@@ -288,7 +288,7 @@ country_event = {
 
 	title = "Evacuation of the Spanish"
 	desc = "EVTDESC46442"
-	picture = "Administration"
+	picture = "bolivar_is_happy"
 	fire_only_once = yes
 	
 	trigger = {
@@ -355,7 +355,7 @@ country_event = { ### Vassal Lost
 	id = 46443
 	title = "Collapse of Spanish Authority"
 	desc = "EVTDESC46443"
-	picture = "administration"
+	picture = "reconquista_success"
 
 	is_triggered_only = yes
 	
@@ -387,9 +387,9 @@ country_event = {
 
 	title = "Collapse of Authority in Colonies"
 	desc = "EVTDESC46444"
-	picture = "Administration"
 	fire_only_once = yes
 	major = yes
+	picture = "colombian_military"
 	
 	trigger = {
 		tag = SPA
@@ -397,6 +397,9 @@ country_event = {
 		NOT = { war_with = CLM }
 		NOT = { CLM = { vassal_of = THIS }}
 		NOT = { has_country_flag = total_colombian_victory }
+		NOT = { has_country_flag = reorganized_spanish_colonies }
+		NOT = { has_country_flag = emperor_of_india }
+		NOT = { has_country_flag = ended_gran_colombia }
 		NOT = { has_global_flag = treaty_of_andagoya }
 	}
 	
@@ -416,22 +419,23 @@ country_event = {
 					tag = LST
 					tag = ELS
 					tag = YUC
-					
+					tag = CAS
+					tag = QUI
 					tag = AZT
 					
 				} 
 			}
 			country_event = 46443
 		}
-		any_country = { 
-			limit = {  
-				OR = { 
-					tag = CAS
-					tag = QUI
-				} 
-			}
-			country_event = 46440
-		}
+		#any_country = { 
+		#	limit = {  
+		#		OR = { 
+		#			tag = CAS
+		#			tag = QUI
+		#		} 
+		#	}
+		#	country_event = 46440
+		#}
 		set_global_flag = spanish_evacuation_colonies
 	}
 }
@@ -442,7 +446,7 @@ country_event = {
 
 	title = "Gran Colombians Demands End to Protectorship"
 	desc = "EVTDESC46445"
-	picture = "Administration"
+	picture = "la_independencia_del_perú"
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -455,7 +459,7 @@ country_event = {
 	
 	option = {
 		name = "We must respect the treaty and allow Gran Colombia to decide for themselves."
-		prestige = -30
+		prestige = -15
 		CLM = { country_event = 46446 }
 		set_country_flag = colombians_demand_freedom
 	}
@@ -467,9 +471,9 @@ country_event = {
 
 	title = "An End to the Spanish Protectorship"
 	desc = "EVTDESC46446"
-	picture = "Administration"
 	fire_only_once = yes
 	is_triggered_only = yes
+	picture = "la_independencia_del_perú"
 	
 	option = {
 		name = "Gran Colombia will determine its own fate."
@@ -502,6 +506,7 @@ country_event = {
 					}
 				}
 			}
+			country_event = 46440
 		}
 		any_country = { 
 			limit = {  
@@ -532,8 +537,8 @@ country_event = {
 
 	title = "Expiration of the Spanish Protectorship"
 	desc = "EVTDESC46447"
-	picture = "Administration"
 	fire_only_once = yes
+	picture = "bolivar"
 	
 	trigger = {
 		tag = CLM
@@ -558,7 +563,7 @@ country_event = {
 
 	title = "Reorganization of Colonial Administration"
 	desc = "EVTDESC46448"
-	picture = "Administration"
+	picture = "reconquista_success"
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -590,7 +595,7 @@ country_event = {
 
 	title = "Collapse of Gran Colombia"
 	desc = "EVTDESC46449"
-	picture = "Administration"
+	picture = "reconquista_success"
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -661,7 +666,7 @@ country_event = {
 
 	title = "Spanish Military Expeditions Vanquished"
 	desc = "EVTDESC46450"
-	picture = "Administration"
+	picture = "colombian_military"
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -683,7 +688,7 @@ country_event = {
 
 	title = "Occupation of Loyalist States"
 	desc = "EVTDESC46451"
-	picture = "Administration"
+	picture = "colombian_military"
 	
 	trigger = {
 		tag = CLM
@@ -768,7 +773,7 @@ country_event = {
 
 	title = "Advance of Spanish Loyalists"
 	desc = "EVTDESC46452"
-	picture = "Administration"
+	picture = "reconquista_ok"
 	
 	trigger = {
 		tag = CLM
@@ -782,13 +787,10 @@ country_event = {
 		OR = {
 			AND = { NOT = { LST = { any_core = { controlled_by = THIS }}} LST = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { YUC = { any_core = { controlled_by = THIS }}} YUC = { any_core = { owned_by = THIS }} }
-			#AND = { NOT = { AZT = { any_core = { controlled_by = THIS }}} AZT = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { ELS = { any_core = { controlled_by = THIS }}} ELS = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { CAS = { any_core = { controlled_by = THIS }}} CAS = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { QUI = { any_core = { controlled_by = THIS }}} QUI = { any_core = { owned_by = THIS }} }
 			
-			AND = { NOT = { ZAP = { any_core = { controlled_by = THIS }}} ZAP = { any_core = { owned_by = THIS }} }
-			AND = { NOT = { NIC = { any_core = { controlled_by = THIS }}} NIC = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { PNM = { any_core = { controlled_by = THIS }}} PNM = { any_core = { owned_by = THIS }} }
 			AND = { NOT = { SAN = { any_core = { controlled_by = THIS }}} SAN = { any_core = { owned_by = THIS }} }
 		}
@@ -866,7 +868,7 @@ country_event = {
 
 	title = "Loyalist State Restored"
 	desc = "EVTDESC46453"
-	picture = "Administration"
+	picture = "reconquista_ok"
 	fire_only_once = yes
 	is_triggered_only = yes
 	
@@ -898,7 +900,7 @@ country_event = { ### Vassal Gained
 	id = 46454
 	title = "Restoration of Spanish Authority"
 	desc = "EVTDESC46454"
-	picture = "administration"
+	picture = "reconquista_ok"
 
 	is_triggered_only = yes
 	

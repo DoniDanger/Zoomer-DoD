@@ -1,5 +1,5 @@
 capital = 1003
-primary_culture = russian
+primary_culture = north_russian
 religion = orthodox
 government = merchant_republic
 plurality = 25

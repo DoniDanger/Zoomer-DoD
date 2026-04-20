@@ -114,7 +114,10 @@ political_decisions = {
 			allow = {
 				has_country_flag = arequipa_congress
 				NOT = { has_country_flag = reunited_andean_viceroyalties }
-				NOT = { government = democracy }
+				OR = {
+					owns = 2295
+					ideological_thought = 1
+				}
 				war = no
 				is_vassal = no
 				owns = 2302
@@ -167,7 +170,7 @@ political_decisions = {
 		}
 		
 		restore_arequipan_confederation = {
-			picture = Incas
+			picture = peu_const_two
 			potential = {
 				tag = ARE
 				NOT = { has_country_flag = arequipa_confed_restored }
@@ -207,7 +210,7 @@ political_decisions = {
 		}
 		
 		congress_of_arequipa = {
-			picture = Incas
+			picture = peu_const_one
 			potential = {
 				tag = ARE
 				NOT = { has_country_flag = arequipa_congress }
@@ -227,7 +230,7 @@ political_decisions = {
 		}
 		
 		liberate_quito = {
-			picture = Incas
+			picture = peru_bolivia
 			potential = {
 				tag = ARE
 				NOT = { has_country_flag = liberated_quito }
@@ -265,7 +268,7 @@ political_decisions = {
 		}
 		
 		reunite_andean_viceroyalties = {
-			picture = Incas
+			picture = peru_bolivia
 			potential = {
 				tag = ARE
 				NOT = { has_country_flag = reunited_andean_viceroyalties }
@@ -326,7 +329,7 @@ political_decisions = {
 		}
 		
 		advance_granadan_frontier = {
-			picture = Incas
+			picture = peru_bolivia
 			potential = {
 				tag = ARE
 				has_country_flag = reunited_andean_viceroyalties
@@ -359,7 +362,7 @@ political_decisions = {
 		}
 		
 		federalize_santiago = {
-			picture = Incas
+			picture = spain_reconquest_vns
 			potential = {
 				OR = { 
 					tag = ARE
@@ -392,6 +395,34 @@ political_decisions = {
 			}
 		}
 		
+		conquer_the_mapuche = {
+			picture = claim_pata_gonia_chl
+			potential = {
+				OR = { 
+					tag = ARE
+					tag = GRA
+					tag = INC
+				}
+				NOT = { has_country_flag = conquered_the_mapuche }
+			}
+			allow = {
+				war = no
+				is_vassal = no
+				owns = 2369
+				owns = 2374
+				owns = 2324
+				nationalism_n_imperialism = 1
+			}
+			effect = {
+				prestige = 5
+				ARU = { all_core = { add_core = THIS }}
+				set_country_flag = conquered_the_mapuche
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
 		renovate_arequipa = {
 			picture = Incas
 			potential = {
@@ -400,7 +431,7 @@ political_decisions = {
 					tag = GRA
 				}
 				has_country_flag = reunited_andean_viceroyalties
-				NOT = { has_country_flag = federalized_santiago }
+				NOT = { has_country_flag = renovated_arequipa }
 			}
 			allow = {
 				war = no
@@ -425,7 +456,7 @@ political_decisions = {
 		}
 			   
 		unite_andean_granadan_state = {
-			picture = Incas
+			picture = the_north_andean_union
 			potential = {
 				tag = ARE
 				has_country_flag = reunited_andean_viceroyalties

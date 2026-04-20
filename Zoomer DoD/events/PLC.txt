@@ -123,6 +123,12 @@ country_event = {
 			months = 24
 		 }
 	}
+	casus_belli = {
+			target = MSC
+			type = cut_down_to_size
+			months = 24
+		 }
+	}
 }
 
 	

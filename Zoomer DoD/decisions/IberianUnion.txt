@@ -1,68 +1,68 @@
 political_decisions = {
-	#form_iberia = {
-	#	potential = {
-	#		tag = SPA
-	#		NOT = {
-	#			exists = POR
-	#		}
-	#		NOT = { has_country_flag = iberian_union }
-	#	}
-	#	
-	#	allow = {
-	#		NOT = { war = yes }
-	#		prestige = 30
-	#		OR = {
-	#			state_n_government = 1
-	#			AND = {
-	#				has_country_flag = colonial_empire_reestablished
-	#				revolution_n_counterrevolution
-	#			}
-	#		}
-	#		SPA = {
-	#			all_core = {
-	#				owned_by = THIS
-	#			}
-	#		}
-	#		CAT = {
-	#			all_core = {
-	#				owner = {
-	#					OR = {
-	#						tag = THIS
-	#						in_sphere = THIS
-	#						vassal_of = THIS
-	#					}
-	#				}
-	#			}
-	#		}						
-	#	}
-	#	
-	#	effect = {
-	#		prestige = 20
-	#		set_country_flag = iberian_union
-	#		any_country = {
-	#			limit = {
-	#				tag = CAT
-	#				OR = {
-	#					in_sphere = THIS
-	#					vassal_of = THIS
-	#				}
-	#			}
-	#			annex_to = THIS
-	#		}
-	#		any_owned = {
-	#			limit = {
-	#				is_core = CAT
-	#			}
-	#			add_core = THIS
-	#		}
-	#		add_accepted_culture = catalan
-	#	}
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#}
+	form_iberia = {
+		picture = create_iberia
+		potential = {
+			tag = SPA
+			NOT = { exists = POR }
+			NOT = { has_country_flag = iberian_union }
+		}
+		
+		allow = {
+			war = no
+			prestige = 30
+			OR = {
+				state_n_government = 1
+				AND = {
+					has_country_flag = colonial_empire_reestablished
+					revolution_n_counterrevolution = 1
+				}
+			}
+			SPA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			CAT = {
+				all_core = {
+					owner = {
+						OR = {
+							tag = THIS
+							in_sphere = THIS
+							vassal_of = THIS
+						}
+					}
+				}
+			}						
+		}
+		
+		effect = {
+			prestige = 20
+			set_country_flag = iberian_union
+			any_country = {
+				limit = {
+					tag = CAT
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = CAT
+				}
+				add_core = THIS
+			}
+			add_accepted_culture = catalan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 	
 	integrate_navarra = { 
+		picture = create_iberia
 		potential = {
 			tag = SPA
 			has_country_flag = iberian_union
@@ -91,7 +91,7 @@ political_decisions = {
 	
 	emperor_of_india = { 
 	
-		picture = "emperor_of_india"
+		picture = emperor_of_india
 		
 		potential = { 
 			tag = SPA  
@@ -113,6 +113,7 @@ political_decisions = {
 						owner = { in_sphere = THIS }
 						owner = { vassal_of = THIS }
 						owned_by = THIS
+						empty = yes
 					}
 				}
 			}
@@ -122,6 +123,7 @@ political_decisions = {
 						owner = { in_sphere = THIS }
 						owner = { vassal_of = THIS }
 						owned_by = THIS
+						empty = yes
 					}
 				}
 			}
@@ -131,6 +133,7 @@ political_decisions = {
 						owner = { in_sphere = THIS }
 						owner = { vassal_of = THIS }
 						owned_by = THIS
+						empty = yes
 					}
 				}
 			}
@@ -140,6 +143,7 @@ political_decisions = {
 						owner = { in_sphere = THIS }
 						owner = { vassal_of = THIS }
 						owned_by = THIS
+						empty = yes
 					}
 				}
 			}
@@ -152,12 +156,12 @@ political_decisions = {
 					ai = yes
 					vassal_of = SPA 
 						OR = { 
-							tag = ARE
 							tag = GRA
 							tag = LST
 							tag = QUI
 							tag = MEX
 							tag = ELS
+							tag = YUC
 						} 
 					}
 				country_event = 333222
@@ -170,8 +174,43 @@ political_decisions = {
 		}
 	}
 	
+	extend_rights_havana = { 
+		picture = Cuba	
+		potential = { 
+			tag = SPA  
+			NOT = { has_country_flag = extended_rights_havana }
+			NOT = { owns = 2209 }
+		}
+		
+		allow = { 
+			OR = {
+				AND = {
+					nationalism_n_imperialism = 1 
+					has_country_flag = emperor_of_india
+				}
+				biologism = 1
+				revolution_n_counterrevolution = 1
+			}
+			CUB = {
+				all_core = { 
+					OR = {
+						owned_by = THIS
+						empty = yes
+					}
+				}
+			}
+		}
+		
+		effect = { 
+			prestige = 5 
+			CUB = { all_core = { add_core = THIS }}
+			add_accepted_culture = caribeno
+			set_country_flag = extended_rights_havana 
+		}
+	}
+	
 	mancomunidad_de_naciones = { 
-		picture = restore_order_GC
+		picture = emperor_of_india
 		potential = { 
 			tag = SPA  
 			has_country_flag = emperor_of_india
@@ -187,7 +226,7 @@ political_decisions = {
 		effect = {
 			prestige = 25
 			add_accepted_culture = mexican
-			add_accepted_culture = salvadorian
+			add_accepted_culture = central_american
 			add_accepted_culture = granadan
 			government = hms_government
 			political_reform = state_equal_weight
@@ -203,7 +242,7 @@ political_decisions = {
 	}
 	
 	restore_arequipa_viceroyalty = {
-		picture = restore_order_GC
+		picture = spain_reconquest_vop 
 		potential = { 
 			tag = SPA  
 			NOT = { has_country_flag = restored_arequipa_viceroyalty }
@@ -250,16 +289,24 @@ political_decisions = {
 				}
 				call_ally = yes
 			}
+			ARE = { country_event = 66951 }
 			set_country_flag = restored_arequipa_viceroyalty	
 		}	
 		
 	}
 	
 	integrate_arequipa_viceroyalty = {
-		picture = restore_order_GC
+		picture = peru_bolivia
 		potential = { 
 			tag = SPA  
 			NOT = { has_country_flag = integrated_arequipa_viceroyalty }
+			NOT = {
+				has_country_flag = total_colombian_victory 
+				has_global_flag = spanish_evacuation_colonies
+				has_global_flag = treaty_of_andagoya
+				has_global_flag = peaceful_colombian_independence
+			}
+			has_country_flag = emperor_of_india
 		}
 		
 		allow = { 
@@ -270,11 +317,11 @@ political_decisions = {
 						owner = { in_sphere = THIS }
 						owner = { vassal_of = THIS }
 						owned_by = THIS
+						empty = yes
 					}
 				}
 			}
 			nationalism_n_imperialism = 1
-			has_country_flag = emperor_of_india
 		}
 		
 		effect = {
@@ -296,7 +343,7 @@ political_decisions = {
 	}
 	
 	defend_lusitanian_frontier = { 
-		picture = restore_order_GC
+		picture = Rio_Grande_flag
 		potential = { 
 			tag = SPA  
 			has_country_flag = emperor_of_india
@@ -312,6 +359,7 @@ political_decisions = {
 						owner = { in_sphere = THIS }
 						owner = { vassal_of = THIS }
 						owned_by = THIS
+						empty = yes
 					}
 				}
 			}
@@ -327,7 +375,7 @@ political_decisions = {
 	}
 	
 	defend_andean_frontier = { 
-		picture = restore_order_GC
+		picture = spain_reconquest_vop
 		potential = { 
 			tag = SPA  
 			has_country_flag = emperor_of_india

@@ -34,6 +34,10 @@ country_event = {
 	
 	option = { 
 	name = "265401.E"
+	prestige = 15
+	relation = { who = HUN value = -100 }
+	diplomatic_influence = { who = HUN value = -50 }
+	set_global_flag = stefen_crown_bohemia
 	ai_chance = { 
 	factor = 10
 	modifier = { 

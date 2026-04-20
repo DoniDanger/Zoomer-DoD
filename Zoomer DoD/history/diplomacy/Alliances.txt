@@ -84,19 +84,19 @@ alliance=
 		start_date="1773.1.1"
 	}
 	
-	alliance=
-	{
-		first="TUR"
-		second="CRI"
-		start_date="1773.1.1"
-	}
-	
-	alliance=
-	{
-		first="TUR"
-		second="ASK"
-		start_date="1773.1.1"
-	}
+	#alliance=
+	#{
+	#	first="TUR"
+	#	second="CRI"
+	#	start_date="1773.1.1"
+	#}
+	#
+	#alliance=
+	#{
+	#	first="TUR"
+	#	second="ASK"
+	#	start_date="1773.1.1"
+	#}
 	
 
 	alliance=

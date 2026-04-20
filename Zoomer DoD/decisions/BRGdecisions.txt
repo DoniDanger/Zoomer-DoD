@@ -12,6 +12,7 @@ political_decisions = {
 			is_greater_power = yes
 			NOT = { war = yes }
 			owns = 400
+			ideological_thought = 1
 		}
 		
 		effect = {
@@ -43,6 +44,7 @@ political_decisions = {
 			is_greater_power = yes
 			NOT = { war = yes }
 			owns = 428
+			state_n_government = 1
 		}
 		
 		effect = {
@@ -243,48 +245,48 @@ political_decisions = {
 		}
 	}
 
-#	form_lotharingia = {
-#		potential = {
-#			tag = BRG
-#			NOT = {
-#			has_country_flag = lothaaringia
-#				has_country_flag = treaty_of_neuchatel
-#			}
-#		}	
-#		allow = {
-#			is_greater_power = yes
-#			NOT = { war = yes }
-#			BRG = {
-#				all_core = {
-#					owned_by = THIS
-#				}
-#			}
-#			GER = { exists = no }
-#		}
-#		
-#		effect = {
-#			prestige = 25
-#			set_country_flag = lothaaringia
-#			FRA_404 = {
-#				add_core = BRG
-#			}
-#			FRA_451 = {
-#				add_core = BRG
-#			}
-#			HEK_568 = {
-#				add_core = BRG
-#			}
-#			SAX_1 = {
-#				add_core = BRG
-#			}
-#			PRU_553 = {
-#				add_core = BRG
-#			}
-#		}
-#		ai_will_do = {
-#			factor = 1
-#		}
-#	}
+	#form_lotharingia = {
+	#	potential = {
+	#		tag = BRG
+	#		NOT = {
+	#		has_country_flag = lothaaringia
+	#			has_country_flag = treaty_of_neuchatel
+	#		}
+	#	}	
+	#	allow = {
+	#		is_greater_power = yes
+	#		NOT = { war = yes }
+	#		BRG = {
+	#			all_core = {
+	#				owned_by = THIS
+	#			}
+	#		}
+	#		GER = { exists = no }
+	#	}
+	#	
+	#	effect = {
+	#		prestige = 25
+	#		set_country_flag = lothaaringia
+	#		FRA_404 = {
+	#			add_core = BRG
+	#		}
+	#		FRA_451 = {
+	#			add_core = BRG
+	#		}
+	#		HEK_568 = {
+	#			add_core = BRG
+	#		}
+	#		SAX_1 = {
+	#			add_core = BRG
+	#		}
+	#		PRU_553 = {
+	#			add_core = BRG
+	#		}
+	#	}
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
 
 	fall_of_burgundy = {
 		potential = {
@@ -599,6 +601,27 @@ political_decisions = {
 			add_accepted_culture = occitan
 			prestige = 10
 			set_country_flag = brg_occitania_integrated
+		}
+	}
+	
+	brg_county_champagne = { 
+		picture = form_fra
+		potential = { 
+			tag = BRG  
+			NOT = { has_country_flag = brg_champagne_county }
+		}
+		
+		allow = { 
+			ideological_thought = 1 
+			owns = 408
+		}
+		
+		effect = { 
+			403 = { add_core = THIS }
+			406 = { add_core = THIS }
+			408 = { add_core = THIS }
+			prestige = 5
+		set_country_flag = brg_champagne_county
 		}
 	}
 }
