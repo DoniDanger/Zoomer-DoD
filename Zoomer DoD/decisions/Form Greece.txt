@@ -4,7 +4,7 @@ form_greece = {
 		potential = {
 			NOT = { GRE = { exists = yes }	}
 			primary_culture = greek
-			NOT = { tag = MAC }
+			tag = MAC 
 			}
 
 		allow = {

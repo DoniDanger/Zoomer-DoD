@@ -1,61 +1,13 @@
 political_decisions = {
-	form_mejico = {
-		potential = {
-			NOT = {	MEX = { exists = yes }	}
-			NOT = {	CLM = { exists = yes }	}
-			tag = JLS
-		}
-
-		allow = {
-			NOT = { war = yes }
-			NOT = { is_vassal = yes }
-			rank = 20
-			prestige = 50
-			JLS = {
-				all_core = {
-						owned_by = THIS
-				}
-			}
-			AZT = {
-				all_core = {
-						owned_by = THIS
-				}
-			}
-			NOT = {	AZT = { exists = yes }	}
-		}
-		effect = {
-			prestige = 20
-			change_tag = MEX
-			capital = 2172
-			any_country = {
-				limit = {
-					NOT = {
-						is_greater_power = yes
-					}
-					primary_culture = mexican
-					in_sphere = THIS
-				}
-				country_event = 11101
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
 	embrace_mexican_unity = {
 			potential = {
 				tag = MEX
-		   		has_global_flag = congress_of_panama_over
-				NOT = { has_global_flag = fall_of_all_the_colombia }
+				NOT = { has_country_flag = mexican_unity_embraced }
 				NOT = { CLM = { exists = yes } }
 			}
 			allow = {
 				NOT = { AZT = { exists = yes } }
-				NOT = { PUR = { exists = yes } }
-				NOT = { ZAP = { exists = yes } }
-				NOT = { JLS = { exists = yes } }
-				average_militancy = 5
+				vassal_of = SPA
 				NOT = { is_greater_power = yes }
 				NOT = { war = yes }
 			}
@@ -75,7 +27,7 @@ political_decisions = {
 				add_accepted_culture = mayan
 				add_accepted_culture = zapotec
 				add_accepted_culture = tarascan
-				set_global_flag = fall_of_all_the_colombia
+				set_country_flag = mexican_unity_embraced
 			}
 			ai_will_do = {
 				factor = 1

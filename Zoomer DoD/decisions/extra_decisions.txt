@@ -57,7 +57,7 @@ political_decisions = {
 			is_secondary_power = yes
 			sphere_owner = {
 				NOT = {
-					relation = { who = THIS value = -100 }
+					relation = { who = THIS value = -180 }
 					truce_with = THIS
 				}
 			}
