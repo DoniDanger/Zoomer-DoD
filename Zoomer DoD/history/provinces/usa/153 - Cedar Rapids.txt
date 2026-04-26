@@ -1,3 +1,4 @@
+add_core = VIN
 add_core = OCE
 add_core = PLA
 trade_goods = cattle

@@ -35,7 +35,7 @@
     soldiers = {
         culture = mongol
         religion = gelugpa
-        size = 3175
+        size = 6175
     }
 
     farmers = {
@@ -112,6 +112,12 @@
         size = 2650
     }
 
+	soldiers = {
+        culture = mongol
+        religion = gelugpa
+        size = 2175
+    }
+	
     farmers = {
         culture = mongol
         religion = gelugpa
@@ -191,7 +197,7 @@
     soldiers = {
         culture = oirat
         religion = gelugpa
-        size = 4000
+        size = 8000
     }
 
     farmers = {
@@ -214,6 +220,12 @@
         size = 875
     }
 
+	soldiers = {
+        culture = mongol
+        religion = gelugpa
+        size = 1175
+    }
+	
     farmers = {
         culture = mongol
         religion = gelugpa
@@ -235,6 +247,12 @@
         size = 1500
     }
 
+	soldiers = {
+        culture = mongol
+        religion = gelugpa
+        size = 2175
+    }
+	
     farmers = {
         culture = oirat
         religion = gelugpa
@@ -255,6 +273,12 @@
         size = 1050
     }
 
+	soldiers = {
+        culture = mongol
+        religion = gelugpa
+        size = 1175
+    }
+	
     farmers = {
         culture = oirat
         religion = gelugpa
@@ -275,6 +299,12 @@
         size = 900
     }
 
+	soldiers = {
+        culture = mongol
+        religion = gelugpa
+        size = 1175
+    }
+	
     farmers = {
         culture = oirat
         religion = gelugpa

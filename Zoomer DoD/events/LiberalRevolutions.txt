@@ -415,7 +415,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		months = 180
 		modifier = {
 			factor = 0.8
 			any_owned_province = {
@@ -514,7 +514,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 		modifier = {
 			factor = 0.9
 			political_reform_want = 0.02
@@ -661,7 +661,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 20
+		months = 40
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -827,7 +827,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 20
+		months = 40
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -1015,7 +1015,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 20
+		months = 40
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -1211,7 +1211,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 20
+		months = 40
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -1426,7 +1426,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 60
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -1854,7 +1854,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 120
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -1951,7 +1951,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 20
+		months = 40
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -2142,7 +2142,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 60
 		modifier = {
 			factor = 0.5
 			NOT = { controlled_by = THIS }
@@ -2277,7 +2277,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 50
+		months = 100
 		modifier = {
 			factor = 0.8
 			war = yes
@@ -2379,7 +2379,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 40
+		months = 80
 		modifier = {
 			factor = 0.8
 			owner = { has_country_modifier = anti_jacobin_tract }
@@ -2501,7 +2501,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 40
+		months = 80
 		modifier = {
 			factor = 1.2
 			owner = { has_country_modifier = anti_jacobin_tract }
@@ -2708,7 +2708,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 36
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -2893,7 +2893,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 100
+		months = 150
 		modifier = {
 			factor = 1.25
 			owner = { has_country_modifier = anti_jacobin_tract }
@@ -3020,7 +3020,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 60
 		modifier = {
 			factor = 0.5
 			any_owned_province = {
@@ -3143,7 +3143,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 30
+		months = 60
 		modifier = {
 			factor = 1.2
 			owner = { has_country_modifier = anti_jacobin_tract }
@@ -3351,7 +3351,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 30
+		months = 45
 		modifier = {
 			factor = 1.5
 			owner = { num_of_revolts = 1 }
@@ -4042,7 +4042,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 36
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
@@ -4138,7 +4138,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 36
+		months = 72
 		modifier = {
 			factor = 1.2
 			has_country_modifier = anti_jacobin_tract
@@ -4357,7 +4357,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 150
 		modifier = {
 			factor = 0.1
 			has_country_flag = liberal_revolution_in_progress
@@ -4564,7 +4564,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 180
 		modifier = {
 			factor = 0.2
 			has_country_flag = liberal_revolution_in_progress

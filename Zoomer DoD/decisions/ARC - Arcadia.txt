@@ -15,6 +15,7 @@ political_decisions = {
 						     OR = {
 							   in_sphere = THIS
 							   vassal_of = THIS
+							   empty = yes
 							   }
 						}
 		                province_id = 30
@@ -75,7 +76,7 @@ political_decisions = {
 				PLA = { all_core = { add_core = ARC	} }
 				NBG = { all_core = { add_core = ARC	} }
 				VIN = { all_core = { remove_core = VIN	} }
-        
+				add_accepted_culture = iroquois
         change_tag = ARC
 			  any_country = {
 				limit = {
@@ -115,6 +116,7 @@ political_decisions = {
 						     OR = {
 							   in_sphere = THIS
 							   vassal_of = THIS
+							   empty = yes
 							   }
 						}
 					}
@@ -129,7 +131,7 @@ political_decisions = {
 				PLA = { all_core = { add_core = ARC	} }
 				NBG = { all_core = { add_core = ARC	} }
 				NBG = { all_core = { remove_core = NBG	} }
-        
+				add_accepted_culture = iroquois
         change_tag = ARC 
 			  any_country = {
 				limit = {
@@ -170,6 +172,7 @@ political_decisions = {
 						     OR = {
 							   in_sphere = THIS
 							   vassal_of = THIS
+							   empty = yes
 							   }
 						}
 					}
@@ -184,7 +187,7 @@ political_decisions = {
 				PLA = { all_core = { add_core = ARC	} }
 				NBG = { all_core = { add_core = ARC	} }
 				PLA = { all_core = { remove_core = PLA } }
-        
+				add_accepted_culture = cherokee
         change_tag = ARC  
 			  any_country = {
 				limit = {

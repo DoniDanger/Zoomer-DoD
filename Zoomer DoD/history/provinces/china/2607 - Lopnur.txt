@@ -1,5 +1,6 @@
-owner = CHG
-controller = CHG   
+owner = BUK
+controller = BUK
+add_core = BUK   
 add_core = CHG
 add_core = UGH
 trade_goods = cotton

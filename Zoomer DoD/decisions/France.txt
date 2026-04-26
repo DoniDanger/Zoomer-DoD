@@ -308,57 +308,125 @@ political_decisions = {
 		}
 	}
 	
+	suppress_irish_nationalists = {
+		picture = hundred_years_war
+		potential = {
+			tag = DUA
+			NOT = { has_country_flag = eradicated_irish_nationalists }
+			OR = {
+				ENG_263 = { has_province_modifier = underground_nationalist_movements } #Leinster-Connacht 
+				ENG_260 = { has_province_modifier = underground_nationalist_movements } #Munster
+				ENG_254 = { has_province_modifier = underground_nationalist_movements } #Ulster
+			}
+		}
+		allow = {
+			money = 300000
+			NOT = { badboy = 23 }
+		}
+		effect = {
+			money = -250000
+			badboy = 2
+			random_state = {
+				limit = {
+					any_owned_province = { 	
+						is_core = IRE
+						has_province_modifier = underground_nationalist_movements 
+					}
+				}
+				any_owned = { remove_province_modifier = underground_nationalist_movements }
+				any_owned = { add_province_modifier = { name = nationalist_movement_suppression duration = 1095 }}
+				any_pop = {
+					limit = { militancy = 4 }
+					militancy = -3
+				}	
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	suppress_occitan_nationalists = {
+		picture = hundred_years_war
+		potential = {
+			tag = DUA
+			NOT = { has_country_flag = eradicated_irish_nationalists }
+			any_owned_province = { 	
+				is_core = OCC
+				has_province_modifier = underground_nationalist_movements 
+			}
+			#OR = {
+			#	FRA_448 = { has_province_modifier = underground_nationalist_movements } #Auvergne 
+			#	FRA_458 = { has_province_modifier = underground_nationalist_movements } #Aquitaine
+			#	FRA_455 = { has_province_modifier = underground_nationalist_movements } #Le Midi
+			#	FRA_461 = { has_province_modifier = underground_nationalist_movements } #Languedoc
+			#	FRA_451 = { has_province_modifier = underground_nationalist_movements } #Rhone
+			#}
+		}
+		allow = {
+			money = 300000
+			NOT = { badboy = 23 }
+		}
+		effect = {
+			money = -250000
+			badboy = 2
+			random_state = {
+				limit = {
+					any_owned_province = { 	
+						is_core = OCC
+						has_province_modifier = underground_nationalist_movements 
+					}
+				}
+				any_owned = { remove_province_modifier = underground_nationalist_movements }
+				any_owned = { add_province_modifier = { name = nationalist_movement_suppression duration = 1095 }}
+				any_pop = {
+					limit = { militancy = 4 }
+					militancy = -3
+				}	
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	suppress_english_nationalists = {
 		picture = hundred_years_war
 		potential = {
 			tag = DUA
 			NOT = { has_country_flag = eradicated_english_nationalists }
 			OR = {
-			ENG_291 = { has_province_modifier = underground_nationalist_movements } #Eastern Counties
-			ENG_284 = { has_province_modifier = underground_nationalist_movements } #Midlands 
-			ENG_280 = { has_province_modifier = underground_nationalist_movements } #Northeast England
-			ENG_273 = { has_province_modifier = underground_nationalist_movements } #Wales
-			ENG_277 = { has_province_modifier = underground_nationalist_movements } #Northwest England
-			ENG_296 = { has_province_modifier = underground_nationalist_movements } #Southwest England			 
-			ENG_271 = { has_province_modifier = underground_nationalist_movements } #Lowlands
-			ENG_266 = { has_province_modifier = underground_nationalist_movements } #Highlands
-			ENG_263 = { has_province_modifier = underground_nationalist_movements } #Leinster-Connacht 
-			ENG_260 = { has_province_modifier = underground_nationalist_movements } #Munster
-			ENG_254 = { has_province_modifier = underground_nationalist_movements } #Ulster
+				ENG_291 = { has_province_modifier = underground_nationalist_movements } #Eastern Counties
+				ENG_284 = { has_province_modifier = underground_nationalist_movements } #Midlands 
+				ENG_280 = { has_province_modifier = underground_nationalist_movements } #Northeast England
+				ENG_273 = { has_province_modifier = underground_nationalist_movements } #Wales
+				ENG_277 = { has_province_modifier = underground_nationalist_movements } #Northwest England
+				ENG_296 = { has_province_modifier = underground_nationalist_movements } #Southwest England			 
+				ENG_271 = { has_province_modifier = underground_nationalist_movements } #Lowlands
+				ENG_266 = { has_province_modifier = underground_nationalist_movements } #Highlands
 			}
 		}
 		allow = {
-			money = 500000
+			money = 300000
+			NOT = { badboy = 23 }
 		}
 		effect = {
-			money = -500000
+			money = -250000
+			badboy = 2
 			random_state = {
 				limit = {
 					any_owned_province = { 	
+						is_core = ENL
 						NOT = { region = ENG_300 } 
-						NOT = { region = FRA_425 } 
-						NOT = { region = FRA_461 } 
-						NOT = { region = FRA_451 } 
-						NOT = { region = FRA_435 } 
-						NOT = { region = FRA_399 } 
-						NOT = { region = FRA_467 } 
-						NOT = { region = FRA_412 } 
-						NOT = { region = FRA_418 } 
-						NOT = { region = FRA_442 } 
-						NOT = { region = FRA_455 } 
-						NOT = { region = FRA_445 } 
-						NOT = { region = FRA_420 } 
-						NOT = { region = FRA_428 } 
-						NOT = { region = FRA_404 } 
-						NOT = { region = FRA_411 } 
-						NOT = { region = FRA_432 } 
-						NOT = { region = FRA_448 } 
-						NOT = { region = FRA_458 } 
-						NOT = { region = FRA_438 } 
 						has_province_modifier = underground_nationalist_movements 
 					}
 				}
 				any_owned = { remove_province_modifier = underground_nationalist_movements }
+				any_owned = { add_province_modifier = { name = nationalist_movement_suppression duration = 1095 }}
+				any_pop = {
+					limit = { militancy = 4 }
+					militancy = -3
+				}	
 			}
 		}
 		ai_will_do = {
@@ -371,26 +439,30 @@ political_decisions = {
 		potential = {
 			tag = DUA
 			NOT = { has_country_flag = eradicated_english_nationalists }
+			NOT = {
+				ENG_291 = { has_province_modifier = underground_nationalist_movements } #Eastern Counties
+				ENG_284 = { has_province_modifier = underground_nationalist_movements } #Midlands 
+				ENG_280 = { has_province_modifier = underground_nationalist_movements } #Northeast England
+				ENG_273 = { has_province_modifier = underground_nationalist_movements } #Wales
+				ENG_277 = { has_province_modifier = underground_nationalist_movements } #Northwest England
+				ENG_296 = { has_province_modifier = underground_nationalist_movements } #Southwest England			 
+				ENG_271 = { has_province_modifier = underground_nationalist_movements } #Lowlands
+				ENG_266 = { has_province_modifier = underground_nationalist_movements } #Highlands
+			}
+			ENL = { any_core = { owned_by = THIS }}
+			OR = {
+				has_country_flag = french_integration
+				has_country_flag = dual_integration
+			}
 		}
 		allow = {
-			money = 750000
+			money = 350000
 			nationalism_n_imperialism = 1
 			owns = 300
-			ENG_291 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Eastern Counties
-			ENG_284 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Midlands 
-			ENG_280 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Northeast England
-			ENG_273 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Wales
-			ENG_277 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Northwest England
-			ENG_296 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Southwest England			
-			ENG_271 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Lowlands
-			ENG_266 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Highlands		 
-			ENG_263 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Leinster-Connacht 
-			ENG_260 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Munster
-			ENG_254 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Ulster
 		}
 		effect = {
 			set_country_flag = eradicated_english_nationalists
-			money = -750000
+			money = -300000
 			ENG_300 = { any_owned_province = { remove_province_modifier = underground_nationalist_movements } }
 		}
 		ai_will_do = {
@@ -404,51 +476,43 @@ political_decisions = {
 			tag = DUA
 			NOT = { has_country_flag = eradicated_french_nationalists }
 			OR = {
-			FRA_461 = { has_province_modifier = underground_nationalist_movements } #Languedoc
-			FRA_451 = { has_province_modifier = underground_nationalist_movements } #Rhone
 			FRA_435 = { has_province_modifier = underground_nationalist_movements } #Loire 
 			FRA_399 = { has_province_modifier = underground_nationalist_movements } #Picardie
 			FRA_467 = { has_province_modifier = underground_nationalist_movements } #Provence
 			FRA_412 = { has_province_modifier = underground_nationalist_movements } #Alsace
 			FRA_418 = { has_province_modifier = underground_nationalist_movements } #Normandie
 			FRA_442 = { has_province_modifier = underground_nationalist_movements } #Poitou			 
-			FRA_455 = { has_province_modifier = underground_nationalist_movements } #Le Midi
 			FRA_445 = { has_province_modifier = underground_nationalist_movements } #Limousin
 			FRA_420 = { has_province_modifier = underground_nationalist_movements } #Bretagne 
 			FRA_428 = { has_province_modifier = underground_nationalist_movements } #Bourgogne 
 			FRA_404 = { has_province_modifier = underground_nationalist_movements } #Nord-Pas-De-Calais/Artois
 			FRA_411 = { has_province_modifier = underground_nationalist_movements } #Lorraine
 			FRA_432 = { has_province_modifier = underground_nationalist_movements } #Franche-Comté
-			FRA_448 = { has_province_modifier = underground_nationalist_movements } #Auvergne 
-			FRA_458 = { has_province_modifier = underground_nationalist_movements } #Aquitaine
 			FRA_438 = { has_province_modifier = underground_nationalist_movements } #Region Centre
 			}
 		}
 		allow = {
-			money = 500000
+			money = 300000
+			NOT = { badboy = 23 }
 		}
 		effect = {
-			money = -500000
+			money = -250000
+			badboy = 2
 			random_state = {
 				limit = {
 					any_owned_province = { 	
+						is_core = FRA
+						NOT = { is_core = OCC }
 						NOT = { region = FRA_425 } 
-						NOT = { region = ENG_300 } 
-						NOT = { region = ENG_291 } 
-						NOT = { region = ENG_284 } 
-						NOT = { region = ENG_280 } 
-						NOT = { region = ENG_273 } 
-						NOT = { region = ENG_277 } 
-						NOT = { region = ENG_296 } 
-						NOT = { region = ENG_271 } 
-						NOT = { region = ENG_266 } 
-						NOT = { region = ENG_263 } 
-						NOT = { region = ENG_260 } 
-						NOT = { region = ENG_254 } 
 						has_province_modifier = underground_nationalist_movements 
 					}
 				}
 				any_owned = { remove_province_modifier = underground_nationalist_movements }
+				any_owned = { add_province_modifier = { name = nationalist_movement_suppression duration = 1095 }}
+				any_pop = {
+					limit = { militancy = 4 }
+					militancy = -3
+				}	
 			}
 		}
 		ai_will_do = {
@@ -461,34 +525,94 @@ political_decisions = {
 		potential = {
 			tag = DUA
 			NOT = { has_country_flag = eradicated_french_nationalists }
+			NOT = {
+				FRA_435 = { has_province_modifier = underground_nationalist_movements } #Loire 
+				FRA_399 = { has_province_modifier = underground_nationalist_movements } #Picardie
+				FRA_467 = { has_province_modifier = underground_nationalist_movements } #Provence
+				FRA_412 = { has_province_modifier = underground_nationalist_movements } #Alsace
+				FRA_418 = { has_province_modifier = underground_nationalist_movements } #Normandie
+				FRA_442 = { has_province_modifier = underground_nationalist_movements } #Poitou			 
+				FRA_445 = { has_province_modifier = underground_nationalist_movements } #Limousin
+				FRA_420 = { has_province_modifier = underground_nationalist_movements } #Bretagne 
+				FRA_428 = { has_province_modifier = underground_nationalist_movements } #Bourgogne 
+				FRA_404 = { has_province_modifier = underground_nationalist_movements } #Nord-Pas-De-Calais/Artois
+				FRA_411 = { has_province_modifier = underground_nationalist_movements } #Lorraine
+				FRA_432 = { has_province_modifier = underground_nationalist_movements } #Franche-Comté
+				FRA_438 = { has_province_modifier = underground_nationalist_movements } #Region Centre
+			}
+			OR = {
+				has_country_flag = english_integration
+				has_country_flag = dual_integration
+			}
+			FRA = { any_core = { owned_by = THIS }}
 		}
 		allow = {
-			money = 750000
+			money = 350000
 			nationalism_n_imperialism = 1
 			owns = 425
-			FRA_461 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Languedoc
-			FRA_451 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Rhone
-			FRA_435 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Loire 
-			FRA_399 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Picardie
-			FRA_467 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Provence
-			FRA_412 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Alsace
-			FRA_418 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Normandie
-			FRA_442 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Poitou			 
-			FRA_455 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Le Midi
-			FRA_445 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Limousin
-			FRA_420 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Bretagne 
-			FRA_428 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Bourgogne 
-			FRA_404 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Nord-Pas-De-Calais/Artois
-			FRA_411 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Lorraine
-			FRA_432 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Franche-Comté
-			FRA_448 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Auvergne 
-			FRA_458 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Aquitaine
-			FRA_438 = { NOT = { has_province_modifier = underground_nationalist_movements } } #Region Centre
 		}
 		effect = {
 			set_country_flag = eradicated_french_nationalists
-			money = -750000
+			money = -300000
 			FRA_425 = { any_owned_province = { remove_province_modifier = underground_nationalist_movements } }
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+	
+	eradicate_occitan_nationalists = {
+		picture = hundred_years_war
+		potential = {
+			tag = DUA
+			NOT = { has_country_flag = eradicated_occitan_nationalists }
+			NOT = {
+				any_owned_province = { 	
+					is_core = OCC
+					has_province_modifier = underground_nationalist_movements 
+				}
+			}
+			OR = {
+				has_country_flag = english_integration
+				has_country_flag = dual_integration
+			}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			OCC = { any_core = { owned_by = THIS }}
+		}
+		effect = {
+			set_country_flag = eradicated_occitan_nationalists
+			prestige = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+	
+	eradicate_irish_nationalists = {
+		picture = hundred_years_war
+		potential = {
+			tag = DUA
+			NOT = { has_country_flag = eradicated_irish_nationalists }
+			NOT = {
+				any_owned_province = { 	
+					is_core = IRE
+					has_province_modifier = underground_nationalist_movements 
+				}
+			}
+			OR = {
+				has_country_flag = french_integration
+				has_country_flag = dual_integration
+			}
+		}
+		allow = {
+			nationalism_n_imperialism = 1
+			IRE = { any_core = { owned_by = THIS }}
+		}
+		effect = {
+			set_country_flag = eradicated_irish_nationalists
+			prestige = 15
 		}
 		ai_will_do = {
 			factor = 1

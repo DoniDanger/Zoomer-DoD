@@ -1,14 +1,137 @@
 political_decisions = {
+	liberate_afro_french_slaves = {
+		picture = acceptation_afro 
+		potential = {
+			tag = NBG
+			NOT = { has_country_flag = slave_citizens }
+			NOT = { accepted_culture = afro_frankish }
+		}
+		allow = {
+			war = no
+			slavery = no_slavery 
+			state_n_government = 1
+			OR = {
+				invention = national_fraternity
+				AND = {
+					owns = 216
+					owns = 207
+					owns = 205
+				}
+			}
+			has_country_flag = declared_arcadian_claims
+		}
+		effect = {
+			add_accepted_culture = afro_frankish
+			set_country_flag = slave_citizens
+			prestige = 5
+			any_pop = {
+			    limit = {
+			      NOT = { culture = afro_frankish }
+			    }
+				  militancy = 2
+			}
+			any_pop = {
+			    limit = {
+			       culture = afro_frankish
+				  }
+          consciousness = 2
+			}
+		}
+	}
+	
+	grant_iroquois_rights = {
+		#picture = acceptation_afro 
+		potential = {
+			OR = {
+				tag = NBG
+				tag = VIN
+			}
+			NOT = { has_country_flag = granted_iroquois_rights }
+			NOT = { accepted_culture = iroquois }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			OR = {
+				invention = national_fraternity
+				IRO = { all_core = { owned_by = THIS }}
+			}
+			has_country_flag = declared_arcadian_claims
+		}
+		effect = {
+			add_accepted_culture = iroquois
+			prestige = 5
+			any_pop = {
+			    limit = {
+			      NOT = { culture = iroquois }
+			    }
+				  militancy = 2
+			}
+			any_pop = {
+			    limit = {
+			       culture = iroquois
+				  }
+          consciousness = 2
+			}
+			set_country_flag = granted_iroquois_rights
+		}
+	}
+	
+	grant_cherokee_rights = {
+		#picture = acceptation_afro 
+		potential = {
+			tag = PLA
+			NOT = { has_country_flag = granted_cherokee_rights }
+			NOT = { accepted_culture = cherokee }
+		}
+		allow = {
+			war = no
+			state_n_government = 1
+			OR = {
+				invention = national_fraternity
+				AND = {
+					owns = 180
+					owns = 217
+					owns = 211
+				}
+			}
+			has_country_flag = declared_arcadian_claims
+		}
+		effect = {
+			add_accepted_culture = cherokee
+			prestige = 5
+			any_pop = {
+			    limit = {
+			      NOT = { culture = cherokee }
+			    }
+				  militancy = 2
+			}
+			any_pop = {
+			    limit = {
+			       culture = cherokee
+				  }
+          consciousness = 2
+			}
+			set_country_flag = granted_cherokee_rights
+		}
+	}
+	
 	vin_manifest_destiny = { # Vinland
 		potential = {
 			tag = VIN
 			NOT = { has_country_flag = vin_manifest_destiny }
 		}
 		allow = {
-			all_core = {
-				owned_by = THIS
+			war = no
+			all_core = { 
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
 			}
-			nationalism_n_imperialism = 1
+			state_n_government = 1
+			year = 1845
+			has_country_flag = declared_arcadian_claims
 		}
 		effect = {
 			set_country_flag = vin_manifest_destiny
@@ -60,16 +183,60 @@ political_decisions = {
 		}
 	}
 	
+	vin_declare_arcadian_claims = { # Vinland
+		potential = {
+			tag = VIN
+			NOT = { has_country_flag = declared_arcadian_claims }
+		}
+		allow = {
+			war = no
+			ideological_thought = 1
+			OR = {
+				AND = {
+					owns = 166
+					owns = 243
+				}
+				AND = {
+					owns = 238
+					owns = 243
+				}
+				IRO = { all_core = { owned_by = THIS }}
+				state_n_government = 1
+			}
+		}
+		effect = {
+			set_country_flag = declared_arcadian_claims
+			PLA_9 = {
+				add_core = VIN
+			}
+			NBG_2 = {
+				add_core = VIN
+			}
+			NBG_3 = {
+				add_core = VIN
+			}
+			NBG_7 = {
+				add_core = VIN
+			}
+		}
+	}
+	
 	nbg_manifest_destiny = { # Seven Republics
 		potential = {
 			tag = NBG
 			NOT = { has_country_flag = nbg_manifest_destiny }
 		}
 		allow = {
-			all_core = {
-				owned_by = THIS
+			war = no
+			all_core = { 
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
 			}
-			nationalism_n_imperialism = 1
+			state_n_government = 1
+			year = 1845
+			has_country_flag = declared_arcadian_claims
 		}
 		effect = {
 			set_country_flag = nbg_manifest_destiny
@@ -130,6 +297,57 @@ political_decisions = {
 		}
 	}
 	
+	nbg_declare_arcadian_claims = { # Seven Republics
+		potential = {
+			tag = NBG
+			NOT = { has_country_flag = declared_arcadian_claims }
+		}
+		allow = {
+			war = no
+			ideological_thought = 1
+			OR = {
+				AND = {
+					owns = 180
+					owns = 169
+				}
+				AND = {
+					owns = 46
+					owns = 54
+				}
+				AND = {
+					owns = 207
+					owns = 216
+				}
+				AND = {
+					owns = 180
+					owns = 46
+				}
+				state_n_government = 1
+			}
+		}
+		effect = {
+			set_country_flag = declared_arcadian_claims
+			VIN_7 = {
+				add_core = NBG
+			}
+			VIN_8 = {
+				add_core = NBG
+			}
+			VIN_175 = {
+				add_core = NBG
+			}
+			VIN_4 = {
+				add_core = NBG
+			}
+			PLA_1 = {
+				add_core = NBG
+			}
+			PLA_2 = {
+				add_core = NBG
+			}
+		}
+	}
+	
 	pla_manifest_destiny = { # Plantagenia
 	picture = Destiny_PLA
 		potential = {
@@ -137,10 +355,16 @@ political_decisions = {
 			NOT = { has_country_flag = pla_manifest_destiny }
 		}
 		allow = {
-			all_core = {
-				owned_by = THIS
+			war = no
+			all_core = { 
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
 			}
-			nationalism_n_imperialism = 1
+			state_n_government = 1
+			year = 1845
+			has_country_flag = declared_arcadian_claims
 		}
 		effect = {
 			set_country_flag = pla_manifest_destiny
@@ -183,14 +407,67 @@ political_decisions = {
 		}
 	}
 	
+	pla_declare_arcadian_claims = { # Plantagenia
+		potential = {
+			tag = PLA
+			NOT = { has_country_flag = declared_arcadian_claims }
+		}
+		allow = {
+			war = no
+			ideological_thought = 1
+			OR = {
+				AND = {
+					owns = 180
+					owns = 169
+				}
+				AND = {
+					owns = 217
+					owns = 211
+				}
+				AND = {
+					owns = 211
+					owns = 180
+				}
+				AND = {
+					owns = 217
+					owns = 180
+				}
+				state_n_government = 1
+			}
+		}
+		effect = {
+			set_country_flag = declared_arcadian_claims
+			#Nye Trondelag
+			VIN_7 = {
+				add_core = PLA
+			}
+			#Skraelingmark
+			VIN_8 = {
+				add_core = PLA
+			}
+			#Basse Valoisie
+			NBG_5 = {
+				add_core = PLA
+			}
+			#Nouvelle Lorraine
+			NBG_6 = {
+				add_core = PLA
+			}
+		}
+	}
+	
 	dng_manifest_destiny = { # Qingqiu
 		potential = {
 			tag = DNG
 			NOT = { has_country_flag = dng_manifest_destiny }
 		}
 		allow = {
-			all_core = {
-				owned_by = THIS
+			war = no
+			all_core = { 
+				OR = {
+					owned_by = THIS
+					empty = yes
+				}
 			}
 			nationalism_n_imperialism = 1
 		}

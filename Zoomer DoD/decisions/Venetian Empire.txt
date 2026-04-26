@@ -1,0 +1,131 @@
+political_decisions = {
+	declare_venetian_empire = {
+		potential = {
+			tag = VEN
+			NOT = {
+				exists = ITA
+				exists = GRE
+				exists = MAC
+			}
+			NOT = { has_country_flag = venetian_empire_declared }
+		}
+	
+		allow = {
+			prestige = 25
+			nationalism_n_imperialism = 1
+			war = no
+			GRE = { all_core = { owned_by = THIS }}
+			owns = 828
+			owns = 860
+		}
+	
+		effect = {
+			prestige = 15
+			government = absolute_monarchy
+			add_accepted_culture = greek
+			GRE = { all_core = { add_core = THIS }}
+			TUR_859 = { 
+				add_core = THIS
+			}
+			TUR_860 = {
+				add_core = THIS
+			}
+			TUR_863 = {
+				add_core = THIS
+			}
+			TUR_869 = {
+				add_core = THIS
+			}
+			set_country_flag = venetian_empire_declared
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	constantinople_capital = {
+	picture = Roma
+		potential = {
+			tag = VEN
+			NOT = { capital = 860 }
+			has_country_flag = venetian_empire_declared
+		}
+		allow = {
+			war = no
+			owns = 860
+		}
+		effect = {
+			prestige = 5
+			capital = 860
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	expand_stato_de_mar = { 
+		potential = { 
+			tag = VEN
+			has_country_flag = venetian_empire_declared
+			NOT = { has_country_flag = expanded_stato_de_mar }
+		}
+
+		allow = {
+			owns = 780
+			owns = 778
+			owns = 851
+			owns = 805
+			nationalism_n_imperialism = 1
+		}
+
+		effect = { 
+			add_accepted_culture = croat
+			add_accepted_culture = albanian
+			TUR_853 = { 
+				add_core = THIS
+			}
+			MON_2582 = {
+				add_core = THIS
+			}
+			788 = { add_core = THIS }
+			784 = { add_core = THIS }
+			789 = { add_core = THIS }
+			773 = { add_core = THIS }
+			set_country_flag = expanded_stato_de_mar
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	secure_northern_frontier = {
+		potential = {
+			tag = VEN
+			has_country_flag = venetian_empire_declared
+			NOT = { has_country_flag = secured_northern_frontier }
+		}
+
+		allow = {
+		    owns = 806
+			owns = 815
+			owns = 828
+			owns = 805
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			set_country_flag = secured_northern_frontier
+			TUR_806 = { 
+				add_core = THIS
+			}
+			TUR_809 = {
+				add_core = THIS
+			}
+			TUR_803 = {
+				add_core = THIS
+			}
+		}
+	}
+	
+}

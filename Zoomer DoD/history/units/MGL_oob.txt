@@ -24,50 +24,102 @@ army = {
 	regiment = {
 		name= "3. Brigade"
 		type = infantry
-		home = 1532
+		home = 1535
 	}
 
 	regiment = {
 		name= "4. Brigade"
 		type = infantry
-		home = 1532
+		home = 1488
 	}
 
 	regiment = {
 		name= "5. Brigade"
-		type = hussar
-		home = 1532
+		type = cavalry
+		home = 1488
 	}
 
 	regiment = {
 		name= "6. Brigade"
-		type = hussar
-		home = 1532
+		type = cavalry
+		home = 1600
 	}
 
 	regiment = {
 		name= "7. Brigade"
-		type = hussar
-		home = 1532
+		type = cavalry
+		home = 1600
 	}
 
 	regiment = {
 		name= "8. Brigade"
-		type = hussar
-		home = 1465
+		type = cavalry
+		home = 1600
 	}
 
 	regiment = {
 		name= "9. Brigade"
-		type = hussar
-		home = 1075
+		type = cavalry
+		home = 1534
 	}
 
 	regiment = {
 		name= "10. Brigade"
-		type = hussar
-		home = 1075
+		type = cavalry
+		home = 2207
 	}
 
 }
 
+army = {
+	name = "East Steppes Army"
+	location = 2679
+	regiment = {
+		name= "1. Brigade"
+		type = infantry
+		home = 2679
+	}
+
+	regiment = {
+		name= "2. Brigade"
+		type = infantry
+		home = 2608
+	}
+
+	regiment = {
+		name= "3. Brigade"
+		type = infantry
+		home = 1468
+	}
+
+	regiment = {
+		name= "4. Brigade"
+		type = infantry
+		home = 1468
+	}
+
+	regiment = {
+		name= "5. Brigade"
+		type = cavalry
+		home = 1468
+	}
+
+	regiment = {
+		name= "6. Brigade"
+		type = cavalry
+		home = 2678
+	}
+
+	regiment = {
+		name= "7. Brigade"
+		type = cavalry
+		home = 1465
+	}
+
+	regiment = {
+		name= "8. Brigade"
+		type = cavalry
+		home = 1466
+	}
+
+}

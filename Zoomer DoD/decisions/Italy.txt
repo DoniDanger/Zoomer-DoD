@@ -9,6 +9,7 @@ political_decisions = {
 			NOT = {
 				exists = ITA
 				tag = FRT
+				has_country_flag = venetian_empire_declared
 			}
 		}
 	
@@ -449,7 +450,7 @@ political_decisions = {
 		}
 		
 		allow = { 
-		invention = steamer_shipyard_construction
+		invention = steamer_transports
 		}
 		
 		effect = { 
@@ -489,7 +490,7 @@ political_decisions = {
 		}
 		
 		allow = { 
-		state_n_government = 1 
+		ideological_thought = 1 
 		}
 		
 		effect = { 

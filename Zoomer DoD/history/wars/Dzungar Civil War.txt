@@ -1,0 +1,29 @@
+name = "Dzungar Civil War"
+
+1834.2.2 = {
+	add_attacker = BUK
+	add_defender = MGL
+	
+	# actor
+	# receiver
+	# casus_belli - cb type
+	# country - 3rd party
+	# state_province_id - target state capital
+	war_goal = {
+		casus_belli = civil_war
+		actor = BUK
+		receiver = MGL
+	}
+
+	war_goal = {
+		casus_belli = civil_war
+		actor = MGL
+		receiver = BUK
+	}
+
+}
+
+1836.6.6 = {
+	rem_attacker = BUK
+	rem_defender = MGL
+}

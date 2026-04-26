@@ -1,3 +1,4 @@
+add_core = VIN
 add_core = PLA
 add_core = OCE
 trade_goods = grain

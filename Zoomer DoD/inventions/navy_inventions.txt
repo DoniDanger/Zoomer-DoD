@@ -419,7 +419,7 @@ steamer_automatic_construction_plants = {
 steamer_transports = {
 	limit = { steamers = 1 }
 	chance = {
-		base = 5
+		base = 100
 		modifier = {
 			factor = 2
 			mechanical_production = 1

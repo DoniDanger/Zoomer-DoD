@@ -97,6 +97,7 @@ country_event = {
 			limit = {
 				is_core = FRA 
 				owned_by = THIS	
+				NOT = { region = FRA_425 region = FRA_418 } 
 			}
 			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
 		}
@@ -111,6 +112,7 @@ country_event = {
 			limit = {
 				is_core = ENL 
 				owned_by = THIS	
+				NOT = { region = ENG_300 region = ENG_296 } 
 			}
 			add_province_modifier = { name = underground_nationalist_movements duration = 15000 }
 		}
@@ -723,4 +725,2705 @@ country_event = {  # Remove France cores if DUA has suceeded and owns it
 	
 }
 
+#### DM Revolts Events
 
+country_event = { ##The Total Revolution
+    id = 650247
+    title = "DUA47.T"
+    desc = "DUA47.D"
+    news = yes
+    news_desc_long = "650247_NEWS_LONG"
+    news_desc_medium = "650247_NEWS_MEDIUM"
+    news_desc_short = "650247_NEWS_SHORT"
+
+    major = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                truce_with = ENL
+                truce_with = OCC
+                truce_with = FRA
+                truce_with = IRE
+            }
+            OR = {
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+		year = 1845
+		OR = {
+			FRA_461 = { has_province_modifier = underground_nationalist_movements } #Languedoc
+			FRA_451 = { has_province_modifier = underground_nationalist_movements } #Rhone
+			FRA_435 = { has_province_modifier = underground_nationalist_movements } #Loire 
+			FRA_399 = { has_province_modifier = underground_nationalist_movements } #Picardie
+			FRA_467 = { has_province_modifier = underground_nationalist_movements } #Provence
+			FRA_412 = { has_province_modifier = underground_nationalist_movements } #Alsace
+			FRA_418 = { has_province_modifier = underground_nationalist_movements } #Normandie
+			FRA_442 = { has_province_modifier = underground_nationalist_movements } #Poitou			 
+			FRA_455 = { has_province_modifier = underground_nationalist_movements } #Le Midi
+			FRA_445 = { has_province_modifier = underground_nationalist_movements } #Limousin
+			FRA_420 = { has_province_modifier = underground_nationalist_movements } #Bretagne 
+			FRA_428 = { has_province_modifier = underground_nationalist_movements } #Bourgogne 
+			FRA_404 = { has_province_modifier = underground_nationalist_movements } #Nord-Pas-De-Calais/Artois
+			FRA_411 = { has_province_modifier = underground_nationalist_movements } #Lorraine
+			FRA_432 = { has_province_modifier = underground_nationalist_movements } #Franche-Comté
+			FRA_448 = { has_province_modifier = underground_nationalist_movements } #Auvergne 
+			FRA_458 = { has_province_modifier = underground_nationalist_movements } #Aquitaine
+			FRA_438 = { has_province_modifier = underground_nationalist_movements } #Region Centre
+		}
+		OR = {
+			ENG_291 = { has_province_modifier = underground_nationalist_movements } #Eastern Counties
+			ENG_284 = { has_province_modifier = underground_nationalist_movements } #Midlands 
+			ENG_280 = { has_province_modifier = underground_nationalist_movements } #Northeast England
+			ENG_273 = { has_province_modifier = underground_nationalist_movements } #Wales
+			ENG_277 = { has_province_modifier = underground_nationalist_movements } #Northwest England
+			ENG_296 = { has_province_modifier = underground_nationalist_movements } #Southwest England			 
+			ENG_271 = { has_province_modifier = underground_nationalist_movements } #Lowlands
+			ENG_266 = { has_province_modifier = underground_nationalist_movements } #Highlands
+			ENG_263 = { has_province_modifier = underground_nationalist_movements } #Leinster-Connacht 
+			ENG_260 = { has_province_modifier = underground_nationalist_movements } #Munster
+			ENG_254 = { has_province_modifier = underground_nationalist_movements } #Ulster
+		}
+    }
+
+    mean_time_to_happen = { months = 240 }
+
+    option = {
+        name = "650247.A"
+        set_country_flag = global_revolt
+        set_global_flag = glorious_revolution
+        any_owned = {
+            limit = { 
+				is_core = OCC 
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = OCC
+        }
+        any_owned = {
+            limit = { 
+				is_core = IRE 
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = IRE
+        }
+        any_owned = {
+			limit = { 
+				is_core = ENL 
+				NOT = { is_core = IRE }
+				has_province_modifier = underground_nationalist_movements 
+				NOT = { region = ENG_300 } 
+			}
+            secede_province = ENL
+        }
+        any_owned = {
+            limit = { 
+				is_core = FRA 
+				NOT = { is_core = OCC }
+				has_province_modifier = underground_nationalist_movements 
+				NOT = { region = FRA_425 } 
+			}
+            secede_province = FRA
+        }
+        IRE = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 80000
+        }
+        OCC = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 80000
+        }
+        FRA = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 280000
+        }
+        ENL = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 280000
+        }
+		ENL = { country_event = 650206 }
+		OCC = { country_event = 650223 }
+		any_country = {
+			limit = {
+				exists = yes
+				tag = ENL
+			}
+			DUA = { country_event = 650209 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				tag = FRA
+			}
+			DUA = { country_event = 650305 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				tag = OCC
+			}
+			DUA = { country_event = 650226 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				tag = IRE
+			}
+			DUA = { country_event = 650304 }
+		}
+    }
+	
+	option = {
+        name = "INGERLAND FOREVER!!!"
+		set_country_flag = global_revolt
+        set_global_flag = glorious_revolution
+        any_owned = {
+            limit = { 
+				is_core = OCC 
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = OCC
+        }
+        any_owned = {
+            limit = { 
+				is_core = IRE 
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = IRE
+        }
+        any_owned = {
+            limit = {
+                OR = {
+                    region = ENG_280
+                    region = ENG_277
+                    region = ENG_284
+                    region = ENG_291
+                    province_id = 296
+                }
+            }
+            secede_province = ENL
+        }
+        any_owned = {
+            limit = { 
+				is_core = FRA 
+				NOT = { is_core = OCC }
+				has_province_modifier = underground_nationalist_movements 
+				NOT = { region = FRA_425 } 
+			}
+            secede_province = FRA
+        }
+        IRE = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 80000
+        }
+        OCC = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 80000
+        }
+        FRA = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 280000
+        }
+        ENL = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 240
+			money = 480000
+        }
+		ENL = { country_event = 650206 }
+		OCC = { country_event = 650223 }
+		any_country = {
+			limit = {
+				exists = yes
+				tag = ENL
+			}
+			DUA = { country_event = 650209 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				tag = FRA
+			}
+			DUA = { country_event = 650305 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				tag = OCC
+			}
+			DUA = { country_event = 650226 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				tag = IRE
+			}
+			DUA = { country_event = 650304 }
+		}
+        change_tag_no_core_switch = ENL
+		ai_chance = { factor = 0 }
+    }
+	option = {
+        name = "VIVA FRANCE!!!"
+		set_country_flag = global_revolt
+        set_global_flag = glorious_revolution
+        any_owned = {
+            limit = { 
+				is_core = OCC 
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = OCC
+        }
+        any_owned = {
+            limit = { 
+				is_core = IRE 
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = IRE
+        }
+        any_owned = {
+			limit = { 
+				is_core = ENL 
+				NOT = { is_core = IRE }
+				has_province_modifier = underground_nationalist_movements 
+				NOT = { region = ENG_300 } 
+			}
+            secede_province = ENL
+        }
+        any_owned = {
+            limit = { 
+				is_core = FRA 
+				NOT = { is_core = OCC }
+				NOT = { region = FRA_425 } 
+			}
+            secede_province = FRA
+        }
+        IRE = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 80000
+        }
+        OCC = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 80000
+        }
+        FRA = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 240
+			money = 480000
+        }
+        ENL = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 280000
+        }
+		ENL = { country_event = 650206 }
+		OCC = { country_event = 650223 }
+		any_country = {
+			limit = {
+				exists = yes
+				tag = ENL
+			}
+			DUA = { country_event = 650209 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				tag = FRA
+			}
+			DUA = { country_event = 650305 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				tag = OCC
+			}
+			DUA = { country_event = 650226 }
+		}
+		any_country = {
+			limit = {
+				exists = yes
+				tag = IRE
+			}
+			DUA = { country_event = 650304 }
+		}
+        change_tag_no_core_switch = FRA
+		ai_chance = { factor = 0 }
+    }
+}
+country_event = { ######War with England
+
+    id = 650209
+    title = "DUA9.T"
+    desc = "DUA9.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650209.A"
+        clr_global_flag = wait_DUA
+        diplomatic_influence = {
+            who = ENL
+            value = -300
+        }
+        war = {
+            target = ENL
+            attacker_goal = { casus_belli = annex_core_country }
+            defender_goal = { casus_belli = annex_core_country }
+        }
+    }
+}
+
+country_event = { ## Midi Revolution : Occitania
+    id = 650226
+    title = "DUA26.T"
+    desc = "DUA26.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650226.A"
+        clr_global_flag = wait_DUA
+        diplomatic_influence = {
+            who = OCC
+            value = -300
+        }
+        war = {
+            target = OCC
+            attacker_goal = { casus_belli = annex_core_country }
+            defender_goal = { casus_belli = status_quo }
+        }
+    }
+}
+
+country_event = { ## Irish Revolution 
+    id = 650304
+    title = "Irish Revolution"
+    desc = "The Irish have revolted."
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650226.A"
+        clr_global_flag = wait_DUA
+        diplomatic_influence = {
+            who = IRE
+            value = -300
+        }
+        war = {
+            target = IRE
+            attacker_goal = { casus_belli = annex_core_country }
+            defender_goal = { casus_belli = status_quo }
+        }
+    }
+}
+
+country_event = { ######War with France
+
+    id = 650305
+    title = "French Revolution"
+    desc = "The French have revolted."
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650209.A"
+        clr_global_flag = wait_DUA
+        diplomatic_influence = {
+            who = FRA
+            value = -300
+        }
+        war = {
+            target = FRA
+            attacker_goal = { casus_belli = annex_core_country }
+            defender_goal = { casus_belli = annex_core_country }
+        }
+    }
+}
+
+country_event = { ## Glorious Revolution
+    id = 650211
+    title = "DUA11.T"
+    desc = "DUA11.D"
+    news = yes
+    news_desc_long = "650211_NEWS_LONG"
+    news_desc_medium = "650211_NEWS_MEDIUM"
+    news_desc_short = "650211_NEWS_SHORT"
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        year = 1841
+        has_country_flag = french_integration
+        NOT = { has_country_flag = ENL_revolted }
+		NOT = {
+			any_owned_province = { 	
+				is_core = ENL
+				has_province_modifier = underground_nationalist_movements 
+			}
+		}
+		NOT = { truce_with = ENL }
+    }
+
+    mean_time_to_happen = {
+        months = 170
+        modifier = {
+            factor = 0.97
+            has_country_flag = st_louis_speech
+        }
+        modifier = {
+            factor = 0.91
+            has_country_flag = sons_of_harold
+        }
+        modifier = {
+            factor = 0.5
+            has_country_modifier = springtime_of_nations
+        }
+        modifier = {
+            factor = 1.1
+            has_country_flag = sorbonne_english
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = sorbonne_french
+        }
+        modifier = {
+            factor = 1.2
+            has_country_flag = devonshire_minister
+        }
+        modifier = {
+            factor = 1.2
+            has_country_flag = edward_york
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = henry_gascony
+        }
+        modifier = {
+            factor = 1.3
+            has_country_flag = shakespeare_full
+        }
+        modifier = {
+            factor = 0.95
+            has_country_flag = shakespeare_guard
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = shakespeare_no
+        }
+        modifier = {
+            factor = 0.3
+            any_pop = {
+                location = { is_core = ENL }
+                culture = english
+                OR = {
+                    type = aristocrats
+                    type = bureaucrats
+                }
+                militancy = 6
+            }
+        }
+    }
+	
+	option = {
+        name = "650211.A"
+        set_country_flag = ENL_revolted
+        set_global_flag = glorious_revolution
+        any_owned = {
+			limit = { 
+				is_core = ENL 
+				NOT = { is_core = IRE }
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = ENL
+        }
+        ENL = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 280000
+        }
+		ENL = { country_event = 650206 }
+		any_country = {
+			limit = {
+				exists = yes
+				tag = ENL
+			}
+			DUA = { country_event = 650209 }
+		}
+    }
+}
+
+country_event = { ## Irish Revolution
+    id = 650306
+    title = "DUA11.T"
+    desc = "DUA11.D"
+    news = yes
+    news_desc_long = "650211_NEWS_LONG"
+    news_desc_medium = "650211_NEWS_MEDIUM"
+    news_desc_short = "650211_NEWS_SHORT"
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        year = 1841
+        has_country_flag = french_integration
+        NOT = { has_country_flag = IRE_revolt }
+		NOT = {
+			any_owned_province = { 	
+				is_core = IRE
+				has_province_modifier = underground_nationalist_movements 
+			}
+		}
+		NOT = { truce_with = IRE }
+    }
+
+    mean_time_to_happen = {
+        months = 170
+        modifier = {
+            factor = 0.97
+            has_country_flag = st_louis_speech
+        }
+        modifier = {
+            factor = 0.91
+            has_country_flag = sons_of_harold
+        }
+        modifier = {
+            factor = 0.5
+            has_country_modifier = springtime_of_nations
+        }
+        modifier = {
+            factor = 1.1
+            has_country_flag = sorbonne_english
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = sorbonne_french
+        }
+        modifier = {
+            factor = 1.2
+            has_country_flag = devonshire_minister
+        }
+        modifier = {
+            factor = 1.2
+            has_country_flag = edward_york
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = henry_gascony
+        }
+        modifier = {
+            factor = 1.3
+            has_country_flag = shakespeare_full
+        }
+        modifier = {
+            factor = 0.95
+            has_country_flag = shakespeare_guard
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = shakespeare_no
+        }
+        modifier = {
+            factor = 0.3
+            any_pop = {
+                location = { is_core = ENL }
+                culture = irish
+                OR = {
+                    type = aristocrats
+                    type = bureaucrats
+                }
+                militancy = 6
+            }
+        }
+    }
+	
+	option = {
+        name = "Crush these Irish scum."
+        set_country_flag = IRE_revolt
+        any_owned = {
+            limit = { 
+				is_core = IRE 
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = IRE
+        }
+        IRE = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 80000
+        }
+		any_country = {
+			limit = {
+				exists = yes
+				tag = IRE
+			}
+			DUA = { country_event = 650304 }
+		}
+    }
+}
+
+country_event = { ## Midi Revolution
+    id = 650222
+    title = "DUA22.T"
+    desc = "DUA22.D"
+    news = yes
+    news_desc_long = "650222_NEWS_LONG"
+    news_desc_medium = "650222_NEWS_MEDIUM"
+    news_desc_short = "650222_NEWS_SHORT"
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = english_integration
+        year = 1841
+        NOT = { has_country_flag = OCC_revolted }
+		NOT = {
+			any_owned_province = { 	
+				is_core = OCC
+				has_province_modifier = underground_nationalist_movements 
+			}
+		}
+		NOT = { truce_with = OCC }
+    }
+
+    mean_time_to_happen = {
+        months = 170
+        modifier = {
+            factor = 0.5
+            has_country_modifier = springtime_of_nations
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = devonshire_minister
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = edward_york
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = romanticism_ENL
+        }
+        modifier = {
+            factor = 1.2
+            has_country_flag = romanticism_FRA
+        }
+        modifier = {
+            factor = 1.2
+            has_country_flag = henry_gascony
+        }
+        modifier = {
+            factor = 0.4
+            any_owned_province = {
+                is_core = OCC
+                any_pop = {
+                    culture = provencal
+                    OR = {
+                        type = aristocrats
+                        type = bureaucrats
+                    }
+                    militancy = 6
+                }
+            }
+        }
+    }
+
+	option = {
+        name = "650222.A"
+        set_country_flag = OCC_revolted
+        any_owned = {
+            limit = { 
+				is_core = OCC 
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = OCC
+        }
+        OCC = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 80000
+        }
+		any_country = {
+			limit = {
+				exists = yes
+				tag = OCC
+			}
+			DUA = { country_event = 650226 }
+		}
+		OCC = { country_event = 650223 }
+    }
+}
+
+country_event = { ## French Revolution
+    id = 650307
+    title = "DUA22.T"
+    desc = "DUA22.D"
+    news = yes
+    news_desc_long = "650222_NEWS_LONG"
+    news_desc_medium = "650222_NEWS_MEDIUM"
+    news_desc_short = "650222_NEWS_SHORT"
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = english_integration
+        year = 1841
+        NOT = { has_country_flag = FRA_revolt }
+		NOT = {
+			any_owned_province = { 	
+				is_core = FRA
+				has_province_modifier = underground_nationalist_movements 
+			}
+		}
+		NOT = { truce_with = FRA }
+    }
+
+    mean_time_to_happen = {
+        months = 170
+        modifier = {
+            factor = 0.5
+            has_country_modifier = springtime_of_nations
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = devonshire_minister
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = edward_york
+        }
+        modifier = {
+            factor = 0.9
+            has_country_flag = romanticism_ENL
+        }
+        modifier = {
+            factor = 1.2
+            has_country_flag = romanticism_FRA
+        }
+        modifier = {
+            factor = 1.2
+            has_country_flag = henry_gascony
+        }
+        modifier = {
+            factor = 0.4
+            any_owned_province = {
+                is_core = FRA
+                any_pop = {
+                    culture = french
+                    OR = {
+                        type = aristocrats
+                        type = bureaucrats
+                    }
+                    militancy = 6
+                }
+            }
+        }
+    }
+
+	option = {
+        name = "Make Agincourt look like a picnic."
+        set_country_flag = FRA_revolt 
+        any_owned = {
+            limit = { 
+				is_core = FRA 
+				NOT = { is_core = OCC }
+				has_province_modifier = underground_nationalist_movements 
+			}
+            secede_province = FRA
+        }
+        FRA = {
+            government = democracy
+			ruling_party_ideology = conservative
+			political_reform = mandatory_service
+            set_country_flag = anschluss_DUA
+            add_country_modifier = {
+                name = taiping_draft
+                duration = 730
+            }
+			leadership = 120
+			money = 280000
+        }
+		any_country = {
+			limit = {
+				exists = yes
+				tag = FRA
+			}
+			DUA = { country_event = 650305 }
+		}
+    }
+}
+
+## Old DM Flavor Events
+
+country_event = {
+    id = 650202
+    title = "DUA2.T"
+    desc = "DUA2.D"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        year = 1845
+        OR = {
+            has_country_flag = death_prince_ENL
+            has_country_flag = death_prince_FRA
+        }
+        NOT = {
+            OR = {
+                has_country_flag = edward_york
+                has_country_flag = elisabeth
+                has_country_flag = henry_gascony
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 11 }
+
+    option = {
+        name = "650202.A"
+        random_list = {
+            45 = { country_event = 650203 }
+            30 = { country_event = 650204 }
+            25 = { country_event = 650205 }
+        }
+    }
+}
+
+country_event = {
+    id = 650203
+    title = "DUA3.T"
+    desc = "DUA3.D"
+
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = "650203.A"
+        set_country_flag = elisabeth
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            militancy = 1
+        }
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = 1
+        }
+        any_pop = {
+            limit = {
+                culture = anglois
+                location = { is_core = DUA }
+            }
+            militancy = -3
+        }
+    }
+}
+
+country_event = {
+    id = 650204
+    title = "DUA4.T"
+    desc = "DUA4.D"
+
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = "650204.A"
+        set_country_flag = edward_york
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            militancy = 3
+        }
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = -4
+        }
+        any_pop = {
+            limit = {
+                culture = anglois
+                location = { is_core = DUA }
+            }
+            militancy = -1
+        }
+    }
+}
+
+country_event = {
+    id = 650205
+    title = "DUA5.T"
+    desc = "DUA5.D"
+
+    is_triggered_only = yes
+    major = yes
+
+    option = {
+        name = "650205.A"
+        set_country_flag = henry_gascony
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            militancy = -4
+        }
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = 3
+        }
+        any_pop = {
+            limit = {
+                culture = anglois
+                location = { is_core = DUA }
+            }
+            militancy = -1
+        }
+    }
+}
+
+country_event = {
+    id = 650206
+    title = "DUA6.T"
+    desc = "DUA6.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650206.A"
+        government = hms_government
+        political_reform = state_equal_weight
+        political_reform = universal_weighted_voting
+        political_reform = yes_meeting
+        political_reform = censored_press
+        political_reform = no_trade_unions
+        political_reform = first_past_the_post
+        political_reform = non_secret_ballots
+        country_event = 650207
+        ai_chance = { factor = 30 }
+    }
+
+    option = {
+        name = "650206.B"
+        government = democracy
+        ruling_party_ideology = liberal
+        political_reform = universal_voting
+        political_reform = population_equal_weight
+        political_reform = yes_meeting
+        political_reform = free_press
+        country_event = 650207
+        ai_chance = { factor = 70 }
+    }
+}
+
+country_event = { ######Foreign support ?
+
+    id = 650207
+    title = "DUA7.T"
+    desc = "DUA7.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650207.A"
+        SCA = { country_event = 650208 }
+        ai_chance = {
+            factor = 30
+            modifier = {
+                factor = 0
+                NOT = {
+                    SCA = { is_greater_power = yes }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "650207.B"
+        BRG = { country_event = 650208 }
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 0
+                NOT = {
+                    BRG = { is_greater_power = yes }
+                }
+            }
+        }
+    }
+
+    option = {
+        name = "650207.C"
+        ARA = { country_event = 650208 }
+        ai_chance = {
+            factor = 20
+            modifier = {
+                factor = 0
+                NOT = {
+                    OR = {
+						ARA = { is_greater_power = yes }
+						ARA = { exists = no }
+					}
+                }
+            }
+        }
+    }
+	
+	option = {
+        name = "We will do nothing."
+        ai_chance = {
+            factor = 0
+            modifier = {
+                factor = 100
+                NOT = {
+					OR = {
+						ARA = { is_greater_power = yes }
+						ARA = { exists = no }
+					}
+					BRG = { is_greater_power = yes }
+					SCA = { is_greater_power = yes }
+                }
+            }
+        }
+    }
+}
+
+country_event = { ######Foreign support ?
+
+    id = 650208
+    title = "DUA8.T"
+    desc = "DUA8.D"
+
+    is_triggered_only = yes
+
+    option = { name = "650208.A" }
+
+    option = {
+        name = "650208.B"
+        create_alliance = FROM
+        ai_chance = {
+            factor = 100
+            modifier = {
+                factor = 0
+                THIS = { alliance_with = DUA }
+            }
+            modifier = {
+                factor = 0.5
+                war = yes
+            }
+        }
+    }
+}
+
+country_event = { #St Louis Speech
+    id = 650212
+    title = "DUA12.T"
+    desc = "DUA12.D"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = french_integration
+        NOT = {
+            OR = {
+                has_global_flag = french_int
+                has_global_flag = glorious_revolution
+            }
+        }
+    }
+
+    mean_time_to_happen = { days = 60 }
+
+    option = {
+        name = "650212.A"
+        set_country_flag = st_louis_speech
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 2
+        }
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = -2
+        }
+    }
+}
+
+country_event = { #The great travel
+    id = 650213
+    title = "DUA13.T"
+    desc = "DUA13.D"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = french_integration
+        NOT = {
+            OR = {
+                has_global_flag = french_int
+                has_global_flag = glorious_revolution
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 50 }
+
+    option = {
+        name = "650213.A"
+        set_country_flag = great_travel_FRA
+    }
+}
+
+country_event = { #Sons of Harold
+    id = 650214
+    title = "DUA14.T"
+    desc = "DUA14.D"
+    picture = "liberals_org"
+    news = yes
+    news_desc_long = "650214_NEWS_LONG"
+    news_desc_medium = "650214_NEWS_MEDIUM"
+    news_desc_short = "650214_NEWS_SHORT"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = french_integration
+        NOT = {
+            OR = {
+                has_global_flag = french_int
+                has_global_flag = glorious_revolution
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 70 }
+
+    option = {
+        name = "650214.A"
+        set_country_flag = sons_of_harold
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 2
+        }
+    }
+}
+
+country_event = { #Sorbonne
+
+    id = 650216
+    title = "DUA16.T"
+    desc = "DUA16.D"
+
+    trigger = {
+        tag = DUA
+        has_country_flag = french_integration
+        NOT = {
+            OR = {
+                has_global_flag = french_int
+                has_global_flag = glorious_revolution
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 70 }
+
+    option = {
+        name = "650216.A"
+        prestige = -10
+        set_country_flag = sorbonne_french
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 4
+        }
+        ai_chance = { factor = 55 }
+    }
+
+    option = {
+        name = "650216.B"
+        prestige = -10
+        set_country_flag = sorbonne_english
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = 2
+        }
+        ai_chance = { factor = 15 }
+    }
+
+    option = {
+        name = "650216.C"
+        prestige = 10
+        ai_chance = { factor = 40 }
+    }
+}
+
+country_event = { #the Minister choice
+
+    id = 650217
+    title = "DUA17.T"
+    desc = "DUA17.D"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        NOT = {
+            OR = {
+                has_global_flag = french_int
+                has_global_flag = glorious_revolution
+            }
+        }
+        OR = {
+            has_country_flag = french_integration
+            has_country_flag = english_integration
+        }
+    }
+
+    mean_time_to_happen = { months = 85 }
+
+    option = {
+        name = "650217.A"
+        set_country_flag = richelieu_minister
+        ai_chance = { factor = 34 }
+    }
+
+    option = {
+        name = "650217.B"
+        set_country_flag = rohan_minister
+        ai_chance = { factor = 33 }
+    }
+
+    option = {
+        name = "650217.C"
+        set_country_flag = devonshire_minister
+        ai_chance = { factor = 33 }
+    }
+}
+
+country_event = { #the Shakespeare festival
+
+    id = 650218
+    title = "DUA18.T"
+    desc = "DUA18.D"
+
+    trigger = {
+        tag = DUA
+        has_country_flag = french_integration
+        has_country_flag = sons_of_harold
+        owns = 284
+        NOT = {
+            OR = {
+                has_global_flag = french_int
+                has_global_flag = glorious_revolution
+            }
+        }
+    }
+
+    fire_only_once = yes
+
+    mean_time_to_happen = { months = 15 }
+
+    option = {
+        name = "650218.A"
+        set_country_flag = shakespeare_full
+        prestige = -15
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 3
+        }
+        ai_chance = { factor = 50 }
+    }
+
+    option = {
+        name = "650218.B"
+        set_country_flag = shakespeare_guard
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 2
+            militancy = 1
+        }
+        ai_chance = { factor = 25 }
+    }
+
+    option = {
+        name = "650218.C"
+        set_country_flag = shakespeare_no
+        prestige = 10
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = 3
+        }
+        ai_chance = { factor = 25 }
+    }
+}
+
+country_event = { #the infernal machine -Liverpool
+
+    id = 650219
+    title = "DUA19.T"
+    desc = "DUA19.D"
+    news = yes
+    news_desc_long = "650219_NEWS_LONG"
+    news_desc_medium = "650219_NEWS_MEDIUM"
+    news_desc_short = "650219_NEWS_SHORT"
+
+    major = yes
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = french_integration
+        has_country_flag = sons_of_harold
+        owns = 277
+        NOT = {
+            OR = {
+                has_global_flag = french_int
+                has_global_flag = glorious_revolution
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 90 }
+
+    option = {
+        name = "650219.A"
+        set_country_flag = interdiction_harold
+        set_country_flag = death_prince_ENL
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = 3
+        }
+        ai_chance = { factor = 100 }
+    }
+
+    option = {
+        name = "650219.B"
+        prestige = -10
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = -1
+        }
+    }
+}
+
+country_event = { ## Midi Revolution : Occitan choices
+    id = 650223
+    title = "DUA23.T"
+    desc = "DUA23.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650223.B"
+        government = democracy
+        country_event = 650207
+        ruling_party_ideology = liberal
+        political_reform = universal_voting
+        political_reform = population_equal_weight
+        political_reform = yes_meeting
+        political_reform = free_press
+    }
+}
+
+country_event = { #Sons of St-Louis
+    id = 650227
+    title = "DUA27.T"
+    desc = "DUA27.D"
+    picture = "liberals_org"
+    news = yes
+    news_desc_long = "650227_NEWS_LONG"
+    news_desc_medium = "650227_NEWS_MEDIUM"
+    news_desc_short = "650227_NEWS_SHORT"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = english_integration
+        has_country_modifier = global_liberal_agitation
+        NOT = {
+            OR = {
+                has_global_flag = english_int
+                has_global_flag = glorious_revolution
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 30 }
+
+    option = {
+        name = "650227.A"
+        set_country_flag = sons_of_louis
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = 2
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            consciousness = 2
+        }
+    }
+}
+
+country_event = { #The great travel
+    id = 650229
+    title = "DUA29.T"
+    desc = "DUA29.D"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = english_integration
+        NOT = { has_country_flag = great_travel_ENL }
+        NOT = {
+            OR = {
+                has_global_flag = english_int
+                has_global_flag = glorious_revolution
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 50 }
+
+    option = {
+        name = "650229.A"
+        set_country_flag = great_travel_ENL
+    }
+}
+
+country_event = { #Saxon poetry
+    id = 650230
+    title = "DUA30.T"
+    desc = "DUA30.D"
+    picture = "Saxon_romanticism"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = english_integration
+        NOT = {
+            OR = {
+                has_global_flag = english_int
+                has_global_flag = glorious_revolution
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 35 }
+
+    option = {
+        name = "650230.A"
+        prestige = -15
+        set_country_flag = romanticism_ENL
+    }
+
+    option = {
+        name = "650230.B"
+        prestige = 15
+        set_country_flag = romanticism_FRA
+    }
+}
+
+country_event = {
+    id = 650250
+    title = "DUA50.T"
+    desc = "DUA50.D"
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        NOT = { has_country_flag = patron }
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+        name = "650250.A"
+        any_pop = {
+            limit = { culture = provencal }
+            militancy = -1
+            consciousness = -2
+        }
+        any_pop = {
+            limit = { culture = french }
+            militancy = -1
+            consciousness = -2
+        }
+        any_pop = {
+            limit = { culture = anglois }
+            consciousness = 2
+        }
+        any_pop = {
+            limit = { culture = welsh }
+            militancy = 1
+            consciousness = 1
+        }
+        any_pop = {
+            limit = { culture = english }
+            militancy = 1
+            consciousness = 2
+        }
+        set_country_flag = patron
+    }
+
+    option = {
+        name = "650250.B"
+        any_pop = {
+            limit = { culture = english }
+            militancy = -1
+            consciousness = -2
+        }
+        any_pop = {
+            limit = { culture = welsh }
+            militancy = -1
+            consciousness = -2
+        }
+        any_pop = {
+            limit = { culture = anglois }
+            consciousness = 2
+        }
+        any_pop = {
+            limit = { culture = provencal }
+            militancy = 1
+            consciousness = 1
+        }
+        any_pop = {
+            limit = { culture = french }
+            militancy = 1
+            consciousness = 2
+        }
+        set_country_flag = patron
+    }
+
+    option = {
+        name = "650250.C"
+        any_pop = {
+            limit = { culture = english }
+            militancy = 2
+            consciousness = 2
+        }
+        any_pop = {
+            limit = { culture = irish }
+            militancy = 1
+            consciousness = 2
+        }
+        any_pop = {
+            limit = { culture = anglois }
+            consciousness = -2
+            militancy = -2
+        }
+        any_pop = {
+            limit = { culture = provencal }
+            militancy = 2
+            consciousness = 2
+        }
+        any_pop = {
+            limit = { culture = french }
+            militancy = 2
+            consciousness = 2
+        }
+        set_country_flag = patron
+    }
+}
+
+country_event = {
+    id = 650251
+    title = "DUA51.T"
+    desc = "DUA51.D"
+    picture = "liberals_org"
+
+    trigger = {
+        tag = DUA
+        has_country_modifier = global_liberal_agitation
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        NOT = { has_country_flag = liberals_org }
+    }
+
+    mean_time_to_happen = { months = 7 }
+
+    option = {
+        name = "650251.A"
+        set_country_flag = liberals_org
+        set_country_flag = sons_of_harold
+        set_country_flag = sons_of_louis
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 4
+        }
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = ENL }
+            }
+            consciousness = 4
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = ENL }
+            }
+            consciousness = 4
+        }
+    }
+
+    option = {
+        name = "650251.B"
+        set_country_flag = liberals_org
+        set_country_flag = banned_org
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 5
+            militancy = 2
+        }
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = 5
+            militancy = 2
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            consciousness = 5
+            militancy = 2
+        }
+        any_pop = {
+            scaled_militancy = {
+                factor = 5
+                ideology = liberal
+            }
+        }
+        public_meetings = no_meeting
+    }
+}
+
+country_event = { #Publication of "Histoire de la France depuis ses origines"
+    id = 650252
+    title = "DUA52.T"
+    desc = "DUA52.D"
+    picture = "guizot"
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        NOT = { has_country_flag = guizot_book }
+        has_country_flag = liberals_org
+    }
+
+    mean_time_to_happen = { months = 10 }
+
+    option = {
+        name = "650252.A"
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 5
+            militancy = 1
+        }
+        prestige = 10
+        set_country_flag = guizot_book
+        
+    }
+
+    option = {
+        name = "650252.B"
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = 5
+            militancy = 1
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            consciousness = 5
+            militancy = 1
+        }
+        prestige = -15
+        set_country_flag = guizot_book
+        
+    }
+}
+
+country_event = { #Publication of "Saxon Poetry"
+    id = 650253
+    title = "DUA53.T"
+    desc = "DUA53.D"
+    picture = "Saxon_romanticism"
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        NOT = { has_country_flag = saxon_poetry }
+        has_country_flag = guizot_book
+    }
+
+    mean_time_to_happen = { months = 15 }
+
+    option = {
+        name = "650253.A"
+		any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 1
+            
+        }
+        set_country_flag = saxon_poetry
+    }
+
+    option = {
+        name = "650253.B"
+        set_country_flag = saxon_poetry
+		 any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = 1
+            
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            consciousness = 1
+            
+        }
+    }
+}
+
+country_event = { #The Great Travel of the Dauphin
+    id = 650254
+    title = "DUA54.T"
+    desc = "DUA54.D"
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        year = 1840
+        NOT = { has_country_flag = travel_dauphin }
+    }
+
+    mean_time_to_happen = { months = 15 }
+
+    option = {
+        name = "650254.A"
+        set_country_flag = travel_dauphin
+        set_country_flag = travel_FRA
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 1
+            
+        }
+    }
+
+    option = {
+        name = "650254.B"
+        set_country_flag = travel_dauphin
+        set_country_flag = travel_ENL
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = 1
+            
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            consciousness = 1
+            
+        }
+    }
+
+    option = {
+        name = "650254.C"
+        set_country_flag = travel_dauphin
+		any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 1
+            
+        }
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = 1
+            
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            consciousness = 1
+            
+        }
+    }
+}
+
+country_event = { #Theatre
+    id = 650255
+    title = "DUA55.T"
+    desc = "DUA55.D"
+    picture = "theatre"
+    news = yes
+    news_desc_long = "650255_NEWS_LONG"
+    news_desc_medium = "650255_NEWS_MEDIUM"
+    news_desc_short = "650255_NEWS_SHORT"
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        year = 1841
+        NOT = { has_country_flag = theatre }
+    }
+
+    mean_time_to_happen = { months = 3 }
+
+    option = {
+        name = "650255.A"
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = -1
+        }
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = 1
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            consciousness = 1
+        }
+        any_pop = {
+            limit = {
+                culture = anglois
+                location = { is_core = DUA }
+            }
+            consciousness = 1
+        }
+        set_country_flag = theatre
+    }
+
+    option = {
+        name = "650255.B"
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 1
+        }
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            militancy = -1
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            militancy = -1
+        }
+        any_pop = {
+            limit = {
+                culture = anglois
+                location = { is_core = DUA }
+            }
+            consciousness = 1
+        }
+        set_country_flag = theatre
+    }
+
+    option = {
+        name = "650255.C"
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 1
+        }
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            consciousness = 1
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            consciousness = 1
+        }
+        any_pop = {
+            limit = {
+                culture = anglois
+                location = { is_core = DUA }
+            }
+            militancy = -1
+        }
+        set_country_flag = theatre
+    }
+}
+
+country_event = { #The 'Immortals'
+    id = 650256
+    title = "DUA56.T"
+    desc = "DUA56.D"
+    picture = "academy_france"
+
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        year = 1843
+        NOT = { has_country_flag = academy }
+    }
+
+    mean_time_to_happen = { months = 15 }
+
+    option = {
+        name = "650256.A"
+        set_country_flag = academy
+        
+    }
+
+    option = {
+        name = "650256.B"
+        set_country_flag = academy
+        
+    }
+
+    option = {
+        name = "650256.C"
+        set_country_flag = academy
+        
+    }
+}
+
+country_event = { #Celebration of the German Revolution
+    id = 650257
+    title = "DUA57.T"
+    desc = "DUA57.D"
+    picture = "people_revolution"
+
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        year = 1845
+        NOT = { has_country_flag = celebration }
+    }
+
+    mean_time_to_happen = { months = 2 }
+
+    option = {
+        name = "650257.A"
+        set_country_flag = celebration
+        relation = {
+            who = BOH
+            value = -100
+        }
+        relation = {
+            who = CAE
+            value = -100
+        }
+    }
+
+    option = {
+        name = "650257.B"
+        set_country_flag = celebration
+        relation = {
+            who = BOH
+            value = 50
+        }
+        relation = {
+            who = CAE
+            value = 50
+        }
+    }
+}
+
+country_event = { #Springtime of Nations
+    id = 650258
+    title = "DUA58.T"
+    desc = "DUA58.D"
+    picture = "people_revolution"
+
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        has_country_modifier = springtime_of_nations
+        NOT = { has_country_flag = springtime_DUA }
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+    option = {
+        name = "650258.A"
+        set_country_flag = springtime_DUA
+        any_pop = {
+            limit = {
+                OR = {
+                    culture = english
+                    culture = french
+                    culture = provencal
+                }
+            }
+            militancy = 1
+            consciousness = 4
+        }
+    }
+}
+
+country_event = { #Springtime of Nations
+    id = 650259
+    title = "DUA59.T"
+    desc = "DUA59.D"
+    picture = "people_revolution"
+
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        has_country_flag = had_liberal_revolution
+        NOT = { has_country_flag = springtime_DUA_end }
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+    option = {
+        name = "650259.A"
+        set_country_flag = springtime_DUA_end
+    }
+}
+
+country_event = { #Scottish subversion
+    id = 650268
+    title = "DUA68.T"
+    desc = "DUA68.D"
+    picture = "people_revolution"
+
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+
+        NOT = {
+            OR = {
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        year = 1850
+        owns = 280
+        OR = {
+            AND = {
+                267 = { owned_by = SCO }
+                269 = { owned_by = SCO }
+                NOT = {
+                    SCO = { in_sphere = THIS }
+                }
+            }
+            AND = {
+                267 = { owned_by = SCA }
+                269 = { owned_by = SCA }
+                NOT = { alliance_with = SCA }
+            }
+        }
+        NOT = { has_country_flag = scottish_subversion }
+    }
+
+    mean_time_to_happen = { days = 2 }
+
+    option = {
+        name = "650268.A"
+        set_country_flag = scottish_subversion
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            consciousness = 1
+        }
+    }
+}
+
+country_event = { #Death of the Dauphin, Orléans
+    id = 650274
+    title = "DUA74.T"
+    desc = "DUA74.D"
+    picture = "assassination_dauphin"
+
+    major = yes
+
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        has_country_flag = travel_FRA
+        NOT = { has_country_flag = death_dauphin }
+        NOT = { has_country_flag = banned_org }
+    }
+
+    mean_time_to_happen = { months = 5 }
+
+    option = {
+        name = "650274.A"
+        clr_country_flag = travel_FRA
+        set_country_flag = death_dauphin
+        public_meetings = no_meeting
+        prestige = -15
+        any_pop = {
+            scaled_militancy = {
+                factor = 3
+                ideology = liberal
+            }
+        }
+		any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            militancy = 2
+        }
+    }
+}
+
+country_event = { #Death of the Dauphin, Liverpool
+    id = 650275
+    title = "DUA75.T"
+    desc = "DUA75.D"
+    picture = "assassination_dauphin"
+    news = yes
+    news_desc_long = "650219_NEWS_LONG"
+    news_desc_medium = "650219_NEWS_LONG"
+    news_desc_short = "650219_NEWS_LONG"
+
+    major = yes
+
+    trigger = {
+        tag = DUA
+        has_country_flag = dual_integration
+        NOT = {
+            OR = {
+                has_country_flag = OCC_revolted
+                has_country_flag = ENL_revolted
+                has_country_flag = global_revolt
+                has_country_flag = Anglois_accepted
+            }
+        }
+        has_country_flag = travel_ENL
+        NOT = { has_country_flag = death_dauphin }
+        NOT = { has_country_flag = banned_org }
+    }
+
+    mean_time_to_happen = { months = 5 }
+
+    option = {
+        name = "650275.A"
+        clr_country_flag = travel_ENL
+        set_country_flag = death_dauphin
+        public_meetings = no_meeting
+        prestige = -15
+        any_pop = {
+            scaled_militancy = {
+                factor = 3
+                ideology = liberal
+            }
+        }
+		any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = 2
+        }
+    }
+}
+
+country_event = {
+    id = 650276
+    title = "DUA2.T"
+    desc = "DUA2.D"
+    picture = "Death_King"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        year = 1848
+        has_country_flag = death_dauphin
+        NOT = {
+            OR = {
+                has_country_flag = edward_york
+                has_country_flag = elisabeth
+                has_country_flag = henry_gascony
+            }
+        }
+    }
+
+    mean_time_to_happen = { months = 11 }
+
+    option = {
+        name = "650276.A"
+        random_list = {
+            45 = { country_event = 650277 }
+            30 = { country_event = 650278 }
+            25 = { country_event = 650279 }
+        }
+    }
+}
+
+country_event = {
+    id = 650277
+    title = "DUA3.T"
+    desc = "DUA3.D"
+    picture = "Elisabeth"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650277.A"
+        set_country_flag = elisabeth
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            militancy = 1
+        }
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = 1
+        }
+        any_pop = {
+            limit = {
+                culture = anglois
+                location = { is_core = DUA }
+            }
+            militancy = -3
+        }
+    }
+}
+
+country_event = {
+    id = 650278
+    title = "DUA4.T"
+    desc = "DUA4.D"
+    picture = "Edward"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650278.A"
+        set_country_flag = edward_york
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            militancy = 3
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            militancy = 4
+        }
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = -4
+        }
+        any_pop = {
+            limit = {
+                culture = anglois
+                location = { is_core = DUA }
+            }
+            militancy = -1
+        }
+    }
+}
+
+country_event = {
+    id = 650279
+    title = "DUA5.T"
+    desc = "DUA5.D"
+    picture = "Henri"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650279.A"
+        set_country_flag = henry_gascony
+        any_pop = {
+            limit = {
+                culture = french
+                location = { is_core = FRA }
+            }
+            militancy = -4
+        }
+        any_pop = {
+            limit = {
+                culture = provencal
+                location = { is_core = OCC }
+            }
+            militancy = -4
+        }
+        any_pop = {
+            limit = {
+                culture = english
+                location = { is_core = ENL }
+            }
+            militancy = 3
+        }
+        any_pop = {
+            limit = {
+                culture = anglois
+                location = { is_core = DUA }
+            }
+            militancy = -1
+        }
+    }
+}
+
+country_event = { #Coronation of Henri XI
+
+    id = 650280
+    title = "DUA80.T"
+    desc = "DUA80.D"
+    picture = "Henri_XI"
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = DUA
+        year = 1861
+        has_country_flag = travel_dauphin
+    }
+
+    mean_time_to_happen = { months = 12 }
+
+    option = {
+        name = "650280.A"
+        prestige = 2
+        any_pop = {
+            limit = { has_pop_culture = anglois }
+            militancy = -1
+        }
+    }
+}

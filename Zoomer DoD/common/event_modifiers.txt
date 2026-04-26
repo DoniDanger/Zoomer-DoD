@@ -2496,8 +2496,8 @@ assimilate_tributaries_modif = {
 }
 
 anglois_dilemma = { 
-	non_accepted_pop_militancy_modifier = 0.08
-	pop_consciousness_modifier = 0.1
+	non_accepted_pop_militancy_modifier = 0.06
+	pop_consciousness_modifier = 0.08
 }
 anglois_cultural_unity = {
 	assimilation_rate = 2.5
@@ -2734,18 +2734,20 @@ sizing_cooldown = {
 }
 
 underground_nationalist_movements = {
-	non_accepted_pop_militancy_modifier = 0.02
-	non_accepted_pop_consciousness_modifier = 0.03 
-	icon = 15
+	pop_militancy_modifier = 0.01
+	pop_consciousness_modifier = 0.02
+	icon = 4
 }
 
 nationalist_movement_suppression = {
-	immigrant_push = -0.2
-	local_RGO_output = -0.15
-	farm_rgo_eff = -0.2
-	mine_rgo_eff = -0.2
-	non_accepted_pop_militancy_modifier = -0.02
-	non_accepted_pop_consciousness_modifier = -0.03 
-	pop_militancy_modifier = 0.05
-	icon = 20
+	immigrant_push = 0.25
+	immigrant_attract = -0.25
+	local_RGO_output = -0.1
+	pop_consciousness_modifier = 0.04
+	pop_militancy_modifier = -0.02
+	local_factory_throughput = -0.15
+	local_factory_output = -0.1
+	local_artisan_throughput = -0.15
+	local_artisan_output = -0.15
+	icon = 8
 }
