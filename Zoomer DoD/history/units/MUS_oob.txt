@@ -164,3 +164,49 @@ army = {
 
 
 }
+
+army = {
+	name = "Tver Korpus"
+	location = 998
+	regiment = {
+		name= "1.1-ya Grenaderskiy Korpus"
+		type = infantry
+		home = 1000
+	}
+
+	regiment = {
+		name= "2.1-ya Grenaderskiy Korpus"
+		type = infantry
+		home = 1000
+	}
+	
+	regiment = {
+		name= "3.1-ya Grenaderskiy Korpus"
+		type = infantry
+		home = 998
+	}
+
+	regiment = {
+		name= "4.1-ya Grenaderskiy Korpus"
+		type = infantry
+		home = 998
+	}
+
+	regiment = {
+		name= "5.1-ya Grenaderskiy Korpus"
+		type = infantry
+		home = 998
+	}
+	
+	regiment = {
+		name= "5.1-ya Grenaderskiy Korpus"
+		type = artillery
+		home = 998
+	}
+	
+	regiment = {
+		name= "6.1-ya Kavalerijskaya Diviziya"
+		type = hussar
+		home = 1023
+	}
+}

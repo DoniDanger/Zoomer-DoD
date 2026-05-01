@@ -224,7 +224,7 @@
 	craftsmen= {
 		culture = baltic_german
 		religion = protestant
-		size = 18000
+		size = 12500
 	}
 	soldiers = {
 		culture = baltic_german
@@ -1372,7 +1372,7 @@
 	craftsmen = {
 		culture = north_german
 		religion = catholic
-		size = 30525
+		size = 14525
 	}
 
 	artisans = {
@@ -1404,7 +1404,7 @@
 	craftsmen = {
 		culture = czech
 		religion = catholic
-		size = 5150 
+		size = 3150 
 	}
 
 	artisans = {
@@ -1654,7 +1654,7 @@
 	craftsmen = {
 		culture = north_german
 		religion = catholic
-		size = 50000
+		size = 28960
 	}
   
   capitalists = {
@@ -2096,7 +2096,7 @@
 	craftsmen = {
 		culture = north_german
 		religion = catholic
-		size = 20075
+		size = 13075
 	}
 
 	artisans = {
@@ -3407,7 +3407,7 @@
 	craftsmen = {
 		culture = rheinish
 		religion = protestant
-		size = 12500
+		size = 7500
 	}
 
 	artisans = {

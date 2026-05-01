@@ -3,39 +3,39 @@
 #Manila (780000/195000 POPS)
 1455 = {
     aristocrats = {
-        culture = japanese
+        culture = ganguan
         religion = mahayana
         size = 200
     }
 
     officers = {
-        culture = japanese
+        culture = ganguan
         religion = mahayana
         size = 200
     }
 
     bureaucrats = {
-        culture = japanese
+        culture = ganguan
         religion = mahayana
         size = 400
     }
 
     clergymen = {
-        culture = japanese
+        culture = ganguan
         religion = mahayana
         size = 250
     }
 
     artisans = {
-        culture = japanese
+        culture = ganguan
         religion = mahayana
         size = 1050
     }
 
     soldiers = {
-        culture = japanese
+        culture = ganguan
         religion = mahayana
-        size = 100
+        size = 2100
     }
 
     aristocrats = {
@@ -154,6 +154,12 @@
         size = 250
     }
 
+	soldiers = {
+        culture = filipino
+        religion = mahayana
+        size = 6500
+    }
+	
     farmers = {
         culture = asian_minor
         religion = mahayana
@@ -174,6 +180,12 @@
         size = 6500
     }
 
+	soldiers = {
+        culture = filipino
+        religion = mahayana
+        size = 6500
+    }
+	
     farmers = {
         culture = filipino
         religion = mahayana
@@ -212,6 +224,12 @@
         size = 2100
     }
 
+	soldiers = {
+        culture = filipino
+        religion = mahayana
+        size = 2800
+    }
+	
     farmers = {
         culture = filipino
         religion = mahayana
@@ -261,7 +279,7 @@
     soldiers = {
         culture = filipino
         religion = catholic
-        size = 2400
+        size = 4400
     }
 
     farmers = {
@@ -297,7 +315,7 @@
     soldiers = {
         culture = filipino
         religion = sunni
-        size = 250
+        size = 1250
     }
 
     farmers = {

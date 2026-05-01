@@ -2708,6 +2708,14 @@ peace_of_san_salvador = {
 	icon = 13
 }
 
+violation_of_san_salvador = {
+	icon = 13
+}
+
+salvador_peace_process = {
+	icon = 13
+}
+
 hungarian_land_reform = {
 	icon = 11
 	administrative_efficiency_modifier = 0.15

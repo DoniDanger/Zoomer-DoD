@@ -2,6 +2,6 @@ owner = QUI
 controller = QUI
 add_core = CLM
 add_core = QUI
-trade_goods = wool
+trade_goods = sulphur
 terrain = dryhills
 life_rating = 37

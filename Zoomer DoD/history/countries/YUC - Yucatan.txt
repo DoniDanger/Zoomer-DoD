@@ -49,6 +49,7 @@ upper_house = {
 }
 
 set_country_flag = new_world_nation
+set_country_flag = peace_of_san_salvador
 
 oob = "YUC_oob.txt"
 

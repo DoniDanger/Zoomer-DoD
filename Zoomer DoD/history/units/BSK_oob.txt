@@ -1,0 +1,42 @@
+leader = {
+	name = "Gesparay Turkasha"
+	type = land
+	date = 1836.1.1
+	personality = tyrant
+	background = member_of_elite
+}
+
+army = {
+	name = "Army of Bashkiria"
+	location = 1042
+	regiment = {
+		name= "1.Tatar"
+		type = cavalry
+		home = 1042
+	}
+
+	regiment = {
+		name= "2.Tatar"
+		type = cavalry
+		home = 1042
+	}
+
+	regiment = {
+		name= "3.Tatar"
+		type = cavalry
+		home = 1044
+	}
+
+	regiment = {
+		name= "4.Tatar"
+		type = cavalry
+		home = 1044
+	}
+
+	regiment = {
+		name= "5.Tatar"
+		type = cavalry
+		home = 1060
+	}
+
+}

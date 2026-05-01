@@ -3,5 +3,5 @@ controller = DAX
 add_core = DAX
 add_core = CHI
 add_core = TIB
-trade_goods = tea
+trade_goods = iron
 life_rating = 32

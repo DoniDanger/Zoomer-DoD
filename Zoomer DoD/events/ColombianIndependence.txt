@@ -15,7 +15,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-			days = -1
+			days = 1
 	}
 	
 	option = {
@@ -39,7 +39,7 @@ country_event = {
 	
 	option = {
 		name = "Liberation is a struggle every Latinx dreams of."
-		prestige = 18
+		prestige = 10
 		add_accepted_culture = lusitanian
     	add_accepted_culture = central_american
 		add_accepted_culture = granadan
@@ -48,12 +48,12 @@ country_event = {
 			duration = 1825
 		}
 		set_country_flag = appeal_hispanic_liberation
-		SPA = { country_event = { id= 46438 months = 6 }}
+		#SPA = { country_event = { id= 46438 months = 6 }}
 	}
 	
 	option = {
 		name = "We must free the slaves and arms the Natives."
-		prestige = 14
+		prestige = 5
 		political_reform = no_slavery
 		add_accepted_culture = nahua
     	add_accepted_culture = afro_latino
@@ -62,7 +62,7 @@ country_event = {
 			duration = 1825
 		}
 		set_country_flag = alliance_with_the_natives
-		SPA = { country_event = { id= 46438 months = 6 }}
+		#SPA = { country_event = { id= 46438 months = 6 }}
 	}
 }
 
@@ -78,7 +78,7 @@ country_event = {
 	
 	option = {
 		name = "Liberation is a struggle every Latinx dreams of."
-		prestige = 18
+		prestige = 10
 		add_accepted_culture = lusitanian
     	add_accepted_culture = central_american
 		add_accepted_culture = granadan
@@ -86,12 +86,12 @@ country_event = {
 			name = war_of_colombian_liberation 
 			duration = 1825
 		}
-		SPA = { country_event = { id= 46438 months = 3 }}
+		#SPA = { country_event = { id= 46438 months = 3 }}
 	}
 	
 	option = {
 		name = "We must free the slaves and arms the Natives."
-		prestige = 14
+		prestige = 5
 		political_reform = no_slavery
 		add_accepted_culture = nahua
     	add_accepted_culture = afro_latino
@@ -99,7 +99,7 @@ country_event = {
 			name = alliance_with_the_natives 
 			duration = 1825
 		}
-		SPA = { country_event = { id= 46438 months = 3 }}
+		#SPA = { country_event = { id= 46438 months = 3 }}
 	}
 }
 
@@ -111,9 +111,27 @@ country_event = {
 	desc = "EVTDESC46438"
 	major = yes
 	picture = "colombian_military"
-	
 	fire_only_once = yes
-	is_triggered_only = yes
+	
+	trigger = {
+		tag = SPA
+		NOT = { has_country_modifier = violation_of_san_salvador }
+		has_global_flag = colombians_demand_freedom
+		has_country_flag = KILL_ALL_COLOMBIANS
+		#NOT = { war_with = CLM }
+		is_vassal = no
+		NOT = {
+				has_country_flag = total_colombian_victory 
+				has_global_flag = spanish_evacuation_colonies
+				has_global_flag = treaty_of_andagoya
+				has_global_flag = gran_colombian_collapse
+				has_global_flag = 2nd_colombian_independence_war
+			}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	option = {
 		name = "The Colombian dream must be squashed now."
@@ -126,6 +144,13 @@ country_event = {
             type = make_puppet
             months = 60
         }
+		CLM = {
+			casus_belli = {
+				target = CLM
+				type = assert_colombian_dominance
+				months = 60
+			}
+		}
 		war = {
             target = CLM
             attacker_goal = { casus_belli = make_puppet }
@@ -454,14 +479,19 @@ country_event = {
 		name = "Sorry Colombian, the protectorship WILL continue."
 		prestige = 10
 		CLM = { country_event = 46436 }
-		set_country_flag = colombians_demand_freedom
+		add_country_modifier = {
+			name = violation_of_san_salvador 
+			duration = 180
+		}
+		set_global_flag = colombians_demand_freedom
+		set_country_flag = KILL_ALL_COLOMBIANS
 	}
 	
 	option = {
 		name = "We must respect the treaty and allow Gran Colombia to decide for themselves."
 		prestige = -15
 		CLM = { country_event = 46446 }
-		set_country_flag = colombians_demand_freedom
+		set_global_flag = colombians_demand_freedom
 	}
 }
 
@@ -544,6 +574,7 @@ country_event = {
 		tag = CLM
 		year = 1840
 		NOT = { has_country_flag = demanded_spanish_protectorate_end }
+		NOT = { has_country_modifier = salvador_peace_process }
 	}
 	
 	mean_time_to_happen = {
@@ -553,7 +584,11 @@ country_event = {
 	option = {
 		name = "Hopefully they realize there is no end to the Colombian dream."
 		SPA = { country_event = 46445 }
-		set_country_flag = demanded_spanish_protectorate_end
+		#set_country_flag = demanded_spanish_protectorate_end
+		add_country_modifier = {
+			name = salvador_peace_process 
+			duration = 180
+		}
 	}
 }
 
@@ -918,3 +953,47 @@ country_event = { ### Vassal Gained
 	}
 }
 
+country_event = {
+
+	id = 46455
+
+	title = "Gran Colombians Violate Protectorship"
+	desc = "EVTDESC46455"
+	picture = "la_independencia_del_perú"
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "These Colombian bastards. Show them the might of Spain."
+		prestige = 10
+		CLM = { country_event = 46456 }
+		add_country_modifier = {
+			name = violation_of_san_salvador 
+			duration = 90
+		}
+		set_global_flag = colombians_demand_freedom
+		set_country_flag = KILL_ALL_COLOMBIANS
+	}
+	
+	option = {
+		name = "They've forced our hand. Grant them independence."
+		prestige = -15
+		CLM = { country_event = 46446 }
+		set_global_flag = colombians_demand_freedom
+	}
+}
+
+country_event = {
+
+	id = 46456
+
+	title = "Spanish Reject end to Protectorship"
+	desc = "EVTDESC46456"
+	fire_only_once = yes
+	is_triggered_only = yes
+	picture = "bolivar"
+	
+	option = {
+		name = "Perhaps our hastiness may be our downfall."		
+	}
+}

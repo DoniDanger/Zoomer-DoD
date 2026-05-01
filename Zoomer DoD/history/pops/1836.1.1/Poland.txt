@@ -40,7 +40,7 @@
 	craftsmen = {
 		culture = baltic_german
 		religion = protestant
-		size = 20000
+		size = 14560
 	}
 	soldiers = {
 		culture = baltic_german
@@ -317,7 +317,7 @@
 	craftsmen = {
 		culture = czech
 		religion = catholic
-		size = 29500
+		size = 15500
 	}
 
 	artisans = {
@@ -736,13 +736,13 @@
 	craftsmen = { 
 		culture = czech
 		religion = catholic
-		size = 6663
+		size = 4663
 	}
 
 	farmers = { 
 		culture = czech
 		religion = catholic
-		size = 21411
+		size = 46411
 	}
 
 	soldiers = { 
@@ -808,7 +808,7 @@
 	farmers = { 
 		culture = polish
 		religion = catholic
-		size = 24722
+		size = 49722
 	}
 
 	farmers = { 

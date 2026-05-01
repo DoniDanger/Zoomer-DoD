@@ -1,0 +1,50 @@
+leader = {
+	name = "Vasily Kropotkin"
+	type = land
+	date = 1836.1.1
+	personality = pompous
+	background = aristocrat
+}
+
+leader = {
+	name = "Stanislav Bagushevic"
+	type = land
+	date = 1836.1.1
+	personality = diligent
+	background = aristocrat
+}
+
+army = {
+	name = "Orsha Gvardiya"
+	location = 944
+	regiment = {
+		name= "1.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 946
+	}
+
+	regiment = {
+		name= "2.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 945
+	}
+
+	regiment = {
+		name= "3.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 949
+	}
+
+	regiment = {
+		name= "1.2-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 944
+	}
+	
+	regiment = {
+		name= "4.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = cavalry
+		home = 948
+	}
+
+}

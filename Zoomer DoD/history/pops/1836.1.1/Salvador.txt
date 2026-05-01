@@ -14,6 +14,12 @@
 		size = 150
 	}
 
+	bureaucrats = {
+		culture = mexican
+		religion = catholic
+		size = 575
+	}
+	
 	officers = {
 		culture = central_american
 		religion = catholic

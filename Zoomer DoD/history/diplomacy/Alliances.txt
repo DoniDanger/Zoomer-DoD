@@ -98,7 +98,13 @@ alliance=
 	#	start_date="1773.1.1"
 	#}
 	
-
+	alliance=
+	{
+		first="MUS"
+		second="DON"
+		start_date="1803.1.1"
+	}
+	
 	alliance=
 	{
 		first="OMA"

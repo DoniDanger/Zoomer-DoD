@@ -364,7 +364,7 @@
 	craftsmen = {
 		culture = burgundian
 		religion = protestant
-		size = 28000
+		size = 18000
 	}
 	
 	artisans = {
@@ -569,7 +569,7 @@
 	craftsmen = {
 		culture = rheinish
 		religion = protestant
-		size = 9900
+		size = 5900
 	}
 	
 	craftsmen = {
@@ -759,7 +759,7 @@
 	craftsmen = {
 		culture = burgundian
 		religion = protestant
-		size = 12000
+		size = 6400
 	}
   
   capitalists = {
@@ -1140,7 +1140,7 @@
 	craftsmen = {
 		culture = anglois
 		religion = catholic
-		size = 20000
+		size = 11400
 	}
 	
 	artisans = {
@@ -1436,13 +1436,13 @@
 	craftsmen = {
 		culture = anglois
 		religion = catholic
-		size = 100000
+		size = 67000
 	}
 	
 	craftsmen = {
 		culture = french
 		religion = catholic
-		size = 7500
+		size = 4500
 	}
 
 	artisans = {
@@ -1598,7 +1598,7 @@
 	craftsmen = {
 		culture = anglois
 		religion = jewish
-		size = 6500
+		size = 3800
 	}
 
 	artisans = {
@@ -1761,13 +1761,13 @@
 	craftsmen = {
 		culture = burgundian
 		religion = protestant
-		size = 20000
+		size = 11500
 	}
 
 	craftsmen = {
 		culture = french
 		religion = catholic
-		size = 5430
+		size = 4430
 	}
 
 	soldiers = {
@@ -1960,7 +1960,7 @@
 	craftsmen = {
 		culture = burgundian
 		religion = protestant
-		size = 22000
+		size = 15800
 	}
 	
 	artisans = {
@@ -2241,13 +2241,13 @@
 	craftsmen = {
 		culture = french
 		religion = catholic
-		size = 30050
+		size = 17650
 	}
 	
 	craftsmen = {
 		culture = anglois
 		religion = catholic
-		size = 20000
+		size = 12450
 	}
 	
 	farmers = {
@@ -2691,7 +2691,7 @@
 	craftsmen = {
 		culture = provencal
 		religion = protestant
-		size = 15000
+		size = 8400
 	}
 
 	clergymen = {
@@ -3058,7 +3058,7 @@
 	craftsmen = {
 		culture = provencal
 		religion = protestant
-		size = 10000
+		size = 4800
 	}
 
 	soldiers = {
@@ -3456,7 +3456,7 @@
 	craftsmen = {
 		culture = provencal
 		religion = protestant
-		size = 20000
+		size = 11200
 	}
   
   capitalists = {

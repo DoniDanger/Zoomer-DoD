@@ -75,3 +75,5 @@ disciplinary_reform = rehabilitationunciv
 # Starting Consciousness
 consciousness = 0
 nonstate_consciousness = 0
+
+oob = "KZN_oob.txt"

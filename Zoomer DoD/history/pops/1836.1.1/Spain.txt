@@ -22,7 +22,7 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 500
+		size = 1500
 	}
 	
 	bureaucrats = {
@@ -220,7 +220,7 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 700
+		size = 2300
 	}
 
 	clergymen = {
@@ -510,7 +510,7 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 550
+		size = 1350
 	}
 
 	clergymen = {
@@ -641,7 +641,7 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 1400
+		size = 3100
 	}
 
 	clergymen = {
@@ -1581,7 +1581,7 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 980
+		size = 1480
 	}
 
 	clergymen = {
@@ -1864,7 +1864,7 @@
 	bureaucrats = {
 		culture = castilian
 		religion = catholic
-		size = 1400
+		size = 2100
 	} 
 
 	craftsmen = {

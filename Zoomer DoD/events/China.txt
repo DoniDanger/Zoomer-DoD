@@ -347,326 +347,12 @@ country_event = {
 }
 
 country_event = { 
-	id = 48902 
-	title = "DZG2.T"
-	desc = "DZG2.D"
-	picture = "oirat_khanate"
-	
-	trigger = { 
-	tag = CHG 
-	year = 1850 
-	NOT = { has_country_flag = empire_dislocated }
-	NOT = { year = 1860 }
-	NOT = { 
-	OR = { 
-	AND = { 
-		owns = 1557 
-		owns = 1492 
-		owns = 1561		
-				}
-	owns = 1575
-	owns = 1511
-			}
-		}
-	}
-	
-	mean_time_to_happen = { 
-	months = 2 
-	}
-	
-	option = { 
-	name = "48902.A"
-	set_country_flag = empire_dislocated
-	any_owned = { 
-	limit = { OR = { is_core = KZH is_core = TNT is_core = MGL is_core = UGH is_core = UZB is_core = TJK is_core = KOK } }
-	remove_core = CHG
-		}
-	government = absolute_monarchy 
-	remove_country_modifier = feudal
-	random_owned = { limit = { owner = { admin_reform = yes_admin_reform } } owner = { economic_reform = advanced_admin_reform activate_technology = ideological_thought  }  }
-	random_owned = { limit = { owner = { admin_reform = no_admin_reform } } owner = { economic_reform = yes_admin_reform activate_technology = enlightenment_thought}  }
-	release = TNT 
-	release = MGL 
-	release = TJK 
-	release = UGH 
-	any_owned = { limit = { OR = { region = RUS_1184 region = RUS_1185} } secede_province = KZH }
-	any_owned = { limit = { is_core = CHI } secede_province = MGL }
-	any_owned = { limit = { is_core = TIB } secede_province = UGH }
-	release = UZB 
-	release = KOK
-	TNT = { government = absolute_monarchy }
-	MGL = { government = absolute_monarchy }
-	UZB = { government = absolute_monarchy }
-	remove_accepted_culture = uzbek 
-	remove_accepted_culture = uighur 
-	remove_accepted_culture = kazak  
-	ai_chance = { factor = 60 }
-	}
-	
-	option = { 
-	name = "48902.B"
-	set_country_flag = empire_dislocated
-	any_owned = { 
-	limit = { OR = { is_core = KZH is_core = MGL is_core = UZB is_core = TJK is_core = KOK } }
-	remove_core = CHG
-		}
-	government = absolute_monarchy 
-	remove_country_modifier = feudal
-	release = TNT 
-	release = MGL 
-	release = TJK 
-	release = UGH 
-	any_owned = { limit = { OR = { region = RUS_1184 region = RUS_1185} } secede_province = KZH }
-	any_owned = { limit = { is_core = TIB } secede_province = UGH }
-	any_owned = { limit = { is_core = CHI } secede_province = MGL }
-	release = UZB 
-	release = KOK
-	TNT = { government = absolute_monarchy }
-	MGL = { government = absolute_monarchy }
-	UZB = { government = absolute_monarchy }
-	war = {
-			target = UGH
-			attacker_goal = {
-				casus_belli = annex_core_country
-			}
-		}
-	war = {
-			target = TNT
-			attacker_goal = {
-				casus_belli = annex_core_country
-			}
-		}
-	ai_chance = { factor = 40 }
-	}
-	
-	option = { 
-	name = "48902.C"
-	set_country_flag = empire_dislocated
-	any_owned = { 
-	limit = { OR = { region = RUS_1184 region = RUS_1185} } secede_province = KZH 
-	remove_core = CHG
-		}
-	release = TNT 
-	release = MGL 
-	release = TJK 
-	release = UGH 
-	any_owned = { limit = { OR = { region = RUS_1184 region = RUS_1185 } } secede_province = KZH }
-	any_owned = { limit = { is_core = CHI } secede_province = MGL }
-	release = UZB 
-	release = KOK
-	TNT = { government = absolute_monarchy }
-	MGL = { government = absolute_monarchy }
-	UZB = { government = absolute_monarchy }
-	war = {
-			target = UGH
-			attacker_goal = {
-				casus_belli = annex_core_country
-			}
-		}
-	war = {
-			target = TNT
-			attacker_goal = {
-				casus_belli = annex_core_country
-			}
-		}
-	war = {
-			target = TJK
-			attacker_goal = {
-				casus_belli = annex_core_country
-			}
-		}
-	war = {
-			target = MGL
-			attacker_goal = {
-				casus_belli = annex_core_country
-			}
-		}
-	war = {
-			target = UZB
-			attacker_goal = {
-				casus_belli = annex_core_country
-			}
-		}
-	war = {
-			target = KZH
-			attacker_goal = {
-				casus_belli = annex_core_country
-			}
-		}
-	war = {
-			target = KOK
-			attacker_goal = {
-				casus_belli = annex_core_country
-			}
-		}
-	ai_chance = { factor = 0 }
-	}
-}
-
-country_event = { 
-	id = 48903
-	title = "DZG3.T"
-	desc = "DZG3.D"
-	picture = "oirat_khanate"
-	
-	trigger = { 
-	tag = CHG 
-	has_country_flag = empire_dislocated 
-	NOT = { owns = 1594 }
-	UGH = { exists = yes NOT = { vassal_of = CHG } }
-	war = no 
-	NOT = { has_country_flag = kashgar }
-	}
-	
-	mean_time_to_happen = { months = 35 }
-	
-	option = { 
-	name = "48903.A"
-	set_country_flag = kashgar
-	badboy = 12
-	casus_belli = {
-			target = UGH
-			type = conquest
-			months = 24
-		}
-		war = {
-			target = UGH
-			attacker_goal = {
-				casus_belli = conquest
-			}
-		}
-	ai_chance = { factor = 100 }
-	}
-}
-
-country_event = { 
-	id = 48904
-	title = "DZG4.T"
-	desc = "DZG4.D"
-	picture = "oirat_khanate"
-	
-	trigger = { 
-	tag = CHG 
-	has_country_flag = empire_dislocated 
-	owns = 1594 
-	NOT = { owns = 1465 }
-	MGL = { exists = yes NOT = { vassal_of = CHG } }
-	war = no 
-	NOT = { has_country_flag = urga }
-	}
-	
-	mean_time_to_happen = { months = 48 }
-	
-	option = { 
-	name = "48904.A"
-	badboy = 12
-	set_country_flag = urga
-	casus_belli = {
-			target = MGL
-			type = conquest
-			months = 24
-		}
-		war = {
-			target = MGL
-			attacker_goal = {
-				casus_belli = conquest
-			}
-		}
-	ai_chance = { factor = 95 }
-	}
-}
-
-country_event = { 
-	id = 48905
-	title = "DZG5.T"
-	desc = "DZG5.D"
-	picture = "oirat_khanate"
-	
-	trigger = { 
-	tag = CHG 
-	has_country_flag = empire_dislocated 
-	owns = 1594 
-	NOT = { owns = 1186 }
-	owns = 1465
-	KZH = { exists = yes NOT = { vassal_of = CHG } }
-	war = no 
-	}
-	
-	mean_time_to_happen = { months = 47 }
-	
-	option = { 
-	name = "48905.A"
-	badboy = 15
-	casus_belli = {
-			target = KZH
-			type = conquest
-			months = 24
-		}
-		war = {
-			target = KZH
-			attacker_goal = {
-				casus_belli = conquest
-			}
-		}
-	ai_chance = { factor = 95 }
-	}
-}
-
-country_event = { 
-	id = 48906
-	title = "DZG6.T"
-	desc = "DZG6.D"
-	picture = "oirat_khanate"
-	
-	trigger = { 
-	tag = CHG 
-	has_country_flag = empire_dislocated 
-	owns = 1594 
-	NOT = { owns = 1469 }
-	TNT = { exists = yes NOT = { vassal_of = CHG } }
-	war = no 
-	}
-	
-	mean_time_to_happen = { months = 50 }
-	
-	option = { 
-	name = "48906.A"
-	badboy = 5
-	casus_belli = {
-			target = TNT
-			type = conquest
-			months = 24
-		}
-		war = {
-			target = TNT
-			attacker_goal = {
-				casus_belli = conquest
-			}
-		}
-	ai_chance = { factor = 95 }
-	}
-	
-	option = { 
-	name = "48906.B"
-	ai_chance = { factor = 5 }
-	}
-}
-
-country_event = { 
 	id = 48907
 	title = "DZG7.T"
 	desc = "DZG7.D"
 	picture = "central_asia"
 	
-	trigger = { 
-	tag = CHG
-	civilized = no 
-	year = 1860 
-	NOT = { has_country_flag = modernization_CHG }
-	NOT = { TAR = { exists = yes } }
-	}
-	
-	mean_time_to_happen = { months = 8 }
+	is_triggered_only = yes 
 	
 	option = { 
 	name = "48907.A"
@@ -702,16 +388,9 @@ country_event = {
 	desc = "DZG9.D"
 	picture = "minister_romanov"
 	
-	trigger = { 
-	tag = CHG 
-	has_country_flag = mad_baron
-	}
+	is_triggered_only = yes 
 	
 	fire_only_once = yes 
-	
-	mean_time_to_happen = { 
-	months = 32
-	}
 	
 	option = { 
 	name = "48909.A"
@@ -749,22 +428,6 @@ country_event = {
 		factor = 1
 		}
 	}
-	
-	option = { 
-	name = "48909.B"
-	prestige = -2
-	define_general = {
-		name = "Roman Stroganov-Romanov"
-		personality = inspiring
-		background = natural_born_leader
-		}
-	}
-	
-	option = { 
-	name = "48909.C"
-	set_country_flag = steppe_madness
-	prestige = 3 
-	}
 }
 
 country_event = { 
@@ -786,11 +449,10 @@ country_event = {
 	
 	option = { 
 	name = "48910.A"
-	war = {
+	casus_belli = {
 			target = TIB
-			attacker_goal = {
-				casus_belli = make_puppet
-			}
+			type = conquest
+			months = 24
 		}
 	}
 	
@@ -801,56 +463,12 @@ country_event = {
 }
 
 country_event = { 
-	id = 48911
-	title = "DZG11.T"
-	desc = "DZG11.D"
-	picture = "tibet"
-
-	trigger = { 
-	tag = TIB 
-	vassal_of = CHG
-	owns = 1556
-	}
-	
-	mean_time_to_happen = { 
-	days = 1
-	}
-	
-	option = { 
-	name = "48911.A"
-	any_owned = { limit = { is_core = XBI } secede_province = CHG }
-	CHG = { country_event =  48912 }
-	}
-}
-
-country_event = { 
-	id = 48912
-	title = "DZG12.T"
-	desc = "DZG12.D"
-	picture = "tibet"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "190441.A"
-	}
-}
-
-country_event = { 
 	id = 48913
 	title = "DZG13.T"
 	desc = "DZG13.D"
 	picture = "minister_romanov"
 	
-	trigger = { 
-	tag = CHG 
-	civilization_progress = 0.5
-	has_country_modifier = stroganov_romanov
-	}
-	
-	mean_time_to_happen = { 
-	months = 25 
-	}
+	is_triggered_only = yes 
 	
 	option = { 
 	name = "48913.A"
@@ -887,72 +505,15 @@ country_event = {
 }
 
 country_event = { 
-	id = 48914
-	title = "DZG14.T"
-	desc = "DZG14.D"
-	picture = "cossack_baron"
-	
-	trigger = { 
-	tag = MGL 
-	war =  no 
-	CHG = { has_country_flag = steppe_madness }
-	}
-	
-	fire_only_once = yes 
-	
-	option = { 
-	name = "48914.A"
-	war = {
-			target = CHG
-			attacker_goal = {
-				casus_belli = conquest
-			}
-		}
-	CHG = { country_event = 48915 }
-	ai_chance = { 
-	factor = 100	
-		}
-	}
-	
-	option = { 
-	name = "48914.B"
-	ai_chance = { 
-	factor = 0	
-		}
-	}
-}
-
-country_event = { 
-	id = 48915
-	title = "DZG15.T"
-	desc = "DZG15.D"
-	picture = "cossack_baron"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "97430.A"
-	}
-}
-
-country_event = { 
 	id = 48920 #Urumqi university
 	title = "DZG20.T"
 	desc = "DZG20.D"
 	picture = "Western_education"
 	
-	trigger = { 
-	tag = CHG
-	civilized = no 
-	has_country_flag = modernization_CHG
-	}
-	
-	mean_time_to_happen = { 
-	months = 150 
-	}
+	is_triggered_only = yes 
 	
 	option = { 
-	name = "48920.A"
+	name = "We can not afford this venture right now."
 	ai_chance = { 
 	factor = 20 
 		}
@@ -961,6 +522,7 @@ country_event = {
 	option = { 
 	name = "48920.B"
 	set_country_flag = script_question
+	set_country_flag = university_urumqi
 	money = -100000
 	any_pop = { literacy = 0.05 }
 	random_owned = { limit = { owner = { education_reform = yes_education_reform } } owner = { economic_reform = advanced_education_reform activate_technology = positivism  }  }
@@ -978,7 +540,7 @@ country_event = {
 	name = "48920.C"
 	set_country_flag = university_urumqi
 	set_country_flag = script_question
-	money = -1000000
+	money = -250000
 	any_pop = { literacy = 0.1  }
 	random_owned = { limit = { owner = { education_reform = yes_education_reform } } owner = { economic_reform = advanced_education_reform activate_technology = positivism  }  }
 	random_owned = { limit = { owner = { education_reform = no_education_reform } } owner = { economic_reform = yes_education_reform activate_technology = malthusian_thought }  }
@@ -988,7 +550,7 @@ country_event = {
 	factor = 40 
 	modifier = { 
 	factor = 0 
-	NOT = { money = 1000000 }
+	NOT = { money = 250000 }
 			}
 		}
 	}
@@ -1063,20 +625,12 @@ country_event = {
 	desc = "DZG23.D"
 	picture = "oirat_script"
 	
-	trigger = { 
-	tag = CHG
-	civilized = no 
-	has_country_flag = script_question
-	}
-	
-	mean_time_to_happen = { 
-	months = 22 
-	}
+	is_triggered_only = yes 
 	
 	option = { 
 	name = "48923.A"
 	clr_country_flag = script_question
-	any_pop = { literacy = 0.01 }
+	any_pop = { literacy = 0.03 }
 	ai_chance = { 
 	factor = 60 
 		}
@@ -1085,7 +639,7 @@ country_event = {
 	option = { 
 	name = "48923.B"
 	clr_country_flag = script_question
-	any_pop = { literacy = 0.01  }
+	any_pop = { literacy = 0.03  }
 	ai_chance = { 
 	factor = 25 	
 		}
@@ -1093,7 +647,7 @@ country_event = {
 	
 	option = { 
 	name = "48923.C"
-	any_pop = { literacy = 0.01  }
+	any_pop = { literacy = 0.03  }
 	clr_country_flag = script_question 
 	ai_chance = { 
 	factor = 15 	
@@ -1200,98 +754,98 @@ country_event = {
 	}
 }
 
-country_event = { 
-	id = 48935 #Operation Tsunami
-	title = "DZG35.T"
-	desc = "DZG35.D"
-	picture = "central_asia"
-	
-	trigger = { 
-	tag = JAP 
-	neighbour = CHG
-	CHG = { civilized = no }
-	NOT = { CHG = { has_country_flag = kawaguchi } }
-	NOT = { 1186 = { owned_by = CHG } 1465 = { owned_by = CHG }}
-	NOT = { relation = { who = CHG value = 100 } } 
-	}
-	
-	fire_only_once = yes 
-	
-	option = { 
-	name = "48935.A" 
-	CHG = { country_event = 48936 }
-	war = {
-			target = CHG
-			attacker_goal = {
-				casus_belli = make_puppet
-			}
-		}
-	ai_chance = { factor = 80 }
-	}
-	
-	option = { 
-	name = "48935.B"
-	prestige = 2 
-	ai_chance = { 
-	factor = 20 
-	modifier = { 
-	factor = 3 
-	alliance_with = CHG 
-			}
-	modifier = { 
-	factor = 2 
-	is_greater_power = no 
-			}
-		}
-	}
-}
-
-country_event = { 
-	id = 48936 #Operation Tsunami
-	title = "DZG36.T"
-	desc = "DZG36.D"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "48915.A"
-	}
-}
-
-country_event = { 
-	id = 48937 
-	title = "DZG37.T"
-	desc = "DZG37.D"
-	
-	trigger = { 
-	tag = CHG 
-	vassal_of = JAP 
-	OR = { owns = 1469 owns = 1075 }
-	}
-	
-	mean_time_to_happen = { 
-	days = 1 
-	}
-	
-	option = { 
-	name = "48937.A"
-	any_owned = { limit = { OR = { region = MON_1075 region = RUS_1469 } } secede_province = JAP }
-	JAP = { country_event = 48938 }
-	}
-}
-
-country_event = { 
-	id = 48938 
-	title = "DZG38.T"
-	desc = "DZG38.D"
-	picture = "central_asia"
-	
-	is_triggered_only = yes 
-	
-	option = { 
-	name = "97087.A"
-	}
-}
+#country_event = { 
+#	id = 48935 #Operation Tsunami
+#	title = "DZG35.T"
+#	desc = "DZG35.D"
+#	picture = "central_asia"
+#	
+#	trigger = { 
+#	tag = JAP 
+#	neighbour = CHG
+#	CHG = { civilized = no }
+#	NOT = { CHG = { has_country_flag = kawaguchi } }
+#	NOT = { 1186 = { owned_by = CHG } 1465 = { owned_by = CHG }}
+#	NOT = { relation = { who = CHG value = 100 } } 
+#	}
+#	
+#	fire_only_once = yes 
+#	
+#	option = { 
+#	name = "48935.A" 
+#	CHG = { country_event = 48936 }
+#	war = {
+#			target = CHG
+#			attacker_goal = {
+#				casus_belli = make_puppet
+#			}
+#		}
+#	ai_chance = { factor = 80 }
+#	}
+#	
+#	option = { 
+#	name = "48935.B"
+#	prestige = 2 
+#	ai_chance = { 
+#	factor = 20 
+#	modifier = { 
+#	factor = 3 
+#	alliance_with = CHG 
+#			}
+#	modifier = { 
+#	factor = 2 
+#	is_greater_power = no 
+#			}
+#		}
+#	}
+#}
+#
+#country_event = { 
+#	id = 48936 #Operation Tsunami
+#	title = "DZG36.T"
+#	desc = "DZG36.D"
+#	
+#	is_triggered_only = yes 
+#	
+#	option = { 
+#	name = "48915.A"
+#	}
+#}
+#
+#country_event = { 
+#	id = 48937 
+#	title = "DZG37.T"
+#	desc = "DZG37.D"
+#	
+#	trigger = { 
+#	tag = CHG 
+#	vassal_of = JAP 
+#	OR = { owns = 1469 owns = 1075 }
+#	}
+#	
+#	mean_time_to_happen = { 
+#	days = 1 
+#	}
+#	
+#	option = { 
+#	name = "48937.A"
+#	any_owned = { limit = { OR = { region = MON_1075 region = RUS_1469 } } secede_province = JAP }
+#	JAP = { country_event = 48938 }
+#	}
+#}
+#
+#country_event = { 
+#	id = 48938 
+#	title = "DZG38.T"
+#	desc = "DZG38.D"
+#	picture = "central_asia"
+#	
+#	is_triggered_only = yes 
+#	
+#	option = { 
+#	name = "97087.A"
+#	}
+#}
 
 country_event = { 
 	id = 48940
@@ -1347,7 +901,7 @@ country_event = {
 	option = { 
 	name = "48942.A"
 	any_pop = { 
-	literacy = 0.01 
+	literacy = 0.02
 	ideology = {
 		value = liberal
 		factor = 0.10

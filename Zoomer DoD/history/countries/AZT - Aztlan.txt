@@ -12,6 +12,7 @@ civilized = yes
 
 set_country_flag = new_world_nation
 set_country_flag = catholic_country
+set_country_flag = peace_of_san_salvador
 
 # Political reforms
 slavery = no_slavery

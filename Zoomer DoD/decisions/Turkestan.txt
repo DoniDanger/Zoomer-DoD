@@ -12,8 +12,9 @@ political_decisions = {
 			}
 			NOT = {
 				exists = TKS
-				has_global_flag = turkestan_created
+				has_global_flag = turania_created
 			}
+			civilized = yes
 		}
 
 		allow = {
@@ -71,7 +72,7 @@ political_decisions = {
 		}
 
 		effect = {
-			set_global_flag = turkestan_created
+			set_global_flag = turania_created
 			prestige = 20
 			change_tag = TKS
 			add_accepted_culture = turkmen
@@ -80,6 +81,7 @@ political_decisions = {
 			add_accepted_culture = kirgiz
 			add_accepted_culture = tajik
 			add_accepted_culture = uighur			
+			
 			RUS_1182 = { add_core = TKS } #Uralsk region
 			RUS_1184 = { add_core = TKS } #Akmolisnk region
 			RUS_1185 = { add_core = TKS } #Semireche - Zhetysu
@@ -100,9 +102,487 @@ political_decisions = {
 					}
 					in_sphere = THIS
 					NOT = { tag = THIS }
+					war = no
 				}
 				annex_to = THIS
 			}		
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	reunite_dzungar_khanate_buk = {
+		picture = unite_turkestan
+		potential = {
+			tag = BUK
+			NOT = {
+				exists = CHG
+				has_global_flag = dzungars_reunited
+				has_global_flag = turania_created
+			}
+		}
+
+		allow = {
+			war = no
+			MGL = { exists = no }
+			MGL = { all_core = { owned_by = THIS }}
+			1600 = { #Urumqi
+				OR = {
+					owned_by = THIS
+					owner = {
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+								}
+							}
+						}
+					}
+			1465 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+								}
+							}
+						}
+					}
+			1186 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+								}
+							}
+						}
+					}
+			1594 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						OR = {
+							in_sphere = THIS
+							vassal_of = THIS
+								}
+							}
+						}
+					}
+		}
+
+		effect = {
+			set_global_flag = dzungars_reunited
+			set_global_flag = turania_created
+			set_country_flag = uzb_form_dzungars
+			prestige = 15
+			change_tag = TKS
+			add_accepted_culture = oirat 
+			add_accepted_culture = mongol 
+			add_accepted_culture = turkmen
+			add_accepted_culture = uzbek
+			add_accepted_culture = kazak
+			add_accepted_culture = kirgiz
+			add_accepted_culture = tajik
+			add_accepted_culture = uighur		
+			CHG = { all_core = { add_core = THIS } }
+			RUS_1182 = { add_core = TKS } #Uralsk region
+			RUS_1184 = { add_core = TKS } #Akmolisnk region
+			RUS_1185 = { add_core = TKS } #Semireche - Zhetysu
+			RUS_1196 = { add_core = TKS } #Turkmenia
+			KHI_1191 = { add_core = TKS } #Uzbekia
+			KOK_1190 = { add_core = TKS } #Alay-Kirghizia
+			any_owned = { limit = { is_core = BDK } add_core = TKS remove_core = BDK}
+
+			any_country = {
+				limit = {
+					NOT = { tag = BDK }
+					OR = {
+						primary_culture = turkmen
+						primary_culture = uzbek
+						primary_culture = kirgiz
+						primary_culture = tajik
+						primary_culture = kazak
+					}
+					in_sphere = THIS
+					NOT = { tag = THIS }
+					war = no
+				}
+				annex_to = THIS
+			}		
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	reunite_dzungar_khanate_mgl = {
+		picture = unite_turkestan
+		potential = {
+			tag = MGL
+			NOT = {
+				exists = CHG
+				has_global_flag = dzungars_reunited
+			}
+		}
+
+		allow = {
+			war = no
+			BUK = { exists = no }
+			BUK = { all_core = { owned_by = THIS }}
+		}
+
+		effect = {
+			set_global_flag = dzungars_reunited
+			set_country_flag = yuan_expansion_route
+			prestige = 15
+			change_tag = CHG
+			add_accepted_culture = oirat 
+			add_accepted_culture = mongol 
+			add_accepted_culture = kazak
+			add_accepted_culture = uighur  
+			add_accepted_culture = uzbek 
+			add_accepted_culture = kirgiz	
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	employ_foreign_minister = {
+		picture = unite_turkestan
+		potential = {
+			OR = {
+				tag = CHG
+				tag = TKS
+			}
+			NOT = { has_country_flag = employed_foreign_minister }
+		}
+
+		allow = {
+			war = no
+			money = 45000
+			OR = {
+				year = 1855
+				ideological_thought = 1
+				civilization_progress = 0.6
+			}
+		}
+
+		effect = {
+			set_country_flag = employed_foreign_minister
+			money = -45000
+			country_event = 48909
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	adopt_foreign_army_reforms = {
+		picture = unite_turkestan
+		potential = {
+			OR = {
+				tag = CHG
+				tag = TKS
+			}
+			NOT = { has_country_flag = adopt_foreign_army_reforms }
+		}
+
+		allow = {
+			war = no
+			money = 100000
+			OR = {
+				year = 1860
+				state_n_government = 1
+				civilization_progress = 0.75
+			}
+			has_country_flag = employed_foreign_minister
+		}
+
+		effect = {
+			set_country_flag = adopted_foreign_army_reforms
+			money = -100000
+			country_event = 48913
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	invite_foreign_scholars = {
+		picture = unite_turkestan
+		potential = {
+			OR = {
+				tag = CHG
+				tag = TKS
+			}
+			NOT = { has_country_flag = invited_foreign_scholars }
+		}
+
+		allow = {
+			war = no
+			money = 100000
+			OR = {
+				year = 1850
+				state_n_government = 1
+				civilization_progress = 0.55
+			}
+		}
+
+		effect = {
+			set_country_flag = invited_foreign_scholars
+			prestige = 5
+			money = -100000
+			country_event = 48907
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	establish_urumqui_university = {
+		picture = unite_turkestan
+		potential = {
+			OR = {
+				tag = CHG
+				tag = TKS
+			}
+			NOT = { has_country_flag = university_urumqi }
+		}
+
+		allow = {
+			war = no
+			has_country_flag = invited_foreign_scholars
+			owns = 1600
+			OR = {
+				money = 105000
+				money = 305000
+			}
+		}
+
+		effect = {
+			country_event = 48920
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	formalize_writing_system = {
+		picture = unite_turkestan
+		potential = {
+			OR = {
+				tag = CHG
+				tag = TKS
+			}
+			NOT = { has_country_flag = formalize_writing_system }
+			has_country_flag = university_urumqi
+		}
+
+		allow = {
+			war = no
+			OR = {
+				year = 1860
+				nationalism_n_imperialism = 1
+				civilization_progress = 0.65
+			}
+			money = -150000
+		}
+
+		effect = {
+			set_country_flag = formalize_writing_system
+			prestige = 5
+			money = -150000
+			country_event = 48923
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	reestablish_yuan_dynasty_chg = {
+		picture = unite_turkestan
+		potential = {
+			tag = CHG
+			NOT = { has_country_flag = reestablished_yuan_dynasty }
+			has_country_flag = yuan_expansion_route
+		}
+
+		allow = {
+			war = no
+			owns = 1612
+			owns = 1613
+			owns = 1533
+			owns = 1572
+			owns = 1532
+		}
+
+		effect = {
+			set_country_flag = reestablished_yuan_dynasty
+			prestige = 15
+			government = absolute_monarchy
+			CHI_1618 = { add_core = THIS }
+			CHI_1 = { add_core = THIS }
+			CHI_5 = { add_core = THIS }
+			1572 = { add_core = THIS }
+			1576 = { add_core = THIS }
+			1481 = { add_core = THIS }
+			1480 = { add_core = THIS }
+			1479 = { add_core = THIS }
+			capital = 1612
+			add_accepted_culture = beifaren
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	reestablish_yuan_dynasty_tks = {
+		picture = unite_turkestan
+		potential = {
+			tag = TKS
+			NOT = { has_country_flag = reestablished_yuan_dynasty }
+			civilized = yes
+		}
+
+		allow = {
+			war = no
+			owns = 1612
+			owns = 1613
+			owns = 1533
+			owns = 1572
+			owns = 1532
+			OR = {
+				AND = {
+					nationalism_n_imperialism = 1 
+					owns = 1555
+					owns = 1082
+					owns = 1614
+					owns = 1563
+				} 
+				revolution_n_counterrevolution = 1
+			}
+		}
+
+		effect = {
+			set_country_flag = reestablished_yuan_dynasty
+			prestige = 15
+			CHI_1618 = { add_core = THIS }
+			CHI_1 = { add_core = THIS }
+			CHI_5 = { add_core = THIS }
+			1572 = { add_core = THIS }
+			1576 = { add_core = THIS }
+			1481 = { add_core = THIS }
+			1480 = { add_core = THIS }
+			1479 = { add_core = THIS }
+			add_accepted_culture = beifaren
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	expanding_manchuria_CHG = { 
+		potential = { 
+			tag = CHG 
+			NOT = { has_country_flag = manchuria_CHG }
+			has_country_flag = yuan_expansion_route
+		}
+		
+		allow = { 
+			OR = {
+				state_n_government = 1 
+				owns = 1613
+				owns = 1533
+			}
+			all_core = { owned_by = THIS }
+		}
+	
+		effect = { 
+			CHI_1553 = { add_core = CHG }
+			CHI_5 = { add_core = CHG }
+			add_accepted_culture = manchu
+			set_country_flag = manchuria_CHG 
+		}
+	}
+	
+	expand_tatar_lands_tks = {
+		picture = unite_turkestan
+		potential = {
+			tag = TKS
+			NOT = { has_country_flag = expanded_tatar_lands_tks }
+		}
+
+		allow = {
+			war = no
+			owns = 1042
+			owns = 1182
+			owns = 1066
+			owns = 1469
+			owns = 1059
+		}
+
+		effect = {
+			set_country_flag = expanded_tatar_lands_tks
+			prestige = 15
+			add_accepted_culture = tatar
+			RUS_1060 = { add_core = THIS }
+			RUS_1064 = { add_core = THIS }
+			RUS_2685 = { add_core = THIS }
+			RUS_1020 = { add_core = THIS }
+			RUS_1034 = { add_core = THIS }
+			RUS_1041 = { add_core = THIS } 
+			1039 = { add_core = THIS }
+			1026 = { add_core = THIS }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	expand_tatar_lands_chg = {
+		picture = unite_turkestan
+		potential = {
+			tag = CHG
+			NOT = { has_country_flag = expanded_tatar_lands_chg }
+			civilized = yes
+		}
+
+		allow = {
+			war = no
+			owns = 1042
+			owns = 1182
+			owns = 1066
+			owns = 1469
+			owns = 1059
+			nationalism_n_imperialism = 1
+		}
+
+		effect = {
+			set_country_flag = expanded_tatar_lands_chg
+			prestige = 15
+			add_accepted_culture = tatar
+			RUS_1060 = { add_core = THIS }
+			RUS_1064 = { add_core = THIS }
+			RUS_2685 = { add_core = THIS }
+			RUS_1020 = { add_core = THIS }
+			RUS_1034 = { add_core = THIS }
+			1026 = { add_core = THIS }
+		}
+
+		ai_will_do = { factor = 1 }
+	}
+	
+	the_last_kurultai = {
+		picture = unite_turkestan
+		potential = {
+			OR = {
+				tag = CHG
+				tag = TKS
+			}
+			government = feudal_monarchy
+		}
+
+		allow = {
+			war = no
+			civilized = yes
+		}
+
+		effect = {
+			set_country_flag = expanded_tatar_lands_chg
+			government = absolute_monarchy
 		}
 
 		ai_will_do = { factor = 1 }

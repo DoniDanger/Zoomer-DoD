@@ -100,13 +100,13 @@
 	craftsmen = {
 		culture = dutch
 		religion = protestant
-		size = 53000
+		size = 25600
 	}
 
 	craftsmen = {
 		culture = burgundian
 		religion = protestant
-		size = 9325
+		size = 5325
 	}
 
 	soldiers = {
@@ -279,7 +279,7 @@
 	craftsmen = {
 		culture = dutch
 		religion = protestant
-		size = 5000
+		size = 3250
 	}
   
   capitalists = {
@@ -345,7 +345,7 @@
 	craftsmen = {
 		culture = dutch
 		religion = protestant
-		size = 22000
+		size = 10940
 	}
 	
 	artisans = {
@@ -533,7 +533,7 @@
 	craftsmen = {
 		culture = dutch
 		religion = protestant
-		size = 4500
+		size = 2500
 	}
 	
 	artisans = {

@@ -185,38 +185,6 @@ country_event = {
 		any_pop = { 
 		militancy = -3 
 		}
-		any_country = {
-				any_owned = {
-					limit = {
-					is_core = ENL
-					owned_by = THIS				
-						}
-					remove_core = ENL
-				}
-			}
-		any_country = {
-				any_owned = {
-					limit = {
-					is_core = FRA 
-					owned_by = THIS
-						}
-					remove_core = FRA
-				}
-			}
-		any_owned = {
-					limit = {
-					is_core = FRA 
-					owned_by = THIS	
-						}
-					remove_core = FRA
-			}
-		any_owned = {
-					limit = {
-					is_core = ENL 
-					owned_by = THIS	
-					}
-				remove_core = ENL
-			}	
 	}
 }
 	
@@ -606,124 +574,124 @@ country_event = {  # Give France cores if DUA has suceeded and someone else owns
 	
 }
 
-country_event = {  # Remove France cores if DUA has suceeded and owns it
-	id = 650299
-	title = "EVTNAME650299"
-	desc = "EVTDESC650299"
-	allow_multiple_instances  = no
-	
-	trigger = {
-		tag = DUA
-		OR = {
-			has_global_flag = french_int
-			DUA = { has_country_flag = Anglois_accepted }
-		}
-		any_owned_province = {
-			OR = {
-				province_id = 399
-				province_id = 400
-				province_id = 401
-				province_id = 402
-				province_id = 403
-				province_id = 404
-				province_id = 406
-				province_id = 407
-				province_id = 408
-				province_id = 415
-				province_id = 416
-				province_id = 417
-				province_id = 418
-				province_id = 420
-				province_id = 421
-				province_id = 422
-				province_id = 423
-				province_id = 424
-				province_id = 425
-				province_id = 426
-				province_id = 427
-				province_id = 428
-				province_id = 429
-				province_id = 430
-				province_id = 431
-				province_id = 434
-				province_id = 435
-				province_id = 436
-				province_id = 437
-				province_id = 438
-				province_id = 439
-				province_id = 440
-				province_id = 441
-				province_id = 442
-				province_id = 443
-				province_id = 444
-				province_id = 445
-				province_id = 446
-				province_id = 2570			
-			}
-			owned_by = THIS
-			is_core = FRA
-		}	
-	}
-
-	mean_time_to_happen = { days = 3 }
-	
-	option = { 
-	name = "EVTOPTA650297"
-	any_owned = {
-		limit = {
-			OR = {
-				province_id = 399
-				province_id = 400
-				province_id = 401
-				province_id = 402
-				province_id = 403
-				province_id = 404
-				province_id = 406
-				province_id = 407
-				province_id = 408
-				province_id = 415
-				province_id = 416
-				province_id = 417
-				province_id = 418
-				province_id = 420
-				province_id = 421
-				province_id = 422
-				province_id = 423
-				province_id = 424
-				province_id = 425
-				province_id = 426
-				province_id = 427
-				province_id = 428
-				province_id = 429
-				province_id = 430
-				province_id = 431
-				province_id = 434
-				province_id = 435
-				province_id = 436
-				province_id = 437
-				province_id = 438
-				province_id = 439
-				province_id = 440
-				province_id = 441
-				province_id = 442
-				province_id = 443
-				province_id = 444
-				province_id = 445
-				province_id = 446
-				province_id = 2570		
-			}
-			owned_by = THIS
-			is_core = FRA		
-		}
-	
-	remove_core = FRA
-	
-	}
-
-		
-	}
-	
-}
+#country_event = {  # Remove France cores if DUA has suceeded and owns it
+#	id = 650299
+#	title = "EVTNAME650299"
+#	desc = "EVTDESC650299"
+#	allow_multiple_instances  = no
+#	
+#	trigger = {
+#		tag = DUA
+#		OR = {
+#			has_global_flag = french_int
+#			DUA = { has_country_flag = Anglois_accepted }
+#		}
+#		any_owned_province = {
+#			OR = {
+#				province_id = 399
+#				province_id = 400
+#				province_id = 401
+#				province_id = 402
+#				province_id = 403
+#				province_id = 404
+#				province_id = 406
+#				province_id = 407
+#				province_id = 408
+#				province_id = 415
+#				province_id = 416
+#				province_id = 417
+#				province_id = 418
+#				province_id = 420
+#				province_id = 421
+#				province_id = 422
+#				province_id = 423
+#				province_id = 424
+#				province_id = 425
+#				province_id = 426
+#				province_id = 427
+#				province_id = 428
+#				province_id = 429
+#				province_id = 430
+#				province_id = 431
+#				province_id = 434
+#				province_id = 435
+#				province_id = 436
+#				province_id = 437
+#				province_id = 438
+#				province_id = 439
+#				province_id = 440
+#				province_id = 441
+#				province_id = 442
+#				province_id = 443
+#				province_id = 444
+#				province_id = 445
+#				province_id = 446
+#				province_id = 2570			
+#			}
+#			owned_by = THIS
+#			is_core = FRA
+#		}	
+#	}
+#
+#	mean_time_to_happen = { days = 3 }
+#	
+#	option = { 
+#	name = "EVTOPTA650297"
+#	any_owned = {
+#		limit = {
+#			OR = {
+#				province_id = 399
+#				province_id = 400
+#				province_id = 401
+#				province_id = 402
+#				province_id = 403
+#				province_id = 404
+#				province_id = 406
+#				province_id = 407
+#				province_id = 408
+#				province_id = 415
+#				province_id = 416
+#				province_id = 417
+#				province_id = 418
+#				province_id = 420
+#				province_id = 421
+#				province_id = 422
+#				province_id = 423
+#				province_id = 424
+#				province_id = 425
+#				province_id = 426
+#				province_id = 427
+#				province_id = 428
+#				province_id = 429
+#				province_id = 430
+#				province_id = 431
+#				province_id = 434
+#				province_id = 435
+#				province_id = 436
+#				province_id = 437
+#				province_id = 438
+#				province_id = 439
+#				province_id = 440
+#				province_id = 441
+#				province_id = 442
+#				province_id = 443
+#				province_id = 444
+#				province_id = 445
+#				province_id = 446
+#				province_id = 2570		
+#			}
+#			owned_by = THIS
+#			is_core = FRA		
+#		}
+#	
+#	remove_core = FRA
+#	
+#	}
+#
+#		
+#	}
+#	
+#}
 
 #### DM Revolts Events
 
@@ -1001,7 +969,7 @@ country_event = { ##The Total Revolution
 				exists = yes
 				tag = ENL
 			}
-			DUA = { country_event = 650209 }
+			DUA = { country_event = 650309 }
 		}
 		any_country = {
 			limit = {
@@ -1124,7 +1092,7 @@ country_event = { ##The Total Revolution
 				exists = yes
 				tag = FRA
 			}
-			DUA = { country_event = 650305 }
+			DUA = { country_event = 650310 }
 		}
 		any_country = {
 			limit = {
@@ -1162,7 +1130,7 @@ country_event = { ######War with England
         war = {
             target = ENL
             attacker_goal = { casus_belli = annex_core_country }
-            defender_goal = { casus_belli = annex_core_country }
+            #defender_goal = { casus_belli = acquire_all_cores }
         }
     }
 }
@@ -1229,7 +1197,7 @@ country_event = { ######War with France
         war = {
             target = FRA
             attacker_goal = { casus_belli = annex_core_country }
-            defender_goal = { casus_belli = annex_core_country }
+            #defender_goal = { casus_belli = acquire_all_cores }
         }
     }
 }
@@ -1576,7 +1544,7 @@ country_event = { ## Midi Revolution
 
 country_event = { ## French Revolution
     id = 650307
-    title = "DUA22.T"
+    title = "The French Revolution"
     desc = "DUA22.D"
     news = yes
     news_desc_long = "650222_NEWS_LONG"
@@ -1674,6 +1642,101 @@ country_event = { ## French Revolution
 		}
     }
 }
+
+country_event = {
+    id = 650308
+    title = "DUA5.T"
+    desc = "DUA5.D"
+    picture = "Henri"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650279.A"
+        set_global_flag = anglois_nationalist_victory
+        any_country = {
+				any_owned = {
+					limit = {
+					is_core = ENL
+					owned_by = THIS				
+						}
+					remove_core = ENL
+				}
+			}
+		any_country = {
+				any_owned = {
+					limit = {
+					is_core = FRA 
+					owned_by = THIS
+						}
+					remove_core = FRA
+				}
+			}
+		any_owned = {
+					limit = {
+					is_core = FRA 
+					owned_by = THIS	
+						}
+					remove_core = FRA
+			}
+		any_owned = {
+					limit = {
+					is_core = ENL 
+					owned_by = THIS	
+					}
+				remove_core = ENL
+			}	
+    }
+}
+
+country_event = { ######War with England - Player
+
+    id = 650309
+    title = "DUA9.T"
+    desc = "DUA9.D"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650209.A"
+        clr_global_flag = wait_DUA
+        diplomatic_influence = {
+            who = ENL
+            value = -300
+        }
+        war = {
+            target = ENL
+            attacker_goal = { casus_belli = annex_core_country }
+            defender_goal = { casus_belli = annex_core_country }
+        }
+    }
+}
+
+country_event = { ######War with France - Player
+
+    id = 650310
+    title = "French Revolution"
+    desc = "The French have revolted."
+
+    is_triggered_only = yes
+
+    option = {
+        name = "650209.A"
+        clr_global_flag = wait_DUA
+        diplomatic_influence = {
+            who = FRA
+            value = -300
+        }
+        war = {
+            target = FRA
+            attacker_goal = { casus_belli = annex_core_country }
+            defender_goal = { casus_belli = annex_core_country }
+        }
+    }
+}
+
+
+
 
 ## Old DM Flavor Events
 

@@ -56,7 +56,7 @@
 	craftsmen = {
 		culture = scandinavian
 		religion = protestant
-		size = 14000
+		size = 8600
 	}
 	
 	artisans = {
@@ -359,7 +359,7 @@
 	craftsmen = {
 		culture = scandinavian
 		religion = protestant
-		size = 56000
+		size = 34500
 	}
 
 	soldiers = {

@@ -299,7 +299,7 @@ country_event = {
 			inherit = THIS
 		}
 		ai_chance = {
-			factor = 95
+			factor = 100
 		}
 	}
 
@@ -315,7 +315,7 @@ country_event = {
 			consciousness = 2
 		}
 		ai_chance = {
-			factor = 5
+			factor = 0
 		}
 	}
 }

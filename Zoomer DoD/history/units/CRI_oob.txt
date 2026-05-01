@@ -11,37 +11,37 @@ army = {
 	location = 967
 	regiment = {
 		name= "1.Tatar"
-		type = hussar
+		type = cavalry
 		home = 964
 	}
 
 	regiment = {
 		name= "2.Tatar"
-		type = hussar
+		type = cavalry
 		home = 964
 	}
 
 	regiment = {
 		name= "3.Tatar"
-		type = hussar
+		type = cavalry
 		home = 964
 	}
 
 	regiment = {
 		name= "4.Tatar"
-		type = hussar
+		type = cavalry
 		home = 964
 	}
 
 	regiment = {
 		name= "5.Tatar"
-		type = hussar
+		type = cavalry
 		home = 965
 	}
 
 	regiment = {
 		name= "6.Tatar"
-		type = hussar
+		type = cavalry
 		home = 965
 	}
 
@@ -103,31 +103,31 @@ army = {
 	location = 1047
 	regiment = {
 		name= "1.Tatar"
-		type = hussar
+		type = cavalry
 		home = 965
 	}
 
 	regiment = {
 		name= "2.Tatar"
-		type = hussar
+		type = cavalry
 		home = 977
 	}
 
 	regiment = {
 		name= "3.Tatar"
-		type = hussar
+		type = cavalry
 		home = 977
 	}
 
 	regiment = {
 		name= "4.Tatar"
-		type = hussar
+		type = cavalry
 		home = 977
 	}
 
 	regiment = {
 		name= "5.Tatar"
-		type = hussar
+		type = cavalry
 		home = 977
 	}
 
@@ -136,4 +136,9 @@ army = {
 		type = hussar
 		home = 979
 	}
+}
+
+DON = {
+   value = -150
+   truce_until = "1836.2.1"
 }

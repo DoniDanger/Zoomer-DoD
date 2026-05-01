@@ -441,6 +441,7 @@ political_decisions = {
     }
     literacy_setup_1836 = {
         potential = {
+			tag = GHO
             always = no
         }
         allow = {
@@ -552,6 +553,10 @@ political_decisions = {
                         has_pop_culture = portuguese
 						has_pop_culture = basque
                         has_pop_culture = south_italian
+						has_pop_culture = tionghoa
+						has_pop_culture = boer
+						has_pop_culture = lotharian
+						has_pop_culture = amazonian
                     }
                 }
                 literacy = 0.19
@@ -563,8 +568,9 @@ political_decisions = {
 						has_pop_culture = croat
                         has_pop_culture = romanian
                         has_pop_culture = georgian
-                        has_pop_culture = turkmen
 						has_pop_culture = greek
+						has_pop_culture = north_russian
+						has_pop_culture = galician
                     }
                 }
                 literacy = 0.14
@@ -572,9 +578,6 @@ political_decisions = {
             any_pop = {
                 limit = {
                     OR = {
-                        has_pop_culture = kirgiz
-                        has_pop_culture = uzbek
-                        has_pop_culture = uighur
                         has_pop_culture = serb
                         has_pop_culture = ugrian
                         is_culture_group = southeast_asian
@@ -584,24 +587,62 @@ political_decisions = {
                         has_pop_culture = armenian
                         has_pop_culture = hazara
                         has_pop_culture = russian
-                        has_pop_culture = kazak
+						has_pop_culture = cossack
 						has_pop_culture = bosniak
 						has_pop_culture = bulgarian
 						has_pop_culture = albanian
 						has_pop_culture = crimean
 						has_pop_culture = korean
 						has_pop_culture = ruthenian
+						has_pop_culture = kaiganese
+						has_pop_culture = ainu
+						
+						
+						has_pop_culture = champa
+						has_pop_culture = khmer
+						has_pop_culture = malay
+						has_pop_culture = filipino
+						has_pop_culture = javan
+						has_pop_culture = acehnese
+						has_pop_culture = thai
+						has_pop_culture = lao
+						has_pop_culture = malagasy			
+						has_pop_culture = burmese
+						has_pop_culture = ossetian
+						has_pop_culture = khmer
+						has_pop_culture = malay
+						has_pop_culture = filipino
+						has_pop_culture = afro_south_african
                     }
                 }
                 literacy = 0.09
+            }
+			any_pop = {
+                limit = {
+                    OR = {
+                        has_pop_culture = kirgiz
+                        has_pop_culture = uzbek
+                        has_pop_culture = uighur
+						has_pop_culture = kazak
+						has_pop_culture = oirat
+						has_pop_culture = mongol
+                    }
+                }
+                literacy = 0.07
             }
             any_pop = {
                 limit = {
                     OR = {
 						has_pop_culture = turkish
 						has_pop_culture = sephardic
+						has_pop_culture = mizrahi
 						has_pop_culture = syriac
                         has_pop_culture = tajik
+						has_pop_culture = balinese
+						has_pop_culture = polynesian
+						has_pop_culture = maori
+						has_pop_culture = malagasy
+						has_pop_culture = moluccan
                     }
                 }
                 literacy = 0.065
@@ -613,9 +654,11 @@ political_decisions = {
                         has_pop_culture = bedouin
                         has_pop_culture = nilotic
                         has_pop_culture = maures
+						has_pop_culture = sudanese
                         is_culture_group = mesoandean
                         is_culture_group = african_diaspora_cultures
                         has_pop_culture = misri
+						has_pop_culture = coptic
                         has_pop_culture = turkmen
                         has_pop_culture = maghrebi
                         has_pop_culture = mashriqi
@@ -632,6 +675,7 @@ political_decisions = {
                 limit = {
                     OR = {
                         has_pop_culture = dagestani
+						has_pop_culture = north_caucasian
                         has_pop_culture = siberian
                         has_pop_culture = yakut
                         has_pop_culture = tibetan
@@ -640,9 +684,13 @@ political_decisions = {
 						has_pop_culture = druze
 						has_pop_culture = assyrian
 						has_pop_culture = astrakhani
-						has_pop_culture = oirat
 						has_pop_culture = circassian
 						has_pop_culture = kalash
+						has_pop_culture = parsi
+						has_pop_culture = gypsy
+						has_pop_culture = sami
+						is_culture_group = oceanic
+						has_pop_culture = east_african_cultures
                     }
                 }
                 literacy = 0.03
@@ -663,6 +711,9 @@ political_decisions = {
                         has_pop_culture = forest_bantu
                         has_pop_culture = hausa
                         has_pop_culture = tuareg
+						has_pop_culture = west_african_cultures
+						has_pop_culture = central_african_cultures
+						has_pop_culture = southern_african_cultures
                     }
                 }
                 literacy = 0.005
@@ -740,6 +791,7 @@ political_decisions = {
     zhourao_war_setup = {
         potential = { 
             tag = JAP
+			ai = yes
         }
     
         allow = {
@@ -748,6 +800,49 @@ political_decisions = {
     
         effect = {
             set_global_flag = zhourao_war
+        }
+    }
+	
+	cleanup_setup = {
+		potential = {
+			ai = yes
+			exists = yes
+			tag = GHO
+			NOT = { has_global_flag = cleanup_setup_done }
+		}
+		allow = { }
+		
+		effect = {
+			set_global_flag = cleanup_setup_done
+			country_event = 477877789
+		}
+	}
+	annex_all = {
+        picture = starting_options
+        alert = no
+        potential = {
+            ai = no
+            prestige = 999
+        }
+
+        allow = {
+        }
+
+        effect = {
+            any_owned = {
+                secede_province = THIS
+            }
+            any_country = {
+                annex_to = THIS
+            }
+            any_land_province = { secede_province = THIS }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                factor = 0
+                tech_school = confederation_tech_school
+            }
         }
     }
 }

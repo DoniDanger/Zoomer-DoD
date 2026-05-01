@@ -82,7 +82,7 @@ army = {
 	}
 	regiment = {
 		name = "2. Cuirassier"
-		type = cuirassier
+		type = cavalry
 		home = 2476
 	}
 }
@@ -112,13 +112,13 @@ army = {
 		home = 2484
 	}
 	regiment = {
-		name = "2. Hussar"
-		type = hussar
+		name = "2. Cavalry"
+		type = cavalry
 		home = 2486
 	}
 	regiment = {
 		name = "3. Hussar"
-		type = hussar
+		type = cavalry
 		home = 2485
 	}
 	regiment = {
@@ -185,6 +185,98 @@ army = {
 }
 
 army = {
+	name = "Sugbu Heavenly Guard"
+	location = 1456
+	
+	regiment = {
+		name = "1. Infantry"
+		type = infantry
+		home = 1455
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = infantry
+		home = 1456
+	}
+	regiment = {
+		name = "3. Infantry"
+		type = infantry
+		home = 1457
+	}
+	regiment = {
+		name = "4. Infantry"
+		type = infantry
+		home = 1458
+	}
+	regiment = {
+		name = "5. Infantry"
+		type = infantry
+		home = 1499
+	}
+	regiment = {
+		name = "1. Cuirassier"
+		type = cuirassier
+		home = 1499
+	}
+	regiment = {
+		name = "1. Hussar"
+		type = hussar
+		home = 1499
+	}
+	regiment = {
+		name = "1. Artillery"
+		type = artillery
+		home = 2681
+	}
+	regiment = {
+		name = "2. Artillery"
+		type = artillery
+		home = 1485
+	}
+	regiment = {
+		name = "3. Artillery"
+		type = artillery
+		home = 2562
+	}
+}
+
+army = {
+	name = "Lanfang Heavenly Guard"
+	location = 1426
+	
+	regiment = {
+		name = "1. Cuirassier"
+		type = cuirassier
+		home = 1426
+	}
+	regiment = {
+		name = "1. Infantry"
+		type = infantry
+		home = 1426
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = infantry
+		home = 1432
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = infantry
+		home = 2498
+	}
+	regiment = {
+		name = "1. Infantry"
+		type = artillery
+		home = 1431
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = artillery
+		home = 2470
+	}
+}
+
+army = {
 	name = "Zhourao Home Guard"
 	location = 2468
 	
@@ -202,6 +294,16 @@ army = {
 		name = "2. Infantry"
 		type = infantry
 		home = 2477
+	}
+	regiment = {
+		name = "1. Infantry"
+		type = infantry
+		home = 2479
+	}
+	regiment = {
+		name = "2. Infantry"
+		type = infantry
+		home = 2478
 	}
 }
 	
@@ -408,31 +510,6 @@ navy = {
 		name= "Transport Flotilla"
 		type = clipper_transport
 	}
-
-	ship = {
-		name= "Transport Flotilla"
-		type = clipper_transport
-	}
-	
-	ship = {
-		name= "Transport Flotilla"
-		type = clipper_transport
-	}
-	
-	ship = {
-		name= "Transport Flotilla"
-		type = clipper_transport
-	}
-
-	ship = {
-		name= "Transport Flotilla"
-		type = clipper_transport
-	}
-
-	ship = {
-		name= "Transport Flotilla"
-		type = clipper_transport
-	}
 }
 
 navy = {
@@ -459,6 +536,46 @@ navy = {
 		type = clipper_transport
 	}
 
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Zhourao Convoy Fleet"
+	location = 1455
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
 	ship = {
 		name= "Transport Flotilla"
 		type = clipper_transport

@@ -64,7 +64,7 @@
 	craftsmen = {
 		culture = dutch
 		religion = protestant
-		size = 58000
+		size = 26500
 	}
 
 	artisans = {
@@ -125,7 +125,7 @@
 	craftsmen = {
 		culture = burgundian
 		religion = protestant
-		size = 5000
+		size = 3450
 	}
 
 	artisans = {
@@ -170,7 +170,7 @@
 	craftsmen = {
 		culture = burgundian
 		religion = protestant
-		size = 34000
+		size = 16530
 	}
 	
 	artisans = {
@@ -297,7 +297,7 @@
 	craftsmen = {
 		culture = dutch
 		religion = protestant
-		size = 45000
+		size = 22150
 	}
 
 	artisans = {

@@ -58,6 +58,7 @@ acquire_state_small
 acquire_state_medium
 acquire_state_large
 acquire_state_huge
+acquire_state_huge_china
 demand_concession_casus_belli_tiny
 demand_concession_casus_belli_small
 demand_concession_casus_belli_medium
@@ -72,7 +73,6 @@ colonial_reconquest_cb
 unification_casus_belli
 civil_war
 unification_annex_casus_belli
-annex_core_country
 unification_add_to_sphere
 add_to_sphere
 unification_GP_humiliate
@@ -111,6 +111,7 @@ china_acquire_state
 china_acquire_state_2
 china_conquest
 acquire_substate_region
+acquire_core_substate_region
 take_capital
 colonial_conquest
 rude_boy
@@ -1436,7 +1437,7 @@ liberate_country = {
 
 	badboy_factor = 2.2
 	prestige_factor = 1
-	peace_cost_factor = 0.9
+	peace_cost_factor = 100
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -2102,7 +2103,7 @@ humiliate = {
 	is_triggered_only = yes
 	months = 12
 	
-	badboy_factor = 1.5
+	badboy_factor = 2
 	prestige_factor = 1
 	peace_cost_factor = 15
 	penalty_factor = 1
@@ -2191,6 +2192,91 @@ humiliate = {
 	}
 }
 
+# Acquire All Core States
+acquire_all_cores = {
+    sprite_index = 5
+    is_triggered_only = yes
+    months = 12
+    constructing_cb = yes
+    crisis = no
+
+    badboy_factor = 0
+    prestige_factor = 2
+    peace_cost_factor = 100
+    penalty_factor = 1
+    always = yes
+
+    break_truce_prestige_factor = 5
+    break_truce_infamy_factor = 2
+    break_truce_militancy_factor = 2
+    truce_months = 48
+
+    good_relation_prestige_factor = 1
+    good_relation_infamy_factor = 1
+    good_relation_militancy_factor = 1
+
+    can_use = {
+        NOT = { tech_school = unciv_tech_school }
+        NOT = { is_our_vassal = THIS }
+        number_of_states = 2 # annex if you want their last state
+        #is_vassal = no
+        any_owned_province = { is_core = THIS }
+        any_owned_province = { NOT = { is_core = THIS } }
+        NOT = { has_country_modifier = neutrality }
+        ai = yes
+        THIS = {
+            NOT = {
+                has_country_modifier = neutrality
+                AND = {
+                    war_policy = pacifism
+                    war = no
+                }
+            }
+        }
+        OR = {
+            war_with = THIS
+            THIS = { NOT = { has_country_modifier = punitive_effects } }
+        }
+        OR = {
+            NOT = { has_country_flag = dismantle_declared }
+            THIS = { NOT = { has_country_flag = in_great_war } }
+            THIS = { ai = no }
+        }
+		THIS = { has_country_flag = only_special_stuff }
+    }
+
+    allowed_countries = {
+        FROM = { tag = THIS }
+    }
+
+    allowed_states = {
+        any_owned_province = { is_core = THIS }
+        #NOT = { any_owned_province = { is_capital = yes } }
+        OR = {
+            THIS = { ai = no }
+            AND = {
+                THIS = { num_of_ports = 1 }
+                any_owned_province = { port = yes }
+            }
+            any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+        }
+    }
+
+    all_allowed_states = yes
+    po_transfer_provinces = yes
+
+    war_name = WAR_ALL_CORES_NAME
+
+    on_add = {
+        move_issue_percentage = {
+            from = jingoism
+            to = pro_military
+            value = 0.25
+        }
+    }
+
+}
+
 # Acquire Core State
 acquire_core_state_tiny = {
 	sprite_index = 5
@@ -2200,12 +2286,12 @@ acquire_core_state_tiny = {
 	
 	badboy_factor = 0
 	prestige_factor = 5
-	peace_cost_factor = 0.001
+	peace_cost_factor = 0.002
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 0.75
+	break_truce_militancy_factor = 4
 	truce_months = 60
 	
 	good_relation_prestige_factor = 1
@@ -2264,12 +2350,12 @@ acquire_core_state_small = {
 	
 	badboy_factor = 0
 	prestige_factor = 5
-	peace_cost_factor = 0.003
+	peace_cost_factor = 0.00475
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 0.75
+	break_truce_militancy_factor = 4
 	truce_months = 60
 	
 	good_relation_prestige_factor = 1
@@ -2328,12 +2414,12 @@ acquire_core_state_medium = {
 	
 	badboy_factor = 0
 	prestige_factor = 5
-	peace_cost_factor = 0.004
+	peace_cost_factor = 0.006
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 0.75
+	break_truce_militancy_factor = 4
 	truce_months = 60
 	
 	good_relation_prestige_factor = 1
@@ -2392,12 +2478,12 @@ acquire_core_state_large = {
 	
 	badboy_factor = 0
 	prestige_factor = 5
-	peace_cost_factor = 0.006
+	peace_cost_factor = 0.009
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 0.75
+	break_truce_militancy_factor = 4
 	truce_months = 60
 	
 	good_relation_prestige_factor = 1
@@ -2456,12 +2542,12 @@ acquire_core_state_huge = {
 	
 	badboy_factor = 0
 	prestige_factor = 5
-	peace_cost_factor = 0.008
+	peace_cost_factor = 0.012
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 0.75
+	break_truce_militancy_factor = 4
 	truce_months = 60
 	
 	good_relation_prestige_factor = 1
@@ -2526,9 +2612,9 @@ annex_core_country = {
 	peace_cost_factor = 0.015
 	penalty_factor = 1
 
-	break_truce_prestige_factor = 5
-	break_truce_infamy_factor = 2
-	break_truce_militancy_factor = 2
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 0.75
+	break_truce_militancy_factor = 4
 	truce_months = 60
 	
 	good_relation_prestige_factor = 1
@@ -2585,9 +2671,9 @@ acquire_substate_region = {
 	construction_speed = 0.5
 	crisis = no
 	
-	badboy_factor = 1
+	badboy_factor = 1.5
 	prestige_factor = 2
-	peace_cost_factor = 0.006
+	peace_cost_factor = 0.008
 	penalty_factor = 1
 
 	break_truce_prestige_factor = 1
@@ -2634,6 +2720,81 @@ acquire_substate_region = {
 		owner = { NOT = { in_sphere = THIS } }
 		any_owned_province = {
 			not = {	is_core = THIS }
+			is_colonial = no
+		}
+	}
+
+	po_demand_state = yes
+	po_remove_prestige = yes
+	
+	war_name = WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+}
+
+# Gain control of core Substate region
+acquire_core_substate_region = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 12
+	construction_speed = 0.5
+	crisis = no
+	
+	badboy_factor = 0
+	prestige_factor = 2
+	peace_cost_factor = 0.006
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 0.75
+	break_truce_militancy_factor = 4
+	truce_months = 60
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		
+		NOT = { tag = GHO }
+		NOT = { 
+			OR = { 
+				has_country_modifier = neutrality
+				
+			}
+		}
+		THIS = { NOT = {
+				OR = {
+					has_country_modifier = neutrality
+					
+				}
+			 } 
+		}
+		
+		num_of_substates = 1 # if has any substate
+		THIS = {
+			NOT = { has_country_flag = conquerable_1865 }
+		}
+		any_substate = {
+			number_of_states = 1
+			any_owned_province = {
+				is_core = THIS 
+				is_colonial = no
+			}
+		}
+	}
+	
+	allowed_substate_regions = {
+		is_colonial = no
+		owner = { NOT = { in_sphere = THIS } }
+		any_owned_province = {
+			is_core = THIS 
 			is_colonial = no
 		}
 	}
@@ -4206,7 +4367,6 @@ demand_concession_casus_belli_tiny = {
 			is_core = TIN
 			is_colonial = no
 		}
-		not = { any_owned_province = { is_capital = yes } }
 	}
 	
 	po_demand_state = yes
@@ -4278,7 +4438,7 @@ demand_concession_casus_belli_small = {
 			is_core = SMA
 			is_colonial = no
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		#not = { any_owned_province = { is_capital = yes } }
 	}
 	
 	po_demand_state = yes
@@ -4350,7 +4510,7 @@ demand_concession_casus_belli_medium = {
 			is_core = MED
 			is_colonial = no
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		#not = { any_owned_province = { is_capital = yes } }
 	}
 	
 	po_demand_state = yes
@@ -4422,7 +4582,7 @@ demand_concession_casus_belli_large = {
 			is_core = LRG
 			is_colonial = no
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		#not = { any_owned_province = { is_capital = yes } }
 	}
 	
 	po_demand_state = yes
@@ -4494,7 +4654,7 @@ demand_concession_casus_belli_huge = {
 			is_core = HUG
 			is_colonial = no
 		}
-		not = { any_owned_province = { is_capital = yes } }
+		#not = { any_owned_province = { is_capital = yes } }
 	}
 	
 	po_demand_state = yes
@@ -6306,9 +6466,10 @@ hre_unification = {
 
 	badboy_factor = 1
 	prestige_factor = 1
-	peace_cost_factor = 25
+	peace_cost_factor = 0.01
 	penalty_factor = 1
-	always = yes
+	always = no
+	construction_speed = 0.75
 	
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 1
@@ -6325,7 +6486,7 @@ hre_unification = {
 			is_greater_power = yes
 			NOT = { has_global_flag = liberal_revolutions_should_now_fire }
 		}
-		year = 1837
+		#year = 1837
 		NOT = { is_our_vassal = THIS }
 		tag = SCA 
 		is_greater_power = yes
@@ -6335,6 +6496,7 @@ hre_unification = {
 				NOT = { has_country_modifier = no_more_war }
 			}
 		}
+		NOT = { SCA = { has_country_flag = bohemian_army_authority }}
 	}
 	
 	po_remove_prestige = yes 
@@ -6361,12 +6523,13 @@ hre_unification2 = {
 	is_triggered_only = no
 	months = 12
 	crisis = no
-
+	
 	badboy_factor = 1
 	prestige_factor = 1
-	peace_cost_factor = 25
+	peace_cost_factor = 0.01
 	penalty_factor = 1
-	always = yes
+	always = no
+	construction_speed = 0.75
 	
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 1
@@ -6384,7 +6547,7 @@ hre_unification2 = {
 			NOT = { has_global_flag = liberal_revolutions_should_now_fire }
 		}
 		NOT = { is_our_vassal = THIS }
-		year = 1837
+		#year = 1837
 		tag = BRG
 		is_greater_power = yes
 		OR = {
@@ -6393,6 +6556,7 @@ hre_unification2 = {
 				NOT = { has_country_modifier = no_more_war }
 			}
 		}
+		NOT = { BRG = { has_country_flag = bohemian_army_authority }}
 	}
 	
 	po_remove_prestige = yes 
@@ -6908,7 +7072,7 @@ assert_colombian_dominance = {
 }
 
 russian_conquest = {
-	sprite_index = 5
+	sprite_index = 22
 	is_triggered_only = yes
 	months = 12
 	crisis = no
@@ -6918,9 +7082,18 @@ russian_conquest = {
 		NOT = { is_our_vassal = THIS }
 		NOT = { number_of_states = 3 }
 		is_culture_group = east_slavic
+		THIS ={
+			OR = {
+				tag = MUS 
+				tag = MSC
+				tag = RUS
+				is_greater_power = yes
+			}
+			is_culture_group = east_slavic
+		}
 	}
 
-	badboy_factor = 1.0
+	badboy_factor = 0.8
 	prestige_factor = 5
 	peace_cost_factor = 1
 	penalty_factor = 1
@@ -6934,7 +7107,7 @@ russian_conquest = {
 	good_relation_infamy_factor = 1
 	good_relation_militancy_factor = 1
 	
-	construction_speed = 1
+	construction_speed = 1.25
 	
 	on_add = {
 		move_issue_percentage = { 

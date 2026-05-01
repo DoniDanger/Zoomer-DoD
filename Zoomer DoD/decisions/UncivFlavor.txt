@@ -222,15 +222,20 @@ political_decisions = {
 	
 	uniting_turania = { 
 	potential = { 
-	OR = { 
-	tag = MGL 
-	tag = CHG 
-	tag = UGH 
-	tag = KZH 
-	tag = UZB 
-	tag = TNT 
-	tag = MCH
-	tag = KOK
+		OR = { 
+			tag = MGL 
+			tag = CHG 
+			tag = UGH 
+			tag = KZH 
+			tag = UZB 
+			tag = TNT 
+			tag = MCH
+			tag = KOK
+		}
+		civilized = yes
+		NOT = {
+			exists = CHG
+			has_global_flag = turania_created
 		}
 	}
 	
@@ -315,8 +320,8 @@ political_decisions = {
 				}
 				annex_to = THIS
 			}
+		set_global_flag = turania_created
 	}
-	
 	}
 	
 	expanding_manchuria = { 

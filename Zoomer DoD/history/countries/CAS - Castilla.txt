@@ -36,7 +36,7 @@ border_policy = quota_immigration
 
 set_country_flag = catholic_country
 set_country_flag = new_world_nation
-
+set_country_flag = peace_of_san_salvador
 
 ruling_party = AAA_liberal_3
 last_election = 1832.3.10

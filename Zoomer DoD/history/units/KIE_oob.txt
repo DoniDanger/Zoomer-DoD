@@ -1,0 +1,39 @@
+leader = {
+	name = "Karol Chopovsky"
+	type = land
+	date = 1836.1.1
+	personality = pompous 
+	background = aristocrat
+}
+
+army = {
+	name = "Army of the Uman Konfederacya"
+	location = 958
+	regiment = {
+		name= "Cossacks of Winnica"
+		type = cavalry
+		home = 959
+	}
+	
+	regiment = {
+		name= "Cossacks of Zytomyrz"
+		type = cavalry
+		home = 959
+	}
+	
+	regiment = {
+		name= "Guard of the Metropolitan"
+		type = infantry
+		home = 959
+	}
+	regiment = {
+		name= "1. Battalion of Kiev"
+		type = infantry
+		home = 959
+	}
+	regiment = {
+		name= "2. Battalion of Kiev"
+		type = infantry
+		home = 958
+	}
+}

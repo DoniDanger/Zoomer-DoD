@@ -17,7 +17,7 @@
   craftsmen = {
 		culture = czech
 		religion = catholic
-		size = 90000
+		size = 51250
 	}
   
   capitalists = {
@@ -67,7 +67,7 @@
 	farmers = {
 		culture = czech
 		religion = catholic
-		size = 353325
+		size = 253325
 	}
 
 	aristocrats = {
@@ -572,7 +572,7 @@
 	craftsmen = {
 		culture = czech
 		religion = catholic
-		size = 40000
+		size = 24250
 	}
   
   capitalists = {
@@ -685,7 +685,7 @@
 	farmers = {
 		culture = czech
 		religion = catholic
-		size = 90700 
+		size = 130700 
 	}
 
 	aristocrats = {
@@ -716,7 +716,7 @@
 	farmers = {
 		culture = south_german
 		religion = catholic
-		size =  6850
+		size =  16850
 	}
 
 	clergymen = {
@@ -857,7 +857,7 @@
 	craftsmen = { 
 		culture = czech
 		religion = catholic
-		size = 4105
+		size = 3105
 	}
 
 	farmers = { 

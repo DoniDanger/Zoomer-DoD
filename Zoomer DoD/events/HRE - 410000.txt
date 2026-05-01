@@ -32,7 +32,7 @@ country_event = {
 		secede_province = POM
 		remove_core = THIS
 		}
-	
+		set_country_flag = bohemian_army_authority
     }
 }
 

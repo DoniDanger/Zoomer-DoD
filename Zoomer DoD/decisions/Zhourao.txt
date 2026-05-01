@@ -110,6 +110,33 @@ political_decisions = {
 		}
 	}
 	
+	transfer_imperial_treasury = { 
+		picture = imperial_decree_of_war
+		potential = { 
+			tag = GAN 
+			NOT = { has_country_flag = transferred_imperial_treasury }
+			NOT = { 1482 = { owned_by = JAP }}
+			NOT = { 1482 = { owned_by = TAI }}
+		}
+		
+		allow = { 
+			year = 1837
+			OR = {
+				controls = 1482
+				1482 = { controlled_by = TNG }
+			}
+		}
+		
+		effect = { 
+			set_country_flag = transferred_imperial_treasury
+			money = 240000
+			prestige = 5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	renew_the_phoenix_invasion = { 
 		picture = imperial_decree_of_war
 		potential = { 

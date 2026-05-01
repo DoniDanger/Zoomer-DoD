@@ -38,6 +38,7 @@ border_policy = open_borders
 
 set_country_flag = catholic_country
 set_country_flag = new_world_nation
+set_country_flag = peace_of_san_salvador
 
 ruling_party = AAA_liberal_2
 last_election = 1834.1.1

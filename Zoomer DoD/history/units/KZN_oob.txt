@@ -1,0 +1,118 @@
+leader = {
+	name = "Khadish al-Kazani"
+	type = land
+	date = 1836.1.1
+	personality = tyrant
+	background = member_of_elite
+}
+
+army = {
+	name = "Army of the Khanate of Kazan"
+	location = 1030
+	regiment = {
+		name= "1.Tatar"
+		type = cavalry
+		home = 1030
+	}
+
+	regiment = {
+		name= "2.Tatar"
+		type = cavalry
+		home = 1030
+	}
+
+	regiment = {
+		name= "3.Tatar"
+		type = cavalry
+		home = 1030
+	}
+
+	regiment = {
+		name= "4.Tatar"
+		type = cavalry
+		home = 1030
+	}
+
+	regiment = {
+		name= "5.Tatar"
+		type = cavalry
+		home = 1030
+	}
+
+	regiment = {
+		name= "6.Tatar"
+		type = cavalry
+		home = 1030
+	}
+
+	regiment = {
+		name= "7.Tatar"
+		type = cavalry
+		home = 1032
+	}
+
+	regiment = {
+		name= "8.Tatar"
+		type = cavalry
+		home = 1032
+	}
+}
+
+army = {
+	name = "Khan's Guard"
+	location = 2654
+	regiment = {
+		name= "1.Tatar"
+		type = infantry
+		home = 1034
+	}
+
+	regiment = {
+		name= "2.infantry"
+		type = infantry
+		home = 1033
+	}
+
+	regiment = {
+		name= "3.infantry"
+		type = infantry
+		home = 2654
+	}
+
+	regiment = {
+		name= "4.infantry"
+		type = infantry
+		home = 1035
+	}
+
+	regiment = {
+		name= "5.infantry"
+		type = infantry
+		home = 1035
+	}
+
+	regiment = {
+		name= "6.infantry"
+		type = infantry
+		home = 1037
+	}
+
+	regiment = {
+		name= "1.Tatar"
+		type = cavalry
+		home = 1037
+	}
+
+	regiment = {
+		name= "2.Tatar"
+		type = cavalry
+		home = 1038
+	}
+
+	regiment = {
+		name= "3.Tatar"
+		type = cavalry
+		home = 1043
+	}
+
+}

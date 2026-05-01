@@ -11,6 +11,12 @@
 	bureaucrats = {
 		culture = mexican
 		religion = catholic
+		size = 475
+	}
+	
+	bureaucrats = {
+		culture = central_american
+		religion = catholic
 		size = 175
 	}
 
@@ -153,6 +159,18 @@
 		size = 150
 	}
 
+	bureaucrats = {
+		culture = central_american
+		religion = catholic
+		size = 75
+	}
+	
+	bureaucrats = {
+		culture = mexican
+		religion = catholic
+		size = 225
+	}
+	
 	clergymen = {
 		culture = mexican
 		religion = catholic

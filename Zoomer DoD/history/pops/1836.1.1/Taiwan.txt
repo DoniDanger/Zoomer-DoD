@@ -17,7 +17,7 @@
 	bureaucrats = {
 		culture = min
 		religion = mahayana
-		size = 1000
+		size = 2000
 	}
 
 	artisans = {
@@ -29,7 +29,7 @@
 	farmers = {
 		culture = chugoku
 		religion = mahayana
-		size = 141225
+		size = 111225
 	}
 
 	aristocrats = {
@@ -65,13 +65,19 @@
 	farmers = {
 		culture = chugoku
 		religion = mahayana
-		size = 95000
+		size = 45000
 	}
 
+	soldiers = {
+		culture = min
+		religion = mahayana
+		size = 3825
+	}
+	
 	farmers = {
 		culture = min
 		religion = mahayana
-		size = 106300
+		size = 186300
 	}	
 }
 #Taitung (67k - 268k) #now part of Taiwan  
@@ -79,7 +85,7 @@
 	farmers = {
 		culture = min
 		religion = mahayana
-		size = 37000
+		size = 47000
 	}
 	
 	aristocrats = {
@@ -109,13 +115,19 @@
 	soldiers = {
 		culture = chugoku
 		religion = mahayana
-		size = 6300
+		size = 3300
 	}
 
+	soldiers = {
+		culture = min
+		religion = mahayana
+		size = 1425
+	}
+	
 	farmers = {
 		culture = chugoku
 		religion = mahayana
-		size = 12925
+		size = 18925
 	}
 }
 
@@ -164,7 +176,7 @@
 	bureaucrats = {
 		culture = chugoku
 		religion = mahayana
-		size = 7500
+		size = 5500
 	}
 
 	officers = {
@@ -188,7 +200,7 @@
 	farmers = {
 		culture = min
 		religion = mahayana
-		size = 110625
+		size = 170625
 	}
 
 	aristocrats = {
@@ -221,10 +233,16 @@
 		size = 3700
 	}
 
+	soldiers = {
+		culture = min
+		religion = mahayana
+		size = 3825
+	}
+	
 	farmers = {
 		culture = chugoku
 		religion = mahayana
-		size = 220200
+		size = 150200
 	}
 }
 

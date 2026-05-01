@@ -437,6 +437,7 @@ political_decisions = {
 			tag = TUR
 			NOT = {
 				has_global_flag = repudiated_iraqi_claims_levant
+				has_global_flag = persian_levantine_claims
 			}
 		}
 		

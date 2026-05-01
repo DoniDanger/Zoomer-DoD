@@ -1,0 +1,48 @@
+leader = {
+	name = "Stanislav Bagushevic"
+	type = land
+	date = 1836.1.1
+	personality = diligent
+	background = aristocrat
+}
+
+army = {
+	name = "Galich Gvardiya"
+	location = 1024
+	regiment = {
+		name= "1.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1024
+	}
+
+	regiment = {
+		name= "2.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1024
+	}
+
+	regiment = {
+		name= "3.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1024
+	}
+
+	regiment = {
+		name= "1.2-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1024
+	}
+
+	regiment = {
+		name= "3.2-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = artillery
+		home = 1023
+	}
+	
+	regiment = {
+		name= "4.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1027
+	}
+
+}

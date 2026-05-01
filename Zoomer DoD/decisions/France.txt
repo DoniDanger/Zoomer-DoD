@@ -283,6 +283,9 @@ political_decisions = {
 				}
 			country_event = 650330
 		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	fate_of_dual_monarchy = { 

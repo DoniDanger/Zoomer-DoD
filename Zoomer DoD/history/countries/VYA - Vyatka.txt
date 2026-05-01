@@ -77,3 +77,5 @@ basic_chemistry = 1
 consciousness = 3
 nonstate_consciousness = 1
 
+
+oob = "VYA_oob.txt"

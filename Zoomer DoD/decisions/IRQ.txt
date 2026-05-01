@@ -11,6 +11,7 @@ political_decisions = {
 			NOT = {	has_country_flag = levantines }
 			NOT = {
 				has_global_flag = repudiated_iraqi_claims_levant
+				has_global_flag = persian_levantine_claims
 			}
 		}
 
@@ -43,6 +44,7 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			set_country_flag = levantines
+			set_global_flag = persian_levantine_claims
 			#remove_accepted_culture = persian
 			relation = { who = TUR value = -150 }
 			EGY_897 = {

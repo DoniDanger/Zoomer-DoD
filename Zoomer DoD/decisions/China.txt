@@ -57,7 +57,27 @@ political_decisions = {
 			}
 		}
 	}
-			
+	
+	grant_heavenly_rights = {
+		picture = heavenly_seal
+		potential = {
+			tag = TAI
+			NOT = {
+				has_country_flag = granted_heavenly_rights
+			}
+		}
+		allow = {
+			owns = 1504
+			owns = 1497
+			ideological_thought = 1
+		}
+		effect = {
+			add_accepted_culture = miao
+			add_accepted_culture = hui_culture
+			set_country_flag = granted_heavenly_rights
+		}
+	}
+	
 	form_china_chagatai = {
       picture = form_china
   		potential = {

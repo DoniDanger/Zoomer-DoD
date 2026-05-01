@@ -14,6 +14,12 @@
 		size = 225
 	}
 
+	bureaucrats = {
+		culture = mexican
+		religion = catholic
+		size = 675
+	}
+	
 	officers = {
 		culture = granadan
 		religion = catholic
@@ -397,6 +403,12 @@
 		size = 150
 	}
 
+	bureaucrats = {
+		culture = mexican
+		religion = catholic
+		size = 375
+	}
+	
 	officers = {
 		culture = granadan
 		religion = catholic
@@ -760,6 +772,12 @@
 		size = 100
 	}
 
+	bureaucrats = {
+		culture = mexican
+		religion = catholic
+		size = 265
+	}
+	
 	officers = {
 		culture = granadan
 		religion = catholic

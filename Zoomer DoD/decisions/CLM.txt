@@ -1,12 +1,13 @@
 political_decisions = {
 	
-		demand_end_spanish_protectorship = { 
+	demand_end_spanish_protectorship = { 
 		picture = unite_gran_colombia
 		potential = { 
 			tag = CLM
-			NOT = { has_country_flag = demanded_spanish_protectorate_end }
+			#NOT = { has_country_flag = demanded_spanish_protectorate_end }
+			NOT = { has_country_modifier = salvador_peace_process }
 			NOT = {
-				has_country_flag = colombians_demand_freedom 
+				has_global_flag = colombians_demand_freedom 
 				has_country_flag = total_colombian_victory 
 				has_global_flag = spanish_evacuation_colonies
 				has_global_flag = treaty_of_andagoya
@@ -17,11 +18,60 @@ political_decisions = {
 		
 		allow = {
 			year = 1840
+			NOT = {
+				war_with = SPA 
+			}
 		}
 			
 		effect = {
 			SPA = { country_event = 46445 }
+			add_country_modifier = {
+				name = salvador_peace_process 
+				duration = 180
+			}
 			set_country_flag = demanded_spanish_protectorate_end
+		}
+	}
+	
+	violate_spanish_protectorship = { 
+		picture = unite_gran_colombia
+		potential = { 
+			tag = CLM
+			#NOT = { has_country_flag = demanded_spanish_protectorate_end }
+			NOT = { has_country_modifier = salvador_peace_process }
+			NOT = {
+				has_global_flag = colombians_demand_freedom 
+				has_country_flag = total_colombian_victory 
+				has_global_flag = spanish_evacuation_colonies
+				has_global_flag = treaty_of_andagoya
+				has_global_flag = gran_colombian_collapse
+				has_global_flag = 2nd_colombian_independence_war
+			}
+			NOT = {
+				war_with = SPA 
+				year = 1840
+			}
+		}
+		
+		allow = {
+			NOT = {
+				war_with = SPA 
+				year = 1840
+				badboy = 11
+			}
+		}
+			
+		effect = {
+			SPA = { country_event = 46455 }
+			add_country_modifier = {
+				name = salvador_peace_process 
+				duration = 180
+			}
+			badboy = 14
+			set_country_flag = demanded_spanish_protectorate_end
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 	
@@ -81,7 +131,7 @@ political_decisions = {
 		potential = { 
 			tag = SPA
 			NOT = {
-				has_country_flag = colombians_demand_freedom 
+				has_global_flag = colombians_demand_freedom 
 				has_country_flag = total_colombian_victory 
 				has_global_flag = spanish_evacuation_colonies
 				has_global_flag = treaty_of_andagoya
@@ -101,6 +151,8 @@ political_decisions = {
 		effect = {
 			badboy = 14
 			CLM = { country_event = 46437 }
+			set_country_flag = KILL_ALL_COLOMBIANS
+			set_global_flag = colombians_demand_freedom
 		}
 		ai_will_do = {
 			factor = 0

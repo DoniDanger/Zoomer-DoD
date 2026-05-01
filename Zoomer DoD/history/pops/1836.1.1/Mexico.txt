@@ -12,14 +12,14 @@
 	bureaucrats = {
 		culture = lusitanian
 		religion = catholic
-		size = 35
+		size = 135
 		militancy = 5
 	}
 
 	bureaucrats = {
 		culture = mexican
 		religion = catholic
-		size = 235
+		size = 735
 	}
 	
 	clergymen = {
@@ -404,6 +404,12 @@
 		size = 50
 	}
 
+	bureaucrats = {
+		culture = mexican
+		religion = catholic
+		size = 175
+	}
+	
 	officers = {
 		culture = lusitanian
 		religion = catholic
@@ -496,7 +502,7 @@
 	bureaucrats = {
 		culture = mexican
 		religion = catholic
-		size = 435
+		size = 1035
 	}
 	
 	clergymen = {
@@ -1364,7 +1370,7 @@
 	bureaucrats = {
 		culture = mexican
 		religion = catholic
-		size = 100
+		size = 500
 	}
 
 	officers = {

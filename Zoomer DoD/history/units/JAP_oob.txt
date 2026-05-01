@@ -613,56 +613,6 @@ navy = {
 	}
 
 	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
-		name= "Kikka"
-		type = frigate
-	}
-
-	ship = {
 		name= "1a Yusosentai"
 		type = clipper_transport
 	}

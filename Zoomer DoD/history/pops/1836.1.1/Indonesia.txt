@@ -2444,7 +2444,7 @@
 	bureaucrats = {
 		culture = tionghoa
 		religion = mahayana
-		size = 60
+		size = 160
 	}
 	
 	bureaucrats = {

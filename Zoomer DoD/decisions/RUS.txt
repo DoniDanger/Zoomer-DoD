@@ -77,27 +77,22 @@ political_decisions = {
 				war = no
 				owns = 1008
 				OR = {
-					ideological_thought = 1
-					military_score = 45
-					owns = 944
-				}
-				1012 = {
-					owner = {
-						OR = {
-							tag = THIS
-							in_sphere = THIS
-							vassal_of = THIS
-						}
+					AND = {
+						military_score = 60
+						owns = 944
+						owns = 978
+						owns = 943
+						owns = 977
+						owns = 1012
 					}
-				}
-				943 = {
-					owner = {
-						OR = {
-							tag = THIS
-							in_sphere = THIS
-							vassal_of = THIS
-						}
+					AND = {
+						ideological_thought = 1
+						military_score = 45
+						owns = 977
+						owns = 943
+						owns = 1012
 					}
+					state_n_government = 1
 				}
 			}
 		
@@ -140,8 +135,13 @@ political_decisions = {
 			allow = {
 				war = no
 				OR = {
-					ideological_thought = 1
-					military_score = 45
+					AND = {
+						ideological_thought = 1
+						military_score = 55
+						owns = 998
+						owns = 943
+					}
+					state_n_government = 1
 				}
 				NOV = {
 					any_core = {
@@ -194,8 +194,13 @@ political_decisions = {
 			allow = {
 				war = no
 				OR = {
-					ideological_thought = 1
-					military_score = 50
+					AND = {
+						ideological_thought = 1
+						military_score = 75
+						owns = 1012
+						owns = 977
+					}
+					state_n_government = 1
 				}
 				KZN = {
 					any_core = {
@@ -252,8 +257,13 @@ political_decisions = {
 			allow = {
 				war = no
 				OR = {
-					ideological_thought = 1
-					military_score = 55
+					AND = {
+						ideological_thought = 1
+						military_score = 65
+						owns = 1012
+						owns = 977
+					}
+					state_n_government = 1
 				}
 				owns = 943
 				UKR = {
