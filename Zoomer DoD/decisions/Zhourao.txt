@@ -176,7 +176,7 @@ political_decisions = {
 		}
 		
 		effect = { 
-			add_accepted_culture = nanfaren
+			#add_accepted_culture = nanfaren
 			add_accepted_culture = zhuang
 			set_country_flag = phoenix_emperor_legacy
 			GNG = { all_core = { add_core = THIS } }
@@ -214,6 +214,68 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	
+	mandate_of_tingzhou = {
+		picture = heavenly_seal
+		potential = {
+			tag = GAN
+			NOT = {
+				has_country_flag = tingzhou_mandate
+			}
+		}
+		allow = {
+			owns = 1486
+			state_n_government = 1
+			war = no
+		}
+		effect = {
+			GNG = { all_core = { add_core = THIS }}
+			add_accepted_culture = yue
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = {
+							owns = 1501
+							owns = 1500
+							owns = 1550
+						}
+					}
+				}
+				owner = {
+					badboy = 14
+				}
+			}
+			random_owned = {
+				limit = {
+					owner = {
+						OR = {
+							owns = 1501
+							owns = 1500
+							owns = 1550
+						}
+						NOT = {
+							AND = {
+								owns = 1501
+								owns = 1500
+								owns = 1550
+							}
+						}
+					}
+				}
+				owner = {
+					badboy = 7
+				}
+			}
+			set_country_flag = tingzhou_mandate
+		}
+		ai_will_do = { 
+			factor = 1 
+			modifier = { 
+			factor = 0 
+				badboy = 16
+			}
 		}
 	}
 	

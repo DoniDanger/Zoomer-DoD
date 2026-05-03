@@ -22,4 +22,10 @@ name = "Phoenix Invasion"
 		actor = JAP
 		receiver = GAN
 	}
+	war_goal = {
+		casus_belli = acquire_core_state_huge
+		state_province_id = 1604
+		actor = TNG
+		receiver = JAP
+	}
 }

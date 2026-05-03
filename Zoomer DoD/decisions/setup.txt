@@ -817,32 +817,4 @@ political_decisions = {
 			country_event = 477877789
 		}
 	}
-	annex_all = {
-        picture = starting_options
-        alert = no
-        potential = {
-            ai = no
-            prestige = 999
-        }
-
-        allow = {
-        }
-
-        effect = {
-            any_owned = {
-                secede_province = THIS
-            }
-            any_country = {
-                annex_to = THIS
-            }
-            any_land_province = { secede_province = THIS }
-        }
-        ai_will_do = {
-            factor = 1
-            modifier = {
-                factor = 0
-                tech_school = confederation_tech_school
-            }
-        }
-    }
 }

@@ -39,7 +39,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 650
+		size= 1250
 
 		militancy = 5
 	}
@@ -72,7 +72,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 275
+		size= 575
 
 	}
 
@@ -120,7 +120,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 300
+		size= 800
 
 		militancy = 4
 	}
@@ -197,7 +197,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 650
+		size= 1150
 
 		militancy = 7
 	}
@@ -230,7 +230,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 250
+		size= 550
 
 	}
 
@@ -283,7 +283,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 650
+		size= 1150
 		militancy = 9
 	}
 
@@ -340,7 +340,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 650
+		size= 1150
 
 	}
 
@@ -372,7 +372,7 @@
 	soldiers = {
 		culture = afro_latino
 		religion = catholic
-		size= 2000
+		size= 2400
 
 	}
 
@@ -432,7 +432,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 650
+		size= 1250
 
 	}
 
@@ -463,7 +463,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 425
+		size= 725
 
 	}
 
@@ -520,7 +520,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size= 650
+		size= 1250
 
 	}
 
@@ -677,7 +677,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size = 1000
+		size = 1250
 	}
 
 	farmers = {
@@ -759,7 +759,7 @@
 	soldiers = {
 		culture = lusitanian
 		religion = catholic
-		size = 250
+		size = 1250
 	}
 
 	farmers = {
@@ -789,7 +789,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 1500
+		size = 2300
 	}
 
 	farmers = {
@@ -851,7 +851,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 75
+		size= 375
 
 	}
 
@@ -984,7 +984,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size = 250
+		size = 550
 	}
 
 	farmers = {
@@ -1102,7 +1102,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 250
+		size= 1250
 
 		militancy = 9
 	}
@@ -1164,7 +1164,7 @@
 	soldiers = {
 		culture = mexican
 		religion = catholic
-		size= 275
+		size= 1275
 
 	}
 
@@ -2794,7 +2794,7 @@
 	craftsmen = {
 		culture = mexican
 		religion = catholic
-		size = 27000
+		size = 9500
 	}
 	
 	artisans = {
@@ -2836,7 +2836,7 @@
 	craftsmen = {
 		culture = nahua
 		religion = catholic
-		size = 19250
+		size = 5250
 	}
 	
 	artisans = {

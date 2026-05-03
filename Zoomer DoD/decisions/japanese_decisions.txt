@@ -45,6 +45,7 @@ political_decisions = {
 				NOT = { war_with = TKG }
 				war = no
 			}
+			year = 1837
 			owns = 1657
 		}
 		effect = {
@@ -138,12 +139,6 @@ political_decisions = {
 			prestige = 10
 			CHI_2562 = {
 				remove_core = TNG
-				any_pop = {
-					limit = {
-						has_pop_culture = chugoku
-					}
-					literacy = 0.35
-				}
 			}
 			set_country_flag = push_tungning_out_flag
 		}

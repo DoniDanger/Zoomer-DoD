@@ -59,7 +59,7 @@
 	soldiers = {
 		culture = aimara
 		religion = catholic
-		size= 1100
+		size= 700
 	}
 
 	farmers = {
@@ -112,7 +112,7 @@
 	soldiers = {
 		culture = aimara
 		religion = inti
-		size= 700
+		size= 450
 	}
 
 	farmers = {
@@ -730,7 +730,7 @@
 	soldiers = {
 		culture = andean
 		religion = catholic
-		size= 3600
+		size= 2300
 
 	}
 
@@ -791,7 +791,7 @@
 	soldiers = {
 		culture = aimara
 		religion = catholic
-		size= 1450
+		size= 1250
 
 	}
 
@@ -892,7 +892,7 @@
 	soldiers = {
 		culture = aimara
 		religion = catholic
-		size= 1200
+		size= 760
 
 	}
 

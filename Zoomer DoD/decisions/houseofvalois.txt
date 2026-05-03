@@ -180,6 +180,7 @@ political_decisions = {
 		potential = { 
 			tag = ITA 
 			NOT = { has_country_flag = occitania_claimed }
+			has_country_flag = valois_italy	
 		}
 
 		allow = {
@@ -224,6 +225,7 @@ political_decisions = {
 		potential = { 
 			tag = ITA 
 			has_country_flag = occitania_claimed
+			has_country_flag = valois_italy	
 			NOT = { has_country_flag = renew_war }
 		}
 
@@ -268,6 +270,7 @@ political_decisions = {
 	potential = { 
 			tag = ITA 
 			has_country_flag = renew_war 
+			has_country_flag = valois_italy	
 		}
 	allow = {
 			revolution_n_counterrevolution = 1

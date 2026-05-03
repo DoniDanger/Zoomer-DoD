@@ -1,5 +1,23 @@
 political_decisions = {
 	
+	annex_jalisco = { 
+		picture = unite_gran_colombia
+		potential = { 
+			tag = GHO
+			JLS = { exists = yes }
+			NOT = { has_country_flag = annexed_jalisco }
+		}
+		
+		allow = {
+		}
+			
+		effect = {
+			CLM = { inherit = JLS }
+			
+			set_country_flag = annexed_jalisco
+		}
+	}
+	
 	demand_end_spanish_protectorship = { 
 		picture = unite_gran_colombia
 		potential = { 
@@ -349,6 +367,7 @@ political_decisions = {
 		add_accepted_culture = lusitanian
 		add_accepted_culture = central_american
 		add_accepted_culture = granadan
+		add_accepted_culture = andean
 		country_event = 46431
 		government = democracy
 		political_reform = state_equal_weight

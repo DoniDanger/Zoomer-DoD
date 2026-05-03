@@ -814,7 +814,7 @@
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size= 1225
+		size= 825
 
 	}
 
@@ -1411,7 +1411,7 @@
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size = 2500
+		size = 1500
 	}
 
 	farmers = {
@@ -1558,7 +1558,7 @@
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size= 1500
+		size= 700
 	}
 	
 	aristocrats = {

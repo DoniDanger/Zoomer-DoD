@@ -129,8 +129,8 @@ political_decisions = {
 				prestige = 10
 				capital = 2302
 				primary_culture = quechua 
-				add_accepted_culture = andean
-				add_accepted_culture = aimara
+				remove_accepted_culture = andean
+				#add_accepted_culture = aimara
 				religion = inti
 				set_country_flag = restored_sapa_inca
 			}
@@ -300,7 +300,7 @@ political_decisions = {
 			effect = {
 				prestige = 10
 				primary_culture = andean
-				add_accepted_culture = quechua
+				#add_accepted_culture = quechua
 				QUI = { all_core = { add_core = THIS }}
 				any_country = { 
 					limit = {
@@ -322,6 +322,66 @@ political_decisions = {
 					THIS = { inherit = QUI }
 				}
 				set_country_flag = reunited_andean_viceroyalties
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		erase_incan_identity = {
+			picture = peru_bolivia
+			potential = {
+				tag = ARE
+				NOT = { has_country_flag = erase_incan_identity }
+				NOT = { has_country_flag = restored_sapa_inca }
+			}
+			allow = {
+				has_country_flag = reunited_andean_viceroyalties
+				NOT = { has_country_flag = restored_sapa_inca }
+				war = no
+				is_vassal = no
+				owns = 2302
+				owns = 2304
+				nationalism_n_imperialism = 1
+				QUI = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+			effect = {
+				prestige = 5	
+				add_accepted_culture = quechua
+				set_country_flag = erase_incan_identity	
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		embrace_andean_incan_identity = {
+			picture = peru_bolivia
+			potential = {
+				tag = INC
+				NOT = { has_country_flag = embraced_andean_incan_identity }
+				has_country_flag = restored_sapa_inca 
+			}
+			allow = {
+				war = no
+				is_vassal = no
+				owns = 2302
+				owns = 2304
+				nationalism_n_imperialism = 1
+				QUI = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+			effect = {
+				prestige = 5	
+				add_accepted_culture = andean
+				set_country_flag = embraced_andean_incan_identity	
 			}
 			ai_will_do = {
 				factor = 1
@@ -377,7 +437,7 @@ political_decisions = {
 				owns = 2369
 				owns = 2305
 				owns = 2324
-				nationalism_n_imperialism = 1
+				revolution_n_counterrevolution = 1
 				CHL = {
 					all_core = {
 						owned_by = THIS
@@ -389,6 +449,35 @@ political_decisions = {
 				add_accepted_culture = aimara
 				CHL = { all_core = { add_core = THIS }}
 				set_country_flag = federalized_santiago
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		embrace_aimara_incan_identity = {
+			picture = claim_pata_gonia_chl
+			potential = {
+				tag = INC
+				NOT = { has_country_flag = embraced_aimara_incan_identity }
+				has_country_flag = restored_sapa_inca 
+			}
+			allow = {
+				war = no
+				is_vassal = no
+				owns = 2302
+				owns = 2304
+				nationalism_n_imperialism = 1
+				CHL = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+			effect = {
+				prestige = 5	
+				add_accepted_culture = aimara
+				set_country_flag = embraced_aimara_incan_identity	
 			}
 			ai_will_do = {
 				factor = 1
@@ -416,6 +505,7 @@ political_decisions = {
 			effect = {
 				prestige = 5
 				ARU = { all_core = { add_core = THIS }}
+				add_accepted_culture = patagonian
 				set_country_flag = conquered_the_mapuche
 			}
 			ai_will_do = {

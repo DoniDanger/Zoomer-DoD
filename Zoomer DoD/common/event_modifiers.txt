@@ -2682,8 +2682,8 @@ war_of_colombian_liberation = {
 	land_unit_start_experience = 5
 	mobilisation_economy_impact = -0.15
 	supply_consumption = -0.05
-	mobilisation_size = 0.01
-	immigrant_attract = -0.05
+	mobilisation_size = 0.03
+	immigrant_attract = -0.03
 	icon = 8 
 }
 
@@ -2691,7 +2691,7 @@ alliance_with_the_natives = {
 	war_exhaustion = -0.25
 	mobilisation_economy_impact = -0.05
 	supply_consumption = -0.05
-	immigrant_attract = -0.05
+	immigrant_attract = -0.03
 	icon = 8 
 }
 

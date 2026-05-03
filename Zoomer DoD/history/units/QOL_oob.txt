@@ -23,24 +23,6 @@ army = {
         home = 2387
     }
 
-    regiment = {
-        name = "2. División de Infantería"
-        type = irregular
-        home = 2389
-    }
-
-    regiment = {
-        name = "3. División de Infantería"
-        type = irregular
-        home = 2368
-    }
-
-    regiment = {
-        name = "1. División de Caballería"
-        type = cavalry
-        home = 2368
-    }
-
 	regiment = {
         name = "2. División de Caballería"
         type = cavalry
@@ -67,12 +49,6 @@ army = {
         name = "2. División de Infantería"
         type = irregular
         home = 2375
-    }
-
-    regiment = {
-        name = "3. División de Infantería"
-        type = irregular
-        home = 2374
     }
 
     regiment = {

@@ -1594,7 +1594,7 @@
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size = 1500
+		size = 600
 	}
 
 	farmers = {
@@ -1624,7 +1624,7 @@
 	soldiers = {
 		culture = aimara
 		religion = catholic
-		size= 1500
+		size= 800
 
 	}
 
@@ -1667,7 +1667,7 @@
 	soldiers = {
 		culture = quechua
 		religion = inti
-		size = 1600
+		size = 1100
 	}
 
 	farmers = {
@@ -1697,7 +1697,7 @@
 	soldiers = {
 		culture = diaguita
 		religion = inti
-		size= 2400
+		size= 1300
 
 	}
 
@@ -1966,13 +1966,13 @@
 	soldiers = {
 		culture = quechua
 		religion = catholic
-		size = 1200
+		size = 600
 	}
 
 	soldiers = {
 		culture = aimara
 		religion = catholic
-		size= 1500
+		size= 1140
 	}
 
 	farmers = {
@@ -2052,7 +2052,7 @@
 	soldiers = {
 		culture = aimara
 		religion = catholic
-		size= 1125
+		size= 645
 
 	}
 
@@ -2100,7 +2100,7 @@
 	soldiers = {
 		culture = diaguita
 		religion = inti
-		size= 3600
+		size= 2100
 	}
 }
 #Vinchina (4000/1000 POPS)
@@ -3528,7 +3528,7 @@
 	soldiers = {
 		culture = aimara
 		religion = catholic
-		size= 1600
+		size= 740
 	}
 
 	farmers = {
@@ -3558,7 +3558,7 @@
 	soldiers = {
 		culture = diaguita
 		religion = inti
-		size= 2600
+		size= 1560
 	}
 
 	farmers = {
@@ -3684,7 +3684,7 @@
 	soldiers = {
 		culture = aimara
 		religion = catholic
-		size= 1600
+		size= 740
 	}
 
 	farmers = {
@@ -3726,7 +3726,7 @@
 	soldiers = {
 		culture = diaguita
 		religion = inti
-		size= 3600
+		size= 2200
 	}
 
 	farmers = {

@@ -1,5 +1,7 @@
 capital = 2172
 primary_culture = mexican
+#culture = central_american
+culture = granadan
 religion = catholic
 government = presidential_dictatorship
 plurality = 5.0
@@ -9,7 +11,7 @@ non_state_culture_literacy = 0.01
 
 civilized = yes
 #GreaterPowers = prestige
-prestige = 12
+prestige = 18
 
 # Political reforms
 slavery = yes_slavery

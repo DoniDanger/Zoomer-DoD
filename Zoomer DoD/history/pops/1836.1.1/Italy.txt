@@ -399,14 +399,14 @@
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size= 3000
+		size= 3800
 
 	}
 
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size= 350
+		size= 850
 
 	}
 
@@ -451,7 +451,7 @@
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size= 1150
+		size= 1750
 
 	}
 
@@ -484,7 +484,7 @@
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size= 1750
+		size= 1950
 
 	}
 
@@ -567,14 +567,14 @@
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 3000
+		size= 3800
 
 	}
 
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size = 2000
+		size = 2800
 	}
 
 	farmers = {
@@ -624,7 +624,7 @@
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 1500
+		size= 1900
 
 	}
 
@@ -657,7 +657,7 @@
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 1400
+		size= 1900
 
 	}
 
@@ -690,7 +690,7 @@
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 550
+		size= 950
 
 	}
 
@@ -723,7 +723,7 @@
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 750
+		size= 1450
 
 	}
 
@@ -783,7 +783,7 @@
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 1550
+		size= 2250
 
 	}
 
@@ -874,7 +874,7 @@
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 175
+		size= 575
 
 	}
 
@@ -923,7 +923,7 @@
 	soldiers = {
 		culture = slovene
 		religion = catholic
-		size= 100
+		size= 300
 
 	}
 
@@ -956,7 +956,7 @@
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size= 1025
+		size= 1525
 
 	}
 
@@ -981,7 +981,7 @@
 	soldiers = {
 		culture = slovene
 		religion = catholic
-		size= 325
+		size= 625
 
 	}
 
@@ -1028,7 +1028,7 @@
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size= 2000
+		size= 2800
 
 	}
 
@@ -1637,7 +1637,7 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size= 450
+		size= 850
 
 	}
 
@@ -1683,7 +1683,7 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size = 6000
+		size = 6800
 	}
 
 	farmers = {
@@ -1765,14 +1765,14 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size= 6000
+		size= 6700
 
 	}
 
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size= 6000
+		size= 6600
 
 	}
 
@@ -2009,7 +2009,7 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size= 2000
+		size= 2700
 
 	}
 
@@ -2060,7 +2060,7 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size= 1100
+		size= 1800
 
 	}
 
@@ -2105,7 +2105,7 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size= 2000
+		size= 2700
 
 	}
 
@@ -2176,13 +2176,13 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size = 6000
+		size = 6700
 	}
 
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size = 6000
+		size = 6700
 	}
 	
 	farmers = {
@@ -2323,13 +2323,13 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size= 3000
+		size= 3500
 	}
 
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size = 3000
+		size = 3500
 	}
 	
 	farmers = {
@@ -2413,7 +2413,7 @@
 	soldiers = {
 		culture = south_italian
 		religion = catholic
-		size = 1000
+		size = 1500
 	}
 
 	farmers = {
@@ -2446,7 +2446,7 @@
 	soldiers = {
 		culture = venetian
 		religion = catholic
-		size = 300
+		size = 700
 	}
 
 	farmers = {
@@ -2480,7 +2480,7 @@
 	soldiers = {
 		culture = north_italian
 		religion = catholic
-		size = 300
+		size = 700
 	}
 
 	farmers = {

@@ -216,8 +216,8 @@ army = {
 }
 
 army = {
-	name = "Min Contingent"
-	location = 1609
+	name = "Joseon Contingent"
+	location = 1624
 	
 	regiment = {
 		name = "1. Infantry"

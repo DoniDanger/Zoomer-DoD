@@ -51,8 +51,8 @@ army = {
 		home = 2468
 	}
 	regiment = {
-		name= "4. Royal infantry"
-		type = infantry
+		name= "4. Royal Artillery"
+		type = artillery
 		home = 2468
 	}
 	regiment = {
@@ -112,8 +112,8 @@ army = {
 		home = 2484
 	}
 	regiment = {
-		name = "2. Cavalry"
-		type = cavalry
+		name = "2. Artillery"
+		type = artillery
 		home = 2486
 	}
 	regiment = {
@@ -153,8 +153,8 @@ army = {
 		home = 2406
 	}
 	regiment = {
-		name = "5. Infantry"
-		type = infantry
+		name = "5. Artillery"
+		type = artillery
 		home = 1455
 	}
 	regiment = {
@@ -209,8 +209,8 @@ army = {
 		home = 1458
 	}
 	regiment = {
-		name = "5. Infantry"
-		type = infantry
+		name = "5. Artillery"
+		type = artillery
 		home = 1499
 	}
 	regiment = {
@@ -296,13 +296,13 @@ army = {
 		home = 2477
 	}
 	regiment = {
-		name = "1. Infantry"
-		type = infantry
+		name = "1. Artillery"
+		type = artillery
 		home = 2479
 	}
 	regiment = {
-		name = "2. Infantry"
-		type = infantry
+		name = "2. Artillery"
+		type = artillery
 		home = 2478
 	}
 }
@@ -342,6 +342,16 @@ navy = {
 	}
 
 	ship = {
+		name= "Qingqiu"
+		type = manowar
+	}
+	
+	ship = {
+		name= "Nanjing"
+		type = manowar
+	}
+	
+	ship = {
 		name= "Shanghai"
 		type = manowar
 	}
@@ -368,16 +378,6 @@ navy = {
 	
 	ship = {
 		name= "Nanjing"
-		type = frigate
-	}
-
-	ship = {
-		name= "Shanghai"
-		type = frigate
-	}
-
-	ship = {
-		name= "Jiangsu"
 		type = frigate
 	}
 
@@ -517,6 +517,21 @@ navy = {
 	location = 2468
 	
 	ship = {
+		name= "Qingqiu"
+		type = frigate
+	}
+	
+	ship = {
+		name= "Nanjing"
+		type = frigate
+	}
+
+	ship = {
+		name= "Shanghai"
+		type = frigate
+	}
+	
+	ship = {
 		name= "Transport Flotilla"
 		type = clipper_transport
 	}
@@ -576,6 +591,36 @@ navy = {
 		type = clipper_transport
 	}
 	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Zhourao Convoy Fleet"
+	location = 1426
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "Transport Flotilla"
+		type = clipper_transport
+	}
+
 	ship = {
 		name= "Transport Flotilla"
 		type = clipper_transport

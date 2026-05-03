@@ -58,7 +58,7 @@
 	soldiers = {
 		culture = castilian
 		religion = catholic
-		size= 3000
+		size= 3600
 
 	}
 
@@ -97,7 +97,7 @@
 	soldiers = {
 		culture = castilian
 		religion = catholic
-		size= 1100
+		size= 1600
 
 	}
 
@@ -167,7 +167,7 @@
 	soldiers = {
 		culture = castilian
 		religion = catholic
-		size= 1100
+		size= 1400
 
 	}
 
@@ -1098,7 +1098,7 @@
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size = 6000
+		size = 6700
 
 	}
 
@@ -1131,7 +1131,7 @@
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size= 650
+		size= 850
 
 	}
 
@@ -1164,7 +1164,7 @@
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size= 1100
+		size= 1600
 
 	}
 
@@ -1259,7 +1259,7 @@
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size= 15000
+		size= 15800
 
 	}
 
@@ -1292,7 +1292,7 @@
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size= 600
+		size= 850
 
 	}
 
@@ -1325,7 +1325,7 @@
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size= 725
+		size= 925
 
 	}
 
@@ -1398,7 +1398,7 @@
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size= 1600
+		size= 1910
 
 	}
 
@@ -1486,7 +1486,7 @@
 	soldiers = {
 		culture = catalan
 		religion = catholic
-		size = 9000
+		size = 9600
 
 	}
 
