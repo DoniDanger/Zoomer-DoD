@@ -9,8 +9,8 @@ country = {
 	REBEL_ACCEPTANCE_MONTHS = 60,
 	BASE_COUNTRY_TAX_EFFICIENCY = 0.2, -- Basic efficiency for taxes without 'crats and tech
 	BASE_COUNTRY_ADMIN_EFFICIENCY = 0.2,
-	GOLD_TO_CASH_RATE = 1.0, -- Amount of money generated per gold unit
-	GOLD_TO_WORKER_PAY_RATE = 3.0, -- Multiplier for how much money gold pays to pops
+	GOLD_TO_CASH_RATE = 0.8, -- Amount of money generated per gold unit
+	GOLD_TO_WORKER_PAY_RATE = 2.0, -- Multiplier for how much money gold pays to pops
 	GREAT_NATIONS_COUNT = 8,
 	GREATNESS_DAYS = 365, 	   -- how many days until country risks losing status as great nation
 	BADBOY_LIMIT = 25,
@@ -408,7 +408,7 @@ diplomacy = {
 
     PEACE_RELATION_ON_ACCEPT = 0,
     PEACE_RELATION_ON_DECLINE = 0,
-    PEACE_DIPLOMATIC_COST = 5,
+    PEACE_DIPLOMATIC_COST = 4,
 
     ALLIANCE_RELATION_ON_ACCEPT = 0,
     ALLIANCE_RELATION_ON_DECLINE = 0,
