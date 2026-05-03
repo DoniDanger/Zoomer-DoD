@@ -1,4 +1,4 @@
-name = "Zoomer DoD"
+name = "Zoomer DoD 1.4"
 path = "mod/Zoomer DoD"
 user_dir = "Zoomer DoD"
 replace_path = "events"
