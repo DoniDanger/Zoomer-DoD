@@ -1,5 +1,5 @@
-owner = YUC
-controller = YUC
+owner = CLM
+controller = CLM
 add_core = CLM
 add_core = YUC
 add_core = MEX

@@ -2682,7 +2682,7 @@ war_of_colombian_liberation = {
 	land_unit_start_experience = 5
 	mobilisation_economy_impact = -0.15
 	supply_consumption = -0.05
-	mobilisation_size = 0.03
+	mobilisation_size = 0.025
 	immigrant_attract = -0.03
 	icon = 8 
 }
