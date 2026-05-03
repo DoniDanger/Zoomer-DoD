@@ -239,6 +239,7 @@ political_decisions = {
 				NOT = { has_country_flag = liberated_quito }
 				NOT = { has_country_flag = restored_sapa_inca }
 				is_vassal = no
+				QUI = { vassal_of = SPA }
 			}
 			allow = {
 				has_country_flag = arequipa_congress
@@ -253,11 +254,11 @@ political_decisions = {
 				QUI = { vassal_of = SPA }
 			}
 			effect = {
-				casus_belli = {
-					target = QUI
-					type = conquest
-					months = 24
-				}
+				#casus_belli = {
+				#	target = QUI
+				#	type = conquest_any
+				#	months = 24
+				#}
 				casus_belli = {
 					target = SPA
 					type = release_puppet
