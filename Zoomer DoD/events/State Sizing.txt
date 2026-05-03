@@ -45,10 +45,20 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					state_scope = { 
-						NOT = { total_pops = 100000 }
+					OR = {
+						AND = {
+							state_scope = { 
+								NOT = { total_pops = 100000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								NOT = { total_pops = 100000 }
+							}
+							is_core = CHI
+						}
 					}
-					NOT = { is_core = CHI }
 				}
 				add_core = TIN
 				remove_core = SMA
@@ -310,10 +320,22 @@ country_event = {
 			}
 			any_owned = { 
 				limit = {
-					state_scope = { 
-						NOT = { total_pops = 150000 }
+					OR = {
+						AND = {
+							state_scope = { 
+								NOT = { total_pops = 150000 }
+							}
+							NOT = { is_core = CHI }
+						}
+						AND = {
+							state_scope = { 
+								NOT = { total_pops = 150000 }
+							}
+							is_core = CHI
+						}
 					}
 				}
+				
 				add_core = TIN
 				remove_core = SMA
 				remove_core = MED 

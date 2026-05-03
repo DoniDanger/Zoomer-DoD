@@ -155,10 +155,20 @@ political_decisions = {
                 }
                 any_owned = { 
                     limit = {
-                        state_scope = { 
-                            NOT = { total_pops = 100000 }
-                        }
-                        NOT = { is_core = CHI }
+                        OR = {
+							AND = {
+								state_scope = { 
+									NOT = { total_pops = 100000 }
+								}
+								NOT = { is_core = CHI }
+							}
+							AND = {
+								state_scope = { 
+									NOT = { total_pops = 100000 }
+								}
+								is_core = CHI
+							}
+						}
                     }
                     add_core = TIN
                     remove_core = SMA

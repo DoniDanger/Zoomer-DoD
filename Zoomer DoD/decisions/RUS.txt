@@ -351,8 +351,8 @@ political_decisions = {
 	}
 
 	#New Russian focus event.
-	picture = form_RUS
 	set_expansion_focus = {
+			picture = form_RUS
 			potential = {
 				tag = RUS
 				NOT = { 
